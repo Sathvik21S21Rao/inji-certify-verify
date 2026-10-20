@@ -1,0 +1,53 @@
+# Overlay for upstream/inji-verify/docker-compose/docker-compose.yml (project "verify").
+services:
+  postgres:
+    image: ${VERIFY_DB_IMAGE}
+    ports: !reset []
+    volumes: !override
+      - ${CONFORMANCE_ROOT}/compose/verify-db:/docker-entrypoint-initdb.d:ro
+      - ../db_scripts/inji_verify/ddl:/verify-ddl:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U postgres -d inji_verify"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  verify-service:
+    image: ${VERIFY_SERVICE_IMAGE}
+    environment:
+      - INJI_VP_SUBMISSION_BASE_URL=https://verify-tls/v1/verify
+      - INJI_VERIFY_REDIRECT_URI=https://verify-tls
+      - INJI_KEYSTORE_FILE_PATH=file:/conformance-keys/verify-signing.p12
+    volumes:
+      - ${CONFORMANCE_ROOT}/data/certs/verify:/conformance-keys:ro
+    networks: [default, mosip]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://localhost:8080/v1/verify/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 40s
+  verify-ui:
+    profiles: ["ui"]
+  verify-tls:
+    image: ${NGINX_IMAGE}
+    environment:
+      UPSTREAM: verify-service:8080
+      NGINX_ENVSUBST_FILTER: UPSTREAM
+    volumes:
+      - ${CONFORMANCE_ROOT}/compose/tls/proxy-shim-false.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - ${CONFORMANCE_ROOT}/data/certs/tls:/certs:ro
+    networks: [mosip]
+    depends_on:
+      - verify-service
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsk -o /dev/null https://localhost/v1/verify/actuator/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+networks:
+  mosip:
+    name: mosip_network
+    external: true

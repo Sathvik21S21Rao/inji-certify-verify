@@ -1,0 +1,151 @@
++ echo '== digest check =='
+== digest check ==
++ set -a
++ source compose/.env.pinned
+++ INJI_CERTIFY_REPO=https://github.com/inji/inji-certify.git
+++ INJI_CERTIFY_COMMIT=0d52155ba5e4c624fa13d67a4f3d28cbb9151f8a
+++ INJI_VERIFY_REPO=https://github.com/inji/inji-verify.git
+++ INJI_VERIFY_COMMIT=64b27903b5af09bf97c3d1a13563789c16995d6e
+++ CONFORMANCE_SUITE_REPO=https://gitlab.com/openid/conformance-suite.git
+++ CONFORMANCE_SUITE_TAG=release-v5.3.3
+++ CONFORMANCE_SUITE_COMMIT=7d420f716e49d44f8a6b04f0a3e240ad6d68ab55
+++ SUITE_SERVER_IMAGE=registry.gitlab.com/openid/conformance-suite:release-v5.3.3@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436
+++ SUITE_NGINX_IMAGE=registry.gitlab.com/openid/conformance-suite/nginx:release-v5.3.3@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db
+++ SUITE_MONGO_IMAGE=mongo:6.0.13@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070
+++ CERTIFY_IMAGE=injistackqa/inji-certify-with-plugins:1.0.x@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24
+++ CERTIFY_DB_IMAGE=postgres:15@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c
+++ VERIFY_SERVICE_IMAGE=injistackqa/inji-verify-service:1.0.x@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287
+++ VERIFY_DB_IMAGE=postgres:13@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068
+++ NGINX_IMAGE=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
++ set +a
+++ docker ps --format '{{.Names}}'
+++ grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)'
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' verify-verify-tls-1
++ ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ docker inspect -f '{{.Image}}' verify-verify-tls-1
++ id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
++ digests=nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
++ pin=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ [[  nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e  == *\@\s\h\a\2\5\6\:\e\b\1\c\8\9\6\d\e\e\f\8\3\4\f\4\e\0\5\6\8\2\9\f\d\6\d\a\d\a\c\8\3\0\5\5\0\1\f\1\6\c\c\7\1\b\a\6\5\f\b\2\5\2\c\8\d\0\a\a\1\6\8\e\ * ]]
+++ echo MATCH
++ echo 'verify-verify-tls-1 ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e image_id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e repo_digests=[nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e] MATCH'
+verify-verify-tls-1 ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e image_id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e repo_digests=[nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' verify-service
++ ref=injistackqa/inji-verify-service:1.0.x@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287
+++ docker inspect -f '{{.Image}}' verify-service
++ id=sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287
++ digests=injistackqa/inji-verify-service@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287
++ pin=sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287
+++ [[  injistackqa/inji-verify-service@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287  == *\@\s\h\a\2\5\6\:\e\9\6\6\d\b\c\b\e\3\e\1\e\9\4\1\0\2\f\4\4\b\1\a\c\3\2\6\7\9\9\1\0\6\9\1\a\c\b\5\4\e\7\6\7\c\e\f\4\7\4\0\e\6\1\e\c\3\1\7\c\2\8\7\ * ]]
+++ echo MATCH
++ echo 'verify-service ref=injistackqa/inji-verify-service:1.0.x@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287 image_id=sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287 repo_digests=[injistackqa/inji-verify-service@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287] MATCH'
+verify-service ref=injistackqa/inji-verify-service:1.0.x@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287 image_id=sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287 repo_digests=[injistackqa/inji-verify-service@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' postgres-db
++ ref=postgres:13@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068
+++ docker inspect -f '{{.Image}}' postgres-db
++ id=sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068
++ digests=postgres@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068
++ pin=sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068
+++ [[  postgres@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068  == *\@\s\h\a\2\5\6\:\4\6\8\9\9\4\0\c\6\8\3\8\0\1\b\4\a\b\8\3\9\a\b\3\b\0\a\0\a\3\5\5\5\a\5\f\e\4\2\5\3\7\1\4\2\2\3\1\0\9\4\4\e\8\9\e\c\a\7\d\8\0\6\8\ * ]]
+++ echo MATCH
++ echo 'postgres-db ref=postgres:13@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068 image_id=sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068 repo_digests=[postgres@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068] MATCH'
+postgres-db ref=postgres:13@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068 image_id=sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068 repo_digests=[postgres@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' certify-certify-tls-1
++ ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ docker inspect -f '{{.Image}}' certify-certify-tls-1
++ id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
++ digests=nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
++ pin=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ [[  nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e  == *\@\s\h\a\2\5\6\:\e\b\1\c\8\9\6\d\e\e\f\8\3\4\f\4\e\0\5\6\8\2\9\f\d\6\d\a\d\a\c\8\3\0\5\5\0\1\f\1\6\c\c\7\1\b\a\6\5\f\b\2\5\2\c\8\d\0\a\a\1\6\8\e\ * ]]
+++ echo MATCH
++ echo 'certify-certify-tls-1 ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e image_id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e repo_digests=[nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e] MATCH'
+certify-certify-tls-1 ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e image_id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e repo_digests=[nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' certify-certify-nginx-1
++ ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ docker inspect -f '{{.Image}}' certify-certify-nginx-1
++ id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
++ digests=nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
++ pin=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e
+++ [[  nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e  == *\@\s\h\a\2\5\6\:\e\b\1\c\8\9\6\d\e\e\f\8\3\4\f\4\e\0\5\6\8\2\9\f\d\6\d\a\d\a\c\8\3\0\5\5\0\1\f\1\6\c\c\7\1\b\a\6\5\f\b\2\5\2\c\8\d\0\a\a\1\6\8\e\ * ]]
+++ echo MATCH
++ echo 'certify-certify-nginx-1 ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e image_id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e repo_digests=[nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e] MATCH'
+certify-certify-nginx-1 ref=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e image_id=sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e repo_digests=[nginx@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' certify-certify-1
++ ref=injistackqa/inji-certify-with-plugins:1.0.x@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24
+++ docker inspect -f '{{.Image}}' certify-certify-1
++ id=sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24
++ digests=injistackqa/inji-certify-with-plugins@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24
++ pin=sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24
+++ [[  injistackqa/inji-certify-with-plugins@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24  == *\@\s\h\a\2\5\6\:\2\c\7\2\a\7\8\c\d\3\c\5\4\d\9\b\f\d\a\f\5\8\4\8\9\1\2\3\c\d\7\8\a\a\3\f\7\d\1\2\1\0\8\f\d\f\4\5\4\6\f\c\2\8\5\9\1\b\5\9\3\c\2\4\ * ]]
+++ echo MATCH
++ echo 'certify-certify-1 ref=injistackqa/inji-certify-with-plugins:1.0.x@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24 image_id=sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24 repo_digests=[injistackqa/inji-certify-with-plugins@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24] MATCH'
+certify-certify-1 ref=injistackqa/inji-certify-with-plugins:1.0.x@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24 image_id=sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24 repo_digests=[injistackqa/inji-certify-with-plugins@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' certify-database-1
++ ref=postgres:15@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c
+++ docker inspect -f '{{.Image}}' certify-database-1
++ id=sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c
++ digests=postgres@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c
++ pin=sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c
+++ [[  postgres@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c  == *\@\s\h\a\2\5\6\:\c\9\6\1\a\a\2\8\7\d\8\6\9\8\2\9\7\c\b\2\6\c\d\f\a\d\f\b\e\9\f\d\2\c\b\a\f\7\7\e\5\3\c\f\f\f\e\9\6\3\6\e\8\d\8\a\1\e\4\d\8\4\2\c\ * ]]
+++ echo MATCH
++ echo 'certify-database-1 ref=postgres:15@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c image_id=sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c repo_digests=[postgres@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c] MATCH'
+certify-database-1 ref=postgres:15@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c image_id=sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c repo_digests=[postgres@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' oidf-nginx-1
++ ref=registry.gitlab.com/openid/conformance-suite/nginx:release-v5.3.3@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db
+++ docker inspect -f '{{.Image}}' oidf-nginx-1
++ id=sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db
++ digests=registry.gitlab.com/openid/conformance-suite/nginx@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db
++ pin=sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db
+++ [[  registry.gitlab.com/openid/conformance-suite/nginx@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db  == *\@\s\h\a\2\5\6\:\d\8\0\1\8\3\a\f\6\8\c\b\5\1\c\7\2\c\8\6\b\4\9\8\7\8\0\d\9\4\d\6\1\9\2\c\b\c\6\a\d\c\c\7\0\a\7\d\2\8\a\c\6\a\0\1\e\f\f\0\d\0\d\b\ * ]]
+++ echo MATCH
++ echo 'oidf-nginx-1 ref=registry.gitlab.com/openid/conformance-suite/nginx:release-v5.3.3@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db image_id=sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db repo_digests=[registry.gitlab.com/openid/conformance-suite/nginx@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db] MATCH'
+oidf-nginx-1 ref=registry.gitlab.com/openid/conformance-suite/nginx:release-v5.3.3@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db image_id=sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db repo_digests=[registry.gitlab.com/openid/conformance-suite/nginx@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' oidf-server-1
++ ref=registry.gitlab.com/openid/conformance-suite:release-v5.3.3@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436
+++ docker inspect -f '{{.Image}}' oidf-server-1
++ id=sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436
++ digests=registry.gitlab.com/openid/conformance-suite@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436
++ pin=sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436
+++ [[  registry.gitlab.com/openid/conformance-suite@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436  == *\@\s\h\a\2\5\6\:\3\7\7\a\b\5\1\f\0\1\1\d\8\2\1\c\4\b\6\f\7\7\2\9\0\5\3\e\8\5\a\d\f\0\6\2\d\6\9\1\e\5\1\a\3\6\1\5\f\4\0\5\0\7\f\d\9\0\0\a\2\4\3\6\ * ]]
+++ echo MATCH
++ echo 'oidf-server-1 ref=registry.gitlab.com/openid/conformance-suite:release-v5.3.3@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436 image_id=sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436 repo_digests=[registry.gitlab.com/openid/conformance-suite@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436] MATCH'
+oidf-server-1 ref=registry.gitlab.com/openid/conformance-suite:release-v5.3.3@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436 image_id=sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436 repo_digests=[registry.gitlab.com/openid/conformance-suite@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436] MATCH
++ for c in $(docker ps --format '{{.Names}}' | grep -E '^(oidf-|certify-|verify-|postgres-db$|verify-service$)')
+++ docker inspect -f '{{.Config.Image}}' oidf-mongodb-1
++ ref=mongo:6.0.13@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070
+++ docker inspect -f '{{.Image}}' oidf-mongodb-1
++ id=sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070
+++ docker image inspect -f '{{join .RepoDigests " "}}' sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070
++ digests=mongo@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070
++ pin=sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070
+++ [[  mongo@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070  == *\@\s\h\a\2\5\6\:\b\4\1\5\b\1\2\f\6\3\8\e\2\6\8\5\d\0\6\c\5\8\a\b\7\f\b\5\9\4\3\5\7\7\c\5\0\f\a\d\e\c\6\d\9\3\4\0\e\f\6\7\d\2\1\a\e\a\c\7\2\0\7\0\ * ]]
+++ echo MATCH
++ echo 'oidf-mongodb-1 ref=mongo:6.0.13@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070 image_id=sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070 repo_digests=[mongo@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070] MATCH'
+oidf-mongodb-1 ref=mongo:6.0.13@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070 image_id=sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070 repo_digests=[mongo@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070] MATCH
++ grep -E _IMAGE= compose/.env.pinned
+SUITE_SERVER_IMAGE=registry.gitlab.com/openid/conformance-suite:release-v5.3.3@sha256:377ab51f011d821c4b6f7729053e85adf062d691e51a3615f40507fd900a2436
+SUITE_NGINX_IMAGE=registry.gitlab.com/openid/conformance-suite/nginx:release-v5.3.3@sha256:d80183af68cb51c72c86b498780d94d6192cbc6adcc70a7d28ac6a01eff0d0db
+SUITE_MONGO_IMAGE=mongo:6.0.13@sha256:b415b12f638e2685d06c58ab7fb5943577c50fadec6d9340ef67d21aeac72070
+CERTIFY_IMAGE=injistackqa/inji-certify-with-plugins:1.0.x@sha256:2c72a78cd3c54d9bfdaf58489123cd78aa3f7d12108fdf4546fc28591b593c24
+CERTIFY_DB_IMAGE=postgres:15@sha256:c961aa287d8698297cb26cdfadfbe9fd2cbaf77e53cfffe9636e8d8a1e4d842c
+VERIFY_SERVICE_IMAGE=injistackqa/inji-verify-service:1.0.x@sha256:e966dbcbe3e1e94102f44b1ac32679910691acb54e767cef4740e61ec317c287
+VERIFY_DB_IMAGE=postgres:13@sha256:4689940c683801b4ab839ab3b0a0a3555a5fe425371422310944e89eca7d8068
+NGINX_IMAGE=nginx:stable@sha256:eb1c896deef834f4e056829fd6dadac8305501f16cc71ba65fb252c8d0aa168e

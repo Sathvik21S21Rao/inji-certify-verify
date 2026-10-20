@@ -1,0 +1,62 @@
+{
+  "credentialConfigKeyId": "ConformanceSdJwt",
+  "credentialFormat": "dc+sd-jwt",
+  "sdJwtVct": "urn:mosip:conformance:sdjwt",
+  "vcTemplate": "eyJnaXZlbl9uYW1lIjogIiR7Z2l2ZW5fbmFtZX0iLCAiZmFtaWx5X25hbWUiOiAiJHtmYW1pbHlfbmFtZX0iLCAiYmlydGhkYXRlIjogIiR7YmlydGhkYXRlfSJ9",
+  "didUrl": "did:web:certify-tls",
+  "keyManagerAppId": "CERTIFY_VC_SIGN_EC_R1",
+  "keyManagerRefId": "EC_SECP256R1_SIGN",
+  "signatureAlgo": "ES256",
+  "sdClaim": "$.given_name",
+  "scope": "conformance_sdjwt",
+  "displayOrder": [
+    "given_name",
+    "family_name",
+    "birthdate"
+  ],
+  "metaDataDisplay": [
+    {
+      "name": "Conformance SD-JWT",
+      "locale": "en"
+    }
+  ],
+  "sdJwtClaims": {
+    "given_name": {
+      "display": [
+        {
+          "name": "Given name",
+          "locale": "en"
+        }
+      ]
+    },
+    "family_name": {
+      "display": [
+        {
+          "name": "Family name",
+          "locale": "en"
+        }
+      ]
+    },
+    "birthdate": {
+      "display": [
+        {
+          "name": "Birth date",
+          "locale": "en"
+        }
+      ]
+    }
+  },
+  "cryptographicBindingMethodsSupported": [
+    "did:jwk"
+  ],
+  "credentialSigningAlgValuesSupported": [
+    "ES256"
+  ],
+  "proofTypesSupported": {
+    "jwt": {
+      "proof_signing_alg_values_supported": [
+        "ES256"
+      ]
+    }
+  }
+}

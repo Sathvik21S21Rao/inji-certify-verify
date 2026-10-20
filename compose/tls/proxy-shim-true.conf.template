@@ -1,0 +1,22 @@
+# Same as proxy-shim-false plus a placeholder for finding F-CERT-1: Certify's AS metadata has no
+# authorization_endpoint. Selected by CONFORMANCE_CERTIFY_AS_METADATA_SHIM=true; maps to the testrig key
+# conformance.certify.as_metadata_shim.
+server {
+    listen 443 ssl;
+    ssl_certificate /certs/tls.crt;
+    ssl_certificate_key /certs/tls.key;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto https;
+    location / {
+        proxy_pass http://${UPSTREAM};
+    }
+    location = /.well-known/oauth-authorization-server {
+        proxy_pass http://${UPSTREAM};
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header Accept-Encoding "";
+        sub_filter_types application/json;
+        sub_filter '"issuer":' '"authorization_endpoint":"https://certify-tls/conformance-shim-no-authorization-endpoint","issuer":';
+        sub_filter_once on;
+    }
+}

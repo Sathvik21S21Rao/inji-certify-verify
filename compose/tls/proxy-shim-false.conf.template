@@ -1,0 +1,11 @@
+# TLS front: the OIDF suite requires https issuer/request/response URLs. ${UPSTREAM} is substituted by the nginx image.
+server {
+    listen 443 ssl;
+    ssl_certificate /certs/tls.crt;
+    ssl_certificate_key /certs/tls.key;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto https;
+    location / {
+        proxy_pass http://${UPSTREAM};
+    }
+}

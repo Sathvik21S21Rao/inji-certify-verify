@@ -1,0 +1,23 @@
+# Overlay for upstream/conformance-suite/docker-compose-prebuilt.yml (project "oidf").
+services:
+  mongodb:
+    image: ${SUITE_MONGO_IMAGE}
+    volumes: !override
+      - suite-mongo:/data/db
+  nginx:
+    image: ${SUITE_NGINX_IMAGE}
+    # nginx fronts the server, so this checks both
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsk -o /dev/null https://localhost:8443/api/plan/info/oid4vci-1_0-issuer-test-plan"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+  server:
+    image: ${SUITE_SERVER_IMAGE}
+volumes:
+  suite-mongo: {}
+networks:
+  default:
+    name: mosip_network
+    external: true

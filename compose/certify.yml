@@ -1,0 +1,57 @@
+# Overlay for upstream/inji-certify/docker-compose/docker-compose-injistack/docker-compose.yaml (project "certify").
+# Relative paths resolve against the upstream compose dir; our files go through ${CONFORMANCE_ROOT}.
+services:
+  database:
+    image: ${CERTIFY_DB_IMAGE}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  certify:
+    image: ${CERTIFY_IMAGE}
+    environment:
+      # Certify is its own authorization server, advertised at the TLS front (https://certify-tls)
+      SPRING_APPLICATION_JSON: >-
+        {"mosip.certify.domain.url":"https://certify-tls",
+         "mosip.certify.authorization.url":"https://certify-tls",
+         "mosip.certify.authn.issuer-uri":"https://certify-tls",
+         "mosip.certify.authn.jwk-set-uri":"http://certify:8090/v1/certify/.well-known/jwks.json",
+         "mosip.certify.authn.allowed-audiences":"{ 'https://certify-tls/v1/certify/issuance/credential' }",
+         "mosip.certify.integration.data-provider-plugin":"PreAuthDataProviderPlugin"}
+    volumes:
+      - ${CONFORMANCE_ROOT}/data/certify/CERTIFY_PKCS12:/home/mosip/CERTIFY_PKCS12
+    depends_on:
+      database:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs -o /dev/null http://localhost:8090/v1/certify/.well-known/openid-credential-issuer"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 120s
+  certify-nginx:
+    image: ${NGINX_IMAGE}
+  mimoto-service:
+    profiles: ["inji-wallet"]
+  inji-web:
+    profiles: ["inji-wallet"]
+  certify-tls:
+    image: ${NGINX_IMAGE}
+    environment:
+      UPSTREAM: certify-nginx:80
+      NGINX_ENVSUBST_FILTER: UPSTREAM
+    volumes:
+      - ${CONFORMANCE_ROOT}/compose/tls/proxy-shim-${CONFORMANCE_CERTIFY_AS_METADATA_SHIM:-false}.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - ${CONFORMANCE_ROOT}/data/certs/tls:/certs:ro
+    ports:
+      - "9443:443"
+    networks:
+      - network
+    depends_on:
+      - certify-nginx
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsk -o /dev/null https://localhost/.well-known/openid-credential-issuer"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
