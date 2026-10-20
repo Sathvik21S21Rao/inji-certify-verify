@@ -1,0 +1,78 @@
+{
+ "plan_id": "UceiMJUkJXj1c",
+ "variant": {
+  "vp_profile": "plain_vp",
+  "credential_format": "sd_jwt_vc",
+  "client_id_prefix": "x509_san_dns",
+  "request_method": "request_uri_signed",
+  "response_mode": "direct_post"
+ },
+ "results": [
+  [
+   "oid4vp-1final-verifier-happy-flow",
+   "CIcGO79HNvY03nc",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-minimal-cnf-jwk",
+   "zIHGsO2arFTKdDQ",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-request-uri-method-post",
+   "zhqKJa3aiFYyEGP",
+   "FINISHED",
+   "SKIPPED"
+  ],
+  [
+   "oid4vp-1final-verifier-request-uri-fetched-twice",
+   "9OrRuSWFH6HKsNY",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-invalid-kb-jwt-signature",
+   "gzrsGk7pQeSQ8CO",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-invalid-credential-signature",
+   "YzdXgWev0Xc8GVt",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-invalid-sd-hash",
+   "aXDKSmCvlzPEhOH",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-invalid-kb-jwt-nonce",
+   "W7uQ3A7kV8OAAnQ",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-invalid-kb-jwt-aud",
+   "7mFw3DVCSD8BQ2C",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-kb-jwt-iat-in-past",
+   "uVH7Zu7Df3CLcwa",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vp-1final-verifier-kb-jwt-iat-in-future",
+   "xDdt1m3Bhebjv8W",
+   "FINISHED",
+   "FAILED"
+  ]
+ ]
+}

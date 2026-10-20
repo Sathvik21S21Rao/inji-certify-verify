@@ -1,0 +1,28 @@
+{
+ "plan_id": "dNiLMcj0a7XvD",
+ "variant": {
+  "fapi_profile": "vci",
+  "credential_format": "sd_jwt_vc",
+  "authorization_request_type": "simple",
+  "client_auth_type": "private_key_jwt",
+  "fapi_request_method": "unsigned",
+  "sender_constrain": "dpop",
+  "vci_authorization_code_flow_variant": "issuer_initiated",
+  "vci_credential_encryption": "plain",
+  "vci_grant_type": "pre_authorization_code"
+ },
+ "results": [
+  [
+   "oid4vci-1_0-issuer-metadata-test",
+   "fqPSaR4eIyqq8xh",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow",
+   "O82EyTIX6gbLZUl",
+   "INTERRUPTED",
+   "FAILED"
+  ]
+ ]
+}

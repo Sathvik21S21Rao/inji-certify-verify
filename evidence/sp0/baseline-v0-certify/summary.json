@@ -1,0 +1,100 @@
+{
+ "plan_id": "lPxKvhrlgfamg",
+ "variant": {
+  "fapi_profile": "vci",
+  "credential_format": "sd_jwt_vc",
+  "authorization_request_type": "simple",
+  "client_auth_type": "private_key_jwt",
+  "fapi_request_method": "unsigned",
+  "sender_constrain": "dpop",
+  "vci_authorization_code_flow_variant": "issuer_initiated",
+  "vci_credential_encryption": "plain",
+  "vci_grant_type": "pre_authorization_code"
+ },
+ "results": [
+  [
+   "oid4vci-1_0-issuer-metadata-test",
+   "T6gnKAjstpCt0o3",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-metadata-test-signed",
+   "C3qGp0WWr8Vgk98",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow",
+   "bTinBwVMvsV3wHT",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow-additional-requests",
+   "16oqtNwl8rYaVLQ",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow-multiple-clients",
+   "JXtzVpnEnGVmvhd",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow-skip-notification",
+   "zNyN6GlF3UkFyKM",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-batch-issuance",
+   "BvbZIu1sVveqWsm",
+   "FINISHED",
+   "SKIPPED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-invalid-nonce",
+   "6rb6nQX9BbPWAiV",
+   "FINISHED",
+   "PASSED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature",
+   "6BKFzQ8fC3hphDF",
+   "FINISHED",
+   "PASSED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-invalid-key-attestation-signature",
+   "KIFUrgbJZJ5fvcJ",
+   "FINISHED",
+   "SKIPPED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-missing-proof",
+   "Mjjt2gdGsOw8HMM",
+   "FINISHED",
+   "PASSED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-unknown-credential-configuration",
+   "p3t7ENbmhSOOP8K",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-unknown-credential-identifier",
+   "GzAfnO3ThNgp6Ur",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-on-access-token-in-query",
+   "liTCDbKKp3glatB",
+   "INTERRUPTED",
+   "FAILED"
+  ]
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "plan_id": "IwN4ryinAGvus",
+ "variant": {
+  "vp_profile": "plain_vp",
+  "credential_format": "sd_jwt_vc",
+  "client_id_prefix": "x509_san_dns",
+  "request_method": "request_uri_signed",
+  "response_mode": "direct_post"
+ },
+ "results": [
+  [
+   "oid4vp-1final-verifier-happy-flow",
+   "qESj4JPxUmVhNrP",
+   "FINISHED",
+   "FAILED"
+  ]
+ ]
+}

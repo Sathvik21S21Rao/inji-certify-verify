@@ -1,0 +1,100 @@
+{
+ "plan_id": "E4ZLf9Dnm1WAy",
+ "variant": {
+  "fapi_profile": "vci",
+  "credential_format": "sd_jwt_vc",
+  "authorization_request_type": "simple",
+  "client_auth_type": "private_key_jwt",
+  "fapi_request_method": "unsigned",
+  "sender_constrain": "dpop",
+  "vci_authorization_code_flow_variant": "issuer_initiated",
+  "vci_credential_encryption": "plain",
+  "vci_grant_type": "pre_authorization_code"
+ },
+ "results": [
+  [
+   "oid4vci-1_0-issuer-metadata-test",
+   "cIcWTmAgGSbIdlO",
+   "FINISHED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-metadata-test-signed",
+   "R8MrQ1rCKSSrLAC",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow",
+   "yWkNWZziJQxUjwJ",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow-additional-requests",
+   "jRXVmwvCFLKn6ZZ",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow-multiple-clients",
+   "PpUt6zczfAV28SE",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-happy-flow-skip-notification",
+   "OyjpIFrplLKm1zD",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-batch-issuance",
+   "ZqMeWDmXE853jX4",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-invalid-nonce",
+   "3KxEcAn0Rvt94oE",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature",
+   "hLiV8I9Jze8gTfr",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-invalid-key-attestation-signature",
+   "zdI9g52znlvTUw5",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-missing-proof",
+   "ouXcT5PSsYltIT4",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-unknown-credential-configuration",
+   "ZH2d4w63ajan13E",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-unknown-credential-identifier",
+   "kvWWA2EA5rtWJ6f",
+   "INTERRUPTED",
+   "FAILED"
+  ],
+  [
+   "oid4vci-1_0-issuer-fail-on-access-token-in-query",
+   "G7NS91NEl9IDl4U",
+   "INTERRUPTED",
+   "FAILED"
+  ]
+ ]
+}
