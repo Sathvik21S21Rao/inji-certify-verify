@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mosip-decode-2026/inji-conformance/runner/schema/results.schema.json",
+  "title": "Conformance runner JSON Lines record (contract v1.0)",
+  "description": "One JSON object per line on the runner's stdout. Order: one plan record, then one module record per entry of plan.modules (same order), then one end record. See CONTRACT.md.",
+  "oneOf": [
+    {"$ref": "#/$defs/plan"},
+    {"$ref": "#/$defs/module"},
+    {"$ref": "#/$defs/end"}
+  ],
+  "$defs": {
+    "timestamp": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"},
+    "suite_status": {"enum": ["NOT_YET_CREATED", "CREATED", "CONFIGURED", "RUNNING", "WAITING", "INTERRUPTED", "FINISHED", null]},
+    "suite_result": {"enum": ["PASSED", "FAILED", "WARNING", "REVIEW", "SKIPPED", "UNKNOWN", null]},
+    "outcome": {"enum": ["pass", "warning", "review", "skip", "fail", "infra"]},
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["condition", "message", "requirements"],
+      "properties": {
+        "condition": {"type": "string", "minLength": 1},
+        "message": {"type": "string"},
+        "requirements": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "schema_version", "run_id", "alias", "component", "config_name", "plan_name", "plan_id", "variant", "flags", "suite_url", "modules", "started"],
+      "properties": {
+        "type": {"const": "plan"},
+        "schema_version": {"const": "1.0"},
+        "run_id": {"type": "string", "minLength": 1},
+        "alias": {"type": "string", "minLength": 1},
+        "component": {"enum": ["certify", "verify"]},
+        "config_name": {"type": "string", "minLength": 1},
+        "plan_name": {"type": "string", "minLength": 1},
+        "plan_id": {"type": ["string", "null"]},
+        "variant": {"type": "object", "additionalProperties": {"type": "string"}},
+        "flags": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["certify_as_metadata_shim", "verify_evidence_upload"],
+          "properties": {
+            "certify_as_metadata_shim": {"type": ["boolean", "null"]},
+            "verify_evidence_upload": {"type": ["boolean", "null"]}
+          }
+        },
+        "suite_url": {"type": "string", "minLength": 1},
+        "modules": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "started": {"$ref": "#/$defs/timestamp"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"component": {"const": "certify"}}},
+          "then": {"properties": {"flags": {"properties": {"certify_as_metadata_shim": {"type": "boolean"}, "verify_evidence_upload": {"type": "null"}}}}}
+        },
+        {
+          "if": {"properties": {"component": {"const": "verify"}}},
+          "then": {"properties": {"flags": {"properties": {"certify_as_metadata_shim": {"type": "null"}, "verify_evidence_upload": {"type": "boolean"}}}}}
+        }
+      ]
+    },
+    "module": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "module", "test_id", "status", "result", "outcome", "message", "failed_conditions", "warnings", "log_url", "started", "finished", "evidence", "infra_reason"],
+      "properties": {
+        "type": {"const": "module"},
+        "module": {"type": "string", "minLength": 1},
+        "test_id": {"type": ["string", "null"]},
+        "status": {"$ref": "#/$defs/suite_status"},
+        "result": {"$ref": "#/$defs/suite_result"},
+        "outcome": {"$ref": "#/$defs/outcome"},
+        "message": {"type": "string"},
+        "failed_conditions": {"type": "array", "items": {"$ref": "#/$defs/condition"}},
+        "warnings": {"type": "array", "items": {"$ref": "#/$defs/condition"}},
+        "log_url": {"type": ["string", "null"]},
+        "started": {"$ref": "#/$defs/timestamp"},
+        "finished": {"$ref": "#/$defs/timestamp"},
+        "evidence": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "infra_reason": {"type": ["string", "null"]}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"outcome": {"const": "infra"}}},
+          "then": {"properties": {"infra_reason": {"type": "string", "minLength": 1}, "message": {"pattern": "^INFRA: "}}},
+          "else": {"properties": {"infra_reason": {"type": "null"}}}
+        },
+        {
+          "if": {"properties": {"outcome": {"const": "fail"}}},
+          "then": {"properties": {"result": {"const": "FAILED"}}}
+        },
+        {
+          "if": {"properties": {"outcome": {"enum": ["pass", "warning", "review", "skip"]}}},
+          "then": {"properties": {"status": {"const": "FINISHED"}}}
+        },
+        {"if": {"properties": {"outcome": {"const": "pass"}}}, "then": {"properties": {"result": {"const": "PASSED"}}}},
+        {"if": {"properties": {"outcome": {"const": "warning"}}}, "then": {"properties": {"result": {"const": "WARNING"}}}},
+        {"if": {"properties": {"outcome": {"const": "review"}}}, "then": {"properties": {"result": {"const": "REVIEW"}}}},
+        {"if": {"properties": {"outcome": {"const": "skip"}}}, "then": {"properties": {"result": {"const": "SKIPPED"}}}}
+      ]
+    },
+    "end": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "exit", "counts", "error", "export", "finished"],
+      "properties": {
+        "type": {"const": "end"},
+        "exit": {"enum": [0, 1, 2]},
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["pass", "warning", "review", "skip", "fail", "infra"],
+          "properties": {
+            "pass": {"type": "integer", "minimum": 0},
+            "warning": {"type": "integer", "minimum": 0},
+            "review": {"type": "integer", "minimum": 0},
+            "skip": {"type": "integer", "minimum": 0},
+            "fail": {"type": "integer", "minimum": 0},
+            "infra": {"type": "integer", "minimum": 0}
+          }
+        },
+        "error": {"type": ["string", "null"]},
+        "export": {"type": ["string", "null"]},
+        "finished": {"$ref": "#/$defs/timestamp"}
+      },
+      "allOf": [
+        {"if": {"properties": {"exit": {"const": 2}}}, "then": {"properties": {"error": {"type": "string", "minLength": 1}}}}
+      ]
+    }
+  }
+}

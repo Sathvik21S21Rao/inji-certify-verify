@@ -1,0 +1,3 @@
+# versions match Ubuntu 24.04 apt python3-httpx / python3-pil (testrig base image)
+httpx==0.26.0
+pillow==10.2.0

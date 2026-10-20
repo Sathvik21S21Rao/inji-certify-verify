@@ -1,0 +1,76 @@
+{
+ "component": "certify",
+ "description": "Inji Certify 1.0.x pre-authorized code, AS metadata unshimmed (benchmark of record)",
+ "plan_name": "oid4vci-1_0-issuer-test-plan",
+ "variant": {
+  "fapi_profile": "vci",
+  "credential_format": "sd_jwt_vc",
+  "authorization_request_type": "simple",
+  "client_auth_type": "private_key_jwt",
+  "fapi_request_method": "unsigned",
+  "sender_constrain": "dpop",
+  "vci_authorization_code_flow_variant": "issuer_initiated",
+  "vci_credential_encryption": "plain",
+  "vci_grant_type": "pre_authorization_code"
+ },
+ "module_timeout_s": 180,
+ "expect": {
+  "certify_as_metadata_shim": false
+ },
+ "setup": {
+  "credential_configuration": "credential-config.json"
+ },
+ "config": {
+  "vci": {
+   "credential_issuer_url": "${CERTIFY_ISSUER_URL:-https://certify-tls}",
+   "credential_configuration_id": "ConformanceSdJwt"
+  },
+  "client": {
+   "client_id": "52480754053",
+   "scope": "accounts",
+   "jwks": {
+    "keys": [
+     {
+      "kty": "EC",
+      "d": "C9AWp9_vYfHj-ckdYAo0aYk-ZGXOPwoKJEqmYGlqUGI",
+      "use": "sig",
+      "crv": "P-256",
+      "kid": "vci-example-key-1",
+      "x": "yHNp8QgNiVSxSxIH_n_nH23dpUDlNhbgvLKSrjK1hDs",
+      "y": "3_rlpW_FXqghp8dKPpkjfvbfACQQFLFZwJXxOr319Ac",
+      "alg": "ES256"
+     }
+    ]
+   }
+  },
+  "client2": {
+   "client_id": "61732691006",
+   "scope": "accounts",
+   "jwks": {
+    "keys": [
+     {
+      "kty": "RSA",
+      "d": "Nha1ReQVpOa1vsTz0oEcbtCd2UAbYWXhLr06CXXENXxDHWhTkXCaayh4kEOp6CNfY5b75tbBZB2hhxyY7vPNSmnvrIHn1YE5a321vHEti0GoNI9UGi2KhAO40Qu0ZPqvYCo3nfRsS-CWUWzchcKlqwiwuIwXOWPEGTnuKf-iqsqm6zNXB6zkIXb0Qkm5ByyGiF_wgOJLdlEx9hHlmHPiT_RKYbsQQ4mNqwOVnkInttzPiWmfY1cYN4qlxMYtIF7vb1pz1eWjZLlQpM37qQSxNXVeKNIUrs3NRyP-VDv47YFWDRLaPEPnnS7Y5RwJgeydTPHfZ91C2Q_m79KMGHSqkQ",
+      "e": "AQAB",
+      "kid": "fapi-jwt-assertion-20180817-2",
+      "alg": "PS256",
+      "n": "kne7a8IYQR6jweqpHAplq-XRGOuiVyF5Siy6_647OhOC8ppRIMV2O_wP6qK1AKCFb78Bb8qbRI3Mz-Tr9hCWm1BZQkD-HGbNowjVsOj7oB2nbNbGfqciTyT3kTG1f5PmeX2N4-f9zZM-J4Jmi9PdMjn2fkNl9oMCW9XaLHHzCU6f-vYftxdCnVQD7ZKr40HjoAeXjwdGhgzvuWSZHkhEqx_QMh8JskqP46PjsMykFWiryju9balCdS5yASf-Fno8pXMFEV1wgipy-FPlhB5FZtLwVvH9F2jAxRaWkRQzhM5hWugIUi8YobjoIwhrmJ04JTK-DGOlThJsNvS4QANDZw"
+     }
+    ]
+   }
+  }
+ },
+ "handoff": {
+  "plugin": "certify",
+  "offer": {
+   "credential_configuration_id": "ConformanceSdJwt",
+   "claims": {
+    "given_name": "Ada",
+    "family_name": "Lovelace",
+    "birthdate": "1815-12-10"
+   },
+   "expires_in": 600,
+   "tx_code": "493817"
+  }
+ }
+}

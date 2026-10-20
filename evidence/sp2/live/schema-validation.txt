@@ -1,0 +1,15 @@
+OK   certify-shim-off/run1: 16/16 lines valid
+OK   certify-shim-off/run2: 16/16 lines valid
+OK   certify-shim-off/run3: 16/16 lines valid
+OK   certify-shim-on/run1: 16/16 lines valid
+OK   certify-shim-on/run2: 16/16 lines valid
+OK   certify-shim-on/run3: 16/16 lines valid
+OK   verify-redirect-uri/run1: 11/11 lines valid
+OK   verify-redirect-uri/run2: 11/11 lines valid
+OK   verify-redirect-uri/run3: 11/11 lines valid
+OK   verify-x509/run1: 13/13 lines valid
+OK   verify-x509/run2: 13/13 lines valid
+OK   verify-x509/run3: 13/13 lines valid
+
+TOTAL lines=168 schema_errors=0
+plan-flag check: ALL OK

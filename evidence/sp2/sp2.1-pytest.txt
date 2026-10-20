@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- ~/wt/sp2-runner/.venv-sp2/bin/python
+cachedir: .pytest_cache
+rootdir: ~/wt/sp2-runner
+plugins: anyio-4.15.1
+collecting ... collected 22 items
+
+runner/tests/test_records.py::test_fixture_valid_and_ordered[certify-shim-on] PASSED [  4%]
+runner/tests/test_records.py::test_fixture_valid_and_ordered[certify-shim-off] PASSED [  9%]
+runner/tests/test_records.py::test_fixture_valid_and_ordered[verify-redirect-uri] PASSED [ 13%]
+runner/tests/test_records.py::test_fixture_valid_and_ordered[verify-x509] PASSED [ 18%]
+runner/tests/test_records.py::test_fixture_valid_and_ordered[infra-interrupted-unknown] PASSED [ 22%]
+runner/tests/test_records.py::test_outcome_for[FINISHED-PASSED-pass] PASSED [ 27%]
+runner/tests/test_records.py::test_outcome_for[FINISHED-WARNING-warning] PASSED [ 31%]
+runner/tests/test_records.py::test_outcome_for[FINISHED-REVIEW-review] PASSED [ 36%]
+runner/tests/test_records.py::test_outcome_for[FINISHED-SKIPPED-skip] PASSED [ 40%]
+runner/tests/test_records.py::test_outcome_for[FINISHED-FAILED-fail] PASSED [ 45%]
+runner/tests/test_records.py::test_outcome_for[INTERRUPTED-FAILED-fail] PASSED [ 50%]
+runner/tests/test_records.py::test_outcome_for[INTERRUPTED-UNKNOWN-infra] PASSED [ 54%]
+runner/tests/test_records.py::test_outcome_for[RUNNING-None-infra] PASSED [ 59%]
+runner/tests/test_records.py::test_outcome_for[None-None-infra] PASSED   [ 63%]
+runner/tests/test_records.py::test_outcome_for[INTERRUPTED-PASSED-infra] PASSED [ 68%]
+runner/tests/test_records.py::test_norm_ts_and_iso PASSED                [ 72%]
+runner/tests/test_records.py::test_certify_shim_on_counts PASSED         [ 77%]
+runner/tests/test_records.py::test_verify_redirect_uri PASSED            [ 81%]
+runner/tests/test_records.py::test_certify_shim_off_first_failure PASSED [ 86%]
+runner/tests/test_records.py::test_infra_fixture PASSED                  [ 90%]
+runner/tests/test_records.py::test_negative_schema PASSED                [ 95%]
+runner/tests/test_records.py::test_interrupted_unknown_reason_and_emitter PASSED [100%]
+
+============================== 22 passed in 0.13s ==============================

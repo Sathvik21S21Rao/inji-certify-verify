@@ -1,0 +1,61 @@
+{
+ "component": "verify",
+ "description": "Inji Verify 1.0.x redirect_uri/url_query/direct_post",
+ "plan_name": "oid4vp-1final-verifier-test-plan",
+ "variant": {
+  "vp_profile": "plain_vp",
+  "credential_format": "sd_jwt_vc",
+  "client_id_prefix": "redirect_uri",
+  "request_method": "url_query",
+  "response_mode": "direct_post"
+ },
+ "module_timeout_s": 180,
+ "config": {
+  "credential": {
+   "signing_jwk": {
+    "kty": "EC",
+    "crv": "P-256",
+    "x": "7o-bqWNsugf9VpekoAHhncbEcAi1-B_Jdm7JIhEr68w",
+    "y": "o04BS9a59qOniv0sWnvgUm98WsyqQQ45Pmu38N58NCI",
+    "d": "zMaFXGXEAJGdySFt3D65cSmvYC8JD81Zo7zmpDVFESE",
+    "use": "sig",
+    "alg": "ES256",
+    "x5c": [
+     "MIII2TCCCH+gAwIBAgIUVnfpN6i+JLZ4om1mkMNTi/s+mYwwCgYIKoZIzj0EAwIwJDELMAkGA1UEBhMCR0IxFTATBgNVBAMMDE9JREYgVGVzdCBDQTAeFw0yNjA4MjkxMzM4MzBaFw0zNjA4MjYxMzM4MzBaMCExCzAJBgNVBAYTAkdCMRIwEAYDVQQDDAlPSURGIFRlc3QwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATuj5upY2y6B/1Wl6SgAeGdxsRwCLX4H8l2bskiESvrzKNOAUvWufajp4r9LFp74FJvfFrMqkEOOT5rt/DefDQio4IHkDCCB4wwgga2BgNVHREEggatMIIGqYIQd3d3LmhlZW5hbi5tZS51a4IJbG9jYWxob3N0ghZsb2NhbGhvc3QuZW1vYml4LmNvLnVrgh1kZW1vLmNlcnRpZmljYXRpb24ub3BlbmlkLm5ldIIcd3d3LmNlcnRpZmljYXRpb24ub3BlbmlkLm5ldIIgc3RhZ2luZy5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCImRlbW8ucGlkLWlzc3Vlci5idW5kZXNkcnVja2VyZWkuZGWCMHJldmlldy1hcHAtZGV2LWJyYW5jaC0xLmNlcnRpZmljYXRpb24ub3BlbmlkLm5ldIIwcmV2aWV3LWFwcC1kZXYtYnJhbmNoLTIuY2VydGlmaWNhdGlvbi5vcGVuaWQubmV0gjByZXZpZXctYXBwLWRldi1icmFuY2gtMy5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMHJldmlldy1hcHAtZGV2LWJyYW5jaC00LmNlcnRpZmljYXRpb24ub3BlbmlkLm5ldIIwcmV2aWV3LWFwcC1kZXYtYnJhbmNoLTUuY2VydGlmaWNhdGlvbi5vcGVuaWQubmV0gjByZXZpZXctYXBwLWRldi1icmFuY2gtNi5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMHJldmlldy1hcHAtZGV2LWJyYW5jaC03LmNlcnRpZmljYXRpb24ub3BlbmlkLm5ldIIwcmV2aWV3LWFwcC1kZXYtYnJhbmNoLTguY2VydGlmaWNhdGlvbi5vcGVuaWQubmV0gjByZXZpZXctYXBwLWRldi1icmFuY2gtOS5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xMC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xMS5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xMi5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xMy5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xNC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xNS5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xNi5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xNy5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xOC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0xOS5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yMC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yMS5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yMi5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yMy5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yNC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yNS5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yNi5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yNy5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yOC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0yOS5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXSCMXJldmlldy1hcHAtZGV2LWJyYW5jaC0zMC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXQwHQYDVR0OBBYEFGScY4x63TkOHCWldyoXDnB+jAq5MB8GA1UdIwQYMBaAFHukqksuMawT3B8pW/4KSqvPM/flMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB4GA1UdJQEB/wQUMBIGByiBjF0FAQYGByiBtTQEAQYwIQYDVR0SBBowGIEWY2VydGlmaWNhdGlvbkBvaWRmLm9yZzAvBgNVHR8EKDAmMCSgIqAghh5odHRwOi8vZXhhbXBsZS5jb20vdGVzdC1jYS5jcmwwCgYIKoZIzj0EAwIDSAAwRQIgU+wCRFLt62tSwX/m8s6On8wljRv5zS+ydAThdehJRrgCIQD7COQJ+XhfPNo8av5M9cXGRTXqdHLz4n/dODEoo/0qWg=="
+    ]
+   }
+  }
+ },
+ "handoff": {
+  "plugin": "verify",
+  "vp_request": {
+   "clientId": "redirect_uri:${VERIFY_PUBLIC_URL:-https://verify-tls}/v1/verify/v2/vp-submission/direct-post",
+   "dcqlQuery": {
+    "credentials": [
+     {
+      "id": "pid",
+      "format": "dc+sd-jwt",
+      "meta": {
+       "vct_values": [
+        "urn:eudi:pid:1"
+       ]
+      },
+      "claims": [
+       {
+        "path": [
+         "given_name"
+        ]
+       },
+       {
+        "path": [
+         "family_name"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "evidence": "${CONFORMANCE_VERIFY_EVIDENCE:-vp-result-png}"
+ }
+}
