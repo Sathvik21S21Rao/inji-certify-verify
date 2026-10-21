@@ -1,6 +1,11 @@
 # Standalone MinIO for the S3Adapter report push (neither upstream compose has object storage).
 # Run: docker compose -p minio --env-file compose/.env.pinned -f compose/minio.yml up -d --wait
+# The image has no mc, so there is no healthcheck. Check readiness from the host:
+#   curl -fsS http://127.0.0.1:9000/minio/health/live
+# List a bucket:
+#   curl --aws-sigv4 "aws:amz:us-east-1:s3" -u minioadmin:minioadmin "http://127.0.0.1:9000/automation?list-type=2"
 # Credentials are local test values; Kernel.properties' default s3-user-key is minioadmin.
+# /data is tmpfs: the image runs as uid 65532 and the store is ephemeral by design.
 services:
   minio:
     image: ${MINIO_IMAGE}
@@ -11,13 +16,4 @@ services:
     ports:
       - "127.0.0.1:9000:9000"
       - "127.0.0.1:9001:9001"
-    volumes:
-      - minio-data:/data
-    healthcheck:
-      test: ["CMD", "mc", "ready", "local"]
-      interval: 5s
-      timeout: 5s
-      retries: 12
-
-volumes:
-  minio-data:
+    tmpfs: ["/data:uid=65532,gid=65532"]
