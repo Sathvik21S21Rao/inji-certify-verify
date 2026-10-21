@@ -1,0 +1,25 @@
+# apitest-commons 1.5.0 vs 1.6.0, Maven jars (~/.m2), 2026-10-20T21:55:31+05:30
+248d78c2f8debeb56a95e8d12f6db0685b16c22033aad8c4f8361859368c15ab  ~/.m2/repository/io/mosip/testrig/apitest/commons/apitest-commons/1.5.0/apitest-commons-1.5.0.jar
+d729a2d7d351befa2f750c749e80b8aa1137dc634936f51a685063e39ea91b49  ~/.m2/repository/io/mosip/testrig/apitest/commons/apitest-commons/1.6.0/apitest-commons-1.6.0.jar
+fc03f30510b4807a19dbd8176a11c952af39375e
+7092e2bc92c2865548cb1f051c4e38ca85de84bc
+IDENTICAL io/mosip/testrig/apirig/report/EmailableReport$1.class
+IDENTICAL io/mosip/testrig/apirig/report/EmailableReport$ClassResult.class
+IDENTICAL io/mosip/testrig/apirig/report/EmailableReport$MethodResult.class
+IDENTICAL io/mosip/testrig/apirig/report/EmailableReport$SuiteResult.class
+IDENTICAL io/mosip/testrig/apirig/report/EmailableReport$TestResult$1.class
+IDENTICAL io/mosip/testrig/apirig/report/EmailableReport$TestResult.class
+IDENTICAL io/mosip/testrig/apirig/report/EmailableReport.class
+IDENTICAL io/mosip/testrig/apirig/utils/SkipTestCaseHandler.class
+IDENTICAL io/mosip/testrig/apirig/utils/S3Adapter.class
+DIFFERENT io/mosip/testrig/apirig/testrunner/BaseTestCase.class
+IDENTICAL io/mosip/testrig/apirig/utils/ConfigManager.class
+DIFFERENT io/mosip/testrig/apirig/utils/GlobalConstants.class
+
+## javap -p public API diff for DIFFERENT classes
+-- testrunner/BaseTestCase
+33a34
+>   public java.lang.String partnerdevicenewCookie;
+-- utils/GlobalConstants
+156d155
+<   public static final java.lang.String XSRFTOKEN;

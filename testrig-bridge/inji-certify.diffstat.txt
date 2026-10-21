@@ -1,0 +1,7 @@
+ api-test/Dockerfile                                |   2 +-
+ .../injicertify/testrunner/InjiTestRunner.java     |  39 +++
+ .../testscripts/OpenIDConformanceTest.java         | 320 +++++++++++++++++++++
+ .../main/resources/config/injiCertify.properties   |  10 +-
+ .../src/main/resources/testCaseSkippedList.txt     |   3 +-
+ .../testNgXmlFiles/injicertifyConformanceSuite.xml |  13 +
+ 6 files changed, 384 insertions(+), 3 deletions(-)

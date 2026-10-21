@@ -1,0 +1,867 @@
+INFO    2026-10-20 22:15:19,504 [main] io.mosip.testrig.apirig.utils.GlobalMethods  - RUN_CONTEXT set to: 8d5_
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-happy-flow [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=CIcGO79HNvY03nc
+evidence: oid4vp-1final-verifier-happy-flow.log.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-minimal-cnf-jwk [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zIHGsO2arFTKdDQ
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-request-uri-method-post [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/SKIPPED/skip
+message: The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zhqKJa3aiFYyEGP
+evidence: oid4vp-1final-verifier-request-uri-method-post.log.json
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-request-uri-fetched-twice [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=9OrRuSWFH6HKsNY
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.log.json
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.json
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=gzrsGk7pQeSQ8CO
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-invalid-credential-signature [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=YzdXgWev0Xc8GVt
+evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-invalid-sd-hash [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=aXDKSmCvlzPEhOH
+evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=W7uQ3A7kV8OAAnQ
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=7mFw3DVCSD8BQ2C
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=uVH7Zu7Df3CLcwa
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: verify-x509
+oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=xDdt1m3Bhebjv8W
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+INFO    2026-10-20 22:15:20,156 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,157 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,157 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,157 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,157 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,157 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 11, Passes: 0, Failures: 10, Skips: 1
+===============================================
+
+ERROR   2026-10-20 22:15:20,168 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 10
+INFO    2026-10-20 22:15:20,193 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-1-report.html
+INFO    2026-10-20 22:15:20,193 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-1-full-report_T-11_P-0_S-1_F-10_KI-0.html
+WARN    2026-10-20 22:15:20,194 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-1-report.html
+INFO    2026-10-20 22:15:20,194 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,197 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-1-full-report_T-11_P-0_S-1_F-10_KI-0.html
+INFO    2026-10-20 22:15:20,198 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,388 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,389 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,394 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-1-report.html
+INFO    2026-10-20 22:15:20,394 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-1-error-report_T-11_S-1_F-10_KI-0.html
+WARN    2026-10-20 22:15:20,395 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-1-report.html
+INFO    2026-10-20 22:15:20,395 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,395 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-1-error-report_T-11_S-1_F-10_KI-0.html
+INFO    2026-10-20 22:15:20,395 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,396 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case1 verify-x509: 11 modules in order with mapped status
+PASS case1 verify-x509: report filename counts mosip-local-c1-1-full-report_T-11_P-0_S-1_F-10_KI-0.html
+run_id: sp2-live-infra-capture, plan_id: MMYejv9JZtPPZ, config_name: infra-interrupted-unknown
+oid4vp-1final-verifier-happy-flow [infra-interrupted-unknown] verify_evidence_upload=true
+status/result/outcome: INTERRUPTED//infra
+message: INFRA: Test was interrupted before it could complete. The test was requested to stop via the conformance suite API.
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=pUS4FYuTPh1qtRM
+evidence: oid4vp-1final-verifier-happy-flow.log.json
+INFO    2026-10-20 22:15:20,450 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,450 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,450 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,450 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,450 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,450 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 0, Failures: 1, Skips: 0
+===============================================
+
+ERROR   2026-10-20 22:15:20,451 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 1
+INFO    2026-10-20 22:15:20,453 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-2-report.html
+INFO    2026-10-20 22:15:20,453 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-2-full-report_T-1_P-0_S-0_F-1_KI-0.html
+WARN    2026-10-20 22:15:20,453 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-2-report.html
+INFO    2026-10-20 22:15:20,453 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,453 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-2-full-report_T-1_P-0_S-0_F-1_KI-0.html
+INFO    2026-10-20 22:15:20,453 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,454 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,455 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,457 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-2-report.html
+INFO    2026-10-20 22:15:20,457 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-2-error-report_T-1_S-0_F-1_KI-0.html
+WARN    2026-10-20 22:15:20,457 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-2-report.html
+INFO    2026-10-20 22:15:20,457 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,457 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-2-error-report_T-1_S-0_F-1_KI-0.html
+INFO    2026-10-20 22:15:20,457 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,458 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case1 infra-interrupted-unknown: 1 modules in order with mapped status
+PASS case1 infra-interrupted-unknown: report filename counts mosip-local-c1-2-full-report_T-1_P-0_S-0_F-1_KI-0.html
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-metadata-test [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: FINISHED/FAILED/fail
+message: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input
+failed: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input
+warning: CheckForUnexpectedParametersInCredentialIssuerMetadata
+warning: VCIValidateFormatOfCredentialConfigurationsInMetadata
+warning: CheckForUnexpectedParametersInServerMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=cIcWTmAgGSbIdlO
+evidence: oid4vci-1_0-issuer-metadata-test.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-metadata-test-signed [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response
+failed: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response
+failed: VCIDecodeSignedCredentialIssuerMetadata: If present, a string is expected for credential_issuer_metadata_endpoint_response body but JsonNull was found
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=R8MrQ1rCKSSrLAC
+evidence: oid4vci-1_0-issuer-metadata-test-signed.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=yWkNWZziJQxUjwJ
+evidence: oid4vci-1_0-issuer-happy-flow.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow-additional-requests [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=jRXVmwvCFLKn6ZZ
+evidence: oid4vci-1_0-issuer-happy-flow-additional-requests.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow-multiple-clients [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=PpUt6zczfAV28SE
+evidence: oid4vci-1_0-issuer-happy-flow-multiple-clients.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow-skip-notification [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=OyjpIFrplLKm1zD
+evidence: oid4vci-1_0-issuer-happy-flow-skip-notification.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-batch-issuance [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=ZqMeWDmXE853jX4
+evidence: oid4vci-1_0-issuer-batch-issuance.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-invalid-nonce [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=3KxEcAn0Rvt94oE
+evidence: oid4vci-1_0-issuer-fail-invalid-nonce.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=hLiV8I9Jze8gTfr
+evidence: oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-invalid-key-attestation-signature [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zdI9g52znlvTUw5
+evidence: oid4vci-1_0-issuer-fail-invalid-key-attestation-signature.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-missing-proof [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=ouXcT5PSsYltIT4
+evidence: oid4vci-1_0-issuer-fail-missing-proof.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-unknown-credential-configuration [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=ZH2d4w63ajan13E
+evidence: oid4vci-1_0-issuer-fail-unknown-credential-configuration.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-unknown-credential-identifier [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=kvWWA2EA5rtWJ6f
+evidence: oid4vci-1_0-issuer-fail-unknown-credential-identifier.log.json
+run_id: sp0-s04-noshim-fullplan, plan_id: E4ZLf9Dnm1WAy, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-on-access-token-in-query [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=G7NS91NEl9IDl4U
+evidence: oid4vci-1_0-issuer-fail-on-access-token-in-query.log.json
+INFO    2026-10-20 22:15:20,512 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,513 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,513 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,513 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,513 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,513 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 14, Passes: 0, Failures: 14, Skips: 0
+===============================================
+
+ERROR   2026-10-20 22:15:20,514 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 14
+INFO    2026-10-20 22:15:20,519 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-3-report.html
+INFO    2026-10-20 22:15:20,519 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-3-full-report_T-14_P-0_S-0_F-14_KI-0.html
+WARN    2026-10-20 22:15:20,519 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-3-report.html
+INFO    2026-10-20 22:15:20,519 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,520 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-3-full-report_T-14_P-0_S-0_F-14_KI-0.html
+INFO    2026-10-20 22:15:20,520 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,520 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,521 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,525 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-3-report.html
+INFO    2026-10-20 22:15:20,526 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-3-error-report_T-14_S-0_F-14_KI-0.html
+WARN    2026-10-20 22:15:20,526 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-3-report.html
+INFO    2026-10-20 22:15:20,526 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,526 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-3-error-report_T-14_S-0_F-14_KI-0.html
+INFO    2026-10-20 22:15:20,526 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,527 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case1 certify-shim-off: 14 modules in order with mapped status
+PASS case1 certify-shim-off: report filename counts mosip-local-c1-3-full-report_T-14_P-0_S-0_F-14_KI-0.html
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-metadata-test [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input
+failed: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input
+warning: CheckForUnexpectedParametersInCredentialIssuerMetadata
+warning: VCIValidateFormatOfCredentialConfigurationsInMetadata
+warning: CheckForUnexpectedParametersInServerMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=T6gnKAjstpCt0o3
+evidence: oid4vci-1_0-issuer-metadata-test.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-metadata-test-signed [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response
+failed: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response
+failed: VCIDecodeSignedCredentialIssuerMetadata: If present, a string is expected for credential_issuer_metadata_endpoint_response body but JsonNull was found
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=C3qGp0WWr8Vgk98
+evidence: oid4vci-1_0-issuer-metadata-test-signed.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-happy-flow [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+failed: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=bTinBwVMvsV3wHT
+evidence: oid4vci-1_0-issuer-happy-flow.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-happy-flow-additional-requests [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+failed: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+warning: RequireOnlyBCP195RecommendedCiphersForTLS12
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=16oqtNwl8rYaVLQ
+evidence: oid4vci-1_0-issuer-happy-flow-additional-requests.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-happy-flow-multiple-clients [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+failed: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=JXtzVpnEnGVmvhd
+evidence: oid4vci-1_0-issuer-happy-flow-multiple-clients.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-happy-flow-skip-notification [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+failed: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zNyN6GlF3UkFyKM
+evidence: oid4vci-1_0-issuer-happy-flow-skip-notification.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-batch-issuance [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: FINISHED/SKIPPED/skip
+message: The test was skipped: The credential issuer metadata does not contain 'batch_credential_issuance', so the issuer does not support batch credential issuance (which is permitted behavior) and this test cannot be run.
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=BvbZIu1sVveqWsm
+evidence: oid4vci-1_0-issuer-batch-issuance.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-fail-invalid-nonce [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: FINISHED/PASSED/pass
+message: 
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=6rb6nQX9BbPWAiV
+evidence: oid4vci-1_0-issuer-fail-invalid-nonce.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: FINISHED/PASSED/pass
+message: 
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=6BKFzQ8fC3hphDF
+evidence: oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-fail-invalid-key-attestation-signature [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: FINISHED/SKIPPED/skip
+message: The test was skipped: This test requires key attestation. The selected credential configuration uses 'jwt' proof type without key_attestations_required.
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=KIFUrgbJZJ5fvcJ
+evidence: oid4vci-1_0-issuer-fail-invalid-key-attestation-signature.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-fail-missing-proof [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: FINISHED/PASSED/pass
+message: 
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=Mjjt2gdGsOw8HMM
+evidence: oid4vci-1_0-issuer-fail-missing-proof.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-fail-unknown-credential-configuration [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: VCIValidateCredentialErrorResponse: Expected error code not found in credential error response: unknown_credential_configuration
+failed: VCIValidateCredentialErrorResponse: Expected error code not found in credential error response: unknown_credential_configuration
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=p3t7ENbmhSOOP8K
+evidence: oid4vci-1_0-issuer-fail-unknown-credential-configuration.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-fail-unknown-credential-identifier [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: VCIValidateCredentialErrorResponse: Non-standard credential error response error code found: invalid_request
+failed: VCIValidateCredentialErrorResponse: Non-standard credential error response error code found: invalid_request
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=GzAfnO3ThNgp6Ur
+evidence: oid4vci-1_0-issuer-fail-unknown-credential-identifier.log.json
+run_id: sp0-baseline-v0-certify, plan_id: lPxKvhrlgfamg, config_name: certify-shim-on
+oid4vci-1_0-issuer-fail-on-access-token-in-query [certify-shim-on] certify_as_metadata_shim=true
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+failed: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=liTCDbKKp3glatB
+evidence: oid4vci-1_0-issuer-fail-on-access-token-in-query.log.json
+INFO    2026-10-20 22:15:20,577 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,577 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,577 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,577 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,577 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,577 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 14, Passes: 3, Failures: 9, Skips: 2
+===============================================
+
+ERROR   2026-10-20 22:15:20,578 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 9
+INFO    2026-10-20 22:15:20,582 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-4-report.html
+INFO    2026-10-20 22:15:20,582 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-4-full-report_T-14_P-3_S-2_F-9_KI-0.html
+WARN    2026-10-20 22:15:20,582 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-4-report.html
+INFO    2026-10-20 22:15:20,582 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,582 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-4-full-report_T-14_P-3_S-2_F-9_KI-0.html
+INFO    2026-10-20 22:15:20,582 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,583 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,584 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,587 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-4-report.html
+INFO    2026-10-20 22:15:20,587 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-4-error-report_T-11_S-2_F-9_KI-0.html
+WARN    2026-10-20 22:15:20,587 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-4-report.html
+INFO    2026-10-20 22:15:20,587 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,587 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-4-error-report_T-11_S-2_F-9_KI-0.html
+INFO    2026-10-20 22:15:20,587 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,588 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case1 certify-shim-on: 14 modules in order with mapped status
+PASS case1 certify-shim-on: report filename counts mosip-local-c1-4-full-report_T-14_P-3_S-2_F-9_KI-0.html
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-happy-flow [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=B2i1v9fLU4PVz3g
+evidence: oid4vp-1final-verifier-happy-flow.log.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.png
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-minimal-cnf-jwk [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=OxGwPOiQEZyDx2k
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=WcAX2eio1e4ZcXu
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-credential-signature [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=fKhm9Y9sc6KcRyC
+evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-sd-hash [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=bkyXkoKt8euMsaI
+evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=WADBhAzUyfxb5V5
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=GnfZEEKtZBDthKZ
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=tiO9OevoJYbwwQa
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json
+run_id: sp0-baseline-v0-verify, plan_id: AHgOojXglYyFO, config_name: verify-redirect-uri
+oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=ZQE4PUYVQs6ZICC
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json
+INFO    2026-10-20 22:15:20,628 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,628 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,628 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,628 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,628 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,628 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 9, Passes: 0, Failures: 9, Skips: 0
+===============================================
+
+ERROR   2026-10-20 22:15:20,629 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 9
+INFO    2026-10-20 22:15:20,633 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-5-report.html
+INFO    2026-10-20 22:15:20,633 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-5-full-report_T-9_P-0_S-0_F-9_KI-0.html
+WARN    2026-10-20 22:15:20,633 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-5-report.html
+INFO    2026-10-20 22:15:20,633 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,633 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-5-full-report_T-9_P-0_S-0_F-9_KI-0.html
+INFO    2026-10-20 22:15:20,633 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,634 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,635 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,637 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-5-report.html
+INFO    2026-10-20 22:15:20,637 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-5-error-report_T-9_S-0_F-9_KI-0.html
+WARN    2026-10-20 22:15:20,637 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c1-5-report.html
+INFO    2026-10-20 22:15:20,637 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,638 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c1-5-error-report_T-9_S-0_F-9_KI-0.html
+INFO    2026-10-20 22:15:20,638 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,638 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case1 verify-redirect-uri: 9 modules in order with mapped status
+PASS case1 verify-redirect-uri: report filename counts mosip-local-c1-5-full-report_T-9_P-0_S-0_F-9_KI-0.html
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-happy-flow [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=CIcGO79HNvY03nc
+evidence: oid4vp-1final-verifier-happy-flow.log.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-minimal-cnf-jwk [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zIHGsO2arFTKdDQ
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-request-uri-method-post [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/SKIPPED/skip
+message: The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zhqKJa3aiFYyEGP
+evidence: oid4vp-1final-verifier-request-uri-method-post.log.json
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-request-uri-fetched-twice [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=9OrRuSWFH6HKsNY
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.log.json
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.json
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-invalid-kb-jwt-signature [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=gzrsGk7pQeSQ8CO
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-invalid-credential-signature [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=YzdXgWev0Xc8GVt
+evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-invalid-sd-hash [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=aXDKSmCvlzPEhOH
+evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-invalid-kb-jwt-nonce [trunc] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Leaf certificate in x5c chain must not be self-signed
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=W7uQ3A7kV8OAAnQ
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-invalid-kb-jwt-aud [trunc] verify_evidence_upload=true
+status/result/outcome: //infra
+message: INFRA: runner exited without end record (exit 0)
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-kb-jwt-iat-in-past [trunc] verify_evidence_upload=true
+status/result/outcome: //infra
+message: INFRA: runner exited without end record (exit 0)
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: trunc
+oid4vp-1final-verifier-kb-jwt-iat-in-future [trunc] verify_evidence_upload=true
+status/result/outcome: //infra
+message: INFRA: runner exited without end record (exit 0)
+log_url: 
+INFO    2026-10-20 22:15:20,677 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,677 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,677 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,677 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,677 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,677 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 11, Passes: 0, Failures: 10, Skips: 1
+===============================================
+
+ERROR   2026-10-20 22:15:20,678 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 10
+INFO    2026-10-20 22:15:20,680 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c3-6-report.html
+INFO    2026-10-20 22:15:20,680 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c3-6-full-report_T-11_P-0_S-1_F-10_KI-0.html
+WARN    2026-10-20 22:15:20,681 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c3-6-report.html
+INFO    2026-10-20 22:15:20,681 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,681 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c3-6-full-report_T-11_P-0_S-1_F-10_KI-0.html
+INFO    2026-10-20 22:15:20,681 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,681 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,682 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,684 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c3-6-report.html
+INFO    2026-10-20 22:15:20,685 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c3-6-error-report_T-11_S-1_F-10_KI-0.html
+WARN    2026-10-20 22:15:20,685 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c3-6-report.html
+INFO    2026-10-20 22:15:20,685 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,685 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c3-6-error-report_T-11_S-1_F-10_KI-0.html
+INFO    2026-10-20 22:15:20,685 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,686 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case3 truncated stream -> 3 synthetic INFRA failures (3)
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-happy-flow [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-minimal-cnf-jwk [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-request-uri-method-post [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-request-uri-fetched-twice [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-invalid-kb-jwt-signature [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-invalid-credential-signature [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-invalid-sd-hash [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-invalid-kb-jwt-nonce [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-invalid-kb-jwt-aud [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-kb-jwt-iat-in-past [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+run_id: sp0-baseline-v0-verify-x509, plan_id: UceiMJUkJXj1c, config_name: abort
+oid4vp-1final-verifier-kb-jwt-iat-in-future [abort] verify_evidence_upload=not observed
+status/result/outcome: //infra
+message: INFRA: environment has shim=true, config expects false
+log_url: 
+INFO    2026-10-20 22:15:20,726 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,727 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,727 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,727 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,727 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,727 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 11, Passes: 0, Failures: 11, Skips: 0
+===============================================
+
+ERROR   2026-10-20 22:15:20,727 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 11
+INFO    2026-10-20 22:15:20,729 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c4-7-report.html
+INFO    2026-10-20 22:15:20,729 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c4-7-full-report_T-11_P-0_S-0_F-11_KI-0.html
+WARN    2026-10-20 22:15:20,729 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c4-7-report.html
+INFO    2026-10-20 22:15:20,729 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,730 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c4-7-full-report_T-11_P-0_S-0_F-11_KI-0.html
+INFO    2026-10-20 22:15:20,730 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,730 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,731 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,732 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c4-7-report.html
+INFO    2026-10-20 22:15:20,732 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c4-7-error-report_T-11_S-0_F-11_KI-0.html
+WARN    2026-10-20 22:15:20,733 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c4-7-report.html
+INFO    2026-10-20 22:15:20,733 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,733 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c4-7-error-report_T-11_S-0_F-11_KI-0.html
+INFO    2026-10-20 22:15:20,733 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,733 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case4 exit-2 -> all 11 plan modules INFRA, flags not observed
+run_id: r, plan_id: p, config_name: warn
+m1 [warn] certify_as_metadata_shim=false
+status/result/outcome: FINISHED/WARNING/warning
+message: w
+log_url: 
+INFO    2026-10-20 22:15:20,756 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,756 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,756 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,756 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,756 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,756 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+
+ERROR   2026-10-20 22:15:20,757 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,758 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5a-8-report.html
+INFO    2026-10-20 22:15:20,758 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5a-8-full-report_T-1_P-1_S-0_F-0_KI-0.html
+WARN    2026-10-20 22:15:20,758 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5a-8-report.html
+INFO    2026-10-20 22:15:20,758 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,758 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c5a-8-full-report_T-1_P-1_S-0_F-0_KI-0.html
+INFO    2026-10-20 22:15:20,758 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,759 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case5 warning -> PASS by default
+run_id: r, plan_id: p, config_name: warn
+m1 [warn] certify_as_metadata_shim=false
+status/result/outcome: FINISHED/WARNING/warning
+message: w
+log_url: 
+INFO    2026-10-20 22:15:20,782 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,782 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,782 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,782 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,782 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,782 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 0, Failures: 1, Skips: 0
+===============================================
+
+ERROR   2026-10-20 22:15:20,782 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 1
+INFO    2026-10-20 22:15:20,783 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5b-9-report.html
+INFO    2026-10-20 22:15:20,783 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5b-9-full-report_T-1_P-0_S-0_F-1_KI-0.html
+WARN    2026-10-20 22:15:20,783 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5b-9-report.html
+INFO    2026-10-20 22:15:20,783 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,784 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c5b-9-full-report_T-1_P-0_S-0_F-1_KI-0.html
+INFO    2026-10-20 22:15:20,784 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,784 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,784 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,785 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5b-9-report.html
+INFO    2026-10-20 22:15:20,785 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5b-9-error-report_T-1_S-0_F-1_KI-0.html
+WARN    2026-10-20 22:15:20,785 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c5b-9-report.html
+INFO    2026-10-20 22:15:20,785 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,785 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c5b-9-error-report_T-1_S-0_F-1_KI-0.html
+INFO    2026-10-20 22:15:20,785 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,786 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case5 warning -> FAIL with conformance.strict=yes
+run_id: , plan_id: , config_name: empty
+runner [empty] 
+status/result/outcome: //infra
+message: INFRA: runner produced no plan record (exit 0): 
+log_url: 
+INFO    2026-10-20 22:15:20,812 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: ~/automationLogAndReport
+ERROR   2026-10-20 22:15:20,813 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/tmp/testng-report' does not exist
+INFO    2026-10-20 22:15:20,813 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: ~/automationLogAndReport
+INFO    2026-10-20 22:15:20,813 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-20 22:15:20,813 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-20 22:15:20,813 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 0, Failures: 1, Skips: 0
+===============================================
+
+ERROR   2026-10-20 22:15:20,813 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 1
+INFO    2026-10-20 22:15:20,814 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c6-10-report.html
+INFO    2026-10-20 22:15:20,814 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c6-10-full-report_T-1_P-0_S-0_F-1_KI-0.html
+WARN    2026-10-20 22:15:20,815 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c6-10-report.html
+INFO    2026-10-20 22:15:20,815 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,815 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c6-10-full-report_T-1_P-0_S-0_F-1_KI-0.html
+INFO    2026-10-20 22:15:20,815 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,815 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-20 22:15:20,816 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-20 22:15:20,816 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c6-10-report.html
+INFO    2026-10-20 22:15:20,816 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c6-10-error-report_T-1_S-0_F-1_KI-0.html
+WARN    2026-10-20 22:15:20,816 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /tmp/tmp.fERlDGmfF1/testng-report/mosip-local-c6-10-report.html
+INFO    2026-10-20 22:15:20,816 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-20 22:15:20,816 [main] io.mosip.testrig.apirig.report.EmailableReport  - Successfully copied report file to mount path: mosip-local-c6-10-error-report_T-1_S-0_F-1_KI-0.html
+INFO    2026-10-20 22:15:20,816 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-20 22:15:20,817 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+PASS case6 no plan -> single OIDF_verify_runner INFRA failure
+ALL PASSED
