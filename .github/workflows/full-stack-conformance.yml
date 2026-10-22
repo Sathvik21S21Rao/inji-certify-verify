@@ -56,6 +56,7 @@ jobs:
           distribution: temurin
           java-version: '21'
           cache: maven
+          cache-dependency-path: compose/.env.pinned   # no pom.xml here; the pins decide the Maven deps
       - run: pip install -r runner/requirements.txt
       - name: Ensure suite hostname resolves
         run: |
