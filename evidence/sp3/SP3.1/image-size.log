@@ -1,0 +1,583 @@
+[2026-10-20T22:08:32+05:30] C start
+--- base size ---
+228329533 sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119
+--- Dockerfile pil ---
+FROM mosipid/openjdk-21-jre:21.0.4
+RUN apt-get -y update && apt-get install -y --no-install-recommends python3 python3-httpx python3-pil && rm -rf /var/lib/apt/lists/*
+--- Dockerfile nopil ---
+FROM mosipid/openjdk-21-jre:21.0.4
+RUN apt-get -y update && apt-get install -y --no-install-recommends python3 python3-httpx && rm -rf /var/lib/apt/lists/*
+[2026-10-20T22:08:32+05:30] build sp3-adr002-nopil
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 195B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/mosipid/openjdk-21-jre:21.0.4
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/mosipid/openjdk-21-jre:21.0.4@sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119
+#4 resolve docker.io/mosipid/openjdk-21-jre:21.0.4@sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119 0.0s done
+#4 CACHED
+
+#5 [2/2] RUN apt-get -y update && apt-get install -y --no-install-recommends python3 python3-httpx && rm -rf /var/lib/apt/lists/*
+#5 0.732 Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#5 0.732 Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+#5 0.918 Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+#5 1.719 Get:4 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1549 kB]
+#5 1.879 Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+#5 2.359 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1729 kB]
+#5 3.225 Get:7 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2122 kB]
+#5 3.406 Get:8 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [61.7 kB]
+#5 3.418 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2168 kB]
+#5 3.689 Get:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1410 kB]
+#5 3.832 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2231 kB]
+#5 3.878 Get:12 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [55.6 kB]
+#5 4.063 Get:13 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+#5 4.064 Get:14 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+#5 4.066 Get:15 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+#5 4.197 Fetched 11.8 MB in 4s (2981 kB/s)
+#5 4.197 Reading package lists...
+#5 5.419 Reading package lists...
+#5 6.636 Building dependency tree...
+#5 6.890 Reading state information...
+#5 7.276 The following additional packages will be installed:
+#5 7.276   libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libreadline8t64
+#5 7.277   media-types netbase python3-anyio python3-certifi python3-click
+#5 7.277   python3-colorama python3-h11 python3-httpcore python3-idna
+#5 7.277   python3-markdown-it python3-mdurl python3-minimal python3-pkg-resources
+#5 7.277   python3-pygments python3-rich python3-sniffio python3.12 python3.12-minimal
+#5 7.277   readline-common tzdata
+#5 7.278 Suggested packages:
+#5 7.278   python3-doc python3-tk python3-venv python3-setuptools python-pygments-doc
+#5 7.278   ttf-bitstream-vera python3.12-venv python3.12-doc binutils binfmt-support
+#5 7.278   readline-doc
+#5 7.432 The following NEW packages will be installed:
+#5 7.433   libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libreadline8t64
+#5 7.433   media-types netbase python3 python3-anyio python3-certifi python3-click
+#5 7.433   python3-colorama python3-h11 python3-httpcore python3-httpx python3-idna
+#5 7.433   python3-markdown-it python3-mdurl python3-minimal python3-pkg-resources
+#5 7.433   python3-pygments python3-rich python3-sniffio python3.12 python3.12-minimal
+#5 7.433   readline-common tzdata
+#5 7.809 0 upgraded, 26 newly installed, 0 to remove and 115 not upgraded.
+#5 7.809 Need to get 8271 kB of archives.
+#5 7.809 After this operation, 34.9 MB of additional disk space will be used.
+#5 7.809 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.17 [839 kB]
+#5 9.286 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.17 [2335 kB]
+#5 9.856 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+#5 9.906 Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+#5 9.909 Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+#5 9.911 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 tzdata all 2026e-0ubuntu0.24.04.1 [282 kB]
+#5 9.930 Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+#5 9.934 Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+#5 9.943 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.17 [2071 kB]
+#5 10.14 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.17 [651 kB]
+#5 10.23 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+#5 10.23 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+#5 10.23 Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-mdurl all 0.1.2-1 [9702 B]
+#5 10.23 Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-markdown-it all 3.0.0-2 [57.5 kB]
+#5 10.23 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-pkg-resources all 68.1.2-2ubuntu1.2 [168 kB]
+#5 10.24 Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-pygments all 2.17.2+dfsg-1 [819 kB]
+#5 10.26 Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-rich all 13.7.1-1 [189 kB]
+#5 10.27 Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-idna all 3.6-2ubuntu0.2 [49.7 kB]
+#5 10.33 Get:19 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-sniffio all 1.3.0-2 [7216 B]
+#5 10.55 Get:20 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-anyio all 4.2.0-1 [56.5 kB]
+#5 10.55 Get:21 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-certifi all 2023.11.17-1 [165 kB]
+#5 10.55 Get:22 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-colorama all 0.4.6-4 [32.1 kB]
+#5 10.55 Get:23 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-click all 8.1.6-2 [79.0 kB]
+#5 10.55 Get:24 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-h11 all 0.14.0-1ubuntu0.24.04.1 [51.7 kB]
+#5 10.56 Get:25 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-httpcore all 1.0.2-2 [38.3 kB]
+#5 10.56 Get:26 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-httpx all 0.26.0-2 [61.3 kB]
+#5 10.76 debconf: delaying package configuration, since apt-utils is not installed
+#5 10.81 Fetched 8271 kB in 3s (2672 kB/s)
+#5 10.85 Selecting previously unselected package libpython3.12-minimal:amd64.
+#5 10.85 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20729 files and directories currently installed.)
+#5 10.88 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 10.88 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#5 10.99 Selecting previously unselected package python3.12-minimal.
+#5 11.00 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 11.01 Unpacking python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#5 11.13 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#5 11.14 Setting up python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#5 12.18 Selecting previously unselected package python3-minimal.
+#5 12.18 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21038 files and directories currently installed.)
+#5 12.20 Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+#5 12.20 Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+#5 12.23 Selecting previously unselected package media-types.
+#5 12.24 Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+#5 12.24 Unpacking media-types (10.1.0) ...
+#5 12.27 Selecting previously unselected package netbase.
+#5 12.28 Preparing to unpack .../2-netbase_6.4_all.deb ...
+#5 12.28 Unpacking netbase (6.4) ...
+#5 12.31 Selecting previously unselected package tzdata.
+#5 12.32 Preparing to unpack .../3-tzdata_2026e-0ubuntu0.24.04.1_all.deb ...
+#5 12.32 Unpacking tzdata (2026e-0ubuntu0.24.04.1) ...
+#5 12.45 Selecting previously unselected package readline-common.
+#5 12.46 Preparing to unpack .../4-readline-common_8.2-4build1_all.deb ...
+#5 12.46 Unpacking readline-common (8.2-4build1) ...
+#5 12.50 Selecting previously unselected package libreadline8t64:amd64.
+#5 12.50 Preparing to unpack .../5-libreadline8t64_8.2-4build1_amd64.deb ...
+#5 12.51 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+#5 12.52 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+#5 12.53 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+#5 12.53 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+#5 12.54 Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+#5 12.58 Selecting previously unselected package libpython3.12-stdlib:amd64.
+#5 12.58 Preparing to unpack .../6-libpython3.12-stdlib_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 12.59 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#5 12.75 Selecting previously unselected package python3.12.
+#5 12.75 Preparing to unpack .../7-python3.12_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 12.75 Unpacking python3.12 (3.12.3-1ubuntu0.17) ...
+#5 12.79 Selecting previously unselected package libpython3-stdlib:amd64.
+#5 12.79 Preparing to unpack .../8-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+#5 12.79 Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#5 12.83 Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+#5 13.04 Selecting previously unselected package python3.
+#5 13.04 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22037 files and directories currently installed.)
+#5 13.06 Preparing to unpack .../00-python3_3.12.3-0ubuntu2.1_amd64.deb ...
+#5 13.07 Unpacking python3 (3.12.3-0ubuntu2.1) ...
+#5 13.10 Selecting previously unselected package python3-mdurl.
+#5 13.11 Preparing to unpack .../01-python3-mdurl_0.1.2-1_all.deb ...
+#5 13.11 Unpacking python3-mdurl (0.1.2-1) ...
+#5 13.15 Selecting previously unselected package python3-markdown-it.
+#5 13.15 Preparing to unpack .../02-python3-markdown-it_3.0.0-2_all.deb ...
+#5 13.15 Unpacking python3-markdown-it (3.0.0-2) ...
+#5 13.20 Selecting previously unselected package python3-pkg-resources.
+#5 13.20 Preparing to unpack .../03-python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb ...
+#5 13.21 Unpacking python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#5 13.25 Selecting previously unselected package python3-pygments.
+#5 13.26 Preparing to unpack .../04-python3-pygments_2.17.2+dfsg-1_all.deb ...
+#5 13.26 Unpacking python3-pygments (2.17.2+dfsg-1) ...
+#5 13.38 Selecting previously unselected package python3-rich.
+#5 13.39 Preparing to unpack .../05-python3-rich_13.7.1-1_all.deb ...
+#5 13.39 Unpacking python3-rich (13.7.1-1) ...
+#5 13.45 Selecting previously unselected package python3-idna.
+#5 13.45 Preparing to unpack .../06-python3-idna_3.6-2ubuntu0.2_all.deb ...
+#5 13.45 Unpacking python3-idna (3.6-2ubuntu0.2) ...
+#5 13.49 Selecting previously unselected package python3-sniffio.
+#5 13.49 Preparing to unpack .../07-python3-sniffio_1.3.0-2_all.deb ...
+#5 13.49 Unpacking python3-sniffio (1.3.0-2) ...
+#5 13.52 Selecting previously unselected package python3-anyio.
+#5 13.53 Preparing to unpack .../08-python3-anyio_4.2.0-1_all.deb ...
+#5 13.53 Unpacking python3-anyio (4.2.0-1) ...
+#5 13.57 Selecting previously unselected package python3-certifi.
+#5 13.58 Preparing to unpack .../09-python3-certifi_2023.11.17-1_all.deb ...
+#5 13.58 Unpacking python3-certifi (2023.11.17-1) ...
+#5 13.61 Selecting previously unselected package python3-colorama.
+#5 13.62 Preparing to unpack .../10-python3-colorama_0.4.6-4_all.deb ...
+#5 13.62 Unpacking python3-colorama (0.4.6-4) ...
+#5 13.66 Selecting previously unselected package python3-click.
+#5 13.67 Preparing to unpack .../11-python3-click_8.1.6-2_all.deb ...
+#5 13.67 Unpacking python3-click (8.1.6-2) ...
+#5 13.70 Selecting previously unselected package python3-h11.
+#5 13.71 Preparing to unpack .../12-python3-h11_0.14.0-1ubuntu0.24.04.1_all.deb ...
+#5 13.71 Unpacking python3-h11 (0.14.0-1ubuntu0.24.04.1) ...
+#5 13.74 Selecting previously unselected package python3-httpcore.
+#5 13.75 Preparing to unpack .../13-python3-httpcore_1.0.2-2_all.deb ...
+#5 13.75 Unpacking python3-httpcore (1.0.2-2) ...
+#5 13.79 Selecting previously unselected package python3-httpx.
+#5 13.79 Preparing to unpack .../14-python3-httpx_0.26.0-2_all.deb ...
+#5 13.80 Unpacking python3-httpx (0.26.0-2) ...
+#5 13.85 Setting up media-types (10.1.0) ...
+#5 13.85 Setting up tzdata (2026e-0ubuntu0.24.04.1) ...
+#5 13.95 debconf: unable to initialize frontend: Dialog
+#5 13.95 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#5 13.95 debconf: falling back to frontend: Readline
+#5 13.95 debconf: unable to initialize frontend: Readline
+#5 13.95 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+#5 13.95 debconf: falling back to frontend: Teletype
+#5 13.99 Configuring tzdata
+#5 13.99 ------------------
+#5 13.99 
+#5 13.99 Please select the geographic area in which you live. Subsequent configuration
+#5 13.99 questions will narrow this down by presenting a list of cities, representing
+#5 13.99 the time zones in which they are located.
+#5 13.99 
+#5 13.99   1. Africa      4. Arctic    7. Australia  10. Pacific
+#5 13.99   2. America     5. Asia      8. Europe     11. Etc
+#5 13.99   3. Antarctica  6. Atlantic  9. Indian     12. Legacy
+#5 13.99 Geographic area: 
+#5 13.99 Use of uninitialized value $_[1] in join or string at /usr/share/perl5/Debconf/DbDriver/Stack.pm line 112.
+#5 14.01 
+#5 14.01 Current default time zone: '/UTC'
+#5 14.01 Local time is now:      Tue Oct 20 16:38:47 UTC 2026.
+#5 14.01 Universal Time is now:  Tue Oct 20 16:38:47 UTC 2026.
+#5 14.01 Run 'dpkg-reconfigure tzdata' if you wish to change it.
+#5 14.01 
+#5 14.01 Use of uninitialized value $val in substitution (s///) at /usr/share/perl5/Debconf/Format/822.pm line 84, <GEN6> line 4.
+#5 14.01 Use of uninitialized value $val in concatenation (.) or string at /usr/share/perl5/Debconf/Format/822.pm line 85, <GEN6> line 4.
+#5 14.03 Setting up netbase (6.4) ...
+#5 14.04 Setting up readline-common (8.2-4build1) ...
+#5 14.05 Setting up libreadline8t64:amd64 (8.2-4build1) ...
+#5 14.06 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#5 14.06 Setting up python3.12 (3.12.3-1ubuntu0.17) ...
+#5 15.24 Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#5 15.24 Setting up python3 (3.12.3-0ubuntu2.1) ...
+#5 15.26 running python rtupdate hooks for python3.12...
+#5 15.26 running python post-rtupdate hooks for python3.12...
+#5 15.39 Setting up python3-certifi (2023.11.17-1) ...
+#5 15.55 Setting up python3-mdurl (0.1.2-1) ...
+#5 15.73 Setting up python3-idna (3.6-2ubuntu0.2) ...
+#5 16.00 Setting up python3-h11 (0.14.0-1ubuntu0.24.04.1) ...
+#5 16.20 Setting up python3-markdown-it (3.0.0-2) ...
+#5 16.41 Setting up python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#5 16.69 Setting up python3-httpcore (1.0.2-2) ...
+#5 16.91 Setting up python3-sniffio (1.3.0-2) ...
+#5 17.05 Setting up python3-anyio (4.2.0-1) ...
+#5 17.31 Setting up python3-colorama (0.4.6-4) ...
+#5 17.47 Setting up python3-click (8.1.6-2) ...
+#5 17.70 Setting up python3-pygments (2.17.2+dfsg-1) ...
+#5 18.69 Setting up python3-rich (13.7.1-1) ...
+#5 19.04 Setting up python3-httpx (0.26.0-2) ...
+#5 19.26 Processing triggers for systemd (255.4-1ubuntu8.4) ...
+#5 19.26 Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+#5 DONE 19.6s
+
+#6 exporting to image
+#6 exporting layers
+#6 exporting layers 3.6s done
+#6 exporting manifest sha256:2438a5a66b26509d71309fea2d8ef1f5c7f8477bc903b80c8178a914973675ce done
+#6 exporting config sha256:058e828ddf6e85cf529824fc2ba7568541840778b52640f81092f549a9b24c11 done
+#6 exporting attestation manifest sha256:570c1f646b327e6f7b882da17325542816d7fff524ffd1ac8346053cf009a7c6 0.0s done
+#6 exporting manifest list sha256:df9aad7a78f26bfe649e19b00ab498d30b11fef1b21af00ec262bd48070ab25e done
+#6 naming to docker.io/library/sp3-adr002-nopil:latest done
+#6 unpacking to docker.io/library/sp3-adr002-nopil:latest
+#6 unpacking to docker.io/library/sp3-adr002-nopil:latest 1.3s done
+#6 DONE 4.9s
+nopil build exit=0
+[2026-10-20T22:08:57+05:30] build sp3-adr002-pil
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 207B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/mosipid/openjdk-21-jre:21.0.4
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/mosipid/openjdk-21-jre:21.0.4@sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119
+#4 resolve docker.io/mosipid/openjdk-21-jre:21.0.4@sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119 0.0s done
+#4 CACHED
+
+#5 [2/2] RUN apt-get -y update && apt-get install -y --no-install-recommends python3 python3-httpx python3-pil && rm -rf /var/lib/apt/lists/*
+#5 0.449 Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+#5 0.508 Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+#5 0.569 Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+#5 1.150 Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+#5 1.404 Get:5 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2122 kB]
+#5 1.453 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [61.7 kB]
+#5 1.502 Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1729 kB]
+#5 2.150 Get:8 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2231 kB]
+#5 2.433 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2168 kB]
+#5 2.576 Get:10 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+#5 2.577 Get:11 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+#5 2.578 Get:12 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+#5 2.778 Get:13 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [55.6 kB]
+#5 2.779 Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1410 kB]
+#5 2.954 Get:15 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1549 kB]
+#5 3.222 Fetched 11.8 MB in 3s (3870 kB/s)
+#5 3.222 Reading package lists...
+#5 4.418 Reading package lists...
+#5 5.626 Building dependency tree...
+#5 5.881 Reading state information...
+#5 6.282 The following additional packages will be installed:
+#5 6.282   gcc-14-base libgcc-s1 libgomp1 libimagequant0 libopenjp2-7 libpython3-stdlib
+#5 6.283   libpython3.12-minimal libpython3.12-stdlib libraqm0 libreadline8t64
+#5 6.283   libstdc++6 libwebpdemux2 libwebpmux3 media-types netbase python3-anyio
+#5 6.283   python3-certifi python3-click python3-colorama python3-h11 python3-httpcore
+#5 6.283   python3-idna python3-markdown-it python3-mdurl python3-minimal
+#5 6.283   python3-pkg-resources python3-pygments python3-rich python3-sniffio
+#5 6.284   python3.12 python3.12-minimal readline-common tzdata
+#5 6.286 Suggested packages:
+#5 6.286   python3-doc python3-tk python3-venv python-pil-doc python3-setuptools
+#5 6.286   python-pygments-doc ttf-bitstream-vera python3.12-venv python3.12-doc
+#5 6.286   binutils binfmt-support readline-doc
+#5 6.286 Recommended packages:
+#5 6.286   python3-olefile
+#5 6.474 The following NEW packages will be installed:
+#5 6.474   libgomp1 libimagequant0 libopenjp2-7 libpython3-stdlib libpython3.12-minimal
+#5 6.475   libpython3.12-stdlib libraqm0 libreadline8t64 libwebpdemux2 libwebpmux3
+#5 6.475   media-types netbase python3 python3-anyio python3-certifi python3-click
+#5 6.475   python3-colorama python3-h11 python3-httpcore python3-httpx python3-idna
+#5 6.475   python3-markdown-it python3-mdurl python3-minimal python3-pil
+#5 6.475   python3-pkg-resources python3-pygments python3-rich python3-sniffio
+#5 6.475   python3.12 python3.12-minimal readline-common tzdata
+#5 6.477 The following packages will be upgraded:
+#5 6.478   gcc-14-base libgcc-s1 libstdc++6
+#5 6.989 3 upgraded, 33 newly installed, 0 to remove and 112 not upgraded.
+#5 6.989 Need to get 10.1 MB of archives.
+#5 6.989 After this operation, 37.9 MB of additional disk space will be used.
+#5 6.989 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.17 [839 kB]
+#5 8.820 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.17 [2335 kB]
+#5 9.420 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+#5 9.424 Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+#5 9.427 Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+#5 9.429 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 tzdata all 2026e-0ubuntu0.24.04.1 [282 kB]
+#5 9.451 Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+#5 9.457 Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+#5 9.474 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.17 [2071 kB]
+#5 9.622 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.17 [651 kB]
+#5 9.696 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+#5 9.696 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+#5 9.698 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-14-base amd64 14.2.0-4ubuntu2~24.04.1 [51.0 kB]
+#5 9.699 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++6 amd64 14.2.0-4ubuntu2~24.04.1 [792 kB]
+#5 9.728 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-s1 amd64 14.2.0-4ubuntu2~24.04.1 [78.4 kB]
+#5 9.730 Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-mdurl all 0.1.2-1 [9702 B]
+#5 9.730 Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-markdown-it all 3.0.0-2 [57.5 kB]
+#5 9.736 Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-pkg-resources all 68.1.2-2ubuntu1.2 [168 kB]
+#5 9.819 Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-pygments all 2.17.2+dfsg-1 [819 kB]
+#5 10.05 Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-rich all 13.7.1-1 [189 kB]
+#5 10.05 Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04.1 [148 kB]
+#5 10.06 Get:22 http://archive.ubuntu.com/ubuntu noble/main amd64 libimagequant0 amd64 2.18.0-1build1 [36.3 kB]
+#5 10.06 Get:23 http://archive.ubuntu.com/ubuntu noble/main amd64 libraqm0 amd64 0.10.1-1build1 [15.0 kB]
+#5 10.06 Get:24 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebpdemux2 amd64 1.3.2-0.4build3 [12.4 kB]
+#5 10.06 Get:25 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebpmux3 amd64 1.3.2-0.4build3 [25.7 kB]
+#5 10.06 Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-idna all 3.6-2ubuntu0.2 [49.7 kB]
+#5 10.06 Get:27 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-sniffio all 1.3.0-2 [7216 B]
+#5 10.06 Get:28 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-anyio all 4.2.0-1 [56.5 kB]
+#5 10.25 Get:29 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-certifi all 2023.11.17-1 [165 kB]
+#5 10.46 Get:30 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-colorama all 0.4.6-4 [32.1 kB]
+#5 10.46 Get:31 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-click all 8.1.6-2 [79.0 kB]
+#5 10.46 Get:32 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-h11 all 0.14.0-1ubuntu0.24.04.1 [51.7 kB]
+#5 10.46 Get:33 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-httpcore all 1.0.2-2 [38.3 kB]
+#5 10.46 Get:34 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-httpx all 0.26.0-2 [61.3 kB]
+#5 10.46 Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libopenjp2-7 amd64 2.5.0-2ubuntu0.5 [174 kB]
+#5 10.47 Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-pil amd64 10.2.0-1ubuntu1.3 [452 kB]
+#5 10.66 debconf: delaying package configuration, since apt-utils is not installed
+#5 10.72 Fetched 10.1 MB in 4s (2534 kB/s)
+#5 10.76 Selecting previously unselected package libpython3.12-minimal:amd64.
+#5 10.76 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20729 files and directories currently installed.)
+#5 10.78 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 10.78 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#5 10.90 Selecting previously unselected package python3.12-minimal.
+#5 10.90 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 10.91 Unpacking python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#5 11.02 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#5 11.03 Setting up python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#5 12.11 Selecting previously unselected package python3-minimal.
+#5 12.11 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21038 files and directories currently installed.)
+#5 12.13 Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+#5 12.13 Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+#5 12.17 Selecting previously unselected package media-types.
+#5 12.17 Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+#5 12.17 Unpacking media-types (10.1.0) ...
+#5 12.21 Selecting previously unselected package netbase.
+#5 12.21 Preparing to unpack .../2-netbase_6.4_all.deb ...
+#5 12.22 Unpacking netbase (6.4) ...
+#5 12.25 Selecting previously unselected package tzdata.
+#5 12.26 Preparing to unpack .../3-tzdata_2026e-0ubuntu0.24.04.1_all.deb ...
+#5 12.26 Unpacking tzdata (2026e-0ubuntu0.24.04.1) ...
+#5 12.39 Selecting previously unselected package readline-common.
+#5 12.40 Preparing to unpack .../4-readline-common_8.2-4build1_all.deb ...
+#5 12.40 Unpacking readline-common (8.2-4build1) ...
+#5 12.43 Selecting previously unselected package libreadline8t64:amd64.
+#5 12.44 Preparing to unpack .../5-libreadline8t64_8.2-4build1_amd64.deb ...
+#5 12.45 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+#5 12.46 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+#5 12.46 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+#5 12.47 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+#5 12.47 Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+#5 12.52 Selecting previously unselected package libpython3.12-stdlib:amd64.
+#5 12.52 Preparing to unpack .../6-libpython3.12-stdlib_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 12.52 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#5 12.68 Selecting previously unselected package python3.12.
+#5 12.68 Preparing to unpack .../7-python3.12_3.12.3-1ubuntu0.17_amd64.deb ...
+#5 12.68 Unpacking python3.12 (3.12.3-1ubuntu0.17) ...
+#5 12.72 Selecting previously unselected package libpython3-stdlib:amd64.
+#5 12.72 Preparing to unpack .../8-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+#5 12.72 Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#5 12.76 Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+#5 12.96 Selecting previously unselected package python3.
+#5 12.96 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22037 files and directories currently installed.)
+#5 12.98 Preparing to unpack .../python3_3.12.3-0ubuntu2.1_amd64.deb ...
+#5 12.99 Unpacking python3 (3.12.3-0ubuntu2.1) ...
+#5 13.03 Preparing to unpack .../gcc-14-base_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#5 13.04 Unpacking gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04.1) over (14-20240412-0ubuntu1) ...
+#5 13.09 Setting up gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#5 13.14 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22058 files and directories currently installed.)
+#5 13.16 Preparing to unpack .../libstdc++6_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#5 13.21 Unpacking libstdc++6:amd64 (14.2.0-4ubuntu2~24.04.1) over (14-20240412-0ubuntu1) ...
+#5 13.30 Setting up libstdc++6:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#5 13.34 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22058 files and directories currently installed.)
+#5 13.36 Preparing to unpack .../libgcc-s1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#5 13.36 Unpacking libgcc-s1:amd64 (14.2.0-4ubuntu2~24.04.1) over (14-20240412-0ubuntu1) ...
+#5 13.41 Setting up libgcc-s1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#5 13.45 Selecting previously unselected package python3-mdurl.
+#5 13.45 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22058 files and directories currently installed.)
+#5 13.47 Preparing to unpack .../00-python3-mdurl_0.1.2-1_all.deb ...
+#5 13.47 Unpacking python3-mdurl (0.1.2-1) ...
+#5 13.51 Selecting previously unselected package python3-markdown-it.
+#5 13.51 Preparing to unpack .../01-python3-markdown-it_3.0.0-2_all.deb ...
+#5 13.51 Unpacking python3-markdown-it (3.0.0-2) ...
+#5 13.57 Selecting previously unselected package python3-pkg-resources.
+#5 13.57 Preparing to unpack .../02-python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb ...
+#5 13.57 Unpacking python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#5 13.62 Selecting previously unselected package python3-pygments.
+#5 13.62 Preparing to unpack .../03-python3-pygments_2.17.2+dfsg-1_all.deb ...
+#5 13.62 Unpacking python3-pygments (2.17.2+dfsg-1) ...
+#5 13.76 Selecting previously unselected package python3-rich.
+#5 13.76 Preparing to unpack .../04-python3-rich_13.7.1-1_all.deb ...
+#5 13.76 Unpacking python3-rich (13.7.1-1) ...
+#5 13.82 Selecting previously unselected package libgomp1:amd64.
+#5 13.82 Preparing to unpack .../05-libgomp1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#5 13.83 Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#5 13.86 Selecting previously unselected package libimagequant0:amd64.
+#5 13.86 Preparing to unpack .../06-libimagequant0_2.18.0-1build1_amd64.deb ...
+#5 13.86 Unpacking libimagequant0:amd64 (2.18.0-1build1) ...
+#5 13.90 Selecting previously unselected package libraqm0:amd64.
+#5 13.91 Preparing to unpack .../07-libraqm0_0.10.1-1build1_amd64.deb ...
+#5 13.91 Unpacking libraqm0:amd64 (0.10.1-1build1) ...
+#5 13.94 Selecting previously unselected package libwebpdemux2:amd64.
+#5 13.95 Preparing to unpack .../08-libwebpdemux2_1.3.2-0.4build3_amd64.deb ...
+#5 13.95 Unpacking libwebpdemux2:amd64 (1.3.2-0.4build3) ...
+#5 13.98 Selecting previously unselected package libwebpmux3:amd64.
+#5 13.98 Preparing to unpack .../09-libwebpmux3_1.3.2-0.4build3_amd64.deb ...
+#5 13.99 Unpacking libwebpmux3:amd64 (1.3.2-0.4build3) ...
+#5 14.03 Selecting previously unselected package python3-idna.
+#5 14.03 Preparing to unpack .../10-python3-idna_3.6-2ubuntu0.2_all.deb ...
+#5 14.03 Unpacking python3-idna (3.6-2ubuntu0.2) ...
+#5 14.08 Selecting previously unselected package python3-sniffio.
+#5 14.08 Preparing to unpack .../11-python3-sniffio_1.3.0-2_all.deb ...
+#5 14.08 Unpacking python3-sniffio (1.3.0-2) ...
+#5 14.12 Selecting previously unselected package python3-anyio.
+#5 14.12 Preparing to unpack .../12-python3-anyio_4.2.0-1_all.deb ...
+#5 14.12 Unpacking python3-anyio (4.2.0-1) ...
+#5 14.17 Selecting previously unselected package python3-certifi.
+#5 14.17 Preparing to unpack .../13-python3-certifi_2023.11.17-1_all.deb ...
+#5 14.17 Unpacking python3-certifi (2023.11.17-1) ...
+#5 14.22 Selecting previously unselected package python3-colorama.
+#5 14.22 Preparing to unpack .../14-python3-colorama_0.4.6-4_all.deb ...
+#5 14.22 Unpacking python3-colorama (0.4.6-4) ...
+#5 14.27 Selecting previously unselected package python3-click.
+#5 14.27 Preparing to unpack .../15-python3-click_8.1.6-2_all.deb ...
+#5 14.27 Unpacking python3-click (8.1.6-2) ...
+#5 14.31 Selecting previously unselected package python3-h11.
+#5 14.31 Preparing to unpack .../16-python3-h11_0.14.0-1ubuntu0.24.04.1_all.deb ...
+#5 14.32 Unpacking python3-h11 (0.14.0-1ubuntu0.24.04.1) ...
+#5 14.35 Selecting previously unselected package python3-httpcore.
+#5 14.36 Preparing to unpack .../17-python3-httpcore_1.0.2-2_all.deb ...
+#5 14.36 Unpacking python3-httpcore (1.0.2-2) ...
+#5 14.40 Selecting previously unselected package python3-httpx.
+#5 14.40 Preparing to unpack .../18-python3-httpx_0.26.0-2_all.deb ...
+#5 14.40 Unpacking python3-httpx (0.26.0-2) ...
+#5 14.45 Selecting previously unselected package libopenjp2-7:amd64.
+#5 14.46 Preparing to unpack .../19-libopenjp2-7_2.5.0-2ubuntu0.5_amd64.deb ...
+#5 14.46 Unpacking libopenjp2-7:amd64 (2.5.0-2ubuntu0.5) ...
+#5 14.50 Selecting previously unselected package python3-pil:amd64.
+#5 14.51 Preparing to unpack .../20-python3-pil_10.2.0-1ubuntu1.3_amd64.deb ...
+#5 14.51 Unpacking python3-pil:amd64 (10.2.0-1ubuntu1.3) ...
+#5 14.58 Setting up media-types (10.1.0) ...
+#5 14.59 Setting up libwebpdemux2:amd64 (1.3.2-0.4build3) ...
+#5 14.59 Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#5 14.60 Setting up tzdata (2026e-0ubuntu0.24.04.1) ...
+#5 14.70 debconf: unable to initialize frontend: Dialog
+#5 14.70 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#5 14.70 debconf: falling back to frontend: Readline
+#5 14.70 debconf: unable to initialize frontend: Readline
+#5 14.70 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+#5 14.70 debconf: falling back to frontend: Teletype
+#5 14.75 Configuring tzdata
+#5 14.75 ------------------
+#5 14.75 
+#5 14.75 Please select the geographic area in which you live. Subsequent configuration
+#5 14.75 questions will narrow this down by presenting a list of cities, representing
+#5 14.75 the time zones in which they are located.
+#5 14.75 
+#5 14.75   1. Africa      4. Arctic    7. Australia  10. Pacific
+#5 14.75   2. America     5. Asia      8. Europe     11. Etc
+#5 14.75   3. Antarctica  6. Atlantic  9. Indian     12. Legacy
+#5 14.75 Geographic area: 
+#5 14.75 Use of uninitialized value $_[1] in join or string at /usr/share/perl5/Debconf/DbDriver/Stack.pm line 112.
+#5 14.76 
+#5 14.76 Current default time zone: '/UTC'
+#5 14.76 Local time is now:      Tue Oct 20 16:39:12 UTC 2026.
+#5 14.76 Universal Time is now:  Tue Oct 20 16:39:12 UTC 2026.
+#5 14.76 Run 'dpkg-reconfigure tzdata' if you wish to change it.
+#5 14.76 
+#5 14.77 Use of uninitialized value $val in substitution (s///) at /usr/share/perl5/Debconf/Format/822.pm line 84, <GEN6> line 4.
+#5 14.77 Use of uninitialized value $val in concatenation (.) or string at /usr/share/perl5/Debconf/Format/822.pm line 85, <GEN6> line 4.
+#5 14.78 Setting up libraqm0:amd64 (0.10.1-1build1) ...
+#5 14.79 Setting up libimagequant0:amd64 (2.18.0-1build1) ...
+#5 14.79 Setting up libopenjp2-7:amd64 (2.5.0-2ubuntu0.5) ...
+#5 14.80 Setting up netbase (6.4) ...
+#5 14.81 Setting up libwebpmux3:amd64 (1.3.2-0.4build3) ...
+#5 14.82 Setting up readline-common (8.2-4build1) ...
+#5 14.83 Setting up libreadline8t64:amd64 (8.2-4build1) ...
+#5 14.83 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#5 14.84 Setting up python3.12 (3.12.3-1ubuntu0.17) ...
+#5 16.00 Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#5 16.00 Setting up python3 (3.12.3-0ubuntu2.1) ...
+#5 16.02 running python rtupdate hooks for python3.12...
+#5 16.02 running python post-rtupdate hooks for python3.12...
+#5 16.14 Setting up python3-pil:amd64 (10.2.0-1ubuntu1.3) ...
+#5 16.56 Setting up python3-certifi (2023.11.17-1) ...
+#5 16.69 Setting up python3-mdurl (0.1.2-1) ...
+#5 16.84 Setting up python3-idna (3.6-2ubuntu0.2) ...
+#5 17.10 Setting up python3-h11 (0.14.0-1ubuntu0.24.04.1) ...
+#5 17.30 Setting up python3-markdown-it (3.0.0-2) ...
+#5 17.51 Setting up python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+#5 17.79 Setting up python3-httpcore (1.0.2-2) ...
+#5 18.02 Setting up python3-sniffio (1.3.0-2) ...
+#5 18.16 Setting up python3-anyio (4.2.0-1) ...
+#5 18.40 Setting up python3-colorama (0.4.6-4) ...
+#5 18.57 Setting up python3-click (8.1.6-2) ...
+#5 18.79 Setting up python3-pygments (2.17.2+dfsg-1) ...
+#5 19.88 Setting up python3-rich (13.7.1-1) ...
+#5 20.24 Setting up python3-httpx (0.26.0-2) ...
+#5 20.42 Processing triggers for systemd (255.4-1ubuntu8.4) ...
+#5 20.43 Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+#5 DONE 20.6s
+
+#6 exporting to image
+#6 exporting layers
+#6 exporting layers 4.1s done
+#6 exporting manifest sha256:20719886d3b052ec84c1928c7f449733c43c96ed8e28688f5f71e311eeba2c7b done
+#6 exporting config sha256:ecc3d136cc6c1619c4ff54b7043f57c4ae39cff5483307a51889cc61aa87f3cb done
+#6 exporting attestation manifest sha256:657f599d6924f71dbcde3593f4418c8c3eb1d62fba03cd6b348b0ac7cad7cd42 0.0s done
+#6 exporting manifest list sha256:6e68a34a90915496171624ba4ab33c2c0f0604536ae90ae67ec981abda951745 done
+#6 naming to docker.io/library/sp3-adr002-pil:latest done
+#6 unpacking to docker.io/library/sp3-adr002-pil:latest
+#6 unpacking to docker.io/library/sp3-adr002-pil:latest 0.9s done
+#6 DONE 5.1s
+pil build exit=0
+--- sizes (bytes) ---
+mosipid/openjdk-21-jre:21.0.4 228329533
+sp3-adr002-nopil 245925953
+sp3-adr002-pil 248553533
+--- import check (pil) ---
+3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0] 0.26.0 10.2.0
+import pil exit=0
+--- import check (nopil; PIL expected to fail) ---
+3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0] 0.26.0
+import nopil exit=0
+ModuleNotFoundError: No module named 'PIL'
+PIL import in nopil exit=1
+--- apt-cache policy (as specified; apt lists are removed in the image) ---
+python3-pil:
+  Installed: 10.2.0-1ubuntu1.3
+  Candidate: 10.2.0-1ubuntu1.3
+  Version table:
+ *** 10.2.0-1ubuntu1.3 100
+        100 /var/lib/dpkg/status
+python3-httpx:
+  Installed: 0.26.0-2
+  Candidate: 0.26.0-2
+  Version table:
+ *** 0.26.0-2 100
+        100 /var/lib/dpkg/status
+apt-cache policy exit=0
+--- installed package versions (dpkg-query, same image) ---
+python3 3.12.3-0ubuntu2.1
+python3-httpx 0.26.0-2
+python3-pil 10.2.0-1ubuntu1.3
+dpkg-query exit=0
+[2026-10-20T22:09:25+05:30] C done
