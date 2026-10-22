@@ -80,3 +80,4 @@ Per-run directories (`<run>/<config>/`) hold `results.jsonl` and `gate.md`; `<ru
 | `sp5/negative-controls.md` | Every negative control in one place, with links: which pass turns red, the verdict, and the known blind spot while F-CERT-1 stands. |
 | `sp5/triage.md` | F-CERT-3, F-CERT-5 (b) and F-VER-5: spec quotes, suite and component source references, classification and suggested owner. |
 | `sp5/specs/` | The OpenID4VCI 1.0, OpenID4VP 1.0 and HAIP 1.0 Final texts the triage quotes (as fetched from openid.net, with a text rendering and sha256). |
+| `sp5/upstream-ci/README.md` | The api-test patches under each repo's own `push-trigger.yml`, on public forks: `build-maven-apitest-*` and `build-apitest-*-local` succeed, and every job's conclusion is identical on the unpatched pin and on the patched branch. The red jobs need MOSIP's secrets, e.g. Docker Hub login (`*-build-dockers.log`). |
