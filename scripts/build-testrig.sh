@@ -13,6 +13,7 @@ pin=$(sed -n "s/^$pin_var=//p" compose/.env.pinned)
 tag=inji-conformance/testrig-$c:$(sha256sum "$patch" | cut -c1-12)
 if docker image inspect "$tag" >/dev/null 2>&1; then echo "build-testrig: $tag exists, skipping" >&2; echo "$tag"; exit 0; fi
 
+scripts/fetch-upstream.sh >&2   # a fresh checkout has no upstream/ yet (run-conformance.sh builds before env.sh up)
 src=data/testrig-build/inji-$c
 [ -d "$src/.git" ] || { mkdir -p data/testrig-build; git clone --quiet "upstream/inji-$c" "$src"; }
 git -C "$src" checkout --quiet --detach "$pin"
