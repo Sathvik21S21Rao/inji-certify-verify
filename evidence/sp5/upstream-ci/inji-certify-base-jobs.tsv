@@ -1,0 +1,12 @@
+failure	apitest-inji-certify / build-dockers
+success	apitest-inji-certify / build-docker-warning
+success	build-apitest-inji-certify-local
+success	build-maven-apitest-inji-certify / maven-build
+success	build-maven-inji-certify / maven-build
+success	check_snapshot_version
+failure	inji-certify / build-dockers
+success	inji-certify / build-docker-warning
+skipped	matrix.SERVICE_NAME
+success	maven-build-inji-certify-with-plugins / maven-build
+failure	publish_to_nexus / publish-to-nexus
+failure	sonar_analysis / maven-sonar-analysis

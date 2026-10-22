@@ -1,0 +1,18 @@
+failure	apitest-inji-verify / build-dockers
+success	apitest-inji-verify / build-docker-warning
+success	build-apitest-inji-verify-local
+success	build-inji-verify-service / maven-build
+success	build-maven-apitest-inji-verify / maven-build
+success	build-maven-ui-test / maven-build
+success	build-ui-test-local
+failure	inji-verify-service / build-dockers
+success	inji-verify-service / build-docker-warning
+failure	inji-verify-ui / build-dockers
+success	inji-verify-ui / build-docker-warning
+failure	publish_to_nexus / publish-to-nexus
+success	run-apitest-pr
+skipped	sonar-analysis-inji-verify
+failure	sonar-analysis-inji-verify-core / maven-sonar-analysis
+failure	sonar-analysis-inji-verify-service / maven-sonar-analysis
+failure	uitest-verify / build-dockers
+success	uitest-verify / build-docker-warning
