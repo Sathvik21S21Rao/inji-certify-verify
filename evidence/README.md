@@ -69,3 +69,14 @@ Per-run directories (`<run>/<config>/`) hold `results.jsonl` and `gate.md`; `<ru
 | `sp4/SP4.14/parity-*.md` | `runner diff` between the runner driver and the testrig driver for the same scenario: "no changes" in all five comparisons. |
 | `sp4/SP4.3/actionlint.txt` | actionlint on the workflow: exit 0. |
 | `sp4/pytest-final.txt` | Runner unit tests: 103 passed. |
+
+## Verification against independent oracles (22 Oct 2026)
+
+| File | What it shows |
+|---|---|
+| `sp5/SP5.2/live/*/reconcile.md` | A live `--combined` run with the testrig driver: every TestNG row and the EmailableReport counts match the suite's own plan export (MATCH 14/14, 9/9, 11/11); exit 0. |
+| `sp5/SP5.2/doctored/` | The same check on a doctored report: one TestNG row flipped FAIL → PASS, and a report filename with altered counts. Both give MISMATCH, exit 1. |
+| `sp5/SP5.2/README.md` | The table of checks, expected vs got. |
+| `sp5/negative-controls.md` | Every negative control in one place, with links: which pass turns red, the verdict, and the known blind spot while F-CERT-1 stands. |
+| `sp5/triage.md` | F-CERT-3, F-CERT-5 (b) and F-VER-5: spec quotes, suite and component source references, classification and suggested owner. |
+| `sp5/specs/` | The OpenID4VCI 1.0, OpenID4VP 1.0 and HAIP 1.0 Final texts the triage quotes (as fetched from openid.net, with a text rendering and sha256). |

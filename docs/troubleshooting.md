@@ -62,7 +62,7 @@ Verify's compose `db-init/init.sql` is stale: it lacks `vp_submission.response_c
 ## Expected failures that look like bugs in the harness
 
 **Every `verify-x509` module fails `ValidateRequestObjectSignatureAgainstX5cHeader` ("Unsupported JWS algorithm: EdDSA")**
-That is finding F-VER-5, not a setup error. Verify signs only with Ed25519, and the suite's check can't verify EdDSA. Don't swap in a P-256 leaf: `verify-service` exits at startup with one.
+That is finding F-VER-5, not a setup error. Verify signs only with Ed25519, and the suite's x5c check can't verify EdDSA, although its JWKS check can (a suite limitation, `evidence/sp5/triage.md`). Don't swap in a P-256 leaf: `verify-service` exits at startup with one.
 
 **x5c validation fails because the chain contains the trust anchor**
 The suite rejects an `x5c` that includes the root. `scripts/gen-certs.sh` therefore puts only the leaf into `verify-signing.p12`. Regenerate with `scripts/gen-certs.sh --force` if you replaced it.

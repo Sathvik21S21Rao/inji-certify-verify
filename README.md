@@ -9,6 +9,7 @@ What it does, end to end:
 3. Streams one JSON Lines record per module (`results.jsonl`, a versioned contract).
 4. In the testrig, a new `OpenIDConformanceTest` class turns those records into TestNG results. The existing `EmailableReport` writes the report and the existing `S3Adapter` uploads it to MinIO. Known findings use the testrig's existing known-issue (KI) mechanism.
 5. Compares the run with a per-module benchmark (expected outcome, first failing condition, expected warnings) and exits non-zero on a regression, a new failure, a stale entry or an infrastructure fault.
+6. Checks the TestNG report module by module against the suite's own plan export, and exits 4 if they disagree ([how it works](docs/how-the-api-automation-works.md#after-the-run-reconciliation-against-the-suite)).
 
 ## Quick start
 
@@ -19,7 +20,7 @@ python3 -m venv .venv && .venv/bin/pip install -r runner/requirements.txt
 CONFORMANCE_PYTHON=.venv/bin/python scripts/run-conformance.sh --combined
 ```
 
-This builds the patched Certify and Verify testrig images (about two minutes each the first time, cached by patch hash after that; `evidence/sp4/SP4.13/build-durations.txt`), brings up all three stacks and MinIO, and runs the three record configs (`certify-shim-off`, `verify-redirect-uri`, `verify-x509`) through `OpenIDConformanceTest` in the testrig. It writes the TestNG reports, the per-config gate results and a combined HTML report and badge under `reports/`, uploads the reports to MinIO, then tears everything down. Exit code 0 means every gate is green. Run one component with `--component certify` or `--component verify`. `scripts/run-full-stack-conformance.sh` is an alias with the same flags.
+This builds the patched Certify and Verify testrig images (about two minutes each the first time, cached by patch hash after that; `evidence/sp4/SP4.13/build-durations.txt`), brings up all three stacks and MinIO, and runs the three record configs (`certify-shim-off`, `verify-redirect-uri`, `verify-x509`) through `OpenIDConformanceTest` in the testrig. It writes the TestNG reports, the per-config gate results and a combined HTML report and badge under `reports/`, uploads the reports to MinIO, then tears everything down. Exit code 0 means every gate is green and every TestNG report matches the suite's own record (exit 4 means it doesn't). Run one component with `--component certify` or `--component verify`. `scripts/run-full-stack-conformance.sh` is an alias with the same flags.
 
 The suite UI is at <https://localhost.emobix.co.uk:8443> while the stacks are up (`--keep` leaves them running). That hostname resolves to 127.0.0.1 in public DNS.
 
@@ -61,14 +62,14 @@ The same counts appear in the testrig report filenames. For example, `…certify
 |---|---|---|
 | F-CERT-1 | Certify | AS metadata lacks `authorization_endpoint` while advertising the `authorization_code` grant |
 | F-CERT-2 | Certify | Credential endpoint rejects unknown request fields with 400 "Unrecognized field" |
-| F-CERT-3 | Certify | Proof JWT `iss` (the client_id) rejected in the pre-authorized flow |
+| F-CERT-3 | Certify | Token endpoint ignores client authentication on the pre-authorized grant, then rejects proof `iss` = client_id |
 | F-CERT-4 | Certify | Unknown `credential_configuration_id` returns `invalid_credential_request`, not `unknown_credential_configuration` |
-| F-CERT-5 | Certify | Issuer metadata emits `null` optional display fields; signed metadata not served |
+| F-CERT-5 | Certify | Issuer metadata emits `null` optional display fields; `Accept: application/jwt` gets an empty 200 without `Content-Type` |
 | F-VER-1 | Verify | `url_query` requests carry no `client_metadata` / `vp_formats_supported` |
 | F-VER-2 | Verify | KB-JWT `aud` equal to an `x509_san_dns:` client_id rejected as an invalid URI |
 | F-VER-3 | Verify | Accepts a credential whose x5c chains to no configured trust anchor |
 | F-VER-4 | Verify | Some negative cases are rejected only in `/vp-result`, after `direct_post` returns 200 (permitted; informational) |
-| F-VER-5 | Verify | Signs `x509_san_dns` request objects with EdDSA only; the suite cannot verify them |
+| F-VER-5 | OIDF suite / Verify | Request objects are EdDSA-only; the suite's x5c check cannot verify EdDSA (suite limitation); Verify needs ES256 for HAIP |
 
 **The gate goes red when it should.** A gate that never turns red proves nothing, so the harness ships fault injections. Removing `credential_endpoint` from Certify's issuer metadata turns the record gate red (`NEW_FAILURE` on `oid4vci-1_0-issuer-metadata-test`). Removing `nonce_endpoint` turns the diagnostic pass red (`fail-invalid-nonce` PASSED → FAILED). Running Certify v0.14.0, the draft-13 release, against the 1.0 benchmark turns the record gate red through a new suite warning. See [docs/known-limitations.md](docs/known-limitations.md) for what the record pass cannot see while F-CERT-1 stands.
 
@@ -107,6 +108,8 @@ env.sh            JDK 21 + venv on PATH for Maven and Python commands
 ## Documentation
 
 - [Architecture](docs/architecture.md): components, data flow and the network layout.
+- [How the API automation works](docs/how-the-api-automation-works.md): plan lifecycle, suite REST calls, long-polling, and the reconciliation check.
+- [Handoff](docs/handoff.md): how Certify and Verify are driven while the suite waits.
 - [Usage](docs/usage.md): every command, flag, environment variable, testrig key and template placeholder.
 - [Results contract](docs/results-contract.md): the JSON Lines format between the runner, the bridge and the gate.
 - [Design decisions](docs/design-decisions.md): ADR-001 to ADR-006.

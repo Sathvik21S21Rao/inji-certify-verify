@@ -36,6 +36,9 @@ The fingerprint is the first failing condition plus the module's set of warning 
 - How MOSIP CI stages `testNgXmlFiles/` into the image. The api-test `Dockerfile` copies only `api-test/target`, so `testrig-bridge/build-image.sh` copies the XML files into `target/testNgXmlFiles` itself.
 - The GitHub Actions workflow has passed `actionlint`, but it has not yet run on GitHub. It assumes `localhost.emobix.co.uk` resolves to 127.0.0.1 on the runner, and adds an `/etc/hosts` entry if it doesn't.
 
-## Open triage
+## Triage outcome
 
-F-CERT-3 (proof `iss` with an authenticated client), the signed-metadata half of F-CERT-5, and F-VER-5 (EdDSA: Verify gap or suite limitation) still need an owner's decision before they are reported upstream as bugs ([findings.md](findings.md)).
+- F-CERT-3 and the signed-metadata half of F-CERT-5 are Certify defects.
+- F-VER-5's failures come from a suite limitation: the suite's x5c check can't verify EdDSA. Verify still needs ES256 for HAIP.
+
+Spec quotes and source references are in `evidence/sp5/triage.md`, and the summary is in [findings.md](findings.md). Until the suite accepts Ed25519 x5c leaves, the `verify-x509` record pass can't see past the request-object check.

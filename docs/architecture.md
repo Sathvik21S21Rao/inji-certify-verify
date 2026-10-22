@@ -41,6 +41,10 @@
               ├─► gate.md + exit 0 green / 1 red / 2 cannot evaluate
               ├─► python -m runner combined ─► combined/index.html, badge.json, gate.md
               └─► python -m runner diff A.jsonl B.jsonl (CI: against the last successful run)
+
+ testrig driver, after each gate:
+      python -m runner reconcile <config>/testng-report  ─► TestNG rows vs the suite's own plan export zip
+              └─► reconcile.md + exit 0 match / 1 mismatch (run exits 4) / 2 cannot evaluate
 ```
 
 `scripts/run-conformance.sh` runs each config through the testrig path by default: it builds the patched api-test image, starts MinIO, and runs the image in conformance mode, so `OpenIDConformanceTest` starts the runner and `EmailableReport` and `S3Adapter` do the reporting. With `CONFORMANCE_DRIVER=runner` it calls the runner directly. Either way the gate reads the same `results.jsonl`, and the two drivers give identical results (`evidence/sp4/SP4.14/parity-*.md`). The manual testrig recipe is in [usage.md](usage.md#testrig-integration).
@@ -77,7 +81,12 @@ A Python package that drives the suite through its REST API. It uses the suite's
 
 The runner never decides pass or fail for the build. It maps suite outcomes ([ADR-003](design-decisions.md#adr-003-mapping-suite-outcomes-to-testng-results)), and the gate decides.
 
+Step by step, with the REST calls and the long-poll: [how-the-api-automation-works.md](how-the-api-automation-works.md).
+
 ### Handoff plugins (`runner/handoff.py`)
+
+Per-component detail, with observed log lines: [handoff.md](handoff.md).
+
 - **certify.** When the suite exposes `credential_offer_endpoint`, the plugin calls Certify's `POST /pre-authorized-data` with the template's `handoff.offer` (credential configuration id, claims, `expires_in`, `tx_code`). It then calls the suite's offer endpoint with the query string of the returned `credential_offer_uri`, as a wallet would receive it. When the suite exposes `tx_code_endpoint`, the plugin sends the transaction code there.
 - **verify.** When the suite exposes `authorization_endpoint`, the plugin calls Verify's `POST /v1/verify/v2/vp-request` with the template's `handoff.vp_request` (client id and DCQL query), and then opens the suite's authorization endpoint with the same parameters Verify's own SDK builds: `client_id` plus `request_uri`, or the inline `response_mode`, `nonce`, `response_uri`, `state` and `dcql_query`. It does this once per module.
 - **evidence (verify).** When a module has an empty image placeholder, the uploader fetches `GET /v1/verify/vp-result/{transactionId}`, saves it as `<module>.verify-result.json`, renders it to `<module>.verify-result.png` and uploads the PNG. The suite then marks the module `REVIEW`.
@@ -95,8 +104,11 @@ Reporting is entirely the testrig's own. `EmailableReport` names the file with i
 - **Diff.** Compares two runs module by module (outcome and first failing condition) and prints a Markdown table. CI diffs each config against the last successful run on the default branch.
 - **Combined.** Gates several runs together and writes one HTML page, `badge.json` (shields.io endpoint format) and the concatenated `gate.md`.
 
+### Reconciliation (`runner/reconcile.py`)
+The gate trusts `results.jsonl`, which is the harness's own output. The reconcile check closes that loop against the suite: after every testrig run, it compares each module's TestNG status with the status and result in the suite's plan export, mapped through the same ADR-003 table. It also compares the EmailableReport's T/P/S/F/KI counts with the suite. A disagreement makes `scripts/run-conformance.sh` exit 4, so CI fails. Evidence: MATCH on all 34 modules of a live combined run (`evidence/sp5/SP5.2/live/*/reconcile.md`), and MISMATCH on doctored reports (`evidence/sp5/SP5.2/doctored/`).
+
 ### CI (`.github/workflows/full-stack-conformance.yml`)
-Runs on `workflow_dispatch` (inputs `strict`, `parallel`, `fault`, `certify_shim`) and on tags `v*` and `release-*`. A matrix of `certify`, `verify` and `combined` sets up JDK 21 (`actions/setup-java`) and runs `scripts/run-conformance.sh` with the default testrig driver on `ubuntu-24.04`. Each job writes the run info, gate tables and timing to the job summary, diffs against the previous successful run, and uploads `reports/` as the artifact `conformance-<target>`.
+Runs on `workflow_dispatch` (inputs `strict`, `parallel`, `fault`, `certify_shim`) and on tags `v*` and `release-*`. A matrix of `certify`, `verify` and `combined` sets up JDK 21 (`actions/setup-java`) and runs `scripts/run-conformance.sh` with the default testrig driver on `ubuntu-24.04`. Each job writes the run info, gate and reconcile tables and timing to the job summary, diffs against the previous successful run, and uploads `reports/` as the artifact `conformance-<target>`.
 
 ## Data flow, one Verify module
 
@@ -111,6 +123,6 @@ Runs on `workflow_dispatch` (inputs `strict`, `parallel`, `fault`, `certify_shim
 | Output | Path |
 |---|---|
 | Runner, per config | `<out>/results.jsonl`, `<out>/<module>.log.json`, `<out>/*.verify-result.{json,png}`, `<out>/plan-config.json`, plan export `<out>/<plan>-….zip` |
-| Entry script | `reports/run-info.txt`, `reports/timing.tsv`, `reports/<config>/{results.jsonl,stdout.jsonl,stderr.log,gate.md,gate.exit}`, `reports/combined/{index.html,badge.json,gate.md}` |
+| Entry script | `reports/run-info.txt`, `reports/timing.tsv`, `reports/<config>/{results.jsonl,stdout.jsonl,stderr.log,gate.md,gate.exit,reconcile.md,reconcile.exit}`, `reports/combined/{index.html,badge.json,gate.md}` |
 | Testrig (in the container) | `/home/inji/testng-report/*-full-report_T-…html`; the runner output under `/home/inji/testng-report/conformance/<config>/` |
 | MinIO | bucket `s3-account` (default `automation`), key `<modules>/<report file>` |

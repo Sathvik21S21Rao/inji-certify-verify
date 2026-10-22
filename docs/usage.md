@@ -38,7 +38,7 @@ Both drivers produce the same gate result: on the known-good run, the `strip-cre
 | `--keep` | Don't tear the stacks down at the end. |
 | `--out DIR` | Output directory (default `reports/`). |
 
-Exactly one of `--component` or `--combined` is required. Exit codes: `0` all gates green, `1` at least one gate red, `2` usage error or a gate could not evaluate (for example a missing `results.jsonl` or an invalid benchmark), `3` `env.sh up` failed.
+Exactly one of `--component` or `--combined` is required. Exit codes: `0` all gates green, `1` at least one gate red, `2` usage error or a gate could not evaluate (for example a missing `results.jsonl` or an invalid benchmark), `3` `env.sh up` failed, `4` (testrig driver) the TestNG report disagrees with the suite's own plan export for at least one module. `4` outranks `1` and `2`. A reconcile check that can't read its inputs counts like a gate `2`.
 
 Which Certify config runs depends on `CONFORMANCE_CERTIFY_AS_METADATA_SHIM`: `certify-shim-off` by default (the benchmark of record), `certify-shim-on` when it is `true`. For `verify-x509`, the script exports `VERIFY_X509_CA_PEM` from `data/certs/verify-ca.pem` when it is not already set.
 
@@ -53,6 +53,7 @@ reports/<config>/stdout.jsonl        the same stream as printed on stdout (runne
 reports/<config>/stderr.log          runner and handoff log
 reports/<config>/<module>.log.json   suite log per module, plus *.verify-result.{json,png} for Verify
 reports/<config>/gate.md, gate.exit  gate table and its exit code
+reports/<config>/reconcile.md, reconcile.exit  TestNG vs suite export, per module (testrig driver)
 reports/<config>/testng-report/      EmailableReport output, plus conformance/<config>/ from the runner (testrig driver)
 reports/<config>/testrig.log         container log (testrig driver)
 reports/combined/index.html, badge.json, gate.md   (--combined)
@@ -146,6 +147,12 @@ Writes a benchmark skeleton from a clean run (it refuses a run with `infra` modu
 python -m runner diff <A.jsonl> <B.jsonl>
 ```
 Lists the modules whose outcome or first failing condition changed, and modules present in only one run. Exits 0, or 2 if an input can't be read.
+
+### `reconcile`
+```
+python -m runner reconcile <testng-report dir> [--export <plan export zip>] [--strict]
+```
+Compares every `OpenIDConformanceTest` row in `<dir>/testng-results.xml`, and the EmailableReport filename counts, with the `(status, result)` the suite recorded in its plan export. By default the export is the single `<dir>/conformance/*/*.zip`. Exits `0` MATCH, `1` MISMATCH, or `2` if an input is missing or unreadable. `--strict` also accepts FAIL for a suite WARNING (the testrig's `conformance.strict=yes`). `--export` takes any plan export, for example one downloaded from the suite UI with **Download all Logs** after a manual run. How it works: [how-the-api-automation-works.md](how-the-api-automation-works.md#after-the-run-reconciliation-against-the-suite).
 
 ### `combined`
 ```
