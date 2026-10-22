@@ -5,3 +5,5 @@ __pycache__/
 spikes/certs/
 data/
 .venv-sp2/
+.venv-sp4/
+reports/

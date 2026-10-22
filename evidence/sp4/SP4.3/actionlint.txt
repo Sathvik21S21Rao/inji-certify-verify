@@ -1,0 +1,5 @@
+1.7.7
+installed by building from source
+built with go1.23.5 compiler for linux/amd64
+-- lint
+actionlint exit code: 0

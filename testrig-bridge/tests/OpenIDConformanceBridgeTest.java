@@ -26,6 +26,7 @@ public class OpenIDConformanceBridgeTest {
 	static final File FIX = new File(System.getProperty("fixtures"));
 	static final String FAKE = System.getProperty("fake.runner");
 	static int failures = 0, seq = 0;
+	static final String RUN = Long.toString(System.nanoTime(), 36);
 
 	static void check(boolean ok, String what) {
 		System.out.println((ok ? "PASS " : "FAIL ") + what);
@@ -68,7 +69,9 @@ public class OpenIDConformanceBridgeTest {
 		setCfg("reportKnownIssueTestCases", "yes");
 		setCfg("reportIgnoredTestCases", "no");
 		BaseTestCase.environment = "local";
-		String rn = "mosip-local-" + tag + "-" + (++seq) + "-report.html";
+		// Report names must be unique per JVM: seq restarts at 1, so reports left in a reused testng-report/
+		// by an earlier run (other fixture order) matched the prefix and were picked up as this run's report.
+		String rn = "mosip-local-" + tag + "-" + (++seq) + "-" + RUN + "-report.html";
 		System.setProperty("emailable.report2.name", rn);
 		System.setProperty("testng.outpur.dir", "testng-report");
 
@@ -130,7 +133,9 @@ public class OpenIDConformanceBridgeTest {
 		String kiName = "OIDF_" + COMP + "_oid4vci-1_0-issuer-metadata-test";
 
 		// 1. every fixture of this component, in plan order, mapped per ADR-003
-		for (File fx : FIX.listFiles((d, n) -> n.endsWith(".jsonl"))) {
+		File[] fxs = FIX.listFiles((d, n) -> n.endsWith(".jsonl"));
+		java.util.Arrays.sort(fxs);
+		for (File fx : fxs) {
 			List<JSONObject> ls = lines(fx.toPath());
 			String comp = ls.get(0).getString("component");
 			String stem = fx.getName().replace(".jsonl", "");

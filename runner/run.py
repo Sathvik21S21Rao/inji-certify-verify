@@ -85,7 +85,9 @@ async def run_plan(template, *, suite, http, env, out_dir, run_id, modules=None,
                                    plan_name=template["plan_name"], plan_id=plan_id,
                                    variant=template.get("variant", {}), shim=flags["certify_as_metadata_shim"],
                                    evidence_upload=flags["verify_evidence_upload"], suite_url=suite_url,
-                                   modules=mods, started=started)
+                                   modules=mods, started=started,
+                                   environment={"fault": env.get("CONFORMANCE_FAULT") or "none",
+                                                "certify_release": env.get("CONFORMANCE_CERTIFY_RELEASE") or "1.0"})
 
     def abort(msg, mods):
         emit(plan_rec(None, mods))

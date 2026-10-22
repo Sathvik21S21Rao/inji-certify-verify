@@ -1,4 +1,4 @@
-# Runner output contract v1.0 (frozen 2026-10-20)
+# Runner output contract v1.1
 
 Consumer: the testrig bridge (`OpenIDConformanceTest`). Schema: `results.schema.json` (JSON Schema 2020-12). Fixtures: `runner/tests/fixtures/*.jsonl`.
 
@@ -9,6 +9,8 @@ Consumer: the testrig bridge (`OpenIDConformanceTest`). Schema: `results.schema.
 - `certify_as_metadata_shim`: boolean for certify, as **observed** at run time (does the AS metadata served to the suite contain `authorization_endpoint`?), null for verify.
 - `verify_evidence_upload`: boolean for verify (did the harness upload Verify's `/vp-result` rendering as the screenshot?), null for certify.
 - On an `exit: 2` abort where the flag could not be observed (e.g. AS metadata unreachable), the runner prints the template's expected value. Read flags as observations only when `end.exit` < 2.
+
+**`environment`** (optional on `plan`, v1.1): `{fault, certify_release}`, both strings, from `CONFORMANCE_FAULT` (default `none`) and `CONFORMANCE_CERTIFY_RELEASE` (default `1.0`): which injected fault and which Certify release the run was made under. The runner always emits it; v1.0 streams lack it and stay valid. The gate prints it but does not key benchmarks on it.
 
 **`module`.** `module`, `test_id`, `status`, `result` (suite enums, null if never reached [verified: testmodule/TestModule.java:18-35]); `outcome`; `message` (one line, ready for the TestNG message); `failed_conditions[]` and `warnings[]` (`{condition, message, requirements[]}`, in suite log order); `log_url`; `started`, `finished` (ISO-8601 UTC); `evidence[]` (paths relative to the runner `--out` dir: the module's `*.log.json`, plus any `*.verify-result.{json,png}`); `infra_reason` (non-null only for `infra`).
 
@@ -32,3 +34,5 @@ Consumer: the testrig bridge (`OpenIDConformanceTest`). Schema: `results.schema.
 `certify-shim-on.jsonl` ← `evidence/sp0/baseline-v0-certify/`; `certify-shim-off.jsonl` ← `evidence/sp0/s04-noshim-fullplan/`; `verify-redirect-uri.jsonl` ← `evidence/sp0/baseline-v0-verify/`; `verify-x509.jsonl` ← `evidence/sp0/baseline-v0-verify-x509/`; `infra-interrupted-unknown.jsonl` ← `evidence/sp2/live/infra-capture/` (a live module stopped via `DELETE /api/runner/{id}`: INTERRUPTED, result null). Baseline runs used fixed aliases (`inji-certify` …); fixtures keep the recorded value.
 
 **Change rule.** Consumers must ignore fields they don't know. Adding a field is v1.x (schema updated, no consumer change). Renaming, removing or changing a field's meaning is v2 and needs a maintainer decision.
+
+**Versions.** 1.0 frozen 2026-10-20. 1.1 (2026-10-21) adds optional `plan.environment`; v1.0 streams stay valid.

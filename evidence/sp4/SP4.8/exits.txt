@@ -1,0 +1,11 @@
+fault-i exit=1
+candidate search STOPPED at fault-i (non-INFRA red gate row)
+fault-ii skipped: candidate search stopped
+fault-iii skipped: candidate search stopped
+c014 exit=3
+final-ps exit=0
+diff-fault-i exit=0
+diff-fault-ii skipped: no fault-ii/certify-shim-off/results.jsonl
+diff-fault-iii skipped: no fault-iii/certify-shim-off/results.jsonl
+diff-c014 skipped: no c014/certify-shim-off/results.jsonl
+ALL SP4.8 STEPS DONE

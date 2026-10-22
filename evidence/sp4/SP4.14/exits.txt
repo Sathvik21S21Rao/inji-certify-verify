@@ -1,0 +1,5 @@
+tr-kg-combined exit=0
+tr-fault-i exit=1
+tr-c014 exit=1
+final-ps exit=0
+SP4.14 POST STEPS DONE

@@ -1,9 +1,9 @@
-"""Builders for the runner JSONL contract v1.0 (runner/schema/CONTRACT.md). Stdlib only."""
+"""Builders for the runner JSONL contract v1.1 (runner/schema/CONTRACT.md). Stdlib only."""
 import json
 import re
 from datetime import datetime, timezone
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "1.1"
 OUTCOMES = ("pass", "warning", "review", "skip", "fail", "infra")
 _MAP = {"PASSED": "pass", "WARNING": "warning", "REVIEW": "review", "SKIPPED": "skip"}  # with FINISHED
 
@@ -26,12 +26,15 @@ def outcome_for(status, result) -> str:
 
 
 def plan_record(*, run_id, alias, component, config_name, plan_name, plan_id, variant,
-                shim, evidence_upload, suite_url, modules, started) -> dict:
-    return {"type": "plan", "schema_version": SCHEMA_VERSION, "run_id": run_id, "alias": alias,
+                shim, evidence_upload, suite_url, modules, started, environment=None) -> dict:
+    rec = {"type": "plan", "schema_version": SCHEMA_VERSION, "run_id": run_id, "alias": alias,
             "component": component, "config_name": config_name, "plan_name": plan_name,
             "plan_id": plan_id, "variant": variant,
             "flags": {"certify_as_metadata_shim": shim, "verify_evidence_upload": evidence_upload},
             "suite_url": suite_url, "modules": list(modules), "started": norm_ts(started)}
+    if environment is not None:
+        rec["environment"] = dict(environment)
+    return rec
 
 
 def _conds(log, kind):

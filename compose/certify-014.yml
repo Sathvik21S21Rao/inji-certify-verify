@@ -1,0 +1,5 @@
+# Added by scripts/env.sh to the certify project only when CONFORMANCE_CERTIFY_RELEASE=0.14.
+services:
+  certify-tls:
+    volumes:
+      - ${CONFORMANCE_ROOT}/compose/tls/certify-014-as-route.conf:/etc/nginx/extra.d/certify-014.conf:ro

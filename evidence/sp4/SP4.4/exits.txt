@@ -1,0 +1,13 @@
+kg-combined-seq1 exit=0 attempt=1
+kg-certify-shim-on exit=0 attempt=1
+fault-certify-shim-off exit=0 attempt=1
+fault-certify-shim-on exit=1 attempt=1
+fault-combined exit=0 attempt=1
+kg-combined-seq2 exit=0 attempt=1
+kg-combined-seq3 exit=0 attempt=1
+kg-combined-par1 exit=0 attempt=1
+kg-combined-par2 exit=0 attempt=1
+kg-combined-par3 exit=0 attempt=1
+c014-certify-shim-off exit=3 attempt=1
+c014-certify-shim-off exit=3 attempt=2
+ABORT after c014-certify-shim-off rc=3

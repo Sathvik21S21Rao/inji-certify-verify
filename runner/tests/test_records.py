@@ -10,7 +10,7 @@ from runner import records as R
 
 HERE = Path(__file__).parent
 V = Draft202012Validator(json.loads((HERE.parent / "schema" / "results.schema.json").read_text()))
-NAMES = ["certify-shim-on", "certify-shim-off", "verify-redirect-uri", "verify-x509", "infra-interrupted-unknown"]
+NAMES = ["certify-shim-on", "certify-shim-off", "certify-shim-off-v1_1", "verify-redirect-uri", "verify-x509", "infra-interrupted-unknown"]
 
 
 def load(name):

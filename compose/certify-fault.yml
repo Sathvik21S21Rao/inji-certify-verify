@@ -1,0 +1,5 @@
+# Added by scripts/env.sh to the certify project only when CONFORMANCE_FAULT != none.
+services:
+  certify-tls:
+    volumes:
+      - ${CONFORMANCE_ROOT}/compose/tls/fault-${CONFORMANCE_FAULT}.conf:/etc/nginx/extra.d/fault.conf:ro

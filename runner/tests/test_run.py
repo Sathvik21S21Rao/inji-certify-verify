@@ -137,3 +137,14 @@ def test_status_404_race_is_not_infra(tmp_path):
     suite = Racy({"m0": [("CONFIGURED", {}), ("WAITING", {}), ("FINISHED", {})]})
     code, out = go(CERT, suite, Calls(certify_routes()), tmp_path)
     assert code == 0 and out[1]["outcome"] == "pass" and not suite.stopped
+
+
+def test_plan_carries_environment(tmp_path, monkeypatch):
+    suite = FakeSuite({"m0": [("CONFIGURED", {}), ("FINISHED", {})]})
+    calls = Calls({**certify_routes(), **GET_OK})
+    _, out = go(CERT, suite, calls, tmp_path, modules=["m0"])
+    assert out[0]["schema_version"] == "1.1" and out[0]["environment"] == {"fault": "none", "certify_release": "1.0"}
+    monkeypatch.setitem(ENV, "CONFORMANCE_FAULT", "strip-nonce-endpoint")
+    _, out = go(CERT, FakeSuite({"m0": [("CONFIGURED", {}), ("FINISHED", {})]}), Calls({**certify_routes(), **GET_OK}),
+                tmp_path, modules=["m0"])
+    assert out[0]["environment"]["fault"] == "strip-nonce-endpoint"

@@ -1,0 +1,118 @@
+{
+ "benchmark_version": 2,
+ "label": "Benchmark of record: Inji Verify 1.0.x, redirect_uri / url_query / direct_post",
+ "component": "verify",
+ "config_name": "verify-redirect-uri",
+ "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+ "source_run": "evidence/sp2/live/verify-redirect-uri/run1/results.jsonl (run_id 20261020210043-7a29)",
+ "entries": [
+  {
+   "module": "oid4vp-1final-verifier-happy-flow",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-minimal-cnf-jwk",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-invalid-kb-jwt-signature",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-invalid-credential-signature",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-invalid-sd-hash",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-invalid-kb-jwt-nonce",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-invalid-kb-jwt-aud",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-kb-jwt-iat-in-past",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  },
+  {
+   "module": "oid4vp-1final-verifier-kb-jwt-iat-in-future",
+   "variant_key": "oid4vp-1final-verifier-test-plan|client_id_prefix=redirect_uri,credential_format=sd_jwt_vc,request_method=url_query,response_mode=direct_post,vp_profile=plain_vp|verify_evidence_upload=true",
+   "expected": "FAILED",
+   "first_failure": "VP1FinalValidateVpFormatsSupportedInClientMetadata",
+   "expected_warnings": [
+    "VP1FinalCheckForUnexpectedParametersInVpClientMetadata"
+   ],
+   "finding": "F-VER-1",
+   "reason": "url_query request carries no client_metadata / vp_formats_supported.",
+   "ki": "F-VER-1"
+  }
+ ]
+}

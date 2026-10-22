@@ -1,0 +1,156 @@
+{
+ "benchmark_version": 2,
+ "label": "DIAGNOSTIC ONLY (not the benchmark of record): Inji Certify 1.0.x with AS-metadata shim ON (F-CERT-1 masked)",
+ "component": "certify",
+ "config_name": "certify-shim-on",
+ "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+ "source_run": "evidence/sp2/live/certify-shim-on/run1/results.jsonl (run_id 20261020205702-4d84)",
+ "entries": [
+  {
+   "module": "oid4vci-1_0-issuer-metadata-test",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "VCICredentialIssuerMetadataValidation",
+   "expected_warnings": [
+    "CheckForUnexpectedParametersInCredentialIssuerMetadata",
+    "CheckForUnexpectedParametersInServerMetadata",
+    "VCIValidateFormatOfCredentialConfigurationsInMetadata"
+   ],
+   "finding": "F-CERT-5",
+   "reason": "Issuer metadata emits null for unset optional display fields (logo, background_color, …); suite JSON schema rejects it.",
+   "ki": "F-CERT-5"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-metadata-test-signed",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "EnsureContentTypeApplicationJwt",
+   "expected_warnings": [],
+   "finding": "F-CERT-5",
+   "reason": "Accept: application/jwt is answered with plain JSON, not a signed-metadata JWT (whether Certify must support it is an open finding).",
+   "ki": "F-CERT-5"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-happy-flow",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "EnsureHttpStatusCodeIsAnyOf",
+   "expected_warnings": [],
+   "finding": "F-CERT-2",
+   "reason": "Credential endpoint 400 \"Unrecognized field\" on an unknown request field; OID4VCI requires ignoring it.",
+   "ki": "F-CERT-2"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-happy-flow-additional-requests",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "EnsureHttpStatusCodeIsAnyOf",
+   "expected_warnings": [
+    "RequireOnlyBCP195RecommendedCiphersForTLS12"
+   ],
+   "finding": "F-CERT-3",
+   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "ki": "F-CERT-3"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-happy-flow-multiple-clients",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "EnsureHttpStatusCodeIsAnyOf",
+   "expected_warnings": [],
+   "finding": "F-CERT-3",
+   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "ki": "F-CERT-3"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-happy-flow-skip-notification",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "EnsureHttpStatusCodeIsAnyOf",
+   "expected_warnings": [],
+   "finding": "F-CERT-3",
+   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "ki": "F-CERT-3"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-batch-issuance",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "SKIPPED",
+   "first_failure": null,
+   "expected_warnings": [],
+   "finding": null,
+   "reason": "Metadata has no batch_credential_issuance; the suite skips (permitted).",
+   "ki": null
+  },
+  {
+   "module": "oid4vci-1_0-issuer-fail-invalid-nonce",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "PASSED",
+   "first_failure": null,
+   "expected_warnings": [],
+   "finding": null,
+   "reason": "Certify rejects the bad request as required.",
+   "ki": null
+  },
+  {
+   "module": "oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "PASSED",
+   "first_failure": null,
+   "expected_warnings": [],
+   "finding": null,
+   "reason": "Certify rejects the bad request as required.",
+   "ki": null
+  },
+  {
+   "module": "oid4vci-1_0-issuer-fail-invalid-key-attestation-signature",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "SKIPPED",
+   "first_failure": null,
+   "expected_warnings": [],
+   "finding": null,
+   "reason": "Credential config uses jwt proofs without key_attestations_required; not applicable.",
+   "ki": null
+  },
+  {
+   "module": "oid4vci-1_0-issuer-fail-missing-proof",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "PASSED",
+   "first_failure": null,
+   "expected_warnings": [],
+   "finding": null,
+   "reason": "Certify rejects the bad request as required.",
+   "ki": null
+  },
+  {
+   "module": "oid4vci-1_0-issuer-fail-unknown-credential-configuration",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "VCIValidateCredentialErrorResponse",
+   "expected_warnings": [],
+   "finding": "F-CERT-4",
+   "reason": "Unknown credential_configuration_id returns invalid_credential_request instead of unknown_credential_configuration.",
+   "ki": "F-CERT-4"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-fail-unknown-credential-identifier",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "VCIValidateCredentialErrorResponse",
+   "expected_warnings": [],
+   "finding": "F-CERT-2",
+   "reason": "Request with credential_identifier is rejected as an unrecognized field (invalid_request) instead of the spec error.",
+   "ki": "F-CERT-2"
+  },
+  {
+   "module": "oid4vci-1_0-issuer-fail-on-access-token-in-query",
+   "variant_key": "oid4vci-1_0-issuer-test-plan|authorization_request_type=simple,client_auth_type=private_key_jwt,credential_format=sd_jwt_vc,fapi_profile=vci,fapi_request_method=unsigned,sender_constrain=dpop,vci_authorization_code_flow_variant=issuer_initiated,vci_credential_encryption=plain,vci_grant_type=pre_authorization_code|certify_as_metadata_shim=true",
+   "expected": "FAILED",
+   "first_failure": "EnsureHttpStatusCodeIsAnyOf",
+   "expected_warnings": [],
+   "finding": "F-CERT-3",
+   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "ki": "F-CERT-3"
+  }
+ ]
+}

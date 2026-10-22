@@ -6,6 +6,8 @@ set -euo pipefail
 CONFIG_ID=ConformanceSdJwt
 ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
 CONFIG_FILE=$ROOT/compose/seed/certify-sdjwt-config.json
+# v0.14.0's CredentialConfigurationDTO rejects the 1.0-only fields
+[ "${CONFORMANCE_CERTIFY_RELEASE:-1.0}" = 0.14 ] && CONFIG_FILE=$ROOT/compose/seed/certify-sdjwt-config-0.14.json
 API=http://localhost:8091/v1/certify
 if [ "${1:-}" = "--api" ]; then API=${2:?--api needs a URL}; elif [ $# -gt 0 ]; then echo "usage: $0 [--api URL]" >&2; exit 2; fi
 
@@ -16,6 +18,7 @@ import json,sys; sys.exit(0 if sys.argv[1] in json.load(sys.stdin).get("credenti
 
 if present; then echo "seed-certify: $CONFIG_ID already present"; exit 0; fi
 
+echo "seed-certify: posting $CONFIG_FILE"
 resp=$(curl -fsS -X POST -H 'Content-Type: application/json' --data @"$CONFIG_FILE" "$API/credential-configurations")
 echo "$resp"
 echo "$resp" | python3 -c 'import json,sys; sys.exit(0 if json.load(sys.stdin).get("status")=="active" else 1)' \
