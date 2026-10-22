@@ -1,0 +1,2031 @@
+﻿2026-10-22T08:57:53.7474057Z Current runner version: '2.338.0'
+2026-10-22T08:57:53.7512930Z ##[group]Runner Image Provisioner
+2026-10-22T08:57:53.7514620Z Hosted Compute Agent
+2026-10-22T08:57:53.7515597Z Version: 20261012.601
+2026-10-22T08:57:53.7516564Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-22T08:57:53.7517884Z Build Date: 2026-10-12T17:48:21Z
+2026-10-22T08:57:53.7519099Z Worker ID: {41bd191b-f364-42e6-974d-0d1b6e031ed4}
+2026-10-22T08:57:53.7520377Z Region: northcentralus
+2026-10-22T08:57:53.7521327Z Cloud: Azure
+2026-10-22T08:57:53.7522160Z ##[endgroup]
+2026-10-22T08:57:53.7524965Z ##[group]Operating System
+2026-10-22T08:57:53.7525940Z Ubuntu
+2026-10-22T08:57:53.7526725Z 24.04.5
+2026-10-22T08:57:53.7527738Z LTS
+2026-10-22T08:57:53.7528545Z ##[endgroup]
+2026-10-22T08:57:53.7529503Z ##[group]Runner Image
+2026-10-22T08:57:53.7530529Z Image: ubuntu-24.04
+2026-10-22T08:57:53.7531384Z Version: 20261012.334.1
+2026-10-22T08:57:53.7533841Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-22T08:57:53.7536999Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-22T08:57:53.7538648Z ##[endgroup]
+2026-10-22T08:57:53.7540513Z ##[group]GITHUB_TOKEN Permissions
+2026-10-22T08:57:53.7543539Z Actions: read
+2026-10-22T08:57:53.7544610Z Contents: read
+2026-10-22T08:57:53.7545719Z Metadata: read
+2026-10-22T08:57:53.7546562Z ##[endgroup]
+2026-10-22T08:57:53.7549835Z Secret source: Actions
+2026-10-22T08:57:53.7551352Z Cache mode: write
+2026-10-22T08:57:53.7552611Z Prepare workflow directory
+2026-10-22T08:57:53.8466472Z Prepare all required actions
+2026-10-22T08:57:53.8617908Z Getting action download info
+2026-10-22T08:57:54.1538049Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-22T08:57:54.2567830Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-22T08:57:54.3469224Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-22T08:57:54.7852619Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-22T08:57:55.0404154Z Complete job name: conformance (verify)
+2026-10-22T08:57:55.1231491Z ##[group]Run actions/checkout@v4
+2026-10-22T08:57:55.1232454Z with:
+2026-10-22T08:57:55.1232998Z   repository: Sathvik21S21Rao/inji-certify-verify
+2026-10-22T08:57:55.1238937Z   token: ***
+2026-10-22T08:57:55.1239432Z   ssh-strict: true
+2026-10-22T08:57:55.1239914Z   ssh-user: git
+2026-10-22T08:57:55.1240393Z   persist-credentials: true
+2026-10-22T08:57:55.1240948Z   clean: true
+2026-10-22T08:57:55.1241432Z   sparse-checkout-cone-mode: true
+2026-10-22T08:57:55.1242033Z   fetch-depth: 1
+2026-10-22T08:57:55.1242501Z   fetch-tags: false
+2026-10-22T08:57:55.1242987Z   show-progress: true
+2026-10-22T08:57:55.1243793Z   lfs: false
+2026-10-22T08:57:55.1244263Z   submodules: false
+2026-10-22T08:57:55.1244781Z   set-safe-directory: true
+2026-10-22T08:57:55.1245386Z   allow-unsafe-pr-checkout: false
+2026-10-22T08:57:55.1246325Z ##[endgroup]
+2026-10-22T08:57:55.2427124Z Syncing repository: Sathvik21S21Rao/inji-certify-verify
+2026-10-22T08:57:55.2439092Z ##[group]Getting Git version info
+2026-10-22T08:57:55.2441793Z Working directory is '/home/runner/work/inji-certify-verify/inji-certify-verify'
+2026-10-22T08:57:55.2445158Z [command]/usr/bin/git version
+2026-10-22T08:57:55.2562015Z git version 2.55.0
+2026-10-22T08:57:55.2636066Z ##[endgroup]
+2026-10-22T08:57:55.2653209Z Temporarily overriding HOME='/home/runner/work/_temp/bb84fecd-4fc2-4412-8a3c-434bb4975564' before making global git config changes
+2026-10-22T08:57:55.2674855Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-22T08:57:55.2678220Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/inji-certify-verify/inji-certify-verify
+2026-10-22T08:57:55.2734857Z Deleting the contents of '/home/runner/work/inji-certify-verify/inji-certify-verify'
+2026-10-22T08:57:55.2738225Z ##[group]Initializing the repository
+2026-10-22T08:57:55.2741633Z [command]/usr/bin/git init /home/runner/work/inji-certify-verify/inji-certify-verify
+2026-10-22T08:57:55.2880968Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-22T08:57:55.2900801Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-22T08:57:55.2914167Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-22T08:57:55.2939926Z hint: call:
+2026-10-22T08:57:55.2944183Z hint:
+2026-10-22T08:57:55.2945636Z hint: 	git config --global init.defaultBranch <name>
+2026-10-22T08:57:55.2946926Z hint:
+2026-10-22T08:57:55.2950142Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-22T08:57:55.2952178Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-22T08:57:55.2954071Z hint:
+2026-10-22T08:57:55.2954783Z hint: 	git branch -m <name>
+2026-10-22T08:57:55.2955690Z hint:
+2026-10-22T08:57:55.2956899Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-22T08:57:55.2959373Z Initialized empty Git repository in /home/runner/work/inji-certify-verify/inji-certify-verify/.git/
+2026-10-22T08:57:55.2997425Z [command]/usr/bin/git remote add origin https://github.com/Sathvik21S21Rao/inji-certify-verify
+2026-10-22T08:57:55.3006897Z ##[endgroup]
+2026-10-22T08:57:55.3008575Z ##[group]Disabling automatic garbage collection
+2026-10-22T08:57:55.3010031Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-22T08:57:55.3094972Z ##[endgroup]
+2026-10-22T08:57:55.3152268Z ##[group]Setting up auth
+2026-10-22T08:57:55.3167843Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-22T08:57:55.3180192Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-22T08:57:55.3685336Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-22T08:57:55.3791632Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-22T08:57:55.4022583Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-22T08:57:55.4068681Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-22T08:57:55.4346749Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-22T08:57:55.4395198Z ##[endgroup]
+2026-10-22T08:57:55.4404754Z ##[group]Fetching the repository
+2026-10-22T08:57:55.4407914Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +89f5574c05247c0ac1e52bf30a088b75a9978a5e:refs/remotes/origin/main
+2026-10-22T08:57:55.8297502Z From https://github.com/Sathvik21S21Rao/inji-certify-verify
+2026-10-22T08:57:55.8300378Z  * [new ref]         89f5574c05247c0ac1e52bf30a088b75a9978a5e -> origin/main
+2026-10-22T08:57:55.8306617Z ##[endgroup]
+2026-10-22T08:57:55.8308819Z ##[group]Determining the checkout info
+2026-10-22T08:57:55.8311308Z ##[endgroup]
+2026-10-22T08:57:55.8313498Z [command]/usr/bin/git sparse-checkout disable
+2026-10-22T08:57:55.8374906Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-22T08:57:55.8418404Z ##[group]Checking out the ref
+2026-10-22T08:57:55.8524407Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-22T08:57:55.8781976Z Switched to a new branch 'main'
+2026-10-22T08:57:55.8794607Z branch 'main' set up to track 'origin/main'.
+2026-10-22T08:57:55.8867245Z ##[endgroup]
+2026-10-22T08:57:55.8925149Z [command]/usr/bin/git log -1 --format=%H
+2026-10-22T08:57:55.8948832Z 89f5574c05247c0ac1e52bf30a088b75a9978a5e
+2026-10-22T08:57:55.9416618Z ##[group]Run actions/setup-python@v5
+2026-10-22T08:57:55.9417835Z with:
+2026-10-22T08:57:55.9418729Z   python-version: 3.12
+2026-10-22T08:57:55.9419763Z   check-latest: false
+2026-10-22T08:57:55.9429321Z   token: ***
+2026-10-22T08:57:55.9430269Z   update-environment: true
+2026-10-22T08:57:55.9431330Z   allow-prereleases: false
+2026-10-22T08:57:55.9432367Z   freethreaded: false
+2026-10-22T08:57:55.9433479Z ##[endgroup]
+2026-10-22T08:57:56.0866660Z ##[group]Installed versions
+2026-10-22T08:57:56.0923107Z (node:2072) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-22T08:57:56.0926926Z Successfully set up CPython (3.12.15)
+2026-10-22T08:57:56.0941403Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-22T08:57:56.0944059Z ##[endgroup]
+2026-10-22T08:57:56.1472736Z ##[group]Run actions/setup-java@v4
+2026-10-22T08:57:56.1474105Z with:
+2026-10-22T08:57:56.1474986Z   distribution: temurin
+2026-10-22T08:57:56.1475949Z   java-version: 21
+2026-10-22T08:57:56.1476852Z   cache: maven
+2026-10-22T08:57:56.1477830Z   cache-dependency-path: compose/.env.pinned
+2026-10-22T08:57:56.1479013Z   java-package: jdk
+2026-10-22T08:57:56.1479932Z   check-latest: false
+2026-10-22T08:57:56.1480849Z   server-id: github
+2026-10-22T08:57:56.1481773Z   server-username: GITHUB_ACTOR
+2026-10-22T08:57:56.1482845Z   server-password: GITHUB_TOKEN
+2026-10-22T08:57:56.1484047Z   overwrite-settings: true
+2026-10-22T08:57:56.1485049Z   job-status: success
+2026-10-22T08:57:56.1494101Z   token: ***
+2026-10-22T08:57:56.1494966Z env:
+2026-10-22T08:57:56.1496132Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.1497812Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T08:57:56.1499542Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.1501060Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.1502581Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.1504219Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T08:57:56.1505537Z ##[endgroup]
+2026-10-22T08:57:56.3347013Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-22T08:57:56.3363283Z ##[group]Installed distributions
+2026-10-22T08:57:56.3378783Z Resolved Java 21.0.12+1 from tool-cache
+2026-10-22T08:57:56.3380933Z Setting Java 21.0.12+1 as the default
+2026-10-22T08:57:56.3394015Z Creating toolchains.xml for JDK version 21 from temurin
+2026-10-22T08:57:56.3398062Z (node:2080) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-22T08:57:56.3412602Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-22T08:57:56.3537715Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-22T08:57:56.3564257Z 
+2026-10-22T08:57:56.3565474Z Java configuration:
+2026-10-22T08:57:56.3584485Z   Distribution: temurin
+2026-10-22T08:57:56.3604363Z   Version: 21.0.12+1
+2026-10-22T08:57:56.3625238Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T08:57:56.3643918Z 
+2026-10-22T08:57:56.3665448Z ##[endgroup]
+2026-10-22T08:57:56.3704827Z Creating settings.xml with server-id: github
+2026-10-22T08:57:56.3721746Z Writing to /home/runner/.m2/settings.xml
+2026-10-22T08:57:56.5027882Z maven cache is not found
+2026-10-22T08:57:56.5211424Z ##[group]Run pip install -r runner/requirements.txt
+2026-10-22T08:57:56.5213013Z [36;1mpip install -r runner/requirements.txt[0m
+2026-10-22T08:57:56.5472607Z shell: /usr/bin/bash -e {0}
+2026-10-22T08:57:56.5473852Z env:
+2026-10-22T08:57:56.5474907Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.5476537Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T08:57:56.5478150Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.5479888Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.5481369Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:56.5482856Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T08:57:56.5484611Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T08:57:56.5486399Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T08:57:56.5487908Z ##[endgroup]
+2026-10-22T08:57:57.5653543Z Collecting httpx==0.26.0 (from -r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.6385457Z   Downloading httpx-0.26.0-py3-none-any.whl.metadata (7.6 kB)
+2026-10-22T08:57:57.8296819Z Collecting pillow==10.2.0 (from -r runner/requirements.txt (line 3))
+2026-10-22T08:57:57.8343569Z   Downloading pillow-10.2.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+2026-10-22T08:57:57.8528418Z Collecting anyio (from httpx==0.26.0->-r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.8560866Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+2026-10-22T08:57:57.8760367Z Collecting certifi (from httpx==0.26.0->-r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.8794328Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+2026-10-22T08:57:57.8989913Z Collecting httpcore==1.* (from httpx==0.26.0->-r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.9031983Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-10-22T08:57:57.9285223Z Collecting idna (from httpx==0.26.0->-r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.9309495Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+2026-10-22T08:57:57.9454572Z Collecting sniffio (from httpx==0.26.0->-r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.9494281Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2026-10-22T08:57:57.9644584Z Collecting h11>=0.16 (from httpcore==1.*->httpx==0.26.0->-r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.9694639Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-10-22T08:57:57.9939976Z Collecting typing_extensions>=4.16.0 (from anyio->httpx==0.26.0->-r runner/requirements.txt (line 2))
+2026-10-22T08:57:57.9994027Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-10-22T08:57:58.0084356Z Downloading httpx-0.26.0-py3-none-any.whl (75 kB)
+2026-10-22T08:57:58.0180711Z Downloading pillow-10.2.0-cp312-cp312-manylinux_2_28_x86_64.whl (4.5 MB)
+2026-10-22T08:57:58.0404932Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 240.4 MB/s  0:00:00
+2026-10-22T08:57:58.0449533Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2026-10-22T08:57:58.0510136Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-10-22T08:57:58.0552543Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+2026-10-22T08:57:58.0603187Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+2026-10-22T08:57:58.0659048Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-10-22T08:57:58.0711740Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+2026-10-22T08:57:58.0764337Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2026-10-22T08:57:58.1473794Z Installing collected packages: typing_extensions, sniffio, pillow, idna, h11, certifi, httpcore, anyio, httpx
+2026-10-22T08:57:58.9361879Z 
+2026-10-22T08:57:58.9400674Z 
+2026-10-22T08:57:58.9402156Z Successfully installed anyio-4.15.1 certifi-2026.10.19 h11-0.16.0 httpcore-1.0.9 httpx-0.26.0 idna-3.20 pillow-10.2.0 sniffio-1.3.1 typing_extensions-4.16.0
+2026-10-22T08:57:58.9414326Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+2026-10-22T08:57:58.9415207Z [notice] To update, run: pip install --upgrade pip
+2026-10-22T08:57:59.0035662Z ##[group]Run getent hosts localhost.emobix.co.uk || echo "127.0.0.1 localhost.emobix.co.uk" | sudo tee -a /etc/hosts
+2026-10-22T08:57:59.0036483Z [36;1mgetent hosts localhost.emobix.co.uk || echo "127.0.0.1 localhost.emobix.co.uk" | sudo tee -a /etc/hosts[0m
+2026-10-22T08:57:59.0109321Z shell: /usr/bin/bash -e {0}
+2026-10-22T08:57:59.0109606Z env:
+2026-10-22T08:57:59.0109893Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.0110348Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T08:57:59.0110781Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.0111167Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.0111555Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.0111939Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T08:57:59.0112429Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T08:57:59.0112916Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T08:57:59.0113479Z ##[endgroup]
+2026-10-22T08:57:59.4891811Z 127.0.0.1       localhost.emobix.co.uk
+2026-10-22T08:57:59.4944872Z ##[group]Run args=(--out reports)
+2026-10-22T08:57:59.4945253Z [36;1margs=(--out reports)[0m
+2026-10-22T08:57:59.4945527Z [36;1mif [ "$TARGET" = combined ]; then[0m
+2026-10-22T08:57:59.4945813Z [36;1m  args+=(--combined)[0m
+2026-10-22T08:57:59.4946098Z [36;1m  [ "$PARALLEL" = true ] && args+=(--parallel)[0m
+2026-10-22T08:57:59.4946395Z [36;1melse[0m
+2026-10-22T08:57:59.4946622Z [36;1m  args+=(--component "$TARGET")[0m
+2026-10-22T08:57:59.4946884Z [36;1mfi[0m
+2026-10-22T08:57:59.4947110Z [36;1m[ "$STRICT" = true ] && args+=(--strict)[0m
+2026-10-22T08:57:59.4947438Z [36;1mscripts/run-conformance.sh "${args[@]}"[0m
+2026-10-22T08:57:59.5018980Z shell: /usr/bin/bash -e {0}
+2026-10-22T08:57:59.5019248Z env:
+2026-10-22T08:57:59.5019529Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.5019981Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T08:57:59.5020441Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.5020826Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.5021217Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T08:57:59.5021590Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T08:57:59.5022015Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T08:57:59.5022485Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T08:57:59.5022876Z   CONFORMANCE_PYTHON: python
+2026-10-22T08:57:59.5023125Z   CONFORMANCE_FAULT: none
+2026-10-22T08:57:59.5023638Z   CONFORMANCE_CERTIFY_AS_METADATA_SHIM: false
+2026-10-22T08:57:59.5023934Z   TARGET: verify
+2026-10-22T08:57:59.5024150Z   STRICT: false
+2026-10-22T08:57:59.5024357Z   PARALLEL: false
+2026-10-22T08:57:59.5024573Z ##[endgroup]
+2026-10-22T08:57:59.5223827Z mode=verify
+2026-10-22T08:57:59.5224285Z certify_configs=
+2026-10-22T08:57:59.5225112Z verify_configs=verify-redirect-uri verify-x509
+2026-10-22T08:57:59.5225991Z CONFORMANCE_CERTIFY_AS_METADATA_SHIM=false
+2026-10-22T08:57:59.5226663Z CONFORMANCE_FAULT=none
+2026-10-22T08:57:59.5227258Z driver=testrig
+2026-10-22T08:57:59.5227751Z strict=no
+2026-10-22T08:57:59.5228247Z parallel=no
+2026-10-22T08:57:59.5228832Z git=89f5574
+2026-10-22T08:57:59.6179692Z Cloning into '/home/runner/work/inji-certify-verify/inji-certify-verify/upstream/inji-certify'...
+2026-10-22T08:58:01.0830595Z HEAD is now at 0d52155b Fixed issues in StopLight (#1116)
+2026-10-22T08:58:01.0894429Z Cloning into '/home/runner/work/inji-certify-verify/inji-certify-verify/upstream/inji-verify'...
+2026-10-22T08:58:05.4114728Z HEAD is now at 64b27903 Merge pull request #2430 from Ivanmeneges/patch-5
+2026-10-22T08:58:05.4178911Z Cloning into '/home/runner/work/inji-certify-verify/inji-certify-verify/upstream/conformance-suite'...
+2026-10-22T08:58:24.7873026Z HEAD is now at 7d420f716 Merge branch 'vci-wallet-requested-scope' into 'master'
+2026-10-22T08:58:24.7914491Z fetch-upstream: ok
+2026-10-22T08:58:24.8088891Z Note: switching to '64b27903b5af09bf97c3d1a13563789c16995d6e'.
+2026-10-22T08:58:24.8089988Z 
+2026-10-22T08:58:24.8090754Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-22T08:58:24.8091771Z changes and commit them, and you can discard any commits you make in this
+2026-10-22T08:58:24.8092740Z state without impacting any branches by switching back to a branch.
+2026-10-22T08:58:24.8093726Z 
+2026-10-22T08:58:24.8094254Z If you want to create a new branch to retain commits you create, you may
+2026-10-22T08:58:24.8095253Z do so (now or later) by using -c with the switch command. Example:
+2026-10-22T08:58:24.8095867Z 
+2026-10-22T08:58:24.8096256Z   git switch -c <new-branch-name>
+2026-10-22T08:58:24.8096726Z 
+2026-10-22T08:58:24.8097067Z Or undo this operation with:
+2026-10-22T08:58:24.8097507Z 
+2026-10-22T08:58:24.8097860Z   git switch -
+2026-10-22T08:58:24.8098233Z 
+2026-10-22T08:58:24.8099046Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-22T08:58:24.8099743Z 
+2026-10-22T08:59:46.6235063Z SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2026-10-22T08:59:46.6261226Z SLF4J: Defaulting to no-operation (NOP) logger implementation
+2026-10-22T08:59:46.6291150Z SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2026-10-22T08:59:51.4395218Z [ERROR] Error fetching link: /home/runner/work/inji-certify-verify/inji-certify-verify/data/testrig-build/inji-verify/api-test/target/javadoc-bundle-options. Ignored it.
+2026-10-22T09:00:43.6482781Z context: /tmp/tmp.o3ycakkp8u
+2026-10-22T09:00:44.0567489Z #0 building with "default" instance using docker driver
+2026-10-22T09:00:44.0568191Z 
+2026-10-22T09:00:44.0568900Z #1 [internal] load build definition from Dockerfile
+2026-10-22T09:00:44.0570056Z #1 transferring dockerfile: 1.95kB done
+2026-10-22T09:00:44.0570513Z #1 DONE 0.0s
+2026-10-22T09:00:44.0570694Z 
+2026-10-22T09:00:44.0571032Z #2 [auth] mosipid/openjdk-21-jre:pull token for registry-1.docker.io
+2026-10-22T09:00:44.2076544Z #2 DONE 0.0s
+2026-10-22T09:00:44.2076863Z 
+2026-10-22T09:00:44.2077463Z #3 [internal] load metadata for docker.io/mosipid/openjdk-21-jre:21.0.4
+2026-10-22T09:00:44.3835368Z #3 DONE 0.4s
+2026-10-22T09:00:44.5013581Z 
+2026-10-22T09:00:44.5014084Z #4 [internal] load .dockerignore
+2026-10-22T09:00:44.5014585Z #4 transferring context: 2B done
+2026-10-22T09:00:44.5014958Z #4 DONE 0.0s
+2026-10-22T09:00:44.5015148Z 
+2026-10-22T09:00:44.5015765Z #5 [1/5] FROM docker.io/mosipid/openjdk-21-jre:21.0.4@sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119
+2026-10-22T09:00:44.5017095Z #5 resolve docker.io/mosipid/openjdk-21-jre:21.0.4@sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119 done
+2026-10-22T09:00:44.5018243Z #5 sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119 742B / 742B done
+2026-10-22T09:00:44.5019224Z #5 sha256:ae8997c6f803a58c01199478d27c9480f4fa004cb7a4f73acd569c63107276c9 4.80kB / 4.80kB done
+2026-10-22T09:00:44.5020320Z #5 sha256:d1fbec07a2e50e73803e0c9ea0fc8f9fb48ad1215583bb1bbb8852660f52abeb 5.24MB / 29.75MB 0.1s
+2026-10-22T09:00:44.5021434Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 2.10MB / 198.57MB 0.1s
+2026-10-22T09:00:44.6045921Z #5 sha256:d1fbec07a2e50e73803e0c9ea0fc8f9fb48ad1215583bb1bbb8852660f52abeb 29.75MB / 29.75MB 0.2s done
+2026-10-22T09:00:44.7077241Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 20.97MB / 198.57MB 0.3s
+2026-10-22T09:00:44.7079389Z #5 extracting sha256:d1fbec07a2e50e73803e0c9ea0fc8f9fb48ad1215583bb1bbb8852660f52abeb
+2026-10-22T09:00:44.8263755Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 56.62MB / 198.57MB 0.4s
+2026-10-22T09:00:44.9281213Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 85.98MB / 198.57MB 0.5s
+2026-10-22T09:00:45.0279948Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 108.00MB / 198.57MB 0.6s
+2026-10-22T09:00:45.1327978Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 132.12MB / 198.57MB 0.7s
+2026-10-22T09:00:45.2455181Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 154.14MB / 198.57MB 0.8s
+2026-10-22T09:00:45.3785279Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 170.92MB / 198.57MB 0.9s
+2026-10-22T09:00:45.5039328Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 198.57MB / 198.57MB 1.1s
+2026-10-22T09:00:46.4223778Z #5 sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 198.57MB / 198.57MB 1.9s done
+2026-10-22T09:00:47.2267874Z #5 extracting sha256:d1fbec07a2e50e73803e0c9ea0fc8f9fb48ad1215583bb1bbb8852660f52abeb 2.5s done
+2026-10-22T09:00:47.6386046Z #5 ...
+2026-10-22T09:00:47.6386367Z 
+2026-10-22T09:00:47.6387001Z #6 [internal] load build context
+2026-10-22T09:00:47.6387485Z #6 transferring context: 408.07MB 2.8s done
+2026-10-22T09:00:47.6388920Z #6 DONE 3.2s
+2026-10-22T09:00:47.8288186Z 
+2026-10-22T09:00:47.8289658Z #5 [1/5] FROM docker.io/mosipid/openjdk-21-jre:21.0.4@sha256:552cc85a14bb574feffe946f14803a09c8f8d655414032177f5f7a9c4cd8c119
+2026-10-22T09:00:47.8291111Z #5 extracting sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 0.1s
+2026-10-22T09:00:52.9063836Z #5 extracting sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 5.2s
+2026-10-22T09:00:54.7151616Z #5 extracting sha256:ec3831e803432f14b80b9174732215f157ce0a5509a27fda818ccfe13e5454c9 7.0s done
+2026-10-22T09:00:57.6369267Z #5 DONE 13.2s
+2026-10-22T09:00:57.8054070Z 
+2026-10-22T09:00:57.8074508Z #7 [2/5] WORKDIR /home/inji
+2026-10-22T09:00:57.8074959Z #7 DONE 0.0s
+2026-10-22T09:00:57.8075238Z 
+2026-10-22T09:00:57.8075615Z #8 [3/5] COPY ./api-test/target /home/inji/
+2026-10-22T09:00:59.6459940Z #8 DONE 2.0s
+2026-10-22T09:00:59.8094618Z 
+2026-10-22T09:00:59.8095280Z #9 [4/5] COPY entrypoint.sh /home/inji
+2026-10-22T09:00:59.8095768Z #9 DONE 0.0s
+2026-10-22T09:00:59.8095942Z 
+2026-10-22T09:00:59.8100414Z #10 [5/5] RUN apt-get -y update && apt-get install -y unzip jq curl python3 python3-httpx python3-pil && groupadd -g 1001 inji && useradd -u 1001 -g inji -s /bin/bash -m inji && curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.22.9/bin/linux/amd64/kubectl" && mkdir -p /home/inji && chmod +x kubectl /home/inji/entrypoint.sh && mv kubectl /usr/local/bin/ && chown -R inji:inji /home/inji /etc/ssl/certs/java/cacerts && chmod 644 /etc/ssl/certs/java/cacerts
+2026-10-22T09:01:00.1493713Z #10 0.490 Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+2026-10-22T09:01:00.3838768Z #10 0.575 Get:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-22T09:01:00.6263564Z #10 0.968 Get:3 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-22T09:01:00.8139165Z #10 1.155 Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1733 kB]
+2026-10-22T09:01:01.0499395Z #10 1.241 Get:5 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-22T09:01:01.2865510Z #10 1.627 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2231 kB]
+2026-10-22T09:01:01.4426902Z #10 1.784 Get:7 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2122 kB]
+2026-10-22T09:01:01.5605480Z #10 1.802 Get:8 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [61.7 kB]
+2026-10-22T09:01:01.5606556Z #10 1.804 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2171 kB]
+2026-10-22T09:01:01.5607500Z #10 1.902 Get:10 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+2026-10-22T09:01:01.7164885Z #10 1.907 Get:11 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+2026-10-22T09:01:01.7165969Z #10 1.907 Get:12 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+2026-10-22T09:01:02.2451138Z #10 2.586 Get:13 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1411 kB]
+2026-10-22T09:01:02.3788001Z #10 2.720 Get:14 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1549 kB]
+2026-10-22T09:01:02.4937923Z #10 2.834 Get:15 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [55.6 kB]
+2026-10-22T09:01:02.7240261Z #10 2.915 Fetched 11.8 MB in 3s (4321 kB/s)
+2026-10-22T09:01:03.3577019Z #10 2.915 Reading package lists...
+2026-10-22T09:01:04.1754726Z #10 3.719 Reading package lists...
+2026-10-22T09:01:04.4038026Z #10 4.526 Building dependency tree...
+2026-10-22T09:01:04.5547389Z #10 4.745 Reading state information...
+2026-10-22T09:01:04.6163759Z #10 4.956 unzip is already the newest version (6.0-28ubuntu4.1).
+2026-10-22T09:01:04.6164636Z #10 4.956 The following additional packages will be installed:
+2026-10-22T09:01:04.7669208Z #10 4.957   gcc-14-base libcurl4t64 libgcc-s1 libgomp1 libimagequant0 libjq1
+2026-10-22T09:01:04.7676146Z #10 4.957   libldap-common libldap2 libnghttp2-14 libonig5 libopenjp2-7
+2026-10-22T09:01:04.7678314Z #10 4.957   libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libraqm0
+2026-10-22T09:01:04.7680557Z #10 4.957   libreadline8t64 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+2026-10-22T09:01:04.7681981Z #10 4.958   libssh-4 libstdc++6 libwebpdemux2 libwebpmux3 media-types netbase
+2026-10-22T09:01:04.7683764Z #10 4.958   python3-anyio python3-certifi python3-click python3-colorama python3-h11
+2026-10-22T09:01:04.7685263Z #10 4.958   python3-httpcore python3-idna python3-markdown-it python3-mdurl
+2026-10-22T09:01:04.7687100Z #10 4.958   python3-minimal python3-olefile python3-pkg-resources python3-pygments
+2026-10-22T09:01:04.7688310Z #10 4.958   python3-rich python3-sniffio python3.12 python3.12-minimal readline-common
+2026-10-22T09:01:04.7689792Z #10 4.958   tzdata
+2026-10-22T09:01:04.7690583Z #10 4.959 Suggested packages:
+2026-10-22T09:01:04.7692043Z #10 4.959   libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+2026-10-22T09:01:04.7693751Z #10 4.959   libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql python3-doc
+2026-10-22T09:01:04.7695507Z #10 4.959   python3-tk python3-venv python-pil-doc python3-setuptools
+2026-10-22T09:01:04.7696933Z #10 4.959   python-pygments-doc ttf-bitstream-vera python3.12-venv python3.12-doc
+2026-10-22T09:01:04.7698508Z #10 4.959   binutils binfmt-support readline-doc
+2026-10-22T09:01:04.7699544Z #10 5.106 The following NEW packages will be installed:
+2026-10-22T09:01:04.9180585Z #10 5.107   curl jq libcurl4t64 libgomp1 libimagequant0 libjq1 libldap-common libldap2
+2026-10-22T09:01:04.9181676Z #10 5.107   libnghttp2-14 libonig5 libopenjp2-7 libpython3-stdlib libpython3.12-minimal
+2026-10-22T09:01:04.9182569Z #10 5.107   libpython3.12-stdlib libraqm0 libreadline8t64 librtmp1 libsasl2-2
+2026-10-22T09:01:04.9212418Z #10 5.107   libsasl2-modules libsasl2-modules-db libssh-4 libwebpdemux2 libwebpmux3
+2026-10-22T09:01:04.9213603Z #10 5.108   media-types netbase python3 python3-anyio python3-certifi python3-click
+2026-10-22T09:01:04.9214548Z #10 5.108   python3-colorama python3-h11 python3-httpcore python3-httpx python3-idna
+2026-10-22T09:01:04.9215388Z #10 5.108   python3-markdown-it python3-mdurl python3-minimal python3-olefile
+2026-10-22T09:01:04.9216178Z #10 5.108   python3-pil python3-pkg-resources python3-pygments python3-rich
+2026-10-22T09:01:04.9216996Z #10 5.108   python3-sniffio python3.12 python3.12-minimal readline-common tzdata
+2026-10-22T09:01:04.9217830Z #10 5.108 The following packages will be upgraded:
+2026-10-22T09:01:04.9224319Z #10 5.109   gcc-14-base libgcc-s1 libstdc++6
+2026-10-22T09:01:05.0150641Z #10 5.356 3 upgraded, 47 newly installed, 0 to remove and 112 not upgraded.
+2026-10-22T09:01:05.0151385Z #10 5.356 Need to get 11.7 MB of archives.
+2026-10-22T09:01:05.0152260Z #10 5.356 After this operation, 42.7 MB of additional disk space will be used.
+2026-10-22T09:01:05.0153507Z #10 5.356 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.17 [839 kB]
+2026-10-22T09:01:05.9247390Z #10 6.266 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.17 [2335 kB]
+2026-10-22T09:01:06.3071681Z #10 6.648 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+2026-10-22T09:01:06.4987285Z #10 6.651 Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+2026-10-22T09:01:06.4987972Z #10 6.652 Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+2026-10-22T09:01:06.4988635Z #10 6.653 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 tzdata all 2026e-0ubuntu0.24.04.1 [282 kB]
+2026-10-22T09:01:06.4989662Z #10 6.705 Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+2026-10-22T09:01:06.4990343Z #10 6.707 Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+2026-10-22T09:01:06.4991661Z #10 6.714 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.17 [2071 kB]
+2026-10-22T09:01:06.4992609Z #10 6.840 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.17 [651 kB]
+2026-10-22T09:01:06.6354239Z #10 6.869 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+2026-10-22T09:01:06.6356060Z #10 6.869 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+2026-10-22T09:01:06.6357488Z #10 6.870 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-14-base amd64 14.2.0-4ubuntu2~24.04.1 [51.0 kB]
+2026-10-22T09:01:06.6358709Z #10 6.871 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++6 amd64 14.2.0-4ubuntu2~24.04.1 [792 kB]
+2026-10-22T09:01:06.6359876Z #10 6.928 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-s1 amd64 14.2.0-4ubuntu2~24.04.1 [78.4 kB]
+2026-10-22T09:01:06.6360588Z #10 6.930 Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-mdurl all 0.1.2-1 [9702 B]
+2026-10-22T09:01:06.6361238Z #10 6.930 Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-markdown-it all 3.0.0-2 [57.5 kB]
+2026-10-22T09:01:06.6362973Z #10 6.931 Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-pkg-resources all 68.1.2-2ubuntu1.2 [168 kB]
+2026-10-22T09:01:06.6364760Z #10 6.977 Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-pygments all 2.17.2+dfsg-1 [819 kB]
+2026-10-22T09:01:06.7432917Z #10 7.084 Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-rich all 13.7.1-1 [189 kB]
+2026-10-22T09:01:06.8517848Z #10 7.087 Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnghttp2-14 amd64 1.59.0-1ubuntu0.4 [74.6 kB]
+2026-10-22T09:01:06.8518825Z #10 7.088 Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-5ubuntu3.1 [20.4 kB]
+2026-10-22T09:01:06.8519722Z #10 7.089 Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-5ubuntu3.1 [53.2 kB]
+2026-10-22T09:01:06.8520512Z #10 7.090 Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libldap2 amd64 2.6.10+dfsg-0ubuntu0.24.04.1 [198 kB]
+2026-10-22T09:01:06.8521261Z #10 7.093 Get:25 http://archive.ubuntu.com/ubuntu noble/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build7 [56.3 kB]
+2026-10-22T09:01:06.8521973Z #10 7.095 Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssh-4 amd64 0.10.6-2ubuntu0.5 [191 kB]
+2026-10-22T09:01:06.8523178Z #10 7.097 Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.16 [344 kB]
+2026-10-22T09:01:06.8524677Z #10 7.103 Get:28 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.16 [226 kB]
+2026-10-22T09:01:06.8525672Z #10 7.192 Get:29 http://archive.ubuntu.com/ubuntu noble/main amd64 libonig5 amd64 6.9.9-1build1 [172 kB]
+2026-10-22T09:01:06.9600014Z #10 7.301 Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libjq1 amd64 1.7.1-3ubuntu0.24.04.2 [142 kB]
+2026-10-22T09:01:07.0679218Z #10 7.303 Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 jq amd64 1.7.1-3ubuntu0.24.04.2 [65.7 kB]
+2026-10-22T09:01:07.0680656Z #10 7.304 Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04.1 [148 kB]
+2026-10-22T09:01:07.0681828Z #10 7.306 Get:33 http://archive.ubuntu.com/ubuntu noble/main amd64 libimagequant0 amd64 2.18.0-1build1 [36.3 kB]
+2026-10-22T09:01:07.0683016Z #10 7.307 Get:34 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libldap-common all 2.6.10+dfsg-0ubuntu0.24.04.1 [32.9 kB]
+2026-10-22T09:01:07.0684384Z #10 7.308 Get:35 http://archive.ubuntu.com/ubuntu noble/main amd64 libraqm0 amd64 0.10.1-1build1 [15.0 kB]
+2026-10-22T09:01:07.0685488Z #10 7.309 Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-modules amd64 2.1.28+dfsg1-5ubuntu3.1 [69.9 kB]
+2026-10-22T09:01:07.0686252Z #10 7.309 Get:37 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebpdemux2 amd64 1.3.2-0.4build3 [12.4 kB]
+2026-10-22T09:01:07.0686959Z #10 7.310 Get:38 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebpmux3 amd64 1.3.2-0.4build3 [25.7 kB]
+2026-10-22T09:01:07.0687659Z #10 7.409 Get:39 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-idna all 3.6-2ubuntu0.2 [49.7 kB]
+2026-10-22T09:01:07.1761622Z #10 7.517 Get:40 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-sniffio all 1.3.0-2 [7216 B]
+2026-10-22T09:01:07.2840814Z #10 7.518 Get:41 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-anyio all 4.2.0-1 [56.5 kB]
+2026-10-22T09:01:07.2841595Z #10 7.519 Get:42 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-certifi all 2023.11.17-1 [165 kB]
+2026-10-22T09:01:07.2842341Z #10 7.521 Get:43 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-colorama all 0.4.6-4 [32.1 kB]
+2026-10-22T09:01:07.2850278Z #10 7.522 Get:44 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-click all 8.1.6-2 [79.0 kB]
+2026-10-22T09:01:07.2851589Z #10 7.523 Get:45 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-h11 all 0.14.0-1ubuntu0.24.04.1 [51.7 kB]
+2026-10-22T09:01:07.2852823Z #10 7.525 Get:46 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-httpcore all 1.0.2-2 [38.3 kB]
+2026-10-22T09:01:07.2854101Z #10 7.525 Get:47 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-httpx all 0.26.0-2 [61.3 kB]
+2026-10-22T09:01:07.2855151Z #10 7.525 Get:48 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-olefile all 0.46-3 [33.8 kB]
+2026-10-22T09:01:07.2856186Z #10 7.625 Get:49 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libopenjp2-7 amd64 2.5.0-2ubuntu0.5 [174 kB]
+2026-10-22T09:01:07.3925490Z #10 7.734 Get:50 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-pil amd64 10.2.0-1ubuntu1.3 [452 kB]
+2026-10-22T09:01:07.5118312Z #10 7.853 debconf: delaying package configuration, since apt-utils is not installed
+2026-10-22T09:01:07.6510710Z #10 7.881 Fetched 11.7 MB in 3s (4481 kB/s)
+2026-10-22T09:01:07.6511659Z #10 7.896 Selecting previously unselected package libpython3.12-minimal:amd64.
+2026-10-22T09:01:07.6512711Z #10 7.896 (Reading database ... 
+2026-10-22T09:01:07.6513493Z (Reading database ... 5%
+2026-10-22T09:01:07.6514061Z (Reading database ... 10%
+2026-10-22T09:01:07.6514556Z (Reading database ... 15%
+2026-10-22T09:01:07.6515051Z (Reading database ... 20%
+2026-10-22T09:01:07.6515532Z (Reading database ... 25%
+2026-10-22T09:01:07.6516016Z (Reading database ... 30%
+2026-10-22T09:01:07.6516492Z (Reading database ... 35%
+2026-10-22T09:01:07.6516976Z (Reading database ... 40%
+2026-10-22T09:01:07.6517456Z (Reading database ... 45%
+2026-10-22T09:01:07.6517927Z (Reading database ... 50%
+2026-10-22T09:01:07.6518396Z (Reading database ... 55%
+2026-10-22T09:01:07.6518861Z (Reading database ... 60%
+2026-10-22T09:01:07.6519336Z (Reading database ... 65%
+2026-10-22T09:01:07.6519834Z (Reading database ... 70%
+2026-10-22T09:01:07.6520295Z (Reading database ... 75%
+2026-10-22T09:01:07.6521081Z (Reading database ... 80%
+2026-10-22T09:01:07.6521546Z (Reading database ... 85%
+2026-10-22T09:01:07.6522007Z (Reading database ... 90%
+2026-10-22T09:01:07.6522472Z (Reading database ... 95%
+2026-10-22T09:01:07.6522955Z (Reading database ... 100%
+2026-10-22T09:01:07.6524036Z (Reading database ... 20729 files and directories currently installed.)
+2026-10-22T09:01:07.6524916Z #10 7.912 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+2026-10-22T09:01:07.6525830Z #10 7.912 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:07.6526608Z #10 7.992 Selecting previously unselected package python3.12-minimal.
+2026-10-22T09:01:07.8645954Z #10 7.995 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+2026-10-22T09:01:07.8647857Z #10 8.000 Unpacking python3.12-minimal (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:07.8649262Z #10 8.052 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:07.8650237Z #10 8.056 Setting up python3.12-minimal (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:08.4534597Z #10 8.793 Selecting previously unselected package python3-minimal.
+2026-10-22T09:01:08.6219400Z #10 8.793 (Reading database ... 
+2026-10-22T09:01:08.6220879Z (Reading database ... 5%
+2026-10-22T09:01:08.6221463Z (Reading database ... 10%
+2026-10-22T09:01:08.6222122Z (Reading database ... 15%
+2026-10-22T09:01:08.6222668Z (Reading database ... 20%
+2026-10-22T09:01:08.6223016Z (Reading database ... 25%
+2026-10-22T09:01:08.6223660Z (Reading database ... 30%
+2026-10-22T09:01:08.6224038Z (Reading database ... 35%
+2026-10-22T09:01:08.6224380Z (Reading database ... 40%
+2026-10-22T09:01:08.6224715Z (Reading database ... 45%
+2026-10-22T09:01:08.6225056Z (Reading database ... 50%
+2026-10-22T09:01:08.6225391Z (Reading database ... 55%
+2026-10-22T09:01:08.6225730Z (Reading database ... 60%
+2026-10-22T09:01:08.6226107Z (Reading database ... 65%
+2026-10-22T09:01:08.6226442Z (Reading database ... 70%
+2026-10-22T09:01:08.6226789Z (Reading database ... 75%
+2026-10-22T09:01:08.6227124Z (Reading database ... 80%
+2026-10-22T09:01:08.6227465Z (Reading database ... 85%
+2026-10-22T09:01:08.6227798Z (Reading database ... 90%
+2026-10-22T09:01:08.6228132Z (Reading database ... 95%
+2026-10-22T09:01:08.6228493Z (Reading database ... 100%
+2026-10-22T09:01:08.6229004Z (Reading database ... 21038 files and directories currently installed.)
+2026-10-22T09:01:08.6229798Z #10 8.809 Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+2026-10-22T09:01:08.6230450Z #10 8.809 Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+2026-10-22T09:01:08.6231010Z #10 8.826 Selecting previously unselected package media-types.
+2026-10-22T09:01:08.6231606Z #10 8.829 Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+2026-10-22T09:01:08.6232122Z #10 8.830 Unpacking media-types (10.1.0) ...
+2026-10-22T09:01:08.6232603Z #10 8.846 Selecting previously unselected package netbase.
+2026-10-22T09:01:08.6233128Z #10 8.849 Preparing to unpack .../2-netbase_6.4_all.deb ...
+2026-10-22T09:01:08.6233820Z #10 8.850 Unpacking netbase (6.4) ...
+2026-10-22T09:01:08.6234268Z #10 8.867 Selecting previously unselected package tzdata.
+2026-10-22T09:01:08.6234859Z #10 8.870 Preparing to unpack .../3-tzdata_2026e-0ubuntu0.24.04.1_all.deb ...
+2026-10-22T09:01:08.6235434Z #10 8.871 Unpacking tzdata (2026e-0ubuntu0.24.04.1) ...
+2026-10-22T09:01:08.6235969Z #10 8.963 Selecting previously unselected package readline-common.
+2026-10-22T09:01:08.7928847Z #10 8.967 Preparing to unpack .../4-readline-common_8.2-4build1_all.deb ...
+2026-10-22T09:01:08.7932864Z #10 8.968 Unpacking readline-common (8.2-4build1) ...
+2026-10-22T09:01:08.7935427Z #10 8.985 Selecting previously unselected package libreadline8t64:amd64.
+2026-10-22T09:01:08.7936082Z #10 8.988 Preparing to unpack .../5-libreadline8t64_8.2-4build1_amd64.deb ...
+2026-10-22T09:01:08.7937048Z #10 8.993 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+2026-10-22T09:01:08.7938571Z #10 8.998 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+2026-10-22T09:01:08.7939781Z #10 9.003 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+2026-10-22T09:01:08.7941014Z #10 9.007 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+2026-10-22T09:01:08.7941890Z #10 9.009 Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+2026-10-22T09:01:08.7942472Z #10 9.027 Selecting previously unselected package libpython3.12-stdlib:amd64.
+2026-10-22T09:01:08.7943168Z #10 9.029 Preparing to unpack .../6-libpython3.12-stdlib_3.12.3-1ubuntu0.17_amd64.deb ...
+2026-10-22T09:01:08.7944338Z #10 9.030 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:08.7944917Z #10 9.134 Selecting previously unselected package python3.12.
+2026-10-22T09:01:08.9808006Z #10 9.137 Preparing to unpack .../7-python3.12_3.12.3-1ubuntu0.17_amd64.deb ...
+2026-10-22T09:01:08.9809248Z #10 9.138 Unpacking python3.12 (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:08.9810470Z #10 9.157 Selecting previously unselected package libpython3-stdlib:amd64.
+2026-10-22T09:01:08.9811491Z #10 9.159 Preparing to unpack .../8-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+2026-10-22T09:01:08.9812744Z #10 9.160 Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+2026-10-22T09:01:08.9813846Z #10 9.179 Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+2026-10-22T09:01:08.9814951Z #10 9.322 Selecting previously unselected package python3.
+2026-10-22T09:01:09.0944832Z #10 9.322 (Reading database ... 
+2026-10-22T09:01:09.0945539Z (Reading database ... 5%
+2026-10-22T09:01:09.0946191Z (Reading database ... 10%
+2026-10-22T09:01:09.0946889Z (Reading database ... 15%
+2026-10-22T09:01:09.0947480Z (Reading database ... 20%
+2026-10-22T09:01:09.0948109Z (Reading database ... 25%
+2026-10-22T09:01:09.0955430Z (Reading database ... 30%
+2026-10-22T09:01:09.0956197Z (Reading database ... 35%
+2026-10-22T09:01:09.0957307Z (Reading database ... 40%
+2026-10-22T09:01:09.0957979Z (Reading database ... 45%
+2026-10-22T09:01:09.0958887Z (Reading database ... 50%
+2026-10-22T09:01:09.0959637Z (Reading database ... 55%
+2026-10-22T09:01:09.0960588Z (Reading database ... 60%
+2026-10-22T09:01:09.0961280Z (Reading database ... 65%
+2026-10-22T09:01:09.0962178Z (Reading database ... 70%
+2026-10-22T09:01:09.0962729Z (Reading database ... 75%
+2026-10-22T09:01:09.0963929Z (Reading database ... 80%
+2026-10-22T09:01:09.0966567Z (Reading database ... 85%
+2026-10-22T09:01:09.0966927Z (Reading database ... 90%
+2026-10-22T09:01:09.0967290Z (Reading database ... 95%
+2026-10-22T09:01:09.0967630Z (Reading database ... 100%
+2026-10-22T09:01:09.0968160Z (Reading database ... 22037 files and directories currently installed.)
+2026-10-22T09:01:09.0968893Z #10 9.338 Preparing to unpack .../python3_3.12.3-0ubuntu2.1_amd64.deb ...
+2026-10-22T09:01:09.0969510Z #10 9.342 Unpacking python3 (3.12.3-0ubuntu2.1) ...
+2026-10-22T09:01:09.0970127Z #10 9.362 Preparing to unpack .../gcc-14-base_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+2026-10-22T09:01:09.0970946Z #10 9.363 Unpacking gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04.1) over (14-20240412-0ubuntu1) ...
+2026-10-22T09:01:09.0971719Z #10 9.384 Setting up gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+2026-10-22T09:01:09.0972276Z #10 9.403 (Reading database ... 
+2026-10-22T09:01:09.0972663Z (Reading database ... 5%
+2026-10-22T09:01:09.0973030Z (Reading database ... 10%
+2026-10-22T09:01:09.0973704Z (Reading database ... 15%
+2026-10-22T09:01:09.0974072Z (Reading database ... 20%
+2026-10-22T09:01:09.0974429Z (Reading database ... 25%
+2026-10-22T09:01:09.0974779Z (Reading database ... 30%
+2026-10-22T09:01:09.0975126Z (Reading database ... 35%
+2026-10-22T09:01:09.0975495Z (Reading database ... 40%
+2026-10-22T09:01:09.0975858Z (Reading database ... 45%
+2026-10-22T09:01:09.0976718Z (Reading database ... 50%
+2026-10-22T09:01:09.0977021Z (Reading database ... 55%
+2026-10-22T09:01:09.0977320Z (Reading database ... 60%
+2026-10-22T09:01:09.0977613Z (Reading database ... 65%
+2026-10-22T09:01:09.0977918Z (Reading database ... 70%
+2026-10-22T09:01:09.0978225Z (Reading database ... 75%
+2026-10-22T09:01:09.0978538Z (Reading database ... 80%
+2026-10-22T09:01:09.0978837Z (Reading database ... 85%
+2026-10-22T09:01:09.1004101Z (Reading database ... 90%
+2026-10-22T09:01:09.1004705Z (Reading database ... 95%
+2026-10-22T09:01:09.1005121Z (Reading database ... 100%
+2026-10-22T09:01:09.1005650Z (Reading database ... 22058 files and directories currently installed.)
+2026-10-22T09:01:09.1006454Z #10 9.417 Preparing to unpack .../libstdc++6_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+2026-10-22T09:01:09.1007845Z #10 9.435 Unpacking libstdc++6:amd64 (14.2.0-4ubuntu2~24.04.1) over (14-20240412-0ubuntu1) ...
+2026-10-22T09:01:09.2060072Z #10 9.475 Setting up libstdc++6:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+2026-10-22T09:01:09.2060988Z #10 9.491 (Reading database ... 
+2026-10-22T09:01:09.2061946Z (Reading database ... 5%
+2026-10-22T09:01:09.2062512Z (Reading database ... 10%
+2026-10-22T09:01:09.2063568Z (Reading database ... 15%
+2026-10-22T09:01:09.2064192Z (Reading database ... 20%
+2026-10-22T09:01:09.2065090Z (Reading database ... 25%
+2026-10-22T09:01:09.2065726Z (Reading database ... 30%
+2026-10-22T09:01:09.2066599Z (Reading database ... 35%
+2026-10-22T09:01:09.2069042Z (Reading database ... 40%
+2026-10-22T09:01:09.2069413Z (Reading database ... 45%
+2026-10-22T09:01:09.2069748Z (Reading database ... 50%
+2026-10-22T09:01:09.2070083Z (Reading database ... 55%
+2026-10-22T09:01:09.2070414Z (Reading database ... 60%
+2026-10-22T09:01:09.2070746Z (Reading database ... 65%
+2026-10-22T09:01:09.2071078Z (Reading database ... 70%
+2026-10-22T09:01:09.2071414Z (Reading database ... 75%
+2026-10-22T09:01:09.2071771Z (Reading database ... 80%
+2026-10-22T09:01:09.2072101Z (Reading database ... 85%
+2026-10-22T09:01:09.2072447Z (Reading database ... 90%
+2026-10-22T09:01:09.2072780Z (Reading database ... 95%
+2026-10-22T09:01:09.2073121Z (Reading database ... 100%
+2026-10-22T09:01:09.2073788Z (Reading database ... 22058 files and directories currently installed.)
+2026-10-22T09:01:09.2074525Z #10 9.505 Preparing to unpack .../libgcc-s1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+2026-10-22T09:01:09.2075311Z #10 9.507 Unpacking libgcc-s1:amd64 (14.2.0-4ubuntu2~24.04.1) over (14-20240412-0ubuntu1) ...
+2026-10-22T09:01:09.2076029Z #10 9.528 Setting up libgcc-s1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+2026-10-22T09:01:09.2076651Z #10 9.547 Selecting previously unselected package python3-mdurl.
+2026-10-22T09:01:09.3869903Z #10 9.547 (Reading database ... 
+2026-10-22T09:01:09.3870670Z (Reading database ... 5%
+2026-10-22T09:01:09.3871156Z (Reading database ... 10%
+2026-10-22T09:01:09.3871580Z (Reading database ... 15%
+2026-10-22T09:01:09.3872012Z (Reading database ... 20%
+2026-10-22T09:01:09.3872416Z (Reading database ... 25%
+2026-10-22T09:01:09.3872838Z (Reading database ... 30%
+2026-10-22T09:01:09.3876072Z (Reading database ... 35%
+2026-10-22T09:01:09.3876998Z (Reading database ... 40%
+2026-10-22T09:01:09.3877750Z (Reading database ... 45%
+2026-10-22T09:01:09.3887734Z (Reading database ... 50%
+2026-10-22T09:01:09.3890010Z (Reading database ... 55%
+2026-10-22T09:01:09.3892382Z (Reading database ... 60%
+2026-10-22T09:01:09.3892987Z (Reading database ... 65%
+2026-10-22T09:01:09.3894146Z (Reading database ... 70%
+2026-10-22T09:01:09.3894683Z (Reading database ... 75%
+2026-10-22T09:01:09.3895783Z (Reading database ... 80%
+2026-10-22T09:01:09.3896329Z (Reading database ... 85%
+2026-10-22T09:01:09.3904129Z (Reading database ... 90%
+2026-10-22T09:01:09.3904630Z (Reading database ... 95%
+2026-10-22T09:01:09.3905062Z (Reading database ... 100%
+2026-10-22T09:01:09.3905650Z (Reading database ... 22058 files and directories currently installed.)
+2026-10-22T09:01:09.3906490Z #10 9.563 Preparing to unpack .../00-python3-mdurl_0.1.2-1_all.deb ...
+2026-10-22T09:01:09.3907528Z #10 9.564 Unpacking python3-mdurl (0.1.2-1) ...
+2026-10-22T09:01:09.3908209Z #10 9.580 Selecting previously unselected package python3-markdown-it.
+2026-10-22T09:01:09.3909036Z #10 9.583 Preparing to unpack .../01-python3-markdown-it_3.0.0-2_all.deb ...
+2026-10-22T09:01:09.3909773Z #10 9.583 Unpacking python3-markdown-it (3.0.0-2) ...
+2026-10-22T09:01:09.3910498Z #10 9.611 Selecting previously unselected package python3-pkg-resources.
+2026-10-22T09:01:09.3911375Z #10 9.614 Preparing to unpack .../02-python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb ...
+2026-10-22T09:01:09.3912206Z #10 9.614 Unpacking python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+2026-10-22T09:01:09.3912963Z #10 9.639 Selecting previously unselected package python3-pygments.
+2026-10-22T09:01:09.3914041Z #10 9.642 Preparing to unpack .../03-python3-pygments_2.17.2+dfsg-1_all.deb ...
+2026-10-22T09:01:09.3915030Z #10 9.643 Unpacking python3-pygments (2.17.2+dfsg-1) ...
+2026-10-22T09:01:09.3915827Z #10 9.727 Selecting previously unselected package python3-rich.
+2026-10-22T09:01:09.5010040Z #10 9.729 Preparing to unpack .../04-python3-rich_13.7.1-1_all.deb ...
+2026-10-22T09:01:09.5010934Z #10 9.730 Unpacking python3-rich (13.7.1-1) ...
+2026-10-22T09:01:09.5011934Z #10 9.765 Selecting previously unselected package libnghttp2-14:amd64.
+2026-10-22T09:01:09.5013004Z #10 9.768 Preparing to unpack .../05-libnghttp2-14_1.59.0-1ubuntu0.4_amd64.deb ...
+2026-10-22T09:01:09.5014214Z #10 9.768 Unpacking libnghttp2-14:amd64 (1.59.0-1ubuntu0.4) ...
+2026-10-22T09:01:09.5015301Z #10 9.784 Selecting previously unselected package libsasl2-modules-db:amd64.
+2026-10-22T09:01:09.5016310Z #10 9.786 Preparing to unpack .../06-libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+2026-10-22T09:01:09.5024478Z #10 9.787 Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+2026-10-22T09:01:09.5025391Z #10 9.801 Selecting previously unselected package libsasl2-2:amd64.
+2026-10-22T09:01:09.5037096Z #10 9.804 Preparing to unpack .../07-libsasl2-2_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+2026-10-22T09:01:09.5038156Z #10 9.805 Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+2026-10-22T09:01:09.5038999Z #10 9.821 Selecting previously unselected package libldap2:amd64.
+2026-10-22T09:01:09.5040511Z #10 9.823 Preparing to unpack .../08-libldap2_2.6.10+dfsg-0ubuntu0.24.04.1_amd64.deb ...
+2026-10-22T09:01:09.5041353Z #10 9.824 Unpacking libldap2:amd64 (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+2026-10-22T09:01:09.5042068Z #10 9.842 Selecting previously unselected package librtmp1:amd64.
+2026-10-22T09:01:09.6069408Z #10 9.845 Preparing to unpack .../09-librtmp1_2.4+20151223.gitfa8646d.1-2build7_amd64.deb ...
+2026-10-22T09:01:09.6074555Z #10 9.847 Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...
+2026-10-22T09:01:09.6075622Z #10 9.863 Selecting previously unselected package libssh-4:amd64.
+2026-10-22T09:01:09.6076765Z #10 9.866 Preparing to unpack .../10-libssh-4_0.10.6-2ubuntu0.5_amd64.deb ...
+2026-10-22T09:01:09.6077613Z #10 9.866 Unpacking libssh-4:amd64 (0.10.6-2ubuntu0.5) ...
+2026-10-22T09:01:09.6078386Z #10 9.885 Selecting previously unselected package libcurl4t64:amd64.
+2026-10-22T09:01:09.6079217Z #10 9.887 Preparing to unpack .../11-libcurl4t64_8.5.0-2ubuntu10.16_amd64.deb ...
+2026-10-22T09:01:09.6079990Z #10 9.888 Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.16) ...
+2026-10-22T09:01:09.6080663Z #10 9.908 Selecting previously unselected package curl.
+2026-10-22T09:01:09.6081385Z #10 9.909 Preparing to unpack .../12-curl_8.5.0-2ubuntu10.16_amd64.deb ...
+2026-10-22T09:01:09.6082087Z #10 9.910 Unpacking curl (8.5.0-2ubuntu10.16) ...
+2026-10-22T09:01:09.6082757Z #10 9.927 Selecting previously unselected package libonig5:amd64.
+2026-10-22T09:01:09.6084214Z #10 9.930 Preparing to unpack .../13-libonig5_6.9.9-1build1_amd64.deb ...
+2026-10-22T09:01:09.6084930Z #10 9.930 Unpacking libonig5:amd64 (6.9.9-1build1) ...
+2026-10-22T09:01:09.6085642Z #10 9.948 Selecting previously unselected package libjq1:amd64.
+2026-10-22T09:01:09.7195346Z #10 9.952 Preparing to unpack .../14-libjq1_1.7.1-3ubuntu0.24.04.2_amd64.deb ...
+2026-10-22T09:01:09.7196361Z #10 9.952 Unpacking libjq1:amd64 (1.7.1-3ubuntu0.24.04.2) ...
+2026-10-22T09:01:09.7196957Z #10 9.968 Selecting previously unselected package jq.
+2026-10-22T09:01:09.7197679Z #10 9.971 Preparing to unpack .../15-jq_1.7.1-3ubuntu0.24.04.2_amd64.deb ...
+2026-10-22T09:01:09.7205602Z #10 9.971 Unpacking jq (1.7.1-3ubuntu0.24.04.2) ...
+2026-10-22T09:01:09.7206360Z #10 9.987 Selecting previously unselected package libgomp1:amd64.
+2026-10-22T09:01:09.7207347Z #10 9.989 Preparing to unpack .../16-libgomp1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+2026-10-22T09:01:09.7208487Z #10 9.990 Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+2026-10-22T09:01:09.7209535Z #10 10.01 Selecting previously unselected package libimagequant0:amd64.
+2026-10-22T09:01:09.7210941Z #10 10.01 Preparing to unpack .../17-libimagequant0_2.18.0-1build1_amd64.deb ...
+2026-10-22T09:01:09.7212165Z #10 10.01 Unpacking libimagequant0:amd64 (2.18.0-1build1) ...
+2026-10-22T09:01:09.7213680Z #10 10.02 Selecting previously unselected package libldap-common.
+2026-10-22T09:01:09.7215747Z #10 10.03 Preparing to unpack .../18-libldap-common_2.6.10+dfsg-0ubuntu0.24.04.1_all.deb ...
+2026-10-22T09:01:09.7216894Z #10 10.03 Unpacking libldap-common (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+2026-10-22T09:01:09.7217791Z #10 10.04 Selecting previously unselected package libraqm0:amd64.
+2026-10-22T09:01:09.7218598Z #10 10.04 Preparing to unpack .../19-libraqm0_0.10.1-1build1_amd64.deb ...
+2026-10-22T09:01:09.7219300Z #10 10.05 Unpacking libraqm0:amd64 (0.10.1-1build1) ...
+2026-10-22T09:01:09.7220009Z #10 10.06 Selecting previously unselected package libsasl2-modules:amd64.
+2026-10-22T09:01:09.8254753Z #10 10.06 Preparing to unpack .../20-libsasl2-modules_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+2026-10-22T09:01:09.8255593Z #10 10.07 Unpacking libsasl2-modules:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+2026-10-22T09:01:09.8256634Z #10 10.09 Selecting previously unselected package libwebpdemux2:amd64.
+2026-10-22T09:01:09.8257684Z #10 10.09 Preparing to unpack .../21-libwebpdemux2_1.3.2-0.4build3_amd64.deb ...
+2026-10-22T09:01:09.8258521Z #10 10.09 Unpacking libwebpdemux2:amd64 (1.3.2-0.4build3) ...
+2026-10-22T09:01:09.8259304Z #10 10.11 Selecting previously unselected package libwebpmux3:amd64.
+2026-10-22T09:01:09.8260151Z #10 10.11 Preparing to unpack .../22-libwebpmux3_1.3.2-0.4build3_amd64.deb ...
+2026-10-22T09:01:09.8260933Z #10 10.11 Unpacking libwebpmux3:amd64 (1.3.2-0.4build3) ...
+2026-10-22T09:01:09.8261665Z #10 10.13 Selecting previously unselected package python3-idna.
+2026-10-22T09:01:09.8262465Z #10 10.13 Preparing to unpack .../23-python3-idna_3.6-2ubuntu0.2_all.deb ...
+2026-10-22T09:01:09.8263206Z #10 10.13 Unpacking python3-idna (3.6-2ubuntu0.2) ...
+2026-10-22T09:01:09.8264190Z #10 10.15 Selecting previously unselected package python3-sniffio.
+2026-10-22T09:01:09.8264967Z #10 10.15 Preparing to unpack .../24-python3-sniffio_1.3.0-2_all.deb ...
+2026-10-22T09:01:09.8265654Z #10 10.15 Unpacking python3-sniffio (1.3.0-2) ...
+2026-10-22T09:01:09.8266316Z #10 10.17 Selecting previously unselected package python3-anyio.
+2026-10-22T09:01:09.9399056Z #10 10.17 Preparing to unpack .../25-python3-anyio_4.2.0-1_all.deb ...
+2026-10-22T09:01:09.9400564Z #10 10.17 Unpacking python3-anyio (4.2.0-1) ...
+2026-10-22T09:01:09.9401366Z #10 10.19 Selecting previously unselected package python3-certifi.
+2026-10-22T09:01:09.9402239Z #10 10.20 Preparing to unpack .../26-python3-certifi_2023.11.17-1_all.deb ...
+2026-10-22T09:01:09.9402879Z #10 10.20 Unpacking python3-certifi (2023.11.17-1) ...
+2026-10-22T09:01:09.9403674Z #10 10.21 Selecting previously unselected package python3-colorama.
+2026-10-22T09:01:09.9404334Z #10 10.22 Preparing to unpack .../27-python3-colorama_0.4.6-4_all.deb ...
+2026-10-22T09:01:09.9404900Z #10 10.22 Unpacking python3-colorama (0.4.6-4) ...
+2026-10-22T09:01:09.9405473Z #10 10.24 Selecting previously unselected package python3-click.
+2026-10-22T09:01:09.9406079Z #10 10.24 Preparing to unpack .../28-python3-click_8.1.6-2_all.deb ...
+2026-10-22T09:01:09.9406952Z #10 10.24 Unpacking python3-click (8.1.6-2) ...
+2026-10-22T09:01:09.9407469Z #10 10.26 Selecting previously unselected package python3-h11.
+2026-10-22T09:01:09.9408112Z #10 10.26 Preparing to unpack .../29-python3-h11_0.14.0-1ubuntu0.24.04.1_all.deb ...
+2026-10-22T09:01:09.9408735Z #10 10.26 Unpacking python3-h11 (0.14.0-1ubuntu0.24.04.1) ...
+2026-10-22T09:01:09.9409299Z #10 10.28 Selecting previously unselected package python3-httpcore.
+2026-10-22T09:01:10.0860184Z #10 10.28 Preparing to unpack .../30-python3-httpcore_1.0.2-2_all.deb ...
+2026-10-22T09:01:10.0864070Z #10 10.29 Unpacking python3-httpcore (1.0.2-2) ...
+2026-10-22T09:01:10.0867321Z #10 10.31 Selecting previously unselected package python3-httpx.
+2026-10-22T09:01:10.0867928Z #10 10.31 Preparing to unpack .../31-python3-httpx_0.26.0-2_all.deb ...
+2026-10-22T09:01:10.0868910Z #10 10.31 Unpacking python3-httpx (0.26.0-2) ...
+2026-10-22T09:01:10.0869482Z #10 10.33 Selecting previously unselected package python3-olefile.
+2026-10-22T09:01:10.0870163Z #10 10.33 Preparing to unpack .../32-python3-olefile_0.46-3_all.deb ...
+2026-10-22T09:01:10.0870731Z #10 10.33 Unpacking python3-olefile (0.46-3) ...
+2026-10-22T09:01:10.0871301Z #10 10.35 Selecting previously unselected package libopenjp2-7:amd64.
+2026-10-22T09:01:10.0872002Z #10 10.35 Preparing to unpack .../33-libopenjp2-7_2.5.0-2ubuntu0.5_amd64.deb ...
+2026-10-22T09:01:10.0872465Z #10 10.36 Unpacking libopenjp2-7:amd64 (2.5.0-2ubuntu0.5) ...
+2026-10-22T09:01:10.0872860Z #10 10.37 Selecting previously unselected package python3-pil:amd64.
+2026-10-22T09:01:10.0873292Z #10 10.38 Preparing to unpack .../34-python3-pil_10.2.0-1ubuntu1.3_amd64.deb ...
+2026-10-22T09:01:10.0874162Z #10 10.38 Unpacking python3-pil:amd64 (10.2.0-1ubuntu1.3) ...
+2026-10-22T09:01:10.0874608Z #10 10.43 Setting up media-types (10.1.0) ...
+2026-10-22T09:01:10.1960274Z #10 10.43 Setting up libwebpdemux2:amd64 (1.3.2-0.4build3) ...
+2026-10-22T09:01:10.1962660Z #10 10.43 Setting up libsasl2-modules:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+2026-10-22T09:01:10.1963873Z #10 10.44 Setting up libnghttp2-14:amd64 (1.59.0-1ubuntu0.4) ...
+2026-10-22T09:01:10.1964722Z #10 10.44 Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+2026-10-22T09:01:10.1965557Z #10 10.44 Setting up libldap-common (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+2026-10-22T09:01:10.1966457Z #10 10.45 Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+2026-10-22T09:01:10.1967302Z #10 10.45 Setting up tzdata (2026e-0ubuntu0.24.04.1) ...
+2026-10-22T09:01:10.1968049Z #10 10.51 debconf: unable to initialize frontend: Dialog
+2026-10-22T09:01:10.1968896Z #10 10.51 debconf: (TERM is not set, so the dialog frontend is not usable.)
+2026-10-22T09:01:10.1969708Z #10 10.51 debconf: falling back to frontend: Readline
+2026-10-22T09:01:10.1970428Z #10 10.51 debconf: unable to initialize frontend: Readline
+2026-10-22T09:01:10.1973273Z #10 10.51 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+2026-10-22T09:01:10.1976129Z #10 10.51 debconf: falling back to frontend: Teletype
+2026-10-22T09:01:10.1976834Z #10 10.54 Configuring tzdata
+2026-10-22T09:01:10.1977408Z #10 10.54 ------------------
+2026-10-22T09:01:10.1977942Z #10 10.54 
+2026-10-22T09:01:10.1978681Z #10 10.54 Please select the geographic area in which you live. Subsequent configuration
+2026-10-22T09:01:10.4031368Z #10 10.54 questions will narrow this down by presenting a list of cities, representing
+2026-10-22T09:01:10.4034515Z #10 10.54 the time zones in which they are located.
+2026-10-22T09:01:10.4035621Z #10 10.54 
+2026-10-22T09:01:10.4036254Z #10 10.54   1. Africa      4. Arctic    7. Australia  10. Pacific
+2026-10-22T09:01:10.4037495Z #10 10.54   2. America     5. Asia      8. Europe     11. Etc
+2026-10-22T09:01:10.4038274Z #10 10.54   3. Antarctica  6. Atlantic  9. Indian     12. Legacy
+2026-10-22T09:01:10.4038993Z #10 10.54 Geographic area: 
+2026-10-22T09:01:10.4039943Z #10 10.54 Use of uninitialized value $_[1] in join or string at /usr/share/perl5/Debconf/DbDriver/Stack.pm line 112.
+2026-10-22T09:01:10.4040904Z #10 10.55 
+2026-10-22T09:01:10.4041436Z #10 10.55 Current default time zone: '/UTC'
+2026-10-22T09:01:10.4042174Z #10 10.55 Local time is now:      Thu Oct 22 09:01:10 UTC 2026.
+2026-10-22T09:01:10.4042981Z #10 10.55 Universal Time is now:  Thu Oct 22 09:01:10 UTC 2026.
+2026-10-22T09:01:10.4044019Z #10 10.55 Run 'dpkg-reconfigure tzdata' if you wish to change it.
+2026-10-22T09:01:10.4044734Z #10 10.55 
+2026-10-22T09:01:10.4045970Z #10 10.55 Use of uninitialized value $val in substitution (s///) at /usr/share/perl5/Debconf/Format/822.pm line 84, <GEN6> line 4.
+2026-10-22T09:01:10.4047528Z #10 10.55 Use of uninitialized value $val in concatenation (.) or string at /usr/share/perl5/Debconf/Format/822.pm line 85, <GEN6> line 4.
+2026-10-22T09:01:10.4048788Z #10 10.56 Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...
+2026-10-22T09:01:10.4049621Z #10 10.56 Setting up libraqm0:amd64 (0.10.1-1build1) ...
+2026-10-22T09:01:10.4050400Z #10 10.56 Setting up libimagequant0:amd64 (2.18.0-1build1) ...
+2026-10-22T09:01:10.4051231Z #10 10.56 Setting up libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+2026-10-22T09:01:10.4052052Z #10 10.56 Setting up libssh-4:amd64 (0.10.6-2ubuntu0.5) ...
+2026-10-22T09:01:10.4052838Z #10 10.57 Setting up libopenjp2-7:amd64 (2.5.0-2ubuntu0.5) ...
+2026-10-22T09:01:10.4053868Z #10 10.57 Setting up netbase (6.4) ...
+2026-10-22T09:01:10.4054578Z #10 10.57 Setting up libwebpmux3:amd64 (1.3.2-0.4build3) ...
+2026-10-22T09:01:10.4055352Z #10 10.57 Setting up readline-common (8.2-4build1) ...
+2026-10-22T09:01:10.4056170Z #10 10.58 Setting up libldap2:amd64 (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+2026-10-22T09:01:10.4056996Z #10 10.58 Setting up libonig5:amd64 (6.9.9-1build1) ...
+2026-10-22T09:01:10.4057768Z #10 10.58 Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.16) ...
+2026-10-22T09:01:10.4058580Z #10 10.58 Setting up libjq1:amd64 (1.7.1-3ubuntu0.24.04.2) ...
+2026-10-22T09:01:10.4059393Z #10 10.59 Setting up libreadline8t64:amd64 (8.2-4build1) ...
+2026-10-22T09:01:10.4060144Z #10 10.59 Setting up jq (1.7.1-3ubuntu0.24.04.2) ...
+2026-10-22T09:01:10.4060848Z #10 10.59 Setting up curl (8.5.0-2ubuntu10.16) ...
+2026-10-22T09:01:10.4061653Z #10 10.59 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:10.4062507Z #10 10.59 Setting up python3.12 (3.12.3-1ubuntu0.17) ...
+2026-10-22T09:01:11.1136263Z #10 11.45 Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+2026-10-22T09:01:11.3535764Z #10 11.46 Setting up python3 (3.12.3-0ubuntu2.1) ...
+2026-10-22T09:01:11.3537131Z #10 11.46 running python rtupdate hooks for python3.12...
+2026-10-22T09:01:11.3554282Z #10 11.46 running python post-rtupdate hooks for python3.12...
+2026-10-22T09:01:11.3555201Z #10 11.54 Setting up python3-pil:amd64 (10.2.0-1ubuntu1.3) ...
+2026-10-22T09:01:11.4864583Z #10 11.83 Setting up python3-certifi (2023.11.17-1) ...
+2026-10-22T09:01:11.6854389Z #10 11.93 Setting up python3-mdurl (0.1.2-1) ...
+2026-10-22T09:01:11.6859128Z #10 12.03 Setting up python3-idna (3.6-2ubuntu0.2) ...
+2026-10-22T09:01:11.8652649Z #10 12.21 Setting up python3-h11 (0.14.0-1ubuntu0.24.04.1) ...
+2026-10-22T09:01:11.9958571Z #10 12.34 Setting up python3-markdown-it (3.0.0-2) ...
+2026-10-22T09:01:12.1481090Z #10 12.49 Setting up python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+2026-10-22T09:01:12.3417191Z #10 12.68 Setting up python3-httpcore (1.0.2-2) ...
+2026-10-22T09:01:12.4863794Z #10 12.83 Setting up python3-sniffio (1.3.0-2) ...
+2026-10-22T09:01:12.7355536Z #10 12.93 Setting up python3-anyio (4.2.0-1) ...
+2026-10-22T09:01:12.7506403Z #10 13.09 Setting up python3-colorama (0.4.6-4) ...
+2026-10-22T09:01:12.8628207Z #10 13.20 Setting up python3-olefile (0.46-3) ...
+2026-10-22T09:01:12.9737169Z #10 13.31 Setting up python3-click (8.1.6-2) ...
+2026-10-22T09:01:13.1253951Z #10 13.47 Setting up python3-pygments (2.17.2+dfsg-1) ...
+2026-10-22T09:01:13.8031775Z #10 14.14 Setting up python3-rich (13.7.1-1) ...
+2026-10-22T09:01:14.0601883Z #10 14.40 Setting up python3-httpx (0.26.0-2) ...
+2026-10-22T09:01:14.2097522Z #10 14.55 Processing triggers for systemd (255.4-1ubuntu8.4) ...
+2026-10-22T09:01:14.4418594Z #10 14.55 Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+2026-10-22T09:01:14.4419386Z #10 14.63 useradd: warning: the home directory /home/inji already exists.
+2026-10-22T09:01:14.4420030Z #10 14.63 useradd: Not copying any file from skel directory into it.
+2026-10-22T09:01:14.4420659Z #10 14.63   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-10-22T09:01:14.4421822Z #10 14.63                                  Dload  Upload   Total   Spent    Left  Speed
+2026-10-22T09:01:14.4422355Z #10 14.63 
+2026-10-22T09:01:14.6247140Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-10-22T09:01:14.8090996Z  13 44.7M   13 6048k    0     0  17.7M      0  0:00:02 --:--:--  0:00:02 17.7M
+2026-10-22T09:01:14.9597845Z 100 44.7M  100 44.7M    0     0  86.4M      0 --:--:-- --:--:-- --:--:-- 86.4M
+2026-10-22T09:01:17.2917973Z #10 DONE 17.6s
+2026-10-22T09:01:17.4444189Z 
+2026-10-22T09:01:17.4444884Z #11 exporting to image
+2026-10-22T09:01:17.4445308Z #11 exporting layers
+2026-10-22T09:01:20.9080475Z #11 exporting layers 3.6s done
+2026-10-22T09:01:20.9314273Z #11 writing image sha256:1e2232f5dbc73d32bd6cb0524cd790f0d1c7883ad45862b2d69d2b63d9d3d91d done
+2026-10-22T09:01:20.9315637Z #11 naming to docker.io/inji-conformance/testrig-verify:6fd03a5340ac done
+2026-10-22T09:01:20.9316511Z #11 DONE 3.6s
+2026-10-22T09:01:20.9981460Z build	201
+2026-10-22T09:01:21.0031921Z env.sh: CONFORMANCE_CERTIFY_AS_METADATA_SHIM=false CONFORMANCE_FAULT=none CONFORMANCE_CERTIFY_RELEASE=1.0
+2026-10-22T09:01:21.0135428Z fetch-upstream: ok
+2026-10-22T09:01:21.0953782Z 70eef7f398f52d86a36586ed1a403d4d82efd7b72ae584baf0e4b717bbc6372e
+2026-10-22T09:01:21.3031959Z /home/runner/work/inji-certify-verify/inji-certify-verify/data/certs/verify/leaf.pem: OK
+2026-10-22T09:01:24.2851208Z  nginx Pulling 
+2026-10-22T09:01:24.2860253Z  server Pulling 
+2026-10-22T09:01:24.2862123Z  mongodb Pulling 
+2026-10-22T09:01:24.6843870Z  01007420e9b0 Pulling fs layer 
+2026-10-22T09:01:24.6844369Z  c9ca97e2c467 Pulling fs layer 
+2026-10-22T09:01:24.6844705Z  bd242b4fa75f Pulling fs layer 
+2026-10-22T09:01:24.6844959Z  d9608f6bb829 Pulling fs layer 
+2026-10-22T09:01:24.6845197Z  dfb180c9e7b5 Pulling fs layer 
+2026-10-22T09:01:24.6845446Z  44fe9b1d0ed3 Pulling fs layer 
+2026-10-22T09:01:24.6845692Z  6d50a4b3eea6 Pulling fs layer 
+2026-10-22T09:01:24.6845930Z  e5f2ecffbdb8 Pulling fs layer 
+2026-10-22T09:01:24.6846207Z  dfb180c9e7b5 Waiting 
+2026-10-22T09:01:24.6846433Z  d9608f6bb829 Waiting 
+2026-10-22T09:01:24.6846655Z  44fe9b1d0ed3 Waiting 
+2026-10-22T09:01:24.6846857Z  6d50a4b3eea6 Waiting 
+2026-10-22T09:01:24.6847062Z  e5f2ecffbdb8 Waiting 
+2026-10-22T09:01:24.7537652Z  bd242b4fa75f Downloading [>                                                  ]  15.74kB/1.5MB
+2026-10-22T09:01:24.7721477Z  bd242b4fa75f Verifying Checksum 
+2026-10-22T09:01:24.7722252Z  bd242b4fa75f Download complete 
+2026-10-22T09:01:24.7802972Z  c9ca97e2c467 Downloading [==================================================>]  1.782kB/1.782kB
+2026-10-22T09:01:24.7810078Z  01007420e9b0 Downloading [>                                                  ]  310.7kB/29.54MB
+2026-10-22T09:01:24.7811001Z  c9ca97e2c467 Verifying Checksum 
+2026-10-22T09:01:24.7811680Z  c9ca97e2c467 Download complete 
+2026-10-22T09:01:24.8098856Z  c29f5b76f736 Pulling fs layer 
+2026-10-22T09:01:24.8101673Z  ee083de5ceda Pulling fs layer 
+2026-10-22T09:01:24.8106565Z  5afd6583b29c Pulling fs layer 
+2026-10-22T09:01:24.8108401Z  8c2914db26a3 Pulling fs layer 
+2026-10-22T09:01:24.8109491Z  1e8aefce6919 Pulling fs layer 
+2026-10-22T09:01:24.8110005Z  a982d09283a6 Pulling fs layer 
+2026-10-22T09:01:24.8110635Z  ab571a6216e3 Pulling fs layer 
+2026-10-22T09:01:24.8111132Z  5a148d2f097e Pulling fs layer 
+2026-10-22T09:01:24.8111913Z  34ebfb531d00 Pulling fs layer 
+2026-10-22T09:01:24.8113896Z  c29f5b76f736 Waiting 
+2026-10-22T09:01:24.8115613Z  ee083de5ceda Waiting 
+2026-10-22T09:01:24.8119205Z  5afd6583b29c Waiting 
+2026-10-22T09:01:24.8129678Z  8c2914db26a3 Waiting 
+2026-10-22T09:01:24.8132140Z  1e8aefce6919 Waiting 
+2026-10-22T09:01:24.8132605Z  a982d09283a6 Waiting 
+2026-10-22T09:01:24.8133190Z  ab571a6216e3 Waiting 
+2026-10-22T09:01:24.8133943Z  5a148d2f097e Waiting 
+2026-10-22T09:01:24.8134486Z  34ebfb531d00 Waiting 
+2026-10-22T09:01:24.8150397Z  4e07a0f12b2c Pulling fs layer 
+2026-10-22T09:01:24.8152209Z  06ad70e463aa Pulling fs layer 
+2026-10-22T09:01:24.8152934Z  ffef58b983c1 Pulling fs layer 
+2026-10-22T09:01:24.8154155Z  4411437139e9 Pulling fs layer 
+2026-10-22T09:01:24.8154863Z  cb3511313ef0 Pulling fs layer 
+2026-10-22T09:01:24.8155205Z  7b5b1cd28d30 Pulling fs layer 
+2026-10-22T09:01:24.8155713Z  eb374031072c Pulling fs layer 
+2026-10-22T09:01:24.8156060Z  4e07a0f12b2c Waiting 
+2026-10-22T09:01:24.8156459Z  06ad70e463aa Waiting 
+2026-10-22T09:01:24.8156749Z  ffef58b983c1 Waiting 
+2026-10-22T09:01:24.8157079Z  4411437139e9 Waiting 
+2026-10-22T09:01:24.8157515Z  cb3511313ef0 Waiting 
+2026-10-22T09:01:24.8157910Z  7b5b1cd28d30 Waiting 
+2026-10-22T09:01:24.8158365Z  eb374031072c Waiting 
+2026-10-22T09:01:24.8676462Z  d9608f6bb829 Downloading [>                                                  ]  15.74kB/1.094MB
+2026-10-22T09:01:24.8844136Z  d9608f6bb829 Downloading [==================================================>]  1.094MB/1.094MB
+2026-10-22T09:01:24.8844981Z  01007420e9b0 Downloading [=========================================>         ]  24.59MB/29.54MB
+2026-10-22T09:01:24.8845520Z  d9608f6bb829 Verifying Checksum 
+2026-10-22T09:01:24.8845897Z  d9608f6bb829 Download complete 
+2026-10-22T09:01:24.9125319Z  01007420e9b0 Verifying Checksum 
+2026-10-22T09:01:24.9133731Z  01007420e9b0 Download complete 
+2026-10-22T09:01:24.9412682Z  dfb180c9e7b5 Downloading [==================================================>]     116B/116B
+2026-10-22T09:01:24.9428739Z  dfb180c9e7b5 Verifying Checksum 
+2026-10-22T09:01:24.9429225Z  dfb180c9e7b5 Download complete 
+2026-10-22T09:01:24.9640065Z  01007420e9b0 Extracting [>                                                  ]  327.7kB/29.54MB
+2026-10-22T09:01:24.9844640Z  44fe9b1d0ed3 Downloading [==================================================>]     262B/262B
+2026-10-22T09:01:24.9846955Z  44fe9b1d0ed3 Verifying Checksum 
+2026-10-22T09:01:24.9847733Z  44fe9b1d0ed3 Download complete 
+2026-10-22T09:01:25.0169175Z  e5f2ecffbdb8 Downloading [===================================>               ]    3.5kB/4.998kB
+2026-10-22T09:01:25.0171810Z  e5f2ecffbdb8 Downloading [==================================================>]  4.998kB/4.998kB
+2026-10-22T09:01:25.0184986Z  e5f2ecffbdb8 Verifying Checksum 
+2026-10-22T09:01:25.0185979Z  e5f2ecffbdb8 Download complete 
+2026-10-22T09:01:25.0235543Z  6d50a4b3eea6 Downloading [>                                                  ]  528.3kB/213.5MB
+2026-10-22T09:01:25.0694690Z  01007420e9b0 Extracting [=====>                                             ]  3.277MB/29.54MB
+2026-10-22T09:01:25.1245748Z  6d50a4b3eea6 Downloading [=====>                                             ]  24.58MB/213.5MB
+2026-10-22T09:01:25.1698899Z  01007420e9b0 Extracting [=========>                                         ]  5.571MB/29.54MB
+2026-10-22T09:01:25.2267836Z  6d50a4b3eea6 Downloading [============>                                      ]  51.29MB/213.5MB
+2026-10-22T09:01:25.2780047Z  c29f5b76f736 Downloading [>                                                  ]  283.4kB/28.21MB
+2026-10-22T09:01:25.2809147Z  01007420e9b0 Extracting [============>                                      ]  7.537MB/29.54MB
+2026-10-22T09:01:25.3286743Z  6d50a4b3eea6 Downloading [==================>                                ]  81.14MB/213.5MB
+2026-10-22T09:01:25.3502218Z  ee083de5ceda Downloading [>                                                  ]  438.7kB/43.84MB
+2026-10-22T09:01:25.3887561Z  c29f5b76f736 Downloading [=>                                                 ]  849.3kB/28.21MB
+2026-10-22T09:01:25.3911614Z  01007420e9b0 Extracting [==============>                                    ]   8.52MB/29.54MB
+2026-10-22T09:01:25.4400478Z  6d50a4b3eea6 Downloading [=========================>                         ]  107.8MB/213.5MB
+2026-10-22T09:01:25.4888163Z  ee083de5ceda Downloading [==>                                                ]  1.757MB/43.84MB
+2026-10-22T09:01:25.4946072Z  01007420e9b0 Extracting [=================>                                 ]  10.16MB/29.54MB
+2026-10-22T09:01:25.5192758Z  c29f5b76f736 Downloading [===>                                               ]  1.697MB/28.21MB
+2026-10-22T09:01:25.5297974Z  6d50a4b3eea6 Downloading [===============================>                   ]  132.8MB/213.5MB
+2026-10-22T09:01:25.5922051Z  ee083de5ceda Downloading [===>                                               ]  3.097MB/43.84MB
+2026-10-22T09:01:25.6032663Z  01007420e9b0 Extracting [======================>                            ]  13.11MB/29.54MB
+2026-10-22T09:01:25.6313960Z  6d50a4b3eea6 Downloading [====================================>              ]  156.8MB/213.5MB
+2026-10-22T09:01:25.6392238Z  c29f5b76f736 Downloading [====>                                              ]  2.572MB/28.21MB
+2026-10-22T09:01:25.7075049Z  01007420e9b0 Extracting [===========================>                       ]  16.38MB/29.54MB
+2026-10-22T09:01:25.7229310Z  ee083de5ceda Downloading [=====>                                             ]  4.866MB/43.84MB
+2026-10-22T09:01:25.7311511Z  6d50a4b3eea6 Downloading [==========================================>        ]  180.9MB/213.5MB
+2026-10-22T09:01:25.7642083Z  c29f5b76f736 Downloading [======>                                            ]  3.457MB/28.21MB
+2026-10-22T09:01:25.8148295Z  01007420e9b0 Extracting [=================================>                 ]  19.99MB/29.54MB
+2026-10-22T09:01:25.8247577Z  ee083de5ceda Downloading [=======>                                           ]  6.193MB/43.84MB
+2026-10-22T09:01:25.8372704Z  6d50a4b3eea6 Downloading [===============================================>   ]  202.8MB/213.5MB
+2026-10-22T09:01:25.8776240Z  6d50a4b3eea6 Verifying Checksum 
+2026-10-22T09:01:25.8776763Z  6d50a4b3eea6 Download complete 
+2026-10-22T09:01:25.8856562Z  c29f5b76f736 Downloading [=======>                                           ]  4.342MB/28.21MB
+2026-10-22T09:01:25.9166407Z  01007420e9b0 Extracting [=======================================>           ]  23.59MB/29.54MB
+2026-10-22T09:01:25.9528254Z  ee083de5ceda Downloading [=========>                                         ]  7.963MB/43.84MB
+2026-10-22T09:01:26.0041978Z  c29f5b76f736 Downloading [=========>                                         ]  5.226MB/28.21MB
+2026-10-22T09:01:26.0640968Z  5afd6583b29c Downloading [==================================================>]     629B/629B
+2026-10-22T09:01:26.0647491Z  5afd6583b29c Verifying Checksum 
+2026-10-22T09:01:26.0649113Z  5afd6583b29c Download complete 
+2026-10-22T09:01:26.0842475Z  ee083de5ceda Downloading [===========>                                       ]  9.732MB/43.84MB
+2026-10-22T09:01:26.1198954Z  c29f5b76f736 Downloading [==========>                                        ]  6.111MB/28.21MB
+2026-10-22T09:01:26.1426699Z  01007420e9b0 Extracting [===========================================>       ]  25.89MB/29.54MB
+2026-10-22T09:01:26.2164353Z  ee083de5ceda Downloading [=============>                                     ]   11.5MB/43.84MB
+2026-10-22T09:01:26.2319565Z  c29f5b76f736 Downloading [============>                                      ]  6.996MB/28.21MB
+2026-10-22T09:01:26.2807568Z  01007420e9b0 Extracting [===============================================>   ]  28.18MB/29.54MB
+2026-10-22T09:01:26.2823073Z  8c2914db26a3 Downloading [==================================>                ]     667B/955B
+2026-10-22T09:01:26.2829872Z  8c2914db26a3 Downloading [==================================================>]     955B/955B
+2026-10-22T09:01:26.2836666Z  8c2914db26a3 Verifying Checksum 
+2026-10-22T09:01:26.2837190Z  8c2914db26a3 Download complete 
+2026-10-22T09:01:26.3429602Z  c29f5b76f736 Downloading [=============>                                     ]  7.881MB/28.21MB
+2026-10-22T09:01:26.3478645Z  ee083de5ceda Downloading [===============>                                   ]  13.27MB/43.84MB
+2026-10-22T09:01:26.4327900Z  01007420e9b0 Extracting [=================================================> ]  29.16MB/29.54MB
+2026-10-22T09:01:26.4526814Z  c29f5b76f736 Downloading [===============>                                   ]  8.765MB/28.21MB
+2026-10-22T09:01:26.4647439Z  1e8aefce6919 Downloading [==================================================>]     402B/402B
+2026-10-22T09:01:26.4663821Z  1e8aefce6919 Verifying Checksum 
+2026-10-22T09:01:26.4664297Z  1e8aefce6919 Download complete 
+2026-10-22T09:01:26.4802421Z  ee083de5ceda Downloading [=================>                                 ]  15.04MB/43.84MB
+2026-10-22T09:01:26.5642211Z  01007420e9b0 Extracting [==================================================>]  29.54MB/29.54MB
+2026-10-22T09:01:26.5650358Z  c29f5b76f736 Downloading [=================>                                 ]   9.65MB/28.21MB
+2026-10-22T09:01:26.6125201Z  ee083de5ceda Downloading [===================>                               ]  16.81MB/43.84MB
+2026-10-22T09:01:26.6477197Z  a982d09283a6 Downloading [==========================>                        ]     639B/1.209kB
+2026-10-22T09:01:26.6478834Z  a982d09283a6 Downloading [==================================================>]  1.209kB/1.209kB
+2026-10-22T09:01:26.6479485Z  a982d09283a6 Verifying Checksum 
+2026-10-22T09:01:26.6479945Z  a982d09283a6 Download complete 
+2026-10-22T09:01:26.6656526Z  c29f5b76f736 Downloading [==================>                                ]  10.53MB/28.21MB
+2026-10-22T09:01:26.6834351Z  01007420e9b0 Pull complete 
+2026-10-22T09:01:26.6843229Z  c9ca97e2c467 Extracting [==================================================>]  1.782kB/1.782kB
+2026-10-22T09:01:26.6853674Z  c9ca97e2c467 Extracting [==================================================>]  1.782kB/1.782kB
+2026-10-22T09:01:26.7322102Z  ee083de5ceda Downloading [=====================>                             ]  18.58MB/43.84MB
+2026-10-22T09:01:26.7716209Z  c29f5b76f736 Downloading [=====================>                             ]   12.3MB/28.21MB
+2026-10-22T09:01:26.8361474Z  ab571a6216e3 Downloading [=======================>                           ]     664B/1.396kB
+2026-10-22T09:01:26.8362426Z  ab571a6216e3 Downloading [==================================================>]  1.396kB/1.396kB
+2026-10-22T09:01:26.8363286Z  ee083de5ceda Downloading [========================>                          ]  21.68MB/43.84MB
+2026-10-22T09:01:26.8364079Z  ab571a6216e3 Verifying Checksum 
+2026-10-22T09:01:26.8364487Z  ab571a6216e3 Download complete 
+2026-10-22T09:01:26.8769843Z  c29f5b76f736 Downloading [============================>                      ]  16.14MB/28.21MB
+2026-10-22T09:01:26.9382563Z  ee083de5ceda Downloading [================================>                  ]  28.31MB/43.84MB
+2026-10-22T09:01:26.9787190Z  c29f5b76f736 Downloading [==========================================>        ]   24.1MB/28.21MB
+2026-10-22T09:01:27.0102260Z  c29f5b76f736 Verifying Checksum 
+2026-10-22T09:01:27.0102774Z  c29f5b76f736 Download complete 
+2026-10-22T09:01:27.0399163Z  ee083de5ceda Downloading [================================================>  ]  42.47MB/43.84MB
+2026-10-22T09:01:27.0529592Z  ee083de5ceda Verifying Checksum 
+2026-10-22T09:01:27.0531716Z  ee083de5ceda Download complete 
+2026-10-22T09:01:27.0745917Z  c29f5b76f736 Extracting [>                                                  ]  294.9kB/28.21MB
+2026-10-22T09:01:27.1891239Z  34ebfb531d00 Downloading [============================>                      ]     657B/1.143kB
+2026-10-22T09:01:27.6397635Z  34ebfb531d00 Download complete 
+2026-10-22T09:01:27.6519166Z  c29f5b76f736 Extracting [===>                                               ]  1.769MB/28.21MB
+2026-10-22T09:01:27.6884521Z  5a148d2f097e Downloading [>                                                  ]  182.9kB/18.18MB
+2026-10-22T09:01:27.7157549Z  4e07a0f12b2c Downloading [>                                                  ]  419.4kB/41.84MB
+2026-10-22T09:01:27.7490616Z  c29f5b76f736 Extracting [=========>                                         ]  5.603MB/28.21MB
+2026-10-22T09:01:27.7921056Z  5a148d2f097e Downloading [===>                                               ]  1.275MB/18.18MB
+2026-10-22T09:01:27.8160356Z  4e07a0f12b2c Downloading [====>                                              ]  3.801MB/41.84MB
+2026-10-22T09:01:27.8268351Z  06ad70e463aa Downloading [==================================================>]     388B/388B
+2026-10-22T09:01:27.8288273Z  06ad70e463aa Verifying Checksum 
+2026-10-22T09:01:27.8289891Z  06ad70e463aa Download complete 
+2026-10-22T09:01:27.8554037Z  c29f5b76f736 Extracting [===============>                                   ]  8.847MB/28.21MB
+2026-10-22T09:01:27.8973731Z  5a148d2f097e Downloading [=================>                                 ]  6.324MB/18.18MB
+2026-10-22T09:01:27.9195260Z  4e07a0f12b2c Downloading [======================>                            ]  19.14MB/41.84MB
+2026-10-22T09:01:27.9559709Z  c29f5b76f736 Extracting [================>                                  ]  9.437MB/28.21MB
+2026-10-22T09:01:27.9964515Z  5a148d2f097e Downloading [========================================>          ]  14.88MB/18.18MB
+2026-10-22T09:01:28.0172162Z  5a148d2f097e Verifying Checksum 
+2026-10-22T09:01:28.0173845Z  5a148d2f097e Download complete 
+2026-10-22T09:01:28.0188842Z  4e07a0f12b2c Downloading [===============================================>   ]  39.58MB/41.84MB
+2026-10-22T09:01:28.0311985Z  4e07a0f12b2c Verifying Checksum 
+2026-10-22T09:01:28.0313839Z  4e07a0f12b2c Download complete 
+2026-10-22T09:01:28.0565915Z  c29f5b76f736 Extracting [==================>                                ]  10.62MB/28.21MB
+2026-10-22T09:01:28.1666867Z  c29f5b76f736 Extracting [===========================>                       ]  15.34MB/28.21MB
+2026-10-22T09:01:28.2194269Z  cb3511313ef0 Download complete 
+2026-10-22T09:01:28.2681576Z  c29f5b76f736 Extracting [======================================>            ]  21.53MB/28.21MB
+2026-10-22T09:01:28.2699284Z  ffef58b983c1 Downloading [>                                                  ]  270.4kB/27.03MB
+2026-10-22T09:01:28.3775004Z  ffef58b983c1 Downloading [===>                                               ]  1.899MB/27.03MB
+2026-10-22T09:01:28.4421370Z  c9ca97e2c467 Pull complete 
+2026-10-22T09:01:28.4462689Z  bd242b4fa75f Extracting [=>                                                 ]  32.77kB/1.5MB
+2026-10-22T09:01:28.4559416Z  7b5b1cd28d30 Downloading [=============>                                     ]     672B/2.464kB
+2026-10-22T09:01:28.4565731Z  7b5b1cd28d30 Downloading [==================================================>]  2.464kB/2.464kB
+2026-10-22T09:01:28.4582331Z  7b5b1cd28d30 Verifying Checksum 
+2026-10-22T09:01:28.4582813Z  7b5b1cd28d30 Download complete 
+2026-10-22T09:01:28.4781368Z  ffef58b983c1 Downloading [=======>                                           ]   3.85MB/27.03MB
+2026-10-22T09:01:28.5548557Z  bd242b4fa75f Extracting [=================>                                 ]  524.3kB/1.5MB
+2026-10-22T09:01:28.5594885Z  4411437139e9 Downloading [>                                                  ]  525.2kB/158.1MB
+2026-10-22T09:01:28.5832929Z  c29f5b76f736 Extracting [==========================================>        ]  23.89MB/28.21MB
+2026-10-22T09:01:28.5838181Z  ffef58b983c1 Downloading [===========>                                       ]  6.357MB/27.03MB
+2026-10-22T09:01:28.5996964Z  4e07a0f12b2c Extracting [>                                                  ]    426kB/41.84MB
+2026-10-22T09:01:28.6681366Z  bd242b4fa75f Extracting [=========================================>         ]  1.245MB/1.5MB
+2026-10-22T09:01:28.6874534Z  ffef58b983c1 Downloading [===================>                               ]  10.53MB/27.03MB
+2026-10-22T09:01:28.6884533Z  4411437139e9 Downloading [>                                                  ]   1.05MB/158.1MB
+2026-10-22T09:01:28.6919210Z  c29f5b76f736 Extracting [============================================>      ]  25.36MB/28.21MB
+2026-10-22T09:01:28.7059229Z  4e07a0f12b2c Extracting [==>                                                ]   2.13MB/41.84MB
+2026-10-22T09:01:28.7178875Z  bd242b4fa75f Extracting [==================================================>]    1.5MB/1.5MB
+2026-10-22T09:01:28.7892349Z  ffef58b983c1 Downloading [===========================>                       ]  14.99MB/27.03MB
+2026-10-22T09:01:28.8071020Z  4e07a0f12b2c Extracting [=====>                                             ]   4.26MB/41.84MB
+2026-10-22T09:01:28.8100284Z  eb374031072c Downloading [>                                                  ]  525.5kB/125.6MB
+2026-10-22T09:01:28.8197587Z  4411437139e9 Downloading [>                                                  ]  1.575MB/158.1MB
+2026-10-22T09:01:28.8926045Z  ffef58b983c1 Downloading [===================================>               ]  19.43MB/27.03MB
+2026-10-22T09:01:28.9034375Z  c29f5b76f736 Extracting [===============================================>   ]  26.84MB/28.21MB
+2026-10-22T09:01:28.9104400Z  4e07a0f12b2c Extracting [========>                                          ]  6.816MB/41.84MB
+2026-10-22T09:01:28.9198999Z  eb374031072c Downloading [=>                                                 ]  2.654MB/125.6MB
+2026-10-22T09:01:28.9606228Z  4411437139e9 Downloading [>                                                  ]  2.114MB/158.1MB
+2026-10-22T09:01:28.9955188Z  ffef58b983c1 Downloading [============================================>      ]  23.89MB/27.03MB
+2026-10-22T09:01:29.0200622Z  c29f5b76f736 Extracting [================================================>  ]  27.13MB/28.21MB
+2026-10-22T09:01:29.0227488Z  4e07a0f12b2c Extracting [==========>                                        ]  8.946MB/41.84MB
+2026-10-22T09:01:29.0235831Z  eb374031072c Downloading [==>                                                ]   6.98MB/125.6MB
+2026-10-22T09:01:29.0624405Z  ffef58b983c1 Verifying Checksum 
+2026-10-22T09:01:29.0625767Z  ffef58b983c1 Download complete 
+2026-10-22T09:01:29.1080387Z  4411437139e9 Downloading [>                                                  ]  2.654MB/158.1MB
+2026-10-22T09:01:29.1133238Z  bd242b4fa75f Pull complete 
+2026-10-22T09:01:29.1226264Z  4e07a0f12b2c Extracting [============>                                      ]  10.65MB/41.84MB
+2026-10-22T09:01:29.1314216Z  eb374031072c Downloading [=====>                                             ]  13.47MB/125.6MB
+2026-10-22T09:01:29.1475407Z  d9608f6bb829 Extracting [=>                                                 ]  32.77kB/1.094MB
+2026-10-22T09:01:29.1995842Z  d9608f6bb829 Extracting [==================================================>]  1.094MB/1.094MB
+2026-10-22T09:01:29.2344876Z  4e07a0f12b2c Extracting [==============>                                    ]  12.35MB/41.84MB
+2026-10-22T09:01:29.2353566Z  4411437139e9 Downloading [=>                                                 ]  3.195MB/158.1MB
+2026-10-22T09:01:29.2364877Z  eb374031072c Downloading [=======>                                           ]  19.96MB/125.6MB
+2026-10-22T09:01:29.2991339Z  d9608f6bb829 Pull complete 
+2026-10-22T09:01:29.3060458Z  dfb180c9e7b5 Extracting [==================================================>]     116B/116B
+2026-10-22T09:01:29.3068892Z  dfb180c9e7b5 Extracting [==================================================>]     116B/116B
+2026-10-22T09:01:29.3396902Z  eb374031072c Downloading [==========>                                        ]   25.9MB/125.6MB
+2026-10-22T09:01:29.3499869Z  dfb180c9e7b5 Pull complete 
+2026-10-22T09:01:29.3505202Z  4e07a0f12b2c Extracting [=================>                                 ]  14.91MB/41.84MB
+2026-10-22T09:01:29.3564117Z  44fe9b1d0ed3 Extracting [==================================================>]     262B/262B
+2026-10-22T09:01:29.3566164Z  44fe9b1d0ed3 Extracting [==================================================>]     262B/262B
+2026-10-22T09:01:29.3715212Z  4411437139e9 Downloading [=>                                                 ]  3.736MB/158.1MB
+2026-10-22T09:01:29.3958060Z  44fe9b1d0ed3 Pull complete 
+2026-10-22T09:01:29.4419987Z  6d50a4b3eea6 Extracting [>                                                  ]  557.1kB/213.5MB
+2026-10-22T09:01:29.4422031Z  eb374031072c Downloading [=============>                                     ]  34.55MB/125.6MB
+2026-10-22T09:01:29.4964583Z  c29f5b76f736 Extracting [================================================>  ]  27.43MB/28.21MB
+2026-10-22T09:01:29.5056904Z  4e07a0f12b2c Extracting [====================>                              ]  17.04MB/41.84MB
+2026-10-22T09:01:29.5152216Z  4411437139e9 Downloading [=>                                                 ]  4.276MB/158.1MB
+2026-10-22T09:01:29.5454715Z  eb374031072c Downloading [================>                                  ]  42.12MB/125.6MB
+2026-10-22T09:01:29.6090214Z  6d50a4b3eea6 Extracting [>                                                  ]  2.228MB/213.5MB
+2026-10-22T09:01:29.6511038Z  4411437139e9 Downloading [=>                                                 ]  4.817MB/158.1MB
+2026-10-22T09:01:29.6611633Z  eb374031072c Downloading [===================>                               ]  49.69MB/125.6MB
+2026-10-22T09:01:29.6995011Z  4e07a0f12b2c Extracting [=====================>                             ]  18.32MB/41.84MB
+2026-10-22T09:01:29.7006900Z  c29f5b76f736 Extracting [==================================================>]  28.21MB/28.21MB
+2026-10-22T09:01:29.7301125Z  c29f5b76f736 Pull complete 
+2026-10-22T09:01:29.7499457Z  6d50a4b3eea6 Extracting [>                                                  ]  2.785MB/213.5MB
+2026-10-22T09:01:29.7539200Z  eb374031072c Downloading [=======================>                           ]  58.88MB/125.6MB
+2026-10-22T09:01:29.7946414Z  4411437139e9 Downloading [=>                                                 ]  5.358MB/158.1MB
+2026-10-22T09:01:29.7947450Z  4e07a0f12b2c Extracting [======================>                            ]  19.17MB/41.84MB
+2026-10-22T09:01:29.8606826Z  eb374031072c Downloading [==========================>                        ]  66.99MB/125.6MB
+2026-10-22T09:01:29.8812135Z  6d50a4b3eea6 Extracting [=>                                                 ]  4.456MB/213.5MB
+2026-10-22T09:01:29.8838722Z  ee083de5ceda Extracting [>                                                  ]  458.8kB/43.84MB
+2026-10-22T09:01:29.9265133Z  4411437139e9 Downloading [=>                                                 ]  5.898MB/158.1MB
+2026-10-22T09:01:29.9391723Z  4e07a0f12b2c Extracting [========================>                          ]  20.87MB/41.84MB
+2026-10-22T09:01:29.9649886Z  eb374031072c Downloading [==============================>                    ]  77.81MB/125.6MB
+2026-10-22T09:01:29.9916898Z  6d50a4b3eea6 Extracting [=>                                                 ]  7.799MB/213.5MB
+2026-10-22T09:01:30.0014826Z  ee083de5ceda Extracting [===>                                               ]  2.753MB/43.84MB
+2026-10-22T09:01:30.0410663Z  4e07a0f12b2c Extracting [===========================>                       ]     23MB/41.84MB
+2026-10-22T09:01:30.0539573Z  4411437139e9 Downloading [==>                                                ]  6.439MB/158.1MB
+2026-10-22T09:01:30.0699943Z  eb374031072c Downloading [==================================>                ]  87.54MB/125.6MB
+2026-10-22T09:01:30.1113091Z  ee083de5ceda Extracting [=====>                                             ]  5.046MB/43.84MB
+2026-10-22T09:01:30.1156766Z  6d50a4b3eea6 Extracting [==>                                                ]  8.913MB/213.5MB
+2026-10-22T09:01:30.1495637Z  4e07a0f12b2c Extracting [==============================>                    ]  25.13MB/41.84MB
+2026-10-22T09:01:30.1733763Z  eb374031072c Downloading [======================================>            ]  97.27MB/125.6MB
+2026-10-22T09:01:30.1919301Z  4411437139e9 Downloading [==>                                                ]   7.52MB/158.1MB
+2026-10-22T09:01:30.2239410Z  ee083de5ceda Extracting [=======>                                           ]  6.881MB/43.84MB
+2026-10-22T09:01:30.2365427Z  6d50a4b3eea6 Extracting [==>                                                ]  10.03MB/213.5MB
+2026-10-22T09:01:30.2530818Z  4e07a0f12b2c Extracting [================================>                  ]  27.26MB/41.84MB
+2026-10-22T09:01:30.2940113Z  4411437139e9 Downloading [==>                                                ]  9.142MB/158.1MB
+2026-10-22T09:01:30.3397767Z  6d50a4b3eea6 Extracting [==>                                                ]  12.26MB/213.5MB
+2026-10-22T09:01:30.3507711Z  eb374031072c Downloading [=========================================>         ]  105.4MB/125.6MB
+2026-10-22T09:01:30.3673438Z  ee083de5ceda Extracting [==========>                                        ]  9.634MB/43.84MB
+2026-10-22T09:01:30.3831030Z  4e07a0f12b2c Extracting [====================================>              ]  30.24MB/41.84MB
+2026-10-22T09:01:30.4013665Z  4411437139e9 Downloading [===>                                               ]  12.39MB/158.1MB
+2026-10-22T09:01:30.4409109Z  6d50a4b3eea6 Extracting [===>                                               ]  13.93MB/213.5MB
+2026-10-22T09:01:30.4539587Z  eb374031072c Downloading [=============================================>     ]    115MB/125.6MB
+2026-10-22T09:01:30.4766378Z  ee083de5ceda Extracting [============>                                      ]  11.01MB/43.84MB
+2026-10-22T09:01:30.4947331Z  4e07a0f12b2c Extracting [======================================>            ]  31.95MB/41.84MB
+2026-10-22T09:01:30.5020535Z  4411437139e9 Downloading [=====>                                             ]  17.79MB/158.1MB
+2026-10-22T09:01:30.5224010Z  eb374031072c Verifying Checksum 
+2026-10-22T09:01:30.5224832Z  eb374031072c Download complete 
+2026-10-22T09:01:30.5557746Z  6d50a4b3eea6 Extracting [===>                                               ]   15.6MB/213.5MB
+2026-10-22T09:01:30.5939355Z  ee083de5ceda Extracting [===============>                                   ]   13.3MB/43.84MB
+2026-10-22T09:01:30.5968691Z  4e07a0f12b2c Extracting [========================================>          ]  33.65MB/41.84MB
+2026-10-22T09:01:30.6152808Z  4411437139e9 Downloading [========>                                          ]  27.49MB/158.1MB
+2026-10-22T09:01:30.6710250Z  6d50a4b3eea6 Extracting [====>                                              ]  17.83MB/213.5MB
+2026-10-22T09:01:30.7160228Z  ee083de5ceda Extracting [=================>                                 ]   15.6MB/43.84MB
+2026-10-22T09:01:30.7181805Z  4411437139e9 Downloading [===========>                                       ]  36.62MB/158.1MB
+2026-10-22T09:01:30.7382661Z  4e07a0f12b2c Extracting [==========================================>        ]  35.36MB/41.84MB
+2026-10-22T09:01:30.7840422Z  6d50a4b3eea6 Extracting [====>                                              ]  20.05MB/213.5MB
+2026-10-22T09:01:30.8185232Z  ee083de5ceda Extracting [====================>                              ]  17.89MB/43.84MB
+2026-10-22T09:01:30.8452070Z  4411437139e9 Downloading [============>                                      ]  39.85MB/158.1MB
+2026-10-22T09:01:30.9077690Z  6d50a4b3eea6 Extracting [=====>                                             ]  22.84MB/213.5MB
+2026-10-22T09:01:30.9318695Z  ee083de5ceda Extracting [========================>                          ]   21.1MB/43.84MB
+2026-10-22T09:01:31.0124424Z  6d50a4b3eea6 Extracting [=====>                                             ]  25.62MB/213.5MB
+2026-10-22T09:01:31.0389828Z  ee083de5ceda Extracting [============================>                      ]  24.77MB/43.84MB
+2026-10-22T09:01:31.1039368Z  4411437139e9 Downloading [================>                                  ]  50.64MB/158.1MB
+2026-10-22T09:01:31.1370662Z  4e07a0f12b2c Extracting [===========================================>       ]  36.21MB/41.84MB
+2026-10-22T09:01:31.1416188Z  6d50a4b3eea6 Extracting [======>                                            ]  28.97MB/213.5MB
+2026-10-22T09:01:31.1460973Z  ee083de5ceda Extracting [===============================>                   ]  27.53MB/43.84MB
+2026-10-22T09:01:31.2076525Z  4411437139e9 Downloading [===================>                               ]  61.39MB/158.1MB
+2026-10-22T09:01:31.2391713Z  4e07a0f12b2c Extracting [============================================>      ]  37.49MB/41.84MB
+2026-10-22T09:01:31.2513600Z  6d50a4b3eea6 Extracting [=======>                                           ]   31.2MB/213.5MB
+2026-10-22T09:01:31.2549662Z  ee083de5ceda Extracting [=================================>                 ]  29.36MB/43.84MB
+2026-10-22T09:01:31.3469682Z  4411437139e9 Downloading [====================>                              ]  65.16MB/158.1MB
+2026-10-22T09:01:31.3924694Z  ee083de5ceda Extracting [====================================>              ]  32.11MB/43.84MB
+2026-10-22T09:01:31.3954380Z  6d50a4b3eea6 Extracting [=======>                                           ]  33.98MB/213.5MB
+2026-10-22T09:01:31.4545109Z  4411437139e9 Downloading [=========================>                         ]  79.17MB/158.1MB
+2026-10-22T09:01:31.4565792Z  4e07a0f12b2c Extracting [==============================================>    ]  38.76MB/41.84MB
+2026-10-22T09:01:31.4970168Z  ee083de5ceda Extracting [=======================================>           ]  34.41MB/43.84MB
+2026-10-22T09:01:31.5277164Z  6d50a4b3eea6 Extracting [========>                                          ]  36.21MB/213.5MB
+2026-10-22T09:01:31.5985565Z  ee083de5ceda Extracting [=========================================>         ]  36.24MB/43.84MB
+2026-10-22T09:01:31.6310034Z  4411437139e9 Downloading [===========================>                       ]   88.3MB/158.1MB
+2026-10-22T09:01:31.6683860Z  6d50a4b3eea6 Extracting [========>                                          ]  38.44MB/213.5MB
+2026-10-22T09:01:31.7321983Z  4411437139e9 Downloading [=================================>                 ]  104.5MB/158.1MB
+2026-10-22T09:01:31.7717889Z  ee083de5ceda Extracting [==========================================>        ]  37.62MB/43.84MB
+2026-10-22T09:01:31.7832265Z  6d50a4b3eea6 Extracting [=========>                                         ]  40.11MB/213.5MB
+2026-10-22T09:01:31.8341746Z  4411437139e9 Downloading [=====================================>             ]  119.6MB/158.1MB
+2026-10-22T09:01:31.8770594Z  ee083de5ceda Extracting [============================================>      ]  38.99MB/43.84MB
+2026-10-22T09:01:31.9028513Z  6d50a4b3eea6 Extracting [=========>                                         ]  42.34MB/213.5MB
+2026-10-22T09:01:31.9673778Z  4411437139e9 Downloading [=========================================>         ]  130.3MB/158.1MB
+2026-10-22T09:01:32.0042265Z  ee083de5ceda Extracting [===============================================>   ]  41.29MB/43.84MB
+2026-10-22T09:01:32.0591093Z  6d50a4b3eea6 Extracting [==========>                                        ]  44.56MB/213.5MB
+2026-10-22T09:01:32.0604190Z  4e07a0f12b2c Extracting [==============================================>    ]  39.19MB/41.84MB
+2026-10-22T09:01:32.1025459Z  4411437139e9 Downloading [=========================================>         ]  132.4MB/158.1MB
+2026-10-22T09:01:32.1689827Z  ee083de5ceda Extracting [===============================================>   ]  41.75MB/43.84MB
+2026-10-22T09:01:32.1800060Z  6d50a4b3eea6 Extracting [==========>                                        ]  45.68MB/213.5MB
+2026-10-22T09:01:32.2896994Z  4411437139e9 Downloading [=============================================>     ]  142.6MB/158.1MB
+2026-10-22T09:01:32.3605977Z  ee083de5ceda Extracting [==================================================>]  43.84MB/43.84MB
+2026-10-22T09:01:32.3698254Z  4411437139e9 Verifying Checksum 
+2026-10-22T09:01:32.3699078Z  4411437139e9 Download complete 
+2026-10-22T09:01:32.4088657Z  6d50a4b3eea6 Extracting [===========>                                       ]  47.91MB/213.5MB
+2026-10-22T09:01:32.5371817Z  6d50a4b3eea6 Extracting [===========>                                       ]  49.58MB/213.5MB
+2026-10-22T09:01:32.6394996Z  6d50a4b3eea6 Extracting [============>                                      ]  52.92MB/213.5MB
+2026-10-22T09:01:32.7487093Z  6d50a4b3eea6 Extracting [==============>                                    ]  60.16MB/213.5MB
+2026-10-22T09:01:32.7529712Z  4e07a0f12b2c Extracting [===============================================>   ]  39.62MB/41.84MB
+2026-10-22T09:01:32.8522582Z  6d50a4b3eea6 Extracting [===============>                                   ]   67.4MB/213.5MB
+2026-10-22T09:01:32.9350906Z  4e07a0f12b2c Extracting [================================================>  ]  40.47MB/41.84MB
+2026-10-22T09:01:32.9606550Z  6d50a4b3eea6 Extracting [=================>                                 ]   75.2MB/213.5MB
+2026-10-22T09:01:33.0607521Z  6d50a4b3eea6 Extracting [===================>                               ]  81.89MB/213.5MB
+2026-10-22T09:01:33.1612091Z  6d50a4b3eea6 Extracting [====================>                              ]  88.57MB/213.5MB
+2026-10-22T09:01:33.2826796Z  6d50a4b3eea6 Extracting [=====================>                             ]  92.47MB/213.5MB
+2026-10-22T09:01:33.3176566Z  4e07a0f12b2c Extracting [=================================================> ]  41.32MB/41.84MB
+2026-10-22T09:01:33.3904577Z  6d50a4b3eea6 Extracting [======================>                            ]  98.04MB/213.5MB
+2026-10-22T09:01:33.4798863Z  4e07a0f12b2c Extracting [=================================================> ]  41.75MB/41.84MB
+2026-10-22T09:01:33.5020765Z  6d50a4b3eea6 Extracting [========================>                          ]  103.6MB/213.5MB
+2026-10-22T09:01:33.5725521Z  4e07a0f12b2c Extracting [==================================================>]  41.84MB/41.84MB
+2026-10-22T09:01:33.6118008Z  6d50a4b3eea6 Extracting [=========================>                         ]  107.5MB/213.5MB
+2026-10-22T09:01:33.8970316Z  6d50a4b3eea6 Extracting [=========================>                         ]  108.6MB/213.5MB
+2026-10-22T09:01:33.9992891Z  6d50a4b3eea6 Extracting [===========================>                       ]  117.5MB/213.5MB
+2026-10-22T09:01:34.1059101Z  6d50a4b3eea6 Extracting [============================>                      ]  120.9MB/213.5MB
+2026-10-22T09:01:34.3417372Z  6d50a4b3eea6 Extracting [============================>                      ]  121.4MB/213.5MB
+2026-10-22T09:01:34.4484237Z  6d50a4b3eea6 Extracting [=============================>                     ]  124.8MB/213.5MB
+2026-10-22T09:01:34.4935945Z  4e07a0f12b2c Pull complete 
+2026-10-22T09:01:34.5398713Z  06ad70e463aa Extracting [==================================================>]     388B/388B
+2026-10-22T09:01:34.5400524Z  06ad70e463aa Extracting [==================================================>]     388B/388B
+2026-10-22T09:01:34.5547586Z  6d50a4b3eea6 Extracting [==============================>                    ]  131.5MB/213.5MB
+2026-10-22T09:01:34.6606675Z  6d50a4b3eea6 Extracting [================================>                  ]    137MB/213.5MB
+2026-10-22T09:01:34.7627614Z  6d50a4b3eea6 Extracting [=================================>                 ]    142MB/213.5MB
+2026-10-22T09:01:34.8668171Z  6d50a4b3eea6 Extracting [==================================>                ]  149.3MB/213.5MB
+2026-10-22T09:01:34.9714976Z  6d50a4b3eea6 Extracting [====================================>              ]  154.9MB/213.5MB
+2026-10-22T09:01:35.0811733Z  6d50a4b3eea6 Extracting [=====================================>             ]    161MB/213.5MB
+2026-10-22T09:01:35.1861416Z  6d50a4b3eea6 Extracting [======================================>            ]  166.6MB/213.5MB
+2026-10-22T09:01:35.2896395Z  6d50a4b3eea6 Extracting [========================================>          ]  174.9MB/213.5MB
+2026-10-22T09:01:35.4949350Z  6d50a4b3eea6 Extracting [=========================================>         ]  178.3MB/213.5MB
+2026-10-22T09:01:35.5969729Z  6d50a4b3eea6 Extracting [===========================================>       ]  186.1MB/213.5MB
+2026-10-22T09:01:35.6977473Z  6d50a4b3eea6 Extracting [=============================================>     ]  192.7MB/213.5MB
+2026-10-22T09:01:35.8005530Z  6d50a4b3eea6 Extracting [==============================================>    ]  199.4MB/213.5MB
+2026-10-22T09:01:35.9061473Z  6d50a4b3eea6 Extracting [================================================>  ]  205.6MB/213.5MB
+2026-10-22T09:01:36.0367623Z  6d50a4b3eea6 Extracting [=================================================> ]  209.5MB/213.5MB
+2026-10-22T09:01:36.4810472Z  6d50a4b3eea6 Extracting [=================================================> ]  211.1MB/213.5MB
+2026-10-22T09:01:37.2449878Z  ee083de5ceda Pull complete 
+2026-10-22T09:01:37.2467187Z  06ad70e463aa Pull complete 
+2026-10-22T09:01:37.2557260Z  5afd6583b29c Extracting [==================================================>]     629B/629B
+2026-10-22T09:01:37.2558453Z  5afd6583b29c Extracting [==================================================>]     629B/629B
+2026-10-22T09:01:37.2962947Z  5afd6583b29c Pull complete 
+2026-10-22T09:01:37.2998505Z  8c2914db26a3 Extracting [==================================================>]     955B/955B
+2026-10-22T09:01:37.2999530Z  8c2914db26a3 Extracting [==================================================>]     955B/955B
+2026-10-22T09:01:37.3614820Z  ffef58b983c1 Extracting [>                                                  ]  294.9kB/27.03MB
+2026-10-22T09:01:37.3711600Z  8c2914db26a3 Pull complete 
+2026-10-22T09:01:37.3762953Z  1e8aefce6919 Extracting [==================================================>]     402B/402B
+2026-10-22T09:01:37.3764833Z  1e8aefce6919 Extracting [==================================================>]     402B/402B
+2026-10-22T09:01:37.3956860Z  1e8aefce6919 Pull complete 
+2026-10-22T09:01:37.4064421Z  a982d09283a6 Extracting [==================================================>]  1.209kB/1.209kB
+2026-10-22T09:01:37.4065691Z  a982d09283a6 Extracting [==================================================>]  1.209kB/1.209kB
+2026-10-22T09:01:37.4220885Z  a982d09283a6 Pull complete 
+2026-10-22T09:01:37.4263143Z  ab571a6216e3 Extracting [==================================================>]  1.396kB/1.396kB
+2026-10-22T09:01:37.4268007Z  ab571a6216e3 Extracting [==================================================>]  1.396kB/1.396kB
+2026-10-22T09:01:37.4383510Z  ab571a6216e3 Pull complete 
+2026-10-22T09:01:37.4505226Z  5a148d2f097e Extracting [>                                                  ]  196.6kB/18.18MB
+2026-10-22T09:01:37.4614549Z  ffef58b983c1 Extracting [==>                                                ]  1.475MB/27.03MB
+2026-10-22T09:01:37.5518987Z  5a148d2f097e Extracting [======>                                            ]  2.359MB/18.18MB
+2026-10-22T09:01:37.5754703Z  ffef58b983c1 Extracting [=======>                                           ]  3.834MB/27.03MB
+2026-10-22T09:01:37.6751360Z  5a148d2f097e Extracting [===============>                                   ]  5.505MB/18.18MB
+2026-10-22T09:01:37.7079346Z  ffef58b983c1 Extracting [==========>                                        ]  5.898MB/27.03MB
+2026-10-22T09:01:37.7744670Z  6d50a4b3eea6 Extracting [=================================================> ]  212.8MB/213.5MB
+2026-10-22T09:01:37.7835164Z  5a148d2f097e Extracting [=====================>                             ]  7.668MB/18.18MB
+2026-10-22T09:01:37.8093189Z  ffef58b983c1 Extracting [==============>                                    ]  7.963MB/27.03MB
+2026-10-22T09:01:37.8843035Z  5a148d2f097e Extracting [================================>                  ]   11.8MB/18.18MB
+2026-10-22T09:01:37.9118155Z  ffef58b983c1 Extracting [====================>                              ]  11.21MB/27.03MB
+2026-10-22T09:01:37.9909399Z  5a148d2f097e Extracting [===========================================>       ]  15.73MB/18.18MB
+2026-10-22T09:01:38.0258234Z  ffef58b983c1 Extracting [==========================>                        ]  14.45MB/27.03MB
+2026-10-22T09:01:38.0357329Z  6d50a4b3eea6 Extracting [=================================================> ]  213.4MB/213.5MB
+2026-10-22T09:01:38.0691670Z  5a148d2f097e Extracting [==================================================>]  18.18MB/18.18MB
+2026-10-22T09:01:38.1013723Z  6d50a4b3eea6 Extracting [==================================================>]  213.5MB/213.5MB
+2026-10-22T09:01:38.1305134Z  ffef58b983c1 Extracting [============================>                      ]  15.63MB/27.03MB
+2026-10-22T09:01:38.1850155Z  5a148d2f097e Pull complete 
+2026-10-22T09:01:38.1851901Z  6d50a4b3eea6 Pull complete 
+2026-10-22T09:01:38.1884310Z  34ebfb531d00 Extracting [==================================================>]  1.143kB/1.143kB
+2026-10-22T09:01:38.1885486Z  e5f2ecffbdb8 Extracting [==================================================>]  4.998kB/4.998kB
+2026-10-22T09:01:38.1901055Z  34ebfb531d00 Extracting [==================================================>]  1.143kB/1.143kB
+2026-10-22T09:01:38.1919795Z  e5f2ecffbdb8 Extracting [==================================================>]  4.998kB/4.998kB
+2026-10-22T09:01:38.2098031Z  34ebfb531d00 Pull complete 
+2026-10-22T09:01:38.2102606Z  e5f2ecffbdb8 Pull complete 
+2026-10-22T09:01:38.2191126Z  mongodb Pulled 
+2026-10-22T09:01:38.2218379Z  nginx Pulled 
+2026-10-22T09:01:38.2306227Z  ffef58b983c1 Extracting [=================================>                 ]  18.28MB/27.03MB
+2026-10-22T09:01:38.3336255Z  ffef58b983c1 Extracting [=====================================>             ]  20.05MB/27.03MB
+2026-10-22T09:01:38.4374071Z  ffef58b983c1 Extracting [===========================================>       ]  23.59MB/27.03MB
+2026-10-22T09:01:38.5554389Z  ffef58b983c1 Extracting [===============================================>   ]  25.66MB/27.03MB
+2026-10-22T09:01:38.7038135Z  ffef58b983c1 Extracting [=================================================> ]  26.54MB/27.03MB
+2026-10-22T09:01:38.7957241Z  ffef58b983c1 Extracting [==================================================>]  27.03MB/27.03MB
+2026-10-22T09:01:38.8476454Z  ffef58b983c1 Pull complete 
+2026-10-22T09:01:38.8807021Z  4411437139e9 Extracting [>                                                  ]  557.1kB/158.1MB
+2026-10-22T09:01:38.9811410Z  4411437139e9 Extracting [=====>                                             ]  16.15MB/158.1MB
+2026-10-22T09:01:39.0820252Z  4411437139e9 Extracting [==========>                                        ]  31.75MB/158.1MB
+2026-10-22T09:01:39.1841693Z  4411437139e9 Extracting [===============>                                   ]  49.02MB/158.1MB
+2026-10-22T09:01:39.2861118Z  4411437139e9 Extracting [=====================>                             ]  66.85MB/158.1MB
+2026-10-22T09:01:39.3862865Z  4411437139e9 Extracting [=========================>                         ]  81.33MB/158.1MB
+2026-10-22T09:01:39.4889261Z  4411437139e9 Extracting [============================>                      ]  89.13MB/158.1MB
+2026-10-22T09:01:39.5935033Z  4411437139e9 Extracting [==============================>                    ]  95.81MB/158.1MB
+2026-10-22T09:01:39.7011794Z  4411437139e9 Extracting [================================>                  ]  101.9MB/158.1MB
+2026-10-22T09:01:39.8078889Z  4411437139e9 Extracting [==================================>                ]  108.1MB/158.1MB
+2026-10-22T09:01:39.9163810Z  4411437139e9 Extracting [====================================>              ]  114.8MB/158.1MB
+2026-10-22T09:01:40.0205878Z  4411437139e9 Extracting [======================================>            ]  120.9MB/158.1MB
+2026-10-22T09:01:40.1278592Z  4411437139e9 Extracting [========================================>          ]    127MB/158.1MB
+2026-10-22T09:01:40.2347117Z  4411437139e9 Extracting [==========================================>        ]  133.1MB/158.1MB
+2026-10-22T09:01:40.3439719Z  4411437139e9 Extracting [===========================================>       ]  138.7MB/158.1MB
+2026-10-22T09:01:40.4476448Z  4411437139e9 Extracting [=============================================>     ]  143.7MB/158.1MB
+2026-10-22T09:01:40.5611403Z  4411437139e9 Extracting [===============================================>   ]  149.3MB/158.1MB
+2026-10-22T09:01:40.6648127Z  4411437139e9 Extracting [=================================================> ]    156MB/158.1MB
+2026-10-22T09:01:40.7192123Z  4411437139e9 Extracting [==================================================>]  158.1MB/158.1MB
+2026-10-22T09:01:41.9410639Z  4411437139e9 Pull complete 
+2026-10-22T09:01:41.9422728Z  cb3511313ef0 Extracting [==================================================>]     158B/158B
+2026-10-22T09:01:41.9426990Z  cb3511313ef0 Extracting [==================================================>]     158B/158B
+2026-10-22T09:01:41.9533208Z  cb3511313ef0 Pull complete 
+2026-10-22T09:01:41.9566005Z  7b5b1cd28d30 Extracting [==================================================>]  2.464kB/2.464kB
+2026-10-22T09:01:41.9567180Z  7b5b1cd28d30 Extracting [==================================================>]  2.464kB/2.464kB
+2026-10-22T09:01:41.9841134Z  7b5b1cd28d30 Pull complete 
+2026-10-22T09:01:41.9947509Z  eb374031072c Extracting [>                                                  ]  557.1kB/125.6MB
+2026-10-22T09:01:42.0952009Z  eb374031072c Extracting [======>                                            ]  16.15MB/125.6MB
+2026-10-22T09:01:42.1969249Z  eb374031072c Extracting [============>                                      ]  32.31MB/125.6MB
+2026-10-22T09:01:42.2977261Z  eb374031072c Extracting [==================>                                ]  47.35MB/125.6MB
+2026-10-22T09:01:42.3995908Z  eb374031072c Extracting [=========================>                         ]  62.95MB/125.6MB
+2026-10-22T09:01:42.5027740Z  eb374031072c Extracting [===============================>                   ]  78.54MB/125.6MB
+2026-10-22T09:01:42.6056625Z  eb374031072c Extracting [======================================>            ]  96.93MB/125.6MB
+2026-10-22T09:01:42.7087772Z  eb374031072c Extracting [============================================>      ]  112.5MB/125.6MB
+2026-10-22T09:01:42.7935408Z  eb374031072c Extracting [==================================================>]  125.6MB/125.6MB
+2026-10-22T09:01:43.1850390Z  eb374031072c Pull complete 
+2026-10-22T09:01:43.1898105Z  server Pulled 
+2026-10-22T09:01:43.1940997Z  Volume "oidf_suite-mongo"  Creating
+2026-10-22T09:01:43.1958967Z  Volume "oidf_suite-mongo"  Created
+2026-10-22T09:01:43.1962815Z  Container oidf-mongodb-1  Creating
+2026-10-22T09:01:43.2277585Z  Container oidf-mongodb-1  Created
+2026-10-22T09:01:43.2278291Z  Container oidf-server-1  Creating
+2026-10-22T09:01:43.2376714Z  Container oidf-server-1  Created
+2026-10-22T09:01:43.2377506Z  Container oidf-nginx-1  Creating
+2026-10-22T09:01:43.2472493Z  Container oidf-nginx-1  Created
+2026-10-22T09:01:43.2487917Z  Container oidf-mongodb-1  Starting
+2026-10-22T09:01:43.4481387Z  Container oidf-mongodb-1  Started
+2026-10-22T09:01:43.4482250Z  Container oidf-server-1  Starting
+2026-10-22T09:01:43.6088983Z  Container oidf-server-1  Started
+2026-10-22T09:01:43.6089927Z  Container oidf-nginx-1  Starting
+2026-10-22T09:01:43.8825324Z  Container oidf-nginx-1  Started
+2026-10-22T09:01:43.8829191Z  Container oidf-nginx-1  Waiting
+2026-10-22T09:01:43.8829847Z  Container oidf-server-1  Waiting
+2026-10-22T09:01:43.8830486Z  Container oidf-mongodb-1  Waiting
+2026-10-22T09:01:44.3844476Z  Container oidf-server-1  Healthy
+2026-10-22T09:01:44.3864756Z  Container oidf-mongodb-1  Healthy
+2026-10-22T09:01:59.8845802Z  Container oidf-nginx-1  Healthy
+2026-10-22T09:01:59.9726030Z time="2026-10-22T09:01:59Z" level=warning msg="/home/runner/work/inji-certify-verify/inji-certify-verify/upstream/inji-verify/docker-compose/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+2026-10-22T09:01:59.9862955Z  verify-service Pulling 
+2026-10-22T09:01:59.9866759Z  postgres Pulling 
+2026-10-22T09:01:59.9867126Z  verify-tls Pulling 
+2026-10-22T09:02:00.3874484Z  ecc510c1e359 Pulling fs layer 
+2026-10-22T09:02:00.3874969Z  dbc0d6a7f6cc Pulling fs layer 
+2026-10-22T09:02:00.3875375Z  9f58674a3b11 Pulling fs layer 
+2026-10-22T09:02:00.3875745Z  6f3c77a91d70 Pulling fs layer 
+2026-10-22T09:02:00.3876115Z  ecbed8e15a4c Pulling fs layer 
+2026-10-22T09:02:00.3876561Z  8d826465457f Pulling fs layer 
+2026-10-22T09:02:00.3876939Z  761e07649c97 Pulling fs layer 
+2026-10-22T09:02:00.3877288Z  6f3c77a91d70 Waiting 
+2026-10-22T09:02:00.3877612Z  ecbed8e15a4c Waiting 
+2026-10-22T09:02:00.3877923Z  8d826465457f Waiting 
+2026-10-22T09:02:00.3878567Z  761e07649c97 Waiting 
+2026-10-22T09:02:00.3973271Z  d7ecded7702a Pulling fs layer 
+2026-10-22T09:02:00.3974577Z  80e8d95fdf53 Pulling fs layer 
+2026-10-22T09:02:00.3975000Z  fcfd49225910 Pulling fs layer 
+2026-10-22T09:02:00.3975360Z  947bdcac0ea3 Pulling fs layer 
+2026-10-22T09:02:00.3975733Z  097f34b018c0 Pulling fs layer 
+2026-10-22T09:02:00.3976082Z  4d2c7a7b3dba Pulling fs layer 
+2026-10-22T09:02:00.3976430Z  8cb000c698bc Pulling fs layer 
+2026-10-22T09:02:00.3976778Z  ba168ff08d42 Pulling fs layer 
+2026-10-22T09:02:00.3977151Z  bad194149a82 Pulling fs layer 
+2026-10-22T09:02:00.3977534Z  5f1cded65589 Pulling fs layer 
+2026-10-22T09:02:00.3977892Z  7d0650bb210f Pulling fs layer 
+2026-10-22T09:02:00.3978266Z  23a39b1003e9 Pulling fs layer 
+2026-10-22T09:02:00.3978637Z  21f7a31efcb7 Pulling fs layer 
+2026-10-22T09:02:00.3978978Z  ae52c8ce1a35 Pulling fs layer 
+2026-10-22T09:02:00.3979336Z  d7ecded7702a Waiting 
+2026-10-22T09:02:00.3979660Z  80e8d95fdf53 Waiting 
+2026-10-22T09:02:00.3979986Z  fcfd49225910 Waiting 
+2026-10-22T09:02:00.3980319Z  5f1cded65589 Waiting 
+2026-10-22T09:02:00.3980609Z  097f34b018c0 Waiting 
+2026-10-22T09:02:00.3980945Z  4d2c7a7b3dba Waiting 
+2026-10-22T09:02:00.3981263Z  8cb000c698bc Waiting 
+2026-10-22T09:02:00.3981573Z  ba168ff08d42 Waiting 
+2026-10-22T09:02:00.3981901Z  bad194149a82 Waiting 
+2026-10-22T09:02:00.3982220Z  7d0650bb210f Waiting 
+2026-10-22T09:02:00.3982539Z  23a39b1003e9 Waiting 
+2026-10-22T09:02:00.3982847Z  21f7a31efcb7 Waiting 
+2026-10-22T09:02:00.3983175Z  ae52c8ce1a35 Waiting 
+2026-10-22T09:02:00.4760289Z  ecc510c1e359 Downloading [>                                                  ]  310.7kB/29.84MB
+2026-10-22T09:02:00.4766166Z  9f58674a3b11 Downloading [==================================================>]     627B/627B
+2026-10-22T09:02:00.4785642Z  9f58674a3b11 Verifying Checksum 
+2026-10-22T09:02:00.4791633Z  9f58674a3b11 Download complete 
+2026-10-22T09:02:00.4792216Z  d49a2dee86fb Pulling fs layer 
+2026-10-22T09:02:00.4792986Z  ba89a167f7fd Pulling fs layer 
+2026-10-22T09:02:00.4794207Z  e79cf6f12909 Pulling fs layer 
+2026-10-22T09:02:00.4794739Z  504fac65c789 Pulling fs layer 
+2026-10-22T09:02:00.4795269Z  babdbcd0b513 Pulling fs layer 
+2026-10-22T09:02:00.4795642Z  2f7c7b1e96dd Pulling fs layer 
+2026-10-22T09:02:00.4796161Z  c34c57a324bd Pulling fs layer 
+2026-10-22T09:02:00.4797109Z  d49a2dee86fb Waiting 
+2026-10-22T09:02:00.4797472Z  ba89a167f7fd Waiting 
+2026-10-22T09:02:00.4797774Z  e79cf6f12909 Waiting 
+2026-10-22T09:02:00.4798637Z  504fac65c789 Waiting 
+2026-10-22T09:02:00.4799255Z  babdbcd0b513 Waiting 
+2026-10-22T09:02:00.4799518Z  2f7c7b1e96dd Waiting 
+2026-10-22T09:02:00.4799797Z  c34c57a324bd Waiting 
+2026-10-22T09:02:00.4800232Z  dbc0d6a7f6cc Downloading [>                                                  ]  350.1kB/33.74MB
+2026-10-22T09:02:00.5760007Z  ecc510c1e359 Downloading [=======================================>           ]  23.66MB/29.84MB
+2026-10-22T09:02:00.5778077Z  6f3c77a91d70 Downloading [==================================================>]     963B/963B
+2026-10-22T09:02:00.5786641Z  6f3c77a91d70 Verifying Checksum 
+2026-10-22T09:02:00.5790349Z  6f3c77a91d70 Download complete 
+2026-10-22T09:02:00.5831082Z  dbc0d6a7f6cc Downloading [=========>                                         ]  6.191MB/33.74MB
+2026-10-22T09:02:00.5975650Z  ecc510c1e359 Verifying Checksum 
+2026-10-22T09:02:00.5976309Z  ecc510c1e359 Download complete 
+2026-10-22T09:02:00.6403142Z  ecc510c1e359 Extracting [>                                                  ]  327.7kB/29.84MB
+2026-10-22T09:02:00.6796511Z  ecbed8e15a4c Downloading [==================================================>]     405B/405B
+2026-10-22T09:02:00.6805398Z  ecbed8e15a4c Verifying Checksum 
+2026-10-22T09:02:00.6806477Z  ecbed8e15a4c Download complete 
+2026-10-22T09:02:00.6832656Z  dbc0d6a7f6cc Downloading [================>                                  ]  11.35MB/33.74MB
+2026-10-22T09:02:00.6843150Z  8d826465457f Downloading [==================================================>]  1.211kB/1.211kB
+2026-10-22T09:02:00.6857956Z  8d826465457f Verifying Checksum 
+2026-10-22T09:02:00.6858793Z  8d826465457f Download complete 
+2026-10-22T09:02:00.7410698Z  ecc510c1e359 Extracting [=======>                                           ]   4.26MB/29.84MB
+2026-10-22T09:02:00.7697460Z  761e07649c97 Downloading [==================================================>]  1.398kB/1.398kB
+2026-10-22T09:02:00.7705690Z  761e07649c97 Verifying Checksum 
+2026-10-22T09:02:00.7712304Z  761e07649c97 Download complete 
+2026-10-22T09:02:00.7790144Z  d7ecded7702a Downloading [>                                                  ]  310.7kB/29.78MB
+2026-10-22T09:02:00.7849150Z  dbc0d6a7f6cc Downloading [========================>                          ]  16.51MB/33.74MB
+2026-10-22T09:02:00.8591225Z  ecc510c1e359 Extracting [============>                                      ]  7.209MB/29.84MB
+2026-10-22T09:02:00.8755286Z  80e8d95fdf53 Downloading [==================================================>]  1.168kB/1.168kB
+2026-10-22T09:02:00.8774105Z  80e8d95fdf53 Verifying Checksum 
+2026-10-22T09:02:00.8774672Z  80e8d95fdf53 Download complete 
+2026-10-22T09:02:00.8803130Z  d7ecded7702a Downloading [=================================>                 ]  19.92MB/29.78MB
+2026-10-22T09:02:00.8881237Z  dbc0d6a7f6cc Downloading [================================>                  ]  21.67MB/33.74MB
+2026-10-22T09:02:00.9205622Z  d7ecded7702a Verifying Checksum 
+2026-10-22T09:02:00.9214373Z  d7ecded7702a Download complete 
+2026-10-22T09:02:00.9667231Z  ecc510c1e359 Extracting [===============>                                   ]  9.503MB/29.84MB
+2026-10-22T09:02:00.9795324Z  d7ecded7702a Extracting [>                                                  ]  327.7kB/29.78MB
+2026-10-22T09:02:00.9965256Z  dbc0d6a7f6cc Downloading [========================================>          ]  27.18MB/33.74MB
+2026-10-22T09:02:00.9985520Z  fcfd49225910 Downloading [>                                                  ]  64.89kB/6.437MB
+2026-10-22T09:02:01.0178941Z  947bdcac0ea3 Downloading [>                                                  ]  15.74kB/1.257MB
+2026-10-22T09:02:01.0662173Z  ecc510c1e359 Extracting [=================>                                 ]  10.49MB/29.84MB
+2026-10-22T09:02:01.0687194Z  947bdcac0ea3 Verifying Checksum 
+2026-10-22T09:02:01.0698611Z  947bdcac0ea3 Download complete 
+2026-10-22T09:02:01.0855316Z  d7ecded7702a Extracting [===>                                               ]  2.294MB/29.78MB
+2026-10-22T09:02:01.0993931Z  fcfd49225910 Downloading [=========================================>         ]  5.373MB/6.437MB
+2026-10-22T09:02:01.1003276Z  dbc0d6a7f6cc Downloading [================================================>  ]  32.68MB/33.74MB
+2026-10-22T09:02:01.1071450Z  fcfd49225910 Verifying Checksum 
+2026-10-22T09:02:01.1072566Z  fcfd49225910 Download complete 
+2026-10-22T09:02:01.1210709Z  dbc0d6a7f6cc Verifying Checksum 
+2026-10-22T09:02:01.1211536Z  dbc0d6a7f6cc Download complete 
+2026-10-22T09:02:01.1855822Z  097f34b018c0 Downloading [>                                                  ]  97.64kB/8.204MB
+2026-10-22T09:02:01.1893242Z  ecc510c1e359 Extracting [====================>                              ]  12.12MB/29.84MB
+2026-10-22T09:02:01.1921157Z  d7ecded7702a Extracting [=======>                                           ]  4.588MB/29.78MB
+2026-10-22T09:02:01.1967993Z  4d2c7a7b3dba Downloading [>                                                  ]  15.74kB/1.311MB
+2026-10-22T09:02:01.2277103Z  8cb000c698bc Downloading [==================================================>]     116B/116B
+2026-10-22T09:02:01.2288244Z  8cb000c698bc Verifying Checksum 
+2026-10-22T09:02:01.2292825Z  8cb000c698bc Download complete 
+2026-10-22T09:02:01.2331957Z  4d2c7a7b3dba Verifying Checksum 
+2026-10-22T09:02:01.2334307Z  4d2c7a7b3dba Download complete 
+2026-10-22T09:02:01.2632738Z  097f34b018c0 Verifying Checksum 
+2026-10-22T09:02:01.2633642Z  097f34b018c0 Download complete 
+2026-10-22T09:02:01.2937899Z  ecc510c1e359 Extracting [=========================>                         ]  15.07MB/29.84MB
+2026-10-22T09:02:01.3043565Z  d7ecded7702a Extracting [===========>                                       ]  6.881MB/29.78MB
+2026-10-22T09:02:01.3284419Z  ba168ff08d42 Download complete 
+2026-10-22T09:02:01.3447325Z  5f1cded65589 Downloading [==================>                                ]    3.5kB/9.45kB
+2026-10-22T09:02:01.3452631Z  5f1cded65589 Downloading [==================================================>]   9.45kB/9.45kB
+2026-10-22T09:02:01.3467544Z  5f1cded65589 Verifying Checksum 
+2026-10-22T09:02:01.3468062Z  5f1cded65589 Download complete 
+2026-10-22T09:02:01.3486793Z  bad194149a82 Downloading [>                                                  ]  526.3kB/108.8MB
+2026-10-22T09:02:01.4224400Z  ecc510c1e359 Extracting [=============================>                     ]  17.69MB/29.84MB
+2026-10-22T09:02:01.4225193Z  d7ecded7702a Extracting [===============>                                   ]  9.503MB/29.78MB
+2026-10-22T09:02:01.4279167Z  7d0650bb210f Downloading [==================================================>]     128B/128B
+2026-10-22T09:02:01.4294082Z  7d0650bb210f Verifying Checksum 
+2026-10-22T09:02:01.4294709Z  7d0650bb210f Download complete 
+2026-10-22T09:02:01.4524898Z  bad194149a82 Downloading [=======>                                           ]  16.03MB/108.8MB
+2026-10-22T09:02:01.4550950Z  23a39b1003e9 Downloading [==================================================>]     168B/168B
+2026-10-22T09:02:01.4562549Z  23a39b1003e9 Verifying Checksum 
+2026-10-22T09:02:01.4563139Z  23a39b1003e9 Download complete 
+2026-10-22T09:02:01.5499913Z  ecc510c1e359 Extracting [================================>                  ]  19.66MB/29.84MB
+2026-10-22T09:02:01.5554487Z  d7ecded7702a Extracting [==================>                                ]  10.81MB/29.78MB
+2026-10-22T09:02:01.5615315Z  21f7a31efcb7 Downloading [============================>                      ]    3.5kB/6.081kB
+2026-10-22T09:02:01.5620058Z  bad194149a82 Downloading [==============>                                    ]   32.6MB/108.8MB
+2026-10-22T09:02:01.5627334Z  21f7a31efcb7 Downloading [==================================================>]  6.081kB/6.081kB
+2026-10-22T09:02:01.5642894Z  21f7a31efcb7 Verifying Checksum 
+2026-10-22T09:02:01.5644312Z  21f7a31efcb7 Download complete 
+2026-10-22T09:02:01.5668540Z  ae52c8ce1a35 Downloading [==================================================>]     185B/185B
+2026-10-22T09:02:01.5684178Z  ae52c8ce1a35 Verifying Checksum 
+2026-10-22T09:02:01.5684801Z  ae52c8ce1a35 Download complete 
+2026-10-22T09:02:01.6540191Z  bad194149a82 Downloading [========================>                          ]  53.41MB/108.8MB
+2026-10-22T09:02:01.6629590Z  ecc510c1e359 Extracting [===================================>               ]   21.3MB/29.84MB
+2026-10-22T09:02:01.6756051Z  d7ecded7702a Extracting [====================>                              ]  12.12MB/29.78MB
+2026-10-22T09:02:01.6820207Z  d49a2dee86fb Downloading [>                                                  ]  48.51kB/3.805MB
+2026-10-22T09:02:01.7035077Z  ba89a167f7fd Downloading [>                                                  ]  96.97kB/9.421MB
+2026-10-22T09:02:01.7558583Z  bad194149a82 Downloading [=================================>                 ]  73.72MB/108.8MB
+2026-10-22T09:02:01.7690381Z  ecc510c1e359 Extracting [======================================>            ]  22.94MB/29.84MB
+2026-10-22T09:02:01.7695881Z  d49a2dee86fb Verifying Checksum 
+2026-10-22T09:02:01.7696604Z  d49a2dee86fb Download complete 
+2026-10-22T09:02:01.7889249Z  d49a2dee86fb Extracting [>                                                  ]  65.54kB/3.805MB
+2026-10-22T09:02:01.7966287Z  d7ecded7702a Extracting [======================>                            ]  13.43MB/29.78MB
+2026-10-22T09:02:01.8041306Z  ba89a167f7fd Downloading [============================>                      ]  5.442MB/9.421MB
+2026-10-22T09:02:01.8366259Z  ba89a167f7fd Verifying Checksum 
+2026-10-22T09:02:01.8368646Z  ba89a167f7fd Download complete 
+2026-10-22T09:02:01.8734932Z  bad194149a82 Downloading [===========================================>       ]  93.98MB/108.8MB
+2026-10-22T09:02:01.8736438Z  ecc510c1e359 Extracting [======================================>            ]  23.27MB/29.84MB
+2026-10-22T09:02:01.9091359Z  d7ecded7702a Extracting [========================>                          ]  14.42MB/29.78MB
+2026-10-22T09:02:01.9230144Z  d49a2dee86fb Extracting [=========>                                         ]  720.9kB/3.805MB
+2026-10-22T09:02:01.9251700Z  bad194149a82 Verifying Checksum 
+2026-10-22T09:02:01.9256873Z  bad194149a82 Download complete 
+2026-10-22T09:02:01.9579519Z  e79cf6f12909 Downloading [>                                                  ]  539.4kB/61.97MB
+2026-10-22T09:02:01.9873672Z  504fac65c789 Downloading [==================================================>]     128B/128B
+2026-10-22T09:02:01.9885676Z  504fac65c789 Verifying Checksum 
+2026-10-22T09:02:01.9887595Z  504fac65c789 Download complete 
+2026-10-22T09:02:01.9913755Z  ecc510c1e359 Extracting [=========================================>         ]   24.9MB/29.84MB
+2026-10-22T09:02:02.0099473Z  d49a2dee86fb Extracting [========================>                          ]  1.835MB/3.805MB
+2026-10-22T09:02:02.0154205Z  d7ecded7702a Extracting [==========================>                        ]  16.06MB/29.78MB
+2026-10-22T09:02:02.0591588Z  e79cf6f12909 Downloading [====>                                              ]   5.34MB/61.97MB
+2026-10-22T09:02:02.0675901Z  babdbcd0b513 Downloading [==================================================>]  2.282kB/2.282kB
+2026-10-22T09:02:02.0709020Z  babdbcd0b513 Verifying Checksum 
+2026-10-22T09:02:02.0710202Z  babdbcd0b513 Download complete 
+2026-10-22T09:02:02.0971446Z  ecc510c1e359 Extracting [===========================================>       ]  25.89MB/29.84MB
+2026-10-22T09:02:02.1130559Z  d49a2dee86fb Extracting [==========================================>        ]  3.211MB/3.805MB
+2026-10-22T09:02:02.1420362Z  d7ecded7702a Extracting [=============================>                     ]  17.69MB/29.78MB
+2026-10-22T09:02:02.1596575Z  e79cf6f12909 Downloading [==============>                                    ]  18.15MB/61.97MB
+2026-10-22T09:02:02.1991366Z  d49a2dee86fb Extracting [==================================================>]  3.805MB/3.805MB
+2026-10-22T09:02:02.2514858Z  d49a2dee86fb Pull complete 
+2026-10-22T09:02:02.2701513Z  e79cf6f12909 Downloading [===========================>                       ]  33.61MB/61.97MB
+2026-10-22T09:02:02.2801094Z  ba89a167f7fd Extracting [>                                                  ]   98.3kB/9.421MB
+2026-10-22T09:02:02.2838792Z  ecc510c1e359 Extracting [===========================================>       ]  26.21MB/29.84MB
+2026-10-22T09:02:02.2904609Z  d7ecded7702a Extracting [==============================>                    ]  18.35MB/29.78MB
+2026-10-22T09:02:02.3325518Z  2f7c7b1e96dd Downloading [>                                                  ]  33.28kB/2.597MB
+2026-10-22T09:02:02.3724313Z  e79cf6f12909 Downloading [========================================>          ]  50.14MB/61.97MB
+2026-10-22T09:02:02.3956133Z  ecc510c1e359 Extracting [=============================================>     ]   27.2MB/29.84MB
+2026-10-22T09:02:02.4019576Z  d7ecded7702a Extracting [================================>                  ]  19.33MB/29.78MB
+2026-10-22T09:02:02.4322256Z  2f7c7b1e96dd Downloading [===================>                               ]  1.004MB/2.597MB
+2026-10-22T09:02:02.4390832Z  ba89a167f7fd Extracting [====>                                              ]  786.4kB/9.421MB
+2026-10-22T09:02:02.4482314Z  e79cf6f12909 Verifying Checksum 
+2026-10-22T09:02:02.4488704Z  e79cf6f12909 Download complete 
+2026-10-22T09:02:02.4518771Z  c34c57a324bd Downloading [>                                                  ]  525.2kB/94.23MB
+2026-10-22T09:02:02.4883952Z  2f7c7b1e96dd Verifying Checksum 
+2026-10-22T09:02:02.4884908Z  2f7c7b1e96dd Download complete 
+2026-10-22T09:02:02.5032089Z  ecc510c1e359 Extracting [===============================================>   ]  28.18MB/29.84MB
+2026-10-22T09:02:02.5033701Z  d7ecded7702a Extracting [==================================>                ]  20.64MB/29.78MB
+2026-10-22T09:02:02.5396968Z  ba89a167f7fd Extracting [=========>                                         ]  1.868MB/9.421MB
+2026-10-22T09:02:02.5539306Z  c34c57a324bd Downloading [===>                                               ]  6.323MB/94.23MB
+2026-10-22T09:02:02.6132768Z  d7ecded7702a Extracting [====================================>              ]  21.95MB/29.78MB
+2026-10-22T09:02:02.6262219Z  ecc510c1e359 Extracting [================================================>  ]  28.84MB/29.84MB
+2026-10-22T09:02:02.6429110Z  ba89a167f7fd Extracting [=============>                                     ]  2.458MB/9.421MB
+2026-10-22T09:02:02.6575109Z  c34c57a324bd Downloading [===========>                                       ]  22.22MB/94.23MB
+2026-10-22T09:02:02.7668968Z  ba89a167f7fd Extracting [=================>                                 ]  3.342MB/9.421MB
+2026-10-22T09:02:02.7755305Z  d7ecded7702a Extracting [=======================================>           ]  23.27MB/29.78MB
+2026-10-22T09:02:02.8437740Z  c34c57a324bd Downloading [=================>                                 ]  33.43MB/94.23MB
+2026-10-22T09:02:02.8692604Z  ba89a167f7fd Extracting [=================================>                 ]  6.291MB/9.421MB
+2026-10-22T09:02:02.8709480Z  ecc510c1e359 Extracting [================================================>  ]  29.16MB/29.84MB
+2026-10-22T09:02:02.8776727Z  d7ecded7702a Extracting [==========================================>        ]  25.56MB/29.78MB
+2026-10-22T09:02:02.9461158Z  c34c57a324bd Downloading [==================>                                ]  35.55MB/94.23MB
+2026-10-22T09:02:02.9867376Z  ba89a167f7fd Extracting [=======================================>           ]  7.373MB/9.421MB
+2026-10-22T09:02:03.0452520Z  ecc510c1e359 Extracting [=================================================> ]  29.82MB/29.84MB
+2026-10-22T09:02:03.0722448Z  ecc510c1e359 Extracting [==================================================>]  29.84MB/29.84MB
+2026-10-22T09:02:03.0879563Z  ecc510c1e359 Pull complete 
+2026-10-22T09:02:03.1116551Z  ba89a167f7fd Extracting [=========================================>         ]  7.864MB/9.421MB
+2026-10-22T09:02:03.1124036Z  d7ecded7702a Extracting [============================================>      ]  26.21MB/29.78MB
+2026-10-22T09:02:03.1179866Z  c34c57a324bd Downloading [===========================>                       ]  51.66MB/94.23MB
+2026-10-22T09:02:03.1973717Z  dbc0d6a7f6cc Extracting [>                                                  ]  360.4kB/33.74MB
+2026-10-22T09:02:03.2134329Z  ba89a167f7fd Extracting [==============================================>    ]  8.847MB/9.421MB
+2026-10-22T09:02:03.2169097Z  d7ecded7702a Extracting [=============================================>     ]   27.2MB/29.78MB
+2026-10-22T09:02:03.2918776Z  ba89a167f7fd Extracting [==================================================>]  9.421MB/9.421MB
+2026-10-22T09:02:03.2958939Z  c34c57a324bd Downloading [===================================>               ]  67.11MB/94.23MB
+2026-10-22T09:02:03.3506952Z  d7ecded7702a Extracting [===============================================>   ]  28.51MB/29.78MB
+2026-10-22T09:02:03.3614353Z  dbc0d6a7f6cc Extracting [===>                                               ]  2.163MB/33.74MB
+2026-10-22T09:02:03.4025460Z  c34c57a324bd Downloading [============================================>      ]   83.1MB/94.23MB
+2026-10-22T09:02:03.4678210Z  dbc0d6a7f6cc Extracting [====>                                              ]  2.884MB/33.74MB
+2026-10-22T09:02:03.5052656Z  d7ecded7702a Extracting [================================================>  ]  28.84MB/29.78MB
+2026-10-22T09:02:03.5074134Z  c34c57a324bd Downloading [=============================================>     ]  85.22MB/94.23MB
+2026-10-22T09:02:03.5700979Z  c34c57a324bd Verifying Checksum 
+2026-10-22T09:02:03.5709278Z  c34c57a324bd Download complete 
+2026-10-22T09:02:03.5716916Z  dbc0d6a7f6cc Extracting [======>                                            ]  4.325MB/33.74MB
+2026-10-22T09:02:03.6413173Z  d7ecded7702a Extracting [================================================>  ]  29.16MB/29.78MB
+2026-10-22T09:02:03.6742586Z  dbc0d6a7f6cc Extracting [============>                                      ]   8.29MB/33.74MB
+2026-10-22T09:02:03.7801776Z  dbc0d6a7f6cc Extracting [===============>                                   ]  10.45MB/33.74MB
+2026-10-22T09:02:03.8280490Z  d7ecded7702a Extracting [==================================================>]  29.78MB/29.78MB
+2026-10-22T09:02:03.9336896Z  dbc0d6a7f6cc Extracting [====================>                              ]  14.06MB/33.74MB
+2026-10-22T09:02:03.9907171Z  d7ecded7702a Pull complete 
+2026-10-22T09:02:04.0352230Z  dbc0d6a7f6cc Extracting [============================>                      ]  19.46MB/33.74MB
+2026-10-22T09:02:04.1428955Z  dbc0d6a7f6cc Extracting [=====================================>             ]  25.59MB/33.74MB
+2026-10-22T09:02:04.2484781Z  dbc0d6a7f6cc Extracting [=======================================>           ]  26.67MB/33.74MB
+2026-10-22T09:02:04.3389585Z  80e8d95fdf53 Extracting [==================================================>]  1.168kB/1.168kB
+2026-10-22T09:02:04.3391805Z  80e8d95fdf53 Extracting [==================================================>]  1.168kB/1.168kB
+2026-10-22T09:02:04.5434583Z  dbc0d6a7f6cc Extracting [===========================================>       ]  29.56MB/33.74MB
+2026-10-22T09:02:04.6527182Z  dbc0d6a7f6cc Extracting [=============================================>     ]     31MB/33.74MB
+2026-10-22T09:02:05.0427832Z  dbc0d6a7f6cc Extracting [==============================================>    ]  31.36MB/33.74MB
+2026-10-22T09:02:05.1561161Z  dbc0d6a7f6cc Extracting [=================================================> ]  33.52MB/33.74MB
+2026-10-22T09:02:05.6430481Z  dbc0d6a7f6cc Extracting [==================================================>]  33.74MB/33.74MB
+2026-10-22T09:02:05.8399298Z  dbc0d6a7f6cc Pull complete 
+2026-10-22T09:02:05.8424534Z  9f58674a3b11 Extracting [==================================================>]     627B/627B
+2026-10-22T09:02:05.8442556Z  9f58674a3b11 Extracting [==================================================>]     627B/627B
+2026-10-22T09:02:05.8885175Z  9f58674a3b11 Pull complete 
+2026-10-22T09:02:05.8903853Z  6f3c77a91d70 Extracting [==================================================>]     963B/963B
+2026-10-22T09:02:05.8921803Z  6f3c77a91d70 Extracting [==================================================>]     963B/963B
+2026-10-22T09:02:06.4450763Z  6f3c77a91d70 Pull complete 
+2026-10-22T09:02:06.4456417Z  80e8d95fdf53 Pull complete 
+2026-10-22T09:02:06.4465596Z  ba89a167f7fd Pull complete 
+2026-10-22T09:02:06.4476351Z  ecbed8e15a4c Extracting [==================================================>]     405B/405B
+2026-10-22T09:02:06.4487560Z  fcfd49225910 Extracting [>                                                  ]  65.54kB/6.437MB
+2026-10-22T09:02:06.4495870Z  ecbed8e15a4c Extracting [==================================================>]     405B/405B
+2026-10-22T09:02:06.4662572Z  ecbed8e15a4c Pull complete 
+2026-10-22T09:02:06.4705615Z  8d826465457f Extracting [==================================================>]  1.211kB/1.211kB
+2026-10-22T09:02:06.4706712Z  8d826465457f Extracting [==================================================>]  1.211kB/1.211kB
+2026-10-22T09:02:06.4917008Z  8d826465457f Pull complete 
+2026-10-22T09:02:06.4939113Z  761e07649c97 Extracting [==================================================>]  1.398kB/1.398kB
+2026-10-22T09:02:06.4945544Z  761e07649c97 Extracting [==================================================>]  1.398kB/1.398kB
+2026-10-22T09:02:06.5128733Z  761e07649c97 Pull complete 
+2026-10-22T09:02:06.5241962Z  verify-tls Pulled 
+2026-10-22T09:02:06.5640955Z  fcfd49225910 Extracting [=================>                                 ]  2.294MB/6.437MB
+2026-10-22T09:02:06.5810024Z  e79cf6f12909 Extracting [>                                                  ]  557.1kB/61.97MB
+2026-10-22T09:02:06.6647297Z  fcfd49225910 Extracting [================================================>  ]  6.226MB/6.437MB
+2026-10-22T09:02:06.6889385Z  e79cf6f12909 Extracting [===>                                               ]  4.456MB/61.97MB
+2026-10-22T09:02:06.7086360Z  fcfd49225910 Extracting [==================================================>]  6.437MB/6.437MB
+2026-10-22T09:02:06.8164881Z  e79cf6f12909 Extracting [======>                                            ]  8.356MB/61.97MB
+2026-10-22T09:02:06.8166720Z  fcfd49225910 Pull complete 
+2026-10-22T09:02:06.8191558Z  947bdcac0ea3 Extracting [=>                                                 ]  32.77kB/1.257MB
+2026-10-22T09:02:06.8841764Z  947bdcac0ea3 Extracting [==================================================>]  1.257MB/1.257MB
+2026-10-22T09:02:06.9128213Z  947bdcac0ea3 Pull complete 
+2026-10-22T09:02:06.9167361Z  097f34b018c0 Extracting [>                                                  ]   98.3kB/8.204MB
+2026-10-22T09:02:06.9374418Z  e79cf6f12909 Extracting [=========>                                         ]  12.26MB/61.97MB
+2026-10-22T09:02:07.0187074Z  097f34b018c0 Extracting [================>                                  ]  2.753MB/8.204MB
+2026-10-22T09:02:07.0485042Z  e79cf6f12909 Extracting [=============>                                     ]  16.71MB/61.97MB
+2026-10-22T09:02:07.1408632Z  097f34b018c0 Extracting [=======================>                           ]  3.932MB/8.204MB
+2026-10-22T09:02:07.1583155Z  e79cf6f12909 Extracting [=================>                                 ]  21.73MB/61.97MB
+2026-10-22T09:02:07.2422207Z  097f34b018c0 Extracting [===============================>                   ]  5.112MB/8.204MB
+2026-10-22T09:02:07.2587014Z  e79cf6f12909 Extracting [====================>                              ]  25.62MB/61.97MB
+2026-10-22T09:02:07.3435901Z  097f34b018c0 Extracting [====================================>              ]  5.997MB/8.204MB
+2026-10-22T09:02:07.3691944Z  e79cf6f12909 Extracting [=======================>                           ]  29.52MB/61.97MB
+2026-10-22T09:02:07.4508443Z  097f34b018c0 Extracting [===============================================>   ]  7.864MB/8.204MB
+2026-10-22T09:02:07.4682470Z  097f34b018c0 Extracting [==================================================>]  8.204MB/8.204MB
+2026-10-22T09:02:07.4771259Z  e79cf6f12909 Extracting [==========================>                        ]  32.87MB/61.97MB
+2026-10-22T09:02:07.5802803Z  e79cf6f12909 Extracting [=============================>                     ]  36.77MB/61.97MB
+2026-10-22T09:02:07.7082358Z  e79cf6f12909 Extracting [================================>                  ]  40.67MB/61.97MB
+2026-10-22T09:02:07.7877414Z  097f34b018c0 Pull complete 
+2026-10-22T09:02:07.7907284Z  4d2c7a7b3dba Extracting [=>                                                 ]  32.77kB/1.311MB
+2026-10-22T09:02:07.8187106Z  e79cf6f12909 Extracting [====================================>              ]  45.12MB/61.97MB
+2026-10-22T09:02:07.8714937Z  4d2c7a7b3dba Extracting [==================================================>]  1.311MB/1.311MB
+2026-10-22T09:02:07.9997995Z  4d2c7a7b3dba Pull complete 
+2026-10-22T09:02:08.0049739Z  8cb000c698bc Extracting [==================================================>]     116B/116B
+2026-10-22T09:02:08.0056667Z  8cb000c698bc Extracting [==================================================>]     116B/116B
+2026-10-22T09:02:08.0059286Z  e79cf6f12909 Extracting [=======================================>           ]  48.46MB/61.97MB
+2026-10-22T09:02:08.0224106Z  8cb000c698bc Pull complete 
+2026-10-22T09:02:08.0240761Z  ba168ff08d42 Extracting [==================================================>]  3.141kB/3.141kB
+2026-10-22T09:02:08.0255029Z  ba168ff08d42 Extracting [==================================================>]  3.141kB/3.141kB
+2026-10-22T09:02:08.0417392Z  ba168ff08d42 Pull complete 
+2026-10-22T09:02:08.1084041Z  e79cf6f12909 Extracting [=========================================>         ]  51.81MB/61.97MB
+2026-10-22T09:02:08.1349441Z  bad194149a82 Extracting [>                                                  ]  557.1kB/108.8MB
+2026-10-22T09:02:08.2152100Z  e79cf6f12909 Extracting [============================================>      ]  55.15MB/61.97MB
+2026-10-22T09:02:08.2367931Z  bad194149a82 Extracting [=>                                                 ]  2.785MB/108.8MB
+2026-10-22T09:02:08.3260402Z  e79cf6f12909 Extracting [===============================================>   ]  59.05MB/61.97MB
+2026-10-22T09:02:08.3833240Z  bad194149a82 Extracting [===>                                               ]  7.242MB/108.8MB
+2026-10-22T09:02:08.4262844Z  e79cf6f12909 Extracting [==================================================>]  61.97MB/61.97MB
+2026-10-22T09:02:08.4787441Z  e79cf6f12909 Pull complete 
+2026-10-22T09:02:08.4842477Z  504fac65c789 Extracting [==================================================>]     128B/128B
+2026-10-22T09:02:08.4843909Z  504fac65c789 Extracting [==================================================>]     128B/128B
+2026-10-22T09:02:08.4904033Z  504fac65c789 Pull complete 
+2026-10-22T09:02:08.4948332Z  babdbcd0b513 Extracting [==================================================>]  2.282kB/2.282kB
+2026-10-22T09:02:08.4950357Z  babdbcd0b513 Extracting [==================================================>]  2.282kB/2.282kB
+2026-10-22T09:02:08.5030629Z  babdbcd0b513 Pull complete 
+2026-10-22T09:02:08.5073283Z  2f7c7b1e96dd Extracting [>                                                  ]  32.77kB/2.597MB
+2026-10-22T09:02:08.5078634Z  bad194149a82 Extracting [====>                                              ]  8.913MB/108.8MB
+2026-10-22T09:02:08.5422619Z  2f7c7b1e96dd Extracting [==================================================>]  2.597MB/2.597MB
+2026-10-22T09:02:08.5543849Z  2f7c7b1e96dd Pull complete 
+2026-10-22T09:02:08.5714565Z  c34c57a324bd Extracting [>                                                  ]  557.1kB/94.23MB
+2026-10-22T09:02:08.6245444Z  bad194149a82 Extracting [=====>                                             ]   11.7MB/108.8MB
+2026-10-22T09:02:08.6743139Z  c34c57a324bd Extracting [=====>                                             ]  10.03MB/94.23MB
+2026-10-22T09:02:08.7393205Z  bad194149a82 Extracting [======>                                            ]  14.48MB/108.8MB
+2026-10-22T09:02:08.7767020Z  c34c57a324bd Extracting [==========>                                        ]  18.94MB/94.23MB
+2026-10-22T09:02:08.8406708Z  bad194149a82 Extracting [=======>                                           ]  17.27MB/108.8MB
+2026-10-22T09:02:08.8767301Z  c34c57a324bd Extracting [===============>                                   ]  28.41MB/94.23MB
+2026-10-22T09:02:08.9441350Z  bad194149a82 Extracting [========>                                          ]   19.5MB/108.8MB
+2026-10-22T09:02:08.9779701Z  c34c57a324bd Extracting [====================>                              ]  37.88MB/94.23MB
+2026-10-22T09:02:09.0508162Z  bad194149a82 Extracting [==========>                                        ]  22.28MB/108.8MB
+2026-10-22T09:02:09.0784114Z  c34c57a324bd Extracting [========================>                          ]  46.24MB/94.23MB
+2026-10-22T09:02:09.1606822Z  bad194149a82 Extracting [============>                                      ]  26.74MB/108.8MB
+2026-10-22T09:02:09.1790393Z  c34c57a324bd Extracting [============================>                      ]  54.59MB/94.23MB
+2026-10-22T09:02:09.2675117Z  bad194149a82 Extracting [==============>                                    ]  31.75MB/108.8MB
+2026-10-22T09:02:09.2807034Z  c34c57a324bd Extracting [================================>                  ]  61.83MB/94.23MB
+2026-10-22T09:02:09.3770473Z  bad194149a82 Extracting [================>                                  ]  36.77MB/108.8MB
+2026-10-22T09:02:09.3831986Z  c34c57a324bd Extracting [====================================>              ]  67.96MB/94.23MB
+2026-10-22T09:02:09.4832442Z  bad194149a82 Extracting [=================>                                 ]  38.99MB/108.8MB
+2026-10-22T09:02:09.4877976Z  c34c57a324bd Extracting [=========================================>         ]  77.43MB/94.23MB
+2026-10-22T09:02:09.5917089Z  c34c57a324bd Extracting [==============================================>    ]  87.46MB/94.23MB
+2026-10-22T09:02:09.6211559Z  bad194149a82 Extracting [==================>                                ]  41.22MB/108.8MB
+2026-10-22T09:02:09.6972850Z  c34c57a324bd Extracting [=================================================> ]  93.03MB/94.23MB
+2026-10-22T09:02:09.7242792Z  bad194149a82 Extracting [=====================>                             ]  46.79MB/108.8MB
+2026-10-22T09:02:09.7253232Z  c34c57a324bd Extracting [==================================================>]  94.23MB/94.23MB
+2026-10-22T09:02:09.8285808Z  bad194149a82 Extracting [=======================>                           ]  51.25MB/108.8MB
+2026-10-22T09:02:09.9391240Z  bad194149a82 Extracting [=========================>                         ]  55.15MB/108.8MB
+2026-10-22T09:02:10.2361740Z  bad194149a82 Extracting [==========================>                        ]  57.93MB/108.8MB
+2026-10-22T09:02:10.3443461Z  bad194149a82 Extracting [=============================>                     ]  64.62MB/108.8MB
+2026-10-22T09:02:10.4454926Z  bad194149a82 Extracting [================================>                  ]   71.3MB/108.8MB
+2026-10-22T09:02:10.5505464Z  bad194149a82 Extracting [===================================>               ]  77.43MB/108.8MB
+2026-10-22T09:02:10.5846847Z  c34c57a324bd Pull complete 
+2026-10-22T09:02:10.5917220Z  verify-service Pulled 
+2026-10-22T09:02:10.6563644Z  bad194149a82 Extracting [======================================>            ]  84.12MB/108.8MB
+2026-10-22T09:02:10.7576948Z  bad194149a82 Extracting [=========================================>         ]  90.24MB/108.8MB
+2026-10-22T09:02:10.8945796Z  bad194149a82 Extracting [===========================================>       ]  94.14MB/108.8MB
+2026-10-22T09:02:11.0329347Z  bad194149a82 Extracting [=============================================>     ]  98.04MB/108.8MB
+2026-10-22T09:02:11.1359936Z  bad194149a82 Extracting [==============================================>    ]  100.8MB/108.8MB
+2026-10-22T09:02:11.2418049Z  bad194149a82 Extracting [===============================================>   ]  103.1MB/108.8MB
+2026-10-22T09:02:11.3602255Z  bad194149a82 Extracting [================================================>  ]  104.7MB/108.8MB
+2026-10-22T09:02:11.4753775Z  bad194149a82 Extracting [================================================>  ]  105.8MB/108.8MB
+2026-10-22T09:02:11.7239201Z  bad194149a82 Extracting [=================================================> ]  107.5MB/108.8MB
+2026-10-22T09:02:11.8712780Z  bad194149a82 Extracting [==================================================>]  108.8MB/108.8MB
+2026-10-22T09:02:12.4008554Z  bad194149a82 Pull complete 
+2026-10-22T09:02:12.4018515Z  5f1cded65589 Extracting [==================================================>]   9.45kB/9.45kB
+2026-10-22T09:02:12.4034239Z  5f1cded65589 Extracting [==================================================>]   9.45kB/9.45kB
+2026-10-22T09:02:12.4475283Z  5f1cded65589 Pull complete 
+2026-10-22T09:02:12.4485367Z  7d0650bb210f Extracting [==================================================>]     128B/128B
+2026-10-22T09:02:12.4497218Z  7d0650bb210f Extracting [==================================================>]     128B/128B
+2026-10-22T09:02:12.4672098Z  7d0650bb210f Pull complete 
+2026-10-22T09:02:12.4685717Z  23a39b1003e9 Extracting [==================================================>]     168B/168B
+2026-10-22T09:02:12.4692805Z  23a39b1003e9 Extracting [==================================================>]     168B/168B
+2026-10-22T09:02:12.4760282Z  23a39b1003e9 Pull complete 
+2026-10-22T09:02:12.4770499Z  21f7a31efcb7 Extracting [==================================================>]  6.081kB/6.081kB
+2026-10-22T09:02:12.4783095Z  21f7a31efcb7 Extracting [==================================================>]  6.081kB/6.081kB
+2026-10-22T09:02:12.4850981Z  21f7a31efcb7 Pull complete 
+2026-10-22T09:02:12.4870016Z  ae52c8ce1a35 Extracting [==================================================>]     185B/185B
+2026-10-22T09:02:12.4870944Z  ae52c8ce1a35 Extracting [==================================================>]     185B/185B
+2026-10-22T09:02:12.4938296Z  ae52c8ce1a35 Pull complete 
+2026-10-22T09:02:12.4988831Z  postgres Pulled 
+2026-10-22T09:02:12.5016309Z  Network verify_default  Creating
+2026-10-22T09:02:12.5545729Z  Network verify_default  Created
+2026-10-22T09:02:12.5552042Z  Container postgres-db  Creating
+2026-10-22T09:02:12.5736431Z  Container postgres-db  Created
+2026-10-22T09:02:12.5739303Z  Container verify-service  Creating
+2026-10-22T09:02:12.5832637Z  Container verify-service  Created
+2026-10-22T09:02:12.5833703Z  Container verify-verify-tls-1  Creating
+2026-10-22T09:02:12.5927738Z  Container verify-verify-tls-1  Created
+2026-10-22T09:02:12.5940871Z  Container postgres-db  Starting
+2026-10-22T09:02:12.7438500Z  Container postgres-db  Started
+2026-10-22T09:02:12.7439448Z  Container postgres-db  Waiting
+2026-10-22T09:02:18.2451297Z  Container postgres-db  Healthy
+2026-10-22T09:02:18.2452134Z  Container verify-service  Starting
+2026-10-22T09:02:18.4663813Z  Container verify-service  Started
+2026-10-22T09:02:18.4664746Z  Container verify-verify-tls-1  Starting
+2026-10-22T09:02:18.7005829Z  Container verify-verify-tls-1  Started
+2026-10-22T09:02:18.7007414Z  Container verify-service  Waiting
+2026-10-22T09:02:18.7008001Z  Container postgres-db  Waiting
+2026-10-22T09:02:18.7008435Z  Container verify-verify-tls-1  Waiting
+2026-10-22T09:02:19.2000494Z  Container postgres-db  Healthy
+2026-10-22T09:02:34.1997668Z  Container verify-verify-tls-1  Healthy
+2026-10-22T09:02:34.2014587Z  Container verify-service  Healthy
+2026-10-22T09:02:34.7172623Z wait-ready: suite-api ok
+2026-10-22T09:02:34.7509610Z wait-ready: verify-host ok
+2026-10-22T09:02:34.8422468Z wait-ready: verify-from-suite ok
+2026-10-22T09:02:34.8423642Z wait-ready: OK (0s)
+2026-10-22T09:02:34.8425535Z env.sh: ready in 73s
+2026-10-22T09:02:34.8446567Z up	74
+2026-10-22T09:02:34.9226910Z  minio Pulling 
+2026-10-22T09:02:35.7058930Z  44e481484056 Pulling fs layer 
+2026-10-22T09:02:35.7065897Z  7b091f3190c1 Pulling fs layer 
+2026-10-22T09:02:35.7068001Z  abc8e79286e4 Pulling fs layer 
+2026-10-22T09:02:35.7068421Z  f4fa1d391506 Pulling fs layer 
+2026-10-22T09:02:35.7068817Z  556c1b13c420 Pulling fs layer 
+2026-10-22T09:02:35.7069171Z  0fb7687a4a75 Pulling fs layer 
+2026-10-22T09:02:35.7069547Z  5243dc7e3601 Pulling fs layer 
+2026-10-22T09:02:35.7069918Z  80bd503ad813 Pulling fs layer 
+2026-10-22T09:02:35.7070376Z  621b1503e421 Pulling fs layer 
+2026-10-22T09:02:35.7070763Z  99fa23bce1d1 Pulling fs layer 
+2026-10-22T09:02:35.7071396Z  d9200d3a31b7 Pulling fs layer 
+2026-10-22T09:02:35.7071722Z  5243dc7e3601 Waiting 
+2026-10-22T09:02:35.7072183Z  80bd503ad813 Waiting 
+2026-10-22T09:02:35.7072552Z  621b1503e421 Waiting 
+2026-10-22T09:02:35.7072870Z  99fa23bce1d1 Waiting 
+2026-10-22T09:02:35.7073738Z  f4fa1d391506 Waiting 
+2026-10-22T09:02:35.7074032Z  d9200d3a31b7 Waiting 
+2026-10-22T09:02:35.7075288Z  556c1b13c420 Waiting 
+2026-10-22T09:02:35.7075653Z  0fb7687a4a75 Waiting 
+2026-10-22T09:02:35.9425108Z  abc8e79286e4 Downloading [>                                                  ]  34.16kB/3.358MB
+2026-10-22T09:02:35.9491372Z  44e481484056 Downloading [>                                                  ]    426kB/41.2MB
+2026-10-22T09:02:36.0342036Z  7b091f3190c1 Downloading [>                                                  ]    129kB/12.58MB
+2026-10-22T09:02:36.0395929Z  abc8e79286e4 Verifying Checksum 
+2026-10-22T09:02:36.0396604Z  abc8e79286e4 Download complete 
+2026-10-22T09:02:36.0492022Z  44e481484056 Downloading [=======>                                           ]  5.964MB/41.2MB
+2026-10-22T09:02:36.1400052Z  7b091f3190c1 Downloading [============>                                      ]  3.146MB/12.58MB
+2026-10-22T09:02:36.1625336Z  44e481484056 Downloading [============>                                      ]  10.22MB/41.2MB
+2026-10-22T09:02:36.2457324Z  7b091f3190c1 Downloading [===================>                               ]  4.981MB/12.58MB
+2026-10-22T09:02:36.2656394Z  44e481484056 Downloading [========================>                          ]  20.02MB/41.2MB
+2026-10-22T09:02:36.2901641Z  f4fa1d391506 Downloading [>                                                  ]  24.58kB/2.397MB
+2026-10-22T09:02:36.3150339Z  f4fa1d391506 Download complete 
+2026-10-22T09:02:36.3565721Z  7b091f3190c1 Downloading [======================>                            ]  5.636MB/12.58MB
+2026-10-22T09:02:36.3671708Z  44e481484056 Downloading [=================================>                 ]  27.26MB/41.2MB
+2026-10-22T09:02:36.4587046Z  7b091f3190c1 Downloading [====================================>              ]  9.175MB/12.58MB
+2026-10-22T09:02:36.5168668Z  44e481484056 Downloading [===========================================>       ]  35.77MB/41.2MB
+2026-10-22T09:02:36.5347416Z  7b091f3190c1 Downloading [==================================================>]  12.58MB/12.58MB
+2026-10-22T09:02:36.5348089Z  7b091f3190c1 Verifying Checksum 
+2026-10-22T09:02:36.5351355Z  7b091f3190c1 Download complete 
+2026-10-22T09:02:36.5580774Z  44e481484056 Verifying Checksum 
+2026-10-22T09:02:36.5581337Z  44e481484056 Download complete 
+2026-10-22T09:02:36.5665695Z  44e481484056 Extracting [>                                                  ]    426kB/41.2MB
+2026-10-22T09:02:36.5667698Z  556c1b13c420 Downloading [>                                                  ]  8.214kB/701.5kB
+2026-10-22T09:02:36.5788062Z  556c1b13c420 Downloading [==================================================>]  701.5kB/701.5kB
+2026-10-22T09:02:36.5797518Z  556c1b13c420 Verifying Checksum 
+2026-10-22T09:02:36.5797974Z  556c1b13c420 Download complete 
+2026-10-22T09:02:36.6668640Z  44e481484056 Extracting [======>                                            ]  5.538MB/41.2MB
+2026-10-22T09:02:36.7621451Z  5243dc7e3601 Downloading [>                                                  ]  8.192kB/775.8kB
+2026-10-22T09:02:36.7717096Z  44e481484056 Extracting [============>                                      ]  10.65MB/41.2MB
+2026-10-22T09:02:36.7752095Z  0fb7687a4a75 Downloading [>                                                  ]  8.214kB/810.3kB
+2026-10-22T09:02:36.7824799Z  5243dc7e3601 Verifying Checksum 
+2026-10-22T09:02:36.7829128Z  5243dc7e3601 Download complete 
+2026-10-22T09:02:36.7972897Z  0fb7687a4a75 Verifying Checksum 
+2026-10-22T09:02:36.7975036Z  0fb7687a4a75 Download complete 
+2026-10-22T09:02:36.8420050Z  80bd503ad813 Downloading [>                                                  ]  5.177kB/513.6kB
+2026-10-22T09:02:36.8578609Z  80bd503ad813 Downloading [==================================================>]  513.6kB/513.6kB
+2026-10-22T09:02:36.8583665Z  80bd503ad813 Download complete 
+2026-10-22T09:02:36.8811758Z  44e481484056 Extracting [==================>                                ]  15.34MB/41.2MB
+2026-10-22T09:02:36.9812415Z  621b1503e421 Downloading [>                                                  ]  5.177kB/447.9kB
+2026-10-22T09:02:36.9920429Z  44e481484056 Extracting [===========================>                       ]  22.58MB/41.2MB
+2026-10-22T09:02:36.9957692Z  621b1503e421 Download complete 
+2026-10-22T09:02:37.0746725Z  99fa23bce1d1 Downloading [>                                                  ]  12.32kB/1.152MB
+2026-10-22T09:02:37.0950798Z  99fa23bce1d1 Verifying Checksum 
+2026-10-22T09:02:37.0955225Z  99fa23bce1d1 Download complete 
+2026-10-22T09:02:37.0955859Z  44e481484056 Extracting [====================================>              ]  30.24MB/41.2MB
+2026-10-22T09:02:37.1457439Z  d9200d3a31b7 Downloading [==>                                                ]  1.369kB/24.26kB
+2026-10-22T09:02:37.1461137Z  d9200d3a31b7 Downloading [==================================================>]  24.26kB/24.26kB
+2026-10-22T09:02:37.1462756Z  d9200d3a31b7 Verifying Checksum 
+2026-10-22T09:02:37.1463848Z  d9200d3a31b7 Download complete 
+2026-10-22T09:02:37.1955636Z  44e481484056 Extracting [============================================>      ]  37.06MB/41.2MB
+2026-10-22T09:02:37.2787284Z  44e481484056 Extracting [==================================================>]   41.2MB/41.2MB
+2026-10-22T09:02:37.2896605Z  44e481484056 Pull complete 
+2026-10-22T09:02:37.2931822Z  7b091f3190c1 Extracting [>                                                  ]  131.1kB/12.58MB
+2026-10-22T09:02:37.3942237Z  7b091f3190c1 Extracting [===================>                               ]  4.981MB/12.58MB
+2026-10-22T09:02:37.4947301Z  7b091f3190c1 Extracting [===========================================>       ]  10.88MB/12.58MB
+2026-10-22T09:02:37.5312007Z  7b091f3190c1 Extracting [==================================================>]  12.58MB/12.58MB
+2026-10-22T09:02:37.5328258Z  7b091f3190c1 Extracting [==================================================>]  12.58MB/12.58MB
+2026-10-22T09:02:38.0344713Z  7b091f3190c1 Pull complete 
+2026-10-22T09:02:38.0375282Z  abc8e79286e4 Extracting [>                                                  ]  65.54kB/3.358MB
+2026-10-22T09:02:38.1155577Z  abc8e79286e4 Extracting [==================================================>]  3.358MB/3.358MB
+2026-10-22T09:02:38.1352479Z  abc8e79286e4 Pull complete 
+2026-10-22T09:02:38.1412918Z  f4fa1d391506 Extracting [>                                                  ]  32.77kB/2.397MB
+2026-10-22T09:02:38.2149006Z  f4fa1d391506 Extracting [==================================================>]  2.397MB/2.397MB
+2026-10-22T09:02:38.2294612Z  f4fa1d391506 Pull complete 
+2026-10-22T09:02:38.2314761Z  556c1b13c420 Extracting [==>                                                ]  32.77kB/701.5kB
+2026-10-22T09:02:38.3312840Z  556c1b13c420 Extracting [============================================>      ]  622.6kB/701.5kB
+2026-10-22T09:02:38.3334512Z  556c1b13c420 Extracting [==================================================>]  701.5kB/701.5kB
+2026-10-22T09:02:38.3347209Z  556c1b13c420 Extracting [==================================================>]  701.5kB/701.5kB
+2026-10-22T09:02:38.3587790Z  556c1b13c420 Pull complete 
+2026-10-22T09:02:38.3603918Z  0fb7687a4a75 Extracting [==>                                                ]  32.77kB/810.3kB
+2026-10-22T09:02:38.3792323Z  0fb7687a4a75 Extracting [==================================================>]  810.3kB/810.3kB
+2026-10-22T09:02:38.3793237Z  0fb7687a4a75 Extracting [==================================================>]  810.3kB/810.3kB
+2026-10-22T09:02:38.4039768Z  0fb7687a4a75 Pull complete 
+2026-10-22T09:02:38.4048178Z  5243dc7e3601 Extracting [==>                                                ]  32.77kB/775.8kB
+2026-10-22T09:02:38.4211521Z  5243dc7e3601 Extracting [==================================================>]  775.8kB/775.8kB
+2026-10-22T09:02:38.4212783Z  5243dc7e3601 Extracting [==================================================>]  775.8kB/775.8kB
+2026-10-22T09:02:38.4329872Z  5243dc7e3601 Pull complete 
+2026-10-22T09:02:38.4344278Z  80bd503ad813 Extracting [===>                                               ]  32.77kB/513.6kB
+2026-10-22T09:02:38.4460013Z  80bd503ad813 Extracting [==================================================>]  513.6kB/513.6kB
+2026-10-22T09:02:38.4484336Z  80bd503ad813 Extracting [==================================================>]  513.6kB/513.6kB
+2026-10-22T09:02:38.4666111Z  80bd503ad813 Pull complete 
+2026-10-22T09:02:38.4676664Z  621b1503e421 Extracting [===>                                               ]  32.77kB/447.9kB
+2026-10-22T09:02:38.4809079Z  621b1503e421 Extracting [==================================================>]  447.9kB/447.9kB
+2026-10-22T09:02:38.4812824Z  621b1503e421 Extracting [==================================================>]  447.9kB/447.9kB
+2026-10-22T09:02:38.4911151Z  621b1503e421 Pull complete 
+2026-10-22T09:02:38.4920271Z  99fa23bce1d1 Extracting [=>                                                 ]  32.77kB/1.152MB
+2026-10-22T09:02:38.5386033Z  99fa23bce1d1 Extracting [==================================================>]  1.152MB/1.152MB
+2026-10-22T09:02:38.5550783Z  99fa23bce1d1 Pull complete 
+2026-10-22T09:02:38.5563107Z  d9200d3a31b7 Extracting [==================================================>]  24.26kB/24.26kB
+2026-10-22T09:02:38.5574562Z  d9200d3a31b7 Extracting [==================================================>]  24.26kB/24.26kB
+2026-10-22T09:02:38.5907968Z  d9200d3a31b7 Pull complete 
+2026-10-22T09:02:38.5953032Z  minio Pulled 
+2026-10-22T09:02:38.5976361Z  Network minio_default  Creating
+2026-10-22T09:02:38.6571644Z  Network minio_default  Created
+2026-10-22T09:02:38.6576465Z  Container minio-minio-1  Creating
+2026-10-22T09:02:38.6754669Z  Container minio-minio-1  Created
+2026-10-22T09:02:38.6763075Z  Container minio-minio-1  Starting
+2026-10-22T09:02:38.8705151Z  Container minio-minio-1  Started
+2026-10-22T09:02:39.9177787Z minio	5
+2026-10-22T09:03:42.7284704Z ### Gate verify-redirect-uri: GREEN (9 ok)
+2026-10-22T09:03:42.7286822Z run `20261022090330-75b7` · benchmark: Benchmark of record: Inji Verify 1.0.x, redirect_uri / url_query / direct_post · flags: verify_evidence_upload=true · environment: fault=none, certify_release=1.0
+2026-10-22T09:03:42.7288246Z | module | expected | observed | verdict | finding | detail |
+2026-10-22T09:03:42.7288870Z |---|---|---|---|---|---|
+2026-10-22T09:03:42.7290161Z | oid4vp-1final-verifier-happy-flow | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7292213Z | oid4vp-1final-verifier-minimal-cnf-jwk | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7294709Z | oid4vp-1final-verifier-invalid-kb-jwt-signature | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7296942Z | oid4vp-1final-verifier-invalid-credential-signature | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7299181Z | oid4vp-1final-verifier-invalid-sd-hash | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7301483Z | oid4vp-1final-verifier-invalid-kb-jwt-nonce | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7303884Z | oid4vp-1final-verifier-invalid-kb-jwt-aud | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7306067Z | oid4vp-1final-verifier-kb-jwt-iat-in-past | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:03:42.7308641Z | oid4vp-1final-verifier-kb-jwt-iat-in-future | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+2026-10-22T09:04:42.7454601Z ### Gate verify-x509: GREEN (11 ok)
+2026-10-22T09:04:42.7456406Z run `20261022090433-a5a8` · benchmark: Benchmark of record: Inji Verify 1.0.x, x509_san_dns / request_uri_signed / direct_post · flags: verify_evidence_upload=true · environment: fault=none, certify_release=1.0
+2026-10-22T09:04:42.7457745Z | module | expected | observed | verdict | finding | detail |
+2026-10-22T09:04:42.7458274Z |---|---|---|---|---|---|
+2026-10-22T09:04:42.7459447Z | oid4vp-1final-verifier-happy-flow | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7461819Z | oid4vp-1final-verifier-minimal-cnf-jwk | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7463665Z | oid4vp-1final-verifier-request-uri-method-post | SKIPPED | SKIPPED | OK |  |  |
+2026-10-22T09:04:42.7465257Z | oid4vp-1final-verifier-request-uri-fetched-twice | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7466646Z | oid4vp-1final-verifier-invalid-kb-jwt-signature | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7467967Z | oid4vp-1final-verifier-invalid-credential-signature | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7469245Z | oid4vp-1final-verifier-invalid-sd-hash | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7470487Z | oid4vp-1final-verifier-invalid-kb-jwt-nonce | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7471724Z | oid4vp-1final-verifier-invalid-kb-jwt-aud | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7472961Z | oid4vp-1final-verifier-kb-jwt-iat-in-past | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7475346Z | oid4vp-1final-verifier-kb-jwt-iat-in-future | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+2026-10-22T09:04:42.7598555Z tests	123
+2026-10-22T09:04:43.1479547Z time="2026-10-22T09:04:43Z" level=warning msg="/home/runner/work/inji-certify-verify/inji-certify-verify/upstream/inji-verify/docker-compose/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+2026-10-22T09:04:43.1617874Z  Container verify-verify-tls-1  Stopping
+2026-10-22T09:04:43.2400226Z  Container verify-verify-tls-1  Stopped
+2026-10-22T09:04:43.2400936Z  Container verify-verify-tls-1  Removing
+2026-10-22T09:04:43.2552212Z  Container verify-verify-tls-1  Removed
+2026-10-22T09:04:43.2553770Z  Container verify-service  Stopping
+2026-10-22T09:04:43.5332045Z  Container verify-service  Stopped
+2026-10-22T09:04:43.5335625Z  Container verify-service  Removing
+2026-10-22T09:04:43.5501465Z  Container verify-service  Removed
+2026-10-22T09:04:43.5502342Z  Container postgres-db  Stopping
+2026-10-22T09:04:43.6504605Z  Container postgres-db  Stopped
+2026-10-22T09:04:43.6505207Z  Container postgres-db  Removing
+2026-10-22T09:04:43.6652112Z  Container postgres-db  Removed
+2026-10-22T09:04:43.6661297Z  Network verify_default  Removing
+2026-10-22T09:04:43.7298831Z  Network verify_default  Removed
+2026-10-22T09:04:43.8176845Z  Container oidf-nginx-1  Stopping
+2026-10-22T09:04:43.9417400Z  Container oidf-nginx-1  Stopped
+2026-10-22T09:04:43.9418036Z  Container oidf-nginx-1  Removing
+2026-10-22T09:04:43.9528925Z  Container oidf-nginx-1  Removed
+2026-10-22T09:04:43.9529518Z  Container oidf-server-1  Stopping
+2026-10-22T09:04:54.0704000Z  Container oidf-server-1  Stopped
+2026-10-22T09:04:54.0704568Z  Container oidf-server-1  Removing
+2026-10-22T09:04:54.0919845Z  Container oidf-server-1  Removed
+2026-10-22T09:04:54.0921070Z  Container oidf-mongodb-1  Stopping
+2026-10-22T09:04:54.1861183Z  Container oidf-mongodb-1  Stopped
+2026-10-22T09:04:54.1862133Z  Container oidf-mongodb-1  Removing
+2026-10-22T09:04:54.1944365Z  Container oidf-mongodb-1  Removed
+2026-10-22T09:04:54.2016985Z down	11
+2026-10-22T09:04:54.2044386Z total	415
+2026-10-22T09:04:54.2091989Z ##[group]Run {
+2026-10-22T09:04:54.2092259Z [36;1m{[0m
+2026-10-22T09:04:54.2092467Z [36;1m  echo '## Run info'[0m
+2026-10-22T09:04:54.2092711Z [36;1m  echo '```'[0m
+2026-10-22T09:04:54.2093063Z [36;1m  cat reports/run-info.txt 2>/dev/null || echo "no run-info.txt"[0m
+2026-10-22T09:04:54.2093784Z [36;1m  echo '```'[0m
+2026-10-22T09:04:54.2094136Z [36;1m  for f in reports/*/gate.md; do [ -f "$f" ] && { echo "### $f"; cat "$f"; }; done[0m
+2026-10-22T09:04:54.2094584Z [36;1m  if [ -f reports/timing.tsv ]; then[0m
+2026-10-22T09:04:54.2094884Z [36;1m    echo '### timing'[0m
+2026-10-22T09:04:54.2095127Z [36;1m    echo '```'[0m
+2026-10-22T09:04:54.2095363Z [36;1m    cat reports/timing.tsv[0m
+2026-10-22T09:04:54.2095614Z [36;1m    echo '```'[0m
+2026-10-22T09:04:54.2095824Z [36;1m  fi[0m
+2026-10-22T09:04:54.2096043Z [36;1m} >> "$GITHUB_STEP_SUMMARY"[0m
+2026-10-22T09:04:54.2209936Z shell: /usr/bin/bash -e {0}
+2026-10-22T09:04:54.2210204Z env:
+2026-10-22T09:04:54.2210532Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2211001Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T09:04:54.2211428Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2211794Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2212158Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2212527Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T09:04:54.2212949Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:54.2213612Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:54.2214006Z ##[endgroup]
+2026-10-22T09:04:54.2424139Z ##[group]Run echo '## Diff vs previous successful run' >> "$GITHUB_STEP_SUMMARY"
+2026-10-22T09:04:54.2424715Z [36;1mecho '## Diff vs previous successful run' >> "$GITHUB_STEP_SUMMARY"[0m
+2026-10-22T09:04:54.2425465Z [36;1mid=$(gh run list --branch "$DEFAULT_BRANCH" --workflow full-stack-conformance.yml --status success -L 1 --json databaseId -q '.[0].databaseId' || true)[0m
+2026-10-22T09:04:54.2426265Z [36;1mif [ -n "$id" ]; then gh run download "$id" -n "conformance-$TARGET" -D prev || true; fi[0m
+2026-10-22T09:04:54.2426667Z [36;1mfound=0[0m
+2026-10-22T09:04:54.2426909Z [36;1mfor f in reports/*/results.jsonl; do[0m
+2026-10-22T09:04:54.2427201Z [36;1m  [ -f "$f" ] || continue[0m
+2026-10-22T09:04:54.2427482Z [36;1m  cfg=$(basename "$(dirname "$f")")[0m
+2026-10-22T09:04:54.2427782Z [36;1m  p="prev/$cfg/results.jsonl"[0m
+2026-10-22T09:04:54.2428059Z [36;1m  [ -f "$p" ] || continue[0m
+2026-10-22T09:04:54.2428314Z [36;1m  found=1[0m
+2026-10-22T09:04:54.2428702Z [36;1m  { echo "### $cfg"; python -m runner diff "$p" "$f"; } >> "$GITHUB_STEP_SUMMARY" || true[0m
+2026-10-22T09:04:54.2429103Z [36;1mdone[0m
+2026-10-22T09:04:54.2429473Z [36;1m[ "$found" = 1 ] || echo "no previous successful run to diff against" >> "$GITHUB_STEP_SUMMARY"[0m
+2026-10-22T09:04:54.2496499Z shell: /usr/bin/bash -e {0}
+2026-10-22T09:04:54.2496753Z env:
+2026-10-22T09:04:54.2497029Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2497653Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T09:04:54.2498070Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2498442Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2498818Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.2499189Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T09:04:54.2499607Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:54.2500089Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:54.2503166Z   GH_TOKEN: ***
+2026-10-22T09:04:54.2503688Z   TARGET: verify
+2026-10-22T09:04:54.2503907Z   DEFAULT_BRANCH: main
+2026-10-22T09:04:54.2504136Z ##[endgroup]
+2026-10-22T09:04:54.9401249Z ##[group]Run actions/upload-artifact@v4
+2026-10-22T09:04:54.9401709Z with:
+2026-10-22T09:04:54.9402025Z   name: conformance-verify
+2026-10-22T09:04:54.9402413Z   path: reports/
+2026-10-22T09:04:54.9402740Z   if-no-files-found: warn
+2026-10-22T09:04:54.9403109Z   compression-level: 6
+2026-10-22T09:04:54.9403679Z   overwrite: false
+2026-10-22T09:04:54.9404009Z   include-hidden-files: false
+2026-10-22T09:04:54.9404378Z env:
+2026-10-22T09:04:54.9404758Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.9405450Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T09:04:54.9406132Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.9406729Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.9407316Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:54.9407922Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T09:04:54.9408670Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:54.9409451Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:54.9410052Z ##[endgroup]
+2026-10-22T09:04:55.2471794Z (node:7487) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-22T09:04:55.2473157Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-22T09:04:55.3502410Z With the provided path, there will be 105 files uploaded
+2026-10-22T09:04:55.3503237Z Artifact name is valid!
+2026-10-22T09:04:55.3503781Z Root directory input is valid!
+2026-10-22T09:04:55.5642230Z Beginning upload of artifact content to blob storage
+2026-10-22T09:04:56.1026345Z (node:7487) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-22T09:04:56.5500869Z Uploaded bytes 8388608
+2026-10-22T09:04:56.6889948Z Uploaded bytes 10703613
+2026-10-22T09:04:56.7215505Z Finished uploading artifact content to blob storage!
+2026-10-22T09:04:56.7217036Z SHA256 digest of uploaded artifact zip is ea504f39ce92f4313c0b1114377cef133149eef1c2bc0c4f3e45816c89103df0
+2026-10-22T09:04:56.7218100Z Finalizing artifact upload
+2026-10-22T09:04:57.1766940Z Artifact conformance-verify.zip successfully finalized. Artifact ID 12414487035
+2026-10-22T09:04:57.1768289Z Artifact conformance-verify has been successfully uploaded! Final size is 10703613 bytes. Artifact ID is 12414487035
+2026-10-22T09:04:57.1773123Z Artifact download URL: https://github.com/Sathvik21S21Rao/inji-certify-verify/actions/runs/39751717857/artifacts/12414487035
+2026-10-22T09:04:57.1953836Z ##[group]Run scripts/env.sh down all || true
+2026-10-22T09:04:57.1954392Z [36;1mscripts/env.sh down all || true[0m
+2026-10-22T09:04:57.2039982Z shell: /usr/bin/bash -e {0}
+2026-10-22T09:04:57.2040265Z env:
+2026-10-22T09:04:57.2040568Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:57.2041023Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-22T09:04:57.2041786Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:57.2042173Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:57.2042559Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-22T09:04:57.2042938Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-22T09:04:57.2043619Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:57.2044131Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.12-1/x64
+2026-10-22T09:04:57.2044560Z ##[endgroup]
+2026-10-22T09:04:57.2925713Z time="2026-10-22T09:04:57Z" level=warning msg="/home/runner/work/inji-certify-verify/inji-certify-verify/upstream/inji-certify/docker-compose/docker-compose-injistack/docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+2026-10-22T09:04:57.3087201Z time="2026-10-22T09:04:57Z" level=warning msg="Warning: No resource found to remove for project \"certify\"."
+2026-10-22T09:04:57.3960923Z time="2026-10-22T09:04:57Z" level=warning msg="/home/runner/work/inji-certify-verify/inji-certify-verify/upstream/inji-verify/docker-compose/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+2026-10-22T09:04:57.4938499Z time="2026-10-22T09:04:57Z" level=warning msg="Warning: No resource found to remove for project \"oidf\"."
+2026-10-22T09:04:57.5078979Z Post job cleanup.
+2026-10-22T09:04:57.6561847Z (node:7585) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-22T09:04:57.6563587Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-22T09:04:57.6948569Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/inji-certify-verify/inji-certify-verify --files-from manifest.txt --use-compress-program zstdmt
+2026-10-22T09:05:00.0738151Z (node:7585) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-22T09:05:01.0581170Z Sent 10969984 of 413623168 (2.7%), 10.5 MBs/sec
+2026-10-22T09:05:02.0587935Z Sent 346514304 of 413623168 (83.8%), 165.1 MBs/sec
+2026-10-22T09:05:02.2344726Z Sent 413623168 of 413623168 (100.0%), 181.2 MBs/sec
+2026-10-22T09:05:02.4825297Z Cache saved with the key: setup-java-Linux-x64-maven-8d10141ac77bc38d7c1660dfb90b924b030c4bea05720e102b6bf5a3dee55dd9
+2026-10-22T09:05:02.5021605Z Post job cleanup.
+2026-10-22T09:05:02.6411272Z (node:7608) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-22T09:05:02.6412771Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-22T09:05:02.6714898Z Post job cleanup.
+2026-10-22T09:05:02.7953873Z [command]/usr/bin/git version
+2026-10-22T09:05:02.8029251Z git version 2.55.0
+2026-10-22T09:05:02.8079928Z Temporarily overriding HOME='/home/runner/work/_temp/c1e66a88-6068-4486-a691-42a47dd14914' before making global git config changes
+2026-10-22T09:05:02.8082968Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-22T09:05:02.8087095Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/inji-certify-verify/inji-certify-verify
+2026-10-22T09:05:02.8194254Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-22T09:05:02.8284583Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-22T09:05:02.8711500Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-22T09:05:02.8746094Z http.https://github.com/.extraheader
+2026-10-22T09:05:02.8764472Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-22T09:05:02.8844855Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-22T09:05:02.9224651Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-22T09:05:02.9241518Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-22T09:05:02.9838874Z Cleaning up orphan processes
+2026-10-22T09:05:03.0203230Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

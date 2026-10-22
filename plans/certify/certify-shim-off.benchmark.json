@@ -27,7 +27,7 @@
    "first_failure": "EnsureContentTypeApplicationJwt",
    "expected_warnings": [],
    "finding": "F-CERT-5",
-   "reason": "Accept: application/jwt is answered with plain JSON, not a signed-metadata JWT (whether Certify must support it is an open finding).",
+   "reason": "Accept: application/jwt gets 200 with an empty body and no Content-Type (OID4VCI 1.0 12.2.2 requires a Content-Type; plain JSON would make the suite skip). Certify defect.",
    "ki": "F-CERT-5"
   },
   {

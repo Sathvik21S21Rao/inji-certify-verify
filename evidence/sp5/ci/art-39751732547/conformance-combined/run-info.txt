@@ -1,0 +1,9 @@
+mode=all
+certify_configs=certify-shim-off
+verify_configs=verify-redirect-uri verify-x509
+CONFORMANCE_CERTIFY_AS_METADATA_SHIM=false
+CONFORMANCE_FAULT=strip-credential-endpoint
+driver=testrig
+strict=no
+parallel=no
+git=89f5574

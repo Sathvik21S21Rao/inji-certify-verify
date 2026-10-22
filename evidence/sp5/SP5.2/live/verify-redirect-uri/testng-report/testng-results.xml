@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="0" failed="9" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-happy-flow [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rdCfnjDRTVkGupM]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-minimal-cnf-jwk [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rSGepLllB3JFJZQ]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=dU5uPho4TShASMo]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-credential-signature [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=INxP170FgHcB7qr]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-sd-hash [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=Brw38dDkT3ho3xm]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4XygvrVrBzPQYrk]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=7LDNDJJXy9attPR]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=v2Drehqe6PMu8BY]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-redirect-uri] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+    </line>
+    <line>
+      <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=cUaGlQP4RvLAMKw]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-22T09:13:47 GMT" name="Inji-Verify OpenID Conformance" finished-at="2026-10-22T09:13:53 GMT" duration-ms="5623">
+    <groups>
+    </groups>
+    <test started-at="2026-10-22T09:13:47 GMT" name="OpenIDConformance" finished-at="2026-10-22T09:13:53 GMT" duration-ms="5623">
+      <class name="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest">
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:50 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:50 GMT" duration-ms="7" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-happy-flow [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_01, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-happy-flow.log.json","oid4vp-1final-verifier-happy-flow.verify-result.json","oid4vp-1final-verifier-happy-flow.verify-result.png"],"module":"oid4vp-1final-verifier-happy-flow","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:48.411219Z","finished":"2026-10-22T09:13:50.137Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=rdCfnjDRTVkGupM","outcome":"fail","test_id":"rdCfnjDRTVkGupM","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=rdCfnjDRTVkGupM]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=rdCfnjDRTVkGupM
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-happy-flow [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rdCfnjDRTVkGupM]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:50 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:50 GMT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name="" status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:50 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:50 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-minimal-cnf-jwk [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_02, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-minimal-cnf-jwk.log.json","oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json","oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png"],"module":"oid4vp-1final-verifier-minimal-cnf-jwk","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:50.230750Z","finished":"2026-10-22T09:13:50.603Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=rSGepLllB3JFJZQ","outcome":"fail","test_id":"rSGepLllB3JFJZQ","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=rSGepLllB3JFJZQ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=rSGepLllB3JFJZQ
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-minimal-cnf-jwk [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rSGepLllB3JFJZQ]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:50 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:50 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-happy-flow status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:51 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:51 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_03, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json","oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json","oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-signature","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:50.697698Z","finished":"2026-10-22T09:13:51.077Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=dU5uPho4TShASMo","outcome":"fail","test_id":"dU5uPho4TShASMo","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=dU5uPho4TShASMo]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=dU5uPho4TShASMo
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=dU5uPho4TShASMo]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:51 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:51 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:51 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:51 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-credential-signature [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_04, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-credential-signature.log.json","oid4vp-1final-verifier-invalid-credential-signature.verify-result.json","oid4vp-1final-verifier-invalid-credential-signature.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-credential-signature","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:51.195352Z","finished":"2026-10-22T09:13:51.567Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=INxP170FgHcB7qr","outcome":"fail","test_id":"INxP170FgHcB7qr","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=INxP170FgHcB7qr]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=INxP170FgHcB7qr
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-credential-signature [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=INxP170FgHcB7qr]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:51 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:51 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-sd-hash [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_05, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-sd-hash.log.json","oid4vp-1final-verifier-invalid-sd-hash.verify-result.json","oid4vp-1final-verifier-invalid-sd-hash.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-sd-hash","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:51.649268Z","finished":"2026-10-22T09:13:52.023Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=Brw38dDkT3ho3xm","outcome":"fail","test_id":"Brw38dDkT3ho3xm","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=Brw38dDkT3ho3xm]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=Brw38dDkT3ho3xm
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-sd-hash [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=Brw38dDkT3ho3xm]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_06, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-nonce","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:52.120318Z","finished":"2026-10-22T09:13:52.312Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=4XygvrVrBzPQYrk","outcome":"fail","test_id":"4XygvrVrBzPQYrk","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=4XygvrVrBzPQYrk]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=4XygvrVrBzPQYrk
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4XygvrVrBzPQYrk]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_07, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-aud","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:52.343781Z","finished":"2026-10-22T09:13:52.512Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=7LDNDJJXy9attPR","outcome":"fail","test_id":"7LDNDJJXy9attPR","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=7LDNDJJXy9attPR]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=7LDNDJJXy9attPR
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=7LDNDJJXy9attPR]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_08, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json"],"module":"oid4vp-1final-verifier-kb-jwt-iat-in-past","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:52.569288Z","finished":"2026-10-22T09:13:52.732Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=v2Drehqe6PMu8BY","outcome":"fail","test_id":"v2Drehqe6PMu8BY","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=v2Drehqe6PMu8BY]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=v2Drehqe6PMu8BY
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=v2Drehqe6PMu8BY]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_09, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json"],"module":"oid4vp-1final-verifier-kb-jwt-iat-in-future","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:13:52.782020Z","finished":"2026-10-22T09:13:52.948Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=cUaGlQP4RvLAMKw","outcome":"fail","test_id":"cUaGlQP4RvLAMKw","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=cUaGlQP4RvLAMKw]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=cUaGlQP4RvLAMKw
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-redirect-uri] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object]]>
+            </line>
+            <line>
+              <![CDATA[warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=cUaGlQP4RvLAMKw]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:52 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:52 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:13:53 GMT" name="testTearDown" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:13:53 GMT" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest -->
+    </test> <!-- OpenIDConformance -->
+  </suite> <!-- Inji-Verify OpenID Conformance -->
+</testng-results>

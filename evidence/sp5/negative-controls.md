@@ -1,0 +1,18 @@
+# Oracle 3: negative controls
+
+A gate that never goes red proves nothing. Each control below runs a known-bad target through the same entry script and benchmark as the known-good runs. All of them were run in October 2026, and no new runs were made for this page. Paths are relative to `evidence/`.
+
+| # | Known-bad target | Pass | Expected | Observed | Evidence |
+|---|---|---|---|---|---|
+| 1 | Fault proxy removes `nonce_endpoint` from the issuer metadata (`CONFORMANCE_FAULT=strip-nonce-endpoint`) | certify-shim-on (diagnostic) | RED | **RED**: regression, `oid4vci-1_0-issuer-fail-invalid-nonce` PASSED→FAILED `VCIValidateCredentialErrorResponse`; script exit 1 | `sp4/SP4.4/fault-certify-shim-on/certify-shim-on/gate.md`, `sp4/SP4.4/diff-fault-certify-shim-on.md`, `sp4/SP4.4/exits.txt` (`fault-certify-shim-on exit=1`); the field really is absent: `sp4/SP4.4/fault-metadata.json`, `sp4/SP4.4/fault-grep.txt` (`grep_exit=1`) |
+| 1′ | Same fault | certify-shim-off (benchmark of record) | — | GREEN. This is a **known blind spot**, not a pass: F-CERT-1 stops 12 of 14 modules before any nonce use, and the metadata test doesn't require `nonce_endpoint` | `sp4/SP4.4/fault-certify-shim-off/`, `sp4/SP4.4/diff-fault-certify-shim-off.md` (no changes) |
+| 2 | Fault proxy removes `credential_endpoint` (`CONFORMANCE_FAULT=strip-credential-endpoint`), the control for the record pass | certify-shim-off | RED | **RED**: new_failure, `oid4vci-1_0-issuer-metadata-test` expected `VCICredentialIssuerMetadataValidation`, got `VCICheckRequiredMetadataFields`; exit 1 | runner driver: `sp4/SP4.8/fault-i/certify-shim-off/gate.md`, `sp4/SP4.8/diff-fault-i.md`; **testrig driver**: `sp4/SP4.14/tr-fault-i/certify-shim-off/gate.md`, `sp4/SP4.14/exits.txt` (`tr-fault-i exit=1`), `sp4/SP4.14/parity-fault-i.md` |
+| 3 | Inji Certify `v0.14.0` (draft-13 OpenID4VCI) against the 1.0 plan | certify-shim-off | RED | **RED**: new_warning, `VCICheckForOldSdJwtFormatInCredentialConfigurations` on `oid4vci-1_0-issuer-metadata-test` (benchmark v2, expected-warning sets); exit 1 | gate: `sp4/SP4.11/gate-c014.md`, `sp4/SP4.11/benchmark-diff.txt`; **testrig driver**: `sp4/SP4.14/tr-c014/certify-shim-off/gate.md`, `sp4/SP4.14/exits.txt` (`tr-c014 exit=1`); warning sets proven stable 48/48 on known-good: `sp4/SP4.10/warning-stability.md`; setup history: `sp4/SP4.8/c014-r2/`, `sp4/SP4.8/c014-r2-diff.md` |
+| 4 | Known-good control for the same batch | combined, testrig driver | GREEN | GREEN, 3 gates; exit 0 | `sp4/SP4.14/tr-kg-combined/*/gate.md`, `sp4/SP4.14/exits.txt` (`tr-kg-combined exit=0`) |
+| 5 | Doctored TestNG report (oracle 1's own negative control) | reconcile | MISMATCH | see `sp5/SP5.2/README.md` | `sp5/SP5.2/doctored/` |
+
+## What this shows and what it doesn't
+- The record pass (shim off) catches faults in the **issuer metadata** (controls 2 and 3). While F-CERT-1 stands, it cannot catch faults in the token, nonce or credential flow, which is control 1′. Those faults show up only in the diagnostic shim-on pass (control 1). This limit is documented in the public `docs/known-limitations.md`.
+- Control 3 turns red only through the expected-warning set (ADR-004 amendment 1). With a first-failure fingerprint alone, it stayed GREEN (`sp4/SP4.8/c014-r2/certify-shim-off/gate.md`).
+- There is no Verify-side negative control. Verify's modules all fail at the first request today (F-VER-1, F-VER-5), so a Verify fault would be masked the same way as control 1′. [inferred: no run was made.]
+- On GitHub CI, the same controls are `workflow_dispatch` inputs (`fault=strip-credential-endpoint`, `fault=strip-nonce-endpoint` + `certify_shim=true`). They have not been run on GitHub yet, because they need a push.

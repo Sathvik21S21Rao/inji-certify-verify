@@ -1,0 +1,194 @@
+INFO    2026-10-22 09:13:56,110 [main] io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner  - ** ------------- Started Inji Verify API Testrig--------------------------------- **
+INFO    2026-10-22 09:13:56,192 [main] io.mosip.testrig.apirig.utils.GlobalMethods  - RUN_CONTEXT set to: 488_
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR   2026-10-22 09:13:56,303 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Old MosipTestResource folder not exist.
+INFO    2026-10-22 09:13:56,305 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/request.json
+INFO    2026-10-22 09:13:56,310 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/request.json to external resource successfully..!
+INFO    2026-10-22 09:13:56,313 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/internalAuthRequest.json
+INFO    2026-10-22 09:13:56,314 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/internalAuthRequest.json to external resource successfully..!
+INFO    2026-10-22 09:13:56,314 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/DB_delete_script.txt
+INFO    2026-10-22 09:13:56,315 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/DB_delete_script.txt to external resource successfully..!
+INFO    2026-10-22 09:13:56,315 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency.json
+INFO    2026-10-22 09:13:56,316 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency.json to external resource successfully..!
+INFO    2026-10-22 09:13:56,317 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/application.properties
+INFO    2026-10-22 09:13:56,317 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/application.properties to external resource successfully..!
+INFO    2026-10-22 09:13:56,317 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/healthCheckEndpoint.properties
+INFO    2026-10-22 09:13:56,318 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/healthCheckEndpoint.properties to external resource successfully..!
+INFO    2026-10-22 09:13:56,318 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/injiVerify.properties
+INFO    2026-10-22 09:13:56,319 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/injiVerify.properties to external resource successfully..!
+INFO    2026-10-22 09:13:56,319 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/valueMapping.properties
+INFO    2026-10-22 09:13:56,319 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/valueMapping.properties to external resource successfully..!
+INFO    2026-10-22 09:13:56,324 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/id-default.properties
+INFO    2026-10-22 09:13:56,325 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/id-default.properties to external resource successfully..!
+INFO    2026-10-22 09:13:56,327 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Kernel.properties
+INFO    2026-10-22 09:13:56,328 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Kernel.properties to external resource successfully..!
+INFO    2026-10-22 09:14:01,313 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/customize-emailable-report-template.html
+INFO    2026-10-22 09:14:01,314 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: customize-emailable-report-template.html to external resource successfully..!
+INFO    2026-10-22 09:14:07,703 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/metadata.xml
+INFO    2026-10-22 09:14:07,704 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: metadata.xml to external resource successfully..!
+INFO    2026-10-22 09:14:12,876 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/log4j.properties
+INFO    2026-10-22 09:14:12,876 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: log4j.properties to external resource successfully..!
+INFO    2026-10-22 09:14:17,834 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/spring.properties
+INFO    2026-10-22 09:14:17,835 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: spring.properties to external resource successfully..!
+INFO    2026-10-22 09:14:27,701 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/dbConfig.xml
+INFO    2026-10-22 09:14:27,701 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/dbConfig.xml to external resource successfully..!
+INFO    2026-10-22 09:14:27,701 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/.xml
+INFO    2026-10-22 09:14:27,702 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/.xml to external resource successfully..!
+INFO    2026-10-22 09:14:32,583 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/testCaseSkippedList.txt
+INFO    2026-10-22 09:14:32,583 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: testCaseSkippedList.txt to external resource successfully..!
+ERROR   2026-10-22 09:14:37,446 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Exception /home/inji/MosipTestResource/MosipTemporaryTestResource/config/bioValue.properties (No such file or directory)
+INFO    2026-10-22 09:14:37,447 [main] io.mosip.testrig.apirig.utils.ConfigManager  - jar:file:/home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jar!/config/Kernel.properties
+INFO    2026-10-22 09:14:37,447 [main] io.mosip.testrig.apirig.utils.ConfigManager  - jar:file:/home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jar!/config/Kernel.properties
+INFO    2026-10-22 09:14:37,457 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - We have created a Config Manager. Beginning to read properties!
+INFO    2026-10-22 09:14:37,458 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Environemnt is  ==== :local
+INFO    2026-10-22 09:14:37,458 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Application URI ======http://localhost:8080
+INFO    2026-10-22 09:14:37,458 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Application URI ======null
+INFO    2026-10-22 09:14:37,458 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Test Level ======smokeAndRegression
+INFO    2026-10-22 09:14:37,458 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Test Level ======[]
+INFO    2026-10-22 09:14:37,458 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Configs from properties file are set.
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-happy-flow [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4p83qCCIPwpsDuP
+evidence: oid4vp-1final-verifier-happy-flow.log.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.png
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-minimal-cnf-jwk [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=fKKg7h0bndX8MyL
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-request-uri-method-post [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/SKIPPED/skip
+message: The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=iOM6dKTSbnBqu7x
+evidence: oid4vp-1final-verifier-request-uri-method-post.log.json
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-request-uri-fetched-twice [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=A8DHVyNUThxQTaC
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.log.json
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.json
+evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.png
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=eF5yGDT3Beb5x3i
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-invalid-credential-signature [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=ets6nT8bW7UhyXL
+evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-invalid-sd-hash [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=yCiBKXOMBwkEXKm
+evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=whifb2SJxnuRO4N
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rOChP2PIuXpl6as
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=FS6Hd7L2k6MjJkJ
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json
+run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509
+oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-x509] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate
+warning: ValidateRequestObjectIssIfPresent
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=cS9dwUIy6HgdqKD
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+INFO    2026-10-22 09:14:44,029 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: /home/inji/automationLogAndReport
+ERROR   2026-10-22 09:14:44,029 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/home/testng-report' does not exist
+INFO    2026-10-22 09:14:44,029 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: /home/inji/automationLogAndReport
+INFO    2026-10-22 09:14:44,029 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-22 09:14:44,029 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-22 09:14:44,029 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Inji-Verify OpenID Conformance
+Total tests run: 11, Passes: 0, Failures: 10, Skips: 1
+===============================================
+
+ERROR   2026-10-22 09:14:44,033 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 10
+INFO    2026-10-22 09:14:44,066 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-x509-2026-10-22_09-14-report.html
+INFO    2026-10-22 09:14:44,066 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-x509-2026-10-22_09-14-full-report_T-11_P-0_S-1_F-10_I-0_KI-0.html
+WARN    2026-10-22 09:14:44,067 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /home/inji/testng-report/mosip-local-injiverify-conformance-verify-x509-2026-10-22_09-14-report.html
+INFO    2026-10-22 09:14:44,067 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-22 09:14:44,069 [main] io.mosip.testrig.apirig.utils.S3Adapter  - useAccountAsBucketname:: true
+INFO    2026-10-22 09:14:44,071 [main] io.mosip.testrig.apirig.utils.S3Adapter  - bucketName :: automation
+INFO    2026-10-22 09:14:44,071 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3UserKey() :: minioadmin
+INFO    2026-10-22 09:14:44,071 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Host() :: http://localhost:9000
+INFO    2026-10-22 09:14:44,071 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Region() :: null
+INFO    2026-10-22 09:14:44,072 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3SecretKey() :: Masked
+INFO    2026-10-22 09:14:44,734 [main] io.mosip.testrig.apirig.report.EmailableReport  - isStoreSuccess:: true
+INFO    2026-10-22 09:14:44,735 [main] io.mosip.testrig.apirig.report.EmailableReport  - Pushed file to S3
+INFO    2026-10-22 09:14:44,735 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-22 09:14:44,809 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-22 09:14:44,811 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-22 09:14:44,816 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-x509-2026-10-22_09-14-report.html
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-x509-2026-10-22_09-14-error-report_T-11_S-1_F-10_I-0_KI-0.html
+WARN    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /home/inji/testng-report/mosip-local-injiverify-conformance-verify-x509-2026-10-22_09-14-report.html
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.utils.S3Adapter  - useAccountAsBucketname:: true
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.utils.S3Adapter  - bucketName :: automation
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3UserKey() :: minioadmin
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Host() :: http://localhost:9000
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Region() :: null
+INFO    2026-10-22 09:14:44,817 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3SecretKey() :: Masked
+INFO    2026-10-22 09:14:44,834 [main] io.mosip.testrig.apirig.report.EmailableReport  - isStoreSuccess:: true
+INFO    2026-10-22 09:14:44,835 [main] io.mosip.testrig.apirig.report.EmailableReport  - Pushed file to S3
+INFO    2026-10-22 09:14:44,835 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-22 09:14:44,835 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found

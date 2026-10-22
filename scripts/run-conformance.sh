@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # up -> wait-ready -> runner -> gate -> down for one component or both.
 # Usage: scripts/run-conformance.sh (--component certify|verify | --combined) [--strict] [--parallel] [--keep] [--out DIR]
-# Exit: 0 all gates green, 1 any red, 2 usage / any gate could not evaluate, 3 `up` failed.
+# Exit: 0 all gates green, 1 any red, 2 usage / any gate or reconcile could not evaluate, 3 `up` failed,
+#   4 testrig driver only: TestNG report and suite plan export disagree (outranks 1 and 2, not 3).
 # NO locking here: on the shared Docker host wrap the whole call in
 #   flock /tmp/inji-conformance.docker.lock scripts/run-conformance.sh ...
 set -euo pipefail
@@ -86,6 +87,11 @@ run_config() { # component config
   local rc=0
   "$PY" -m runner gate "$dir/results.jsonl" "plans/$comp/$cfg.benchmark.json" $STRICT | tee "$dir/gate.md" || rc=${PIPESTATUS[0]}
   echo "$rc" >"$dir/gate.exit"
+  if [ "$driver" = testrig ]; then
+    rc=0
+    "$PY" -m runner reconcile "$dir/testng-report" | tee "$dir/reconcile.md" || rc=${PIPESTATUS[0]}
+    echo "$rc" >"$dir/reconcile.exit"
+  fi
 }
 chain() { local c=$1; shift; for cfg in "$@"; do run_config "$c" "$cfg"; done; }
 
@@ -148,7 +154,10 @@ fi
 rc=0
 for cfg in "${cfgs[@]}"; do
   g=$(cat "$OUT/$cfg/gate.exit" 2>/dev/null || echo 2)
-  case $g in 0) ;; 1) [ $rc = 2 ] || rc=1;; *) rc=2;; esac
+  case $g in 0) ;; 1) [ $rc = 2 ] || [ $rc = 4 ] || rc=1;; *) [ $rc = 4 ] || rc=2;; esac
+  if [ "$driver" = testrig ]; then
+    case $(cat "$OUT/$cfg/reconcile.exit" 2>/dev/null || echo 2) in 0) ;; 1) rc=4;; *) [ $rc = 4 ] || rc=2;; esac
+  fi
 done
 [ -n "$keep" ] && phase total $((SECONDS - t0))
 exit $rc

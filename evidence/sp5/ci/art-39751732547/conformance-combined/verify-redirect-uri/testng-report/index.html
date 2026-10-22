@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" class="navigator-link">
+              <span class="suite-name border-failed">Inji-Verify OpenID Conformance</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Inji_Verify_OpenID_Conformance" class="navigator-link ">
+                    <span>injiverifyConformanceSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Inji_Verify_OpenID_Conformance" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Inji_Verify_OpenID_Conformance" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Inji_Verify_OpenID_Conformance" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Inji_Verify_OpenID_Conformance" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Inji_Verify_OpenID_Conformance" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Inji_Verify_OpenID_Conformance" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 9 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" class="hide-methods failed suite-Inji_Verify_OpenID_Conformance"> (hide)</a> <!-- hide-methods failed suite-Inji_Verify_OpenID_Conformance -->
+                      <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" class="show-methods failed suite-Inji_Verify_OpenID_Conformance"> (show)</a> <!-- show-methods failed suite-Inji_Verify_OpenID_Conformance -->
+                    </span>
+                    <div class="method-list-content failed suite-Inji_Verify_OpenID_Conformance">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=nul...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=nul...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=nul...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=nul...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null,...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, rol...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, rol...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, te...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, te...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, rol...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, rol...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Inji_Verify_OpenID_Conformance" title="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest" class="method navigator-link" hash-for-method="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=n...)">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=n...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Inji_Verify_OpenID_Conformance -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Inji_Verify_OpenID_Conformance" class="panel Inji_Verify_OpenID_Conformance">
+          <div class="suite-Inji_Verify_OpenID_Conformance-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_08, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json"],"module":"oid4vp-1final-verifier-kb-jwt-iat-in-past","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:36.271088Z","finished":"2026-10-22T09:18:36.480Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=xEKO4CGSCSEeOnn","outcome":"fail","test_id":"xEKO4CGSCSEeOnn","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=xEKO4CGSCSEeOnn
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=nul...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=nul...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-minimal-cnf-jwk [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_02, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-minimal-cnf-jwk.log.json","oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json","oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png"],"module":"oid4vp-1final-verifier-minimal-cnf-jwk","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:32.964431Z","finished":"2026-10-22T09:18:33.663Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=no7CVJ8vgkSZAA2","outcome":"fail","test_id":"no7CVJ8vgkSZAA2","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=no7CVJ8vgkSZAA2
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=nul...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=nul...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-sd-hash [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_05, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-sd-hash.log.json","oid4vp-1final-verifier-invalid-sd-hash.verify-result.json","oid4vp-1final-verifier-invalid-sd-hash.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-sd-hash","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:35.131857Z","finished":"2026-10-22T09:18:35.616Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=uO6vZviMJCpGu0h","outcome":"fail","test_id":"uO6vZviMJCpGu0h","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=uO6vZviMJCpGu0h
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null,...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null,...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_03, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json","oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json","oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-signature","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:33.821608Z","finished":"2026-10-22T09:18:34.363Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=vOMe7vGbLLbk9qS","outcome":"fail","test_id":"vOMe7vGbLLbk9qS","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=vOMe7vGbLLbk9qS
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_07, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-aud","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:35.972194Z","finished":"2026-10-22T09:18:36.216Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=a5BQEnPAAFfBTqq","outcome":"fail","test_id":"a5BQEnPAAFfBTqq","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=a5BQEnPAAFfBTqq
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, rol...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, rol...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_06, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-nonce","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:35.719007Z","finished":"2026-10-22T09:18:35.905Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=YL3HwjPdhs8ytA5","outcome":"fail","test_id":"YL3HwjPdhs8ytA5","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=YL3HwjPdhs8ytA5
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, te...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, te...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-happy-flow [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_01, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-happy-flow.log.json","oid4vp-1final-verifier-happy-flow.verify-result.json","oid4vp-1final-verifier-happy-flow.verify-result.png"],"module":"oid4vp-1final-verifier-happy-flow","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:30.539735Z","finished":"2026-10-22T09:18:32.828Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=lozDWDbsMnUqaXr","outcome":"fail","test_id":"lozDWDbsMnUqaXr","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=lozDWDbsMnUqaXr
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, rol...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, rol...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_09, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json"],"module":"oid4vp-1final-verifier-kb-jwt-iat-in-future","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:36.550617Z","finished":"2026-10-22T09:18:36.805Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=TPpCkRlEPHfHsYE","outcome":"fail","test_id":"TPpCkRlEPHfHsYE","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=TPpCkRlEPHfHsYE
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=n...)">
+                  </a> <!-- test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=n...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-credential-signature [verify-redirect-uri] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-redirect-uri_04, additionalDependencies=null),{"failed_conditions":[{"condition":"VP1FinalValidateVpFormatsSupportedInClientMetadata","requirements":["OID4VP-1FINALA-B.2.2","OID4VP-1FINALA-B.3.4"],"message":"client_metadata is missing or not a JSON object"}],"evidence":["oid4vp-1final-verifier-invalid-credential-signature.log.json","oid4vp-1final-verifier-invalid-credential-signature.verify-result.json","oid4vp-1final-verifier-invalid-credential-signature.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-credential-signature","warnings":[{"condition":"VP1FinalCheckForUnexpectedParametersInVpClientMetadata","requirements":["OID4VP-1FINAL-5.1"],"message":"client_metadata not present in request but it is mandatory to include vp_formats in it"}],"started":"2026-10-22T09:18:34.478838Z","finished":"2026-10-22T09:18:35.021Z","type":"module","message":"VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=mXQ7G1qeF7kzSNH","outcome":"fail","test_id":"mXQ7G1qeF7kzSNH","status":"FINISHED"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object | https://localhost.emobix.co.uk:8443/log-detail.html?log=mXQ7G1qeF7kzSNH
+	at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+	at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Inji_Verify_OpenID_Conformance-class-failed -->
+        </div> <!-- panel Inji_Verify_OpenID_Conformance -->
+        <div panel-name="test-xml-Inji_Verify_OpenID_Conformance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/inji/testNgXmlFiles/injiverifyConformanceSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Inji-Verify OpenID Conformance&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.mosip.testrig.apirig.report.EmailableReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;OpenIDConformance&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OpenIDConformance --&gt;
+&lt;/suite&gt; &lt;!-- Inji-Verify OpenID Conformance --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Inji_Verify_OpenID_Conformance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Inji-Verify OpenID Conformance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">OpenIDConformance (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Inji_Verify_OpenID_Conformance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Inji-Verify OpenID Conformance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Inji_Verify_OpenID_Conformance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Inji-Verify OpenID Conformance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Inji_Verify_OpenID_Conformance');
+function tableData_Inji_Verify_OpenID_Conformance() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test')
+data.setCell(0, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(0, 3, 26);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test')
+data.setCell(1, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(1, 3, 20);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test')
+data.setCell(2, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(2, 3, 10);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test')
+data.setCell(3, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(3, 3, 9);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test')
+data.setCell(4, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(4, 3, 4);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test')
+data.setCell(5, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test')
+data.setCell(6, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(6, 3, 3);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test')
+data.setCell(7, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test')
+data.setCell(8, 2, 'io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest')
+data.setCell(8, 3, 3);
+window.suiteTableData['Inji_Verify_OpenID_Conformance']= { tableData: data, tableDiv: 'times-div-Inji_Verify_OpenID_Conformance'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 82 ms</span>
+              <div id="times-div-Inji_Verify_OpenID_Conformance">
+              </div> <!-- times-div-Inji_Verify_OpenID_Conformance -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Inji_Verify_OpenID_Conformance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Inji-Verify OpenID Conformance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=xEKO4CGSCSEeOnn</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=nul...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-minimal-cnf-jwk [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=no7CVJ8vgkSZAA2</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=nul...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-invalid-sd-hash [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=uO6vZviMJCpGu0h</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=vOMe7vGbLLbk9qS</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=a5BQEnPAAFfBTqq</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, rol...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=YL3HwjPdhs8ytA5</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, te...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-happy-flow [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=lozDWDbsMnUqaXr</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-happy-flow.log.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-happy-flow.verify-result.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-happy-flow.verify-result.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, rol...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=TPpCkRlEPHfHsYE</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=n...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">run_id: 20261022091830-909e, plan_id: LCTRtXh9OCHzG, config_name: verify-redirect-uri</span>
+                <span class="reporter-method-output">oid4vp-1final-verifier-invalid-credential-signature [verify-redirect-uri] verify_evidence_upload=true</span>
+                <span class="reporter-method-output">status/result/outcome: FINISHED/FAILED/fail</span>
+                <span class="reporter-method-output">message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object</span>
+                <span class="reporter-method-output">warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata</span>
+                <span class="reporter-method-output">log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=mXQ7G1qeF7kzSNH</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json</span>
+                <span class="reporter-method-output">evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Inji_Verify_OpenID_Conformance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Inji_Verify_OpenID_Conformance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, te...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name="" status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.Tes...)</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=nul...)</span>
+                <span class="method-start">847 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-happy-flow status=FAILURE method=OpenIDConforman...)</span>
+                <span class="method-start">852 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null,...)</span>
+                <span class="method-start">1507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk status=FAILURE method=OpenIDConf...)</span>
+                <span class="method-start">1512 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=n...)</span>
+                <span class="method-start">2155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature status=FAILURE method=O...)</span>
+                <span class="method-start">2159 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=nul...)</span>
+                <span class="method-start">2746 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature status=FAILURE meth...)</span>
+                <span class="method-start">2753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, rol...)</span>
+                <span class="method-start">2993 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash status=FAILURE method=OpenIDConf...)</span>
+                <span class="method-start">3000 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=...)</span>
+                <span class="method-start">3300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce status=FAILURE method=OpenI...)</span>
+                <span class="method-start">3328 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=...)</span>
+                <span class="method-start">3571 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud status=FAILURE method=OpenIDC...)</span>
+                <span class="method-start">3582 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test(TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, rol...)</span>
+                <span class="method-start">3936 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setResultTestName([TestResult name=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past status=FAILURE method=OpenIDC...)</span>
+                <span class="method-start">3946 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">5191 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

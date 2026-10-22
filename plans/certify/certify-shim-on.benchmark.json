@@ -27,7 +27,7 @@
    "first_failure": "EnsureContentTypeApplicationJwt",
    "expected_warnings": [],
    "finding": "F-CERT-5",
-   "reason": "Accept: application/jwt is answered with plain JSON, not a signed-metadata JWT (whether Certify must support it is an open finding).",
+   "reason": "Accept: application/jwt gets 200 with an empty body and no Content-Type (OID4VCI 1.0 12.2.2 requires a Content-Type; plain JSON would make the suite skip). Certify defect.",
    "ki": "F-CERT-5"
   },
   {
@@ -49,7 +49,7 @@
     "RequireOnlyBCP195RecommendedCiphersForTLS12"
    ],
    "finding": "F-CERT-3",
-   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "reason": "Credential endpoint 400 invalid_proof: Certify ignores client auth on the pre-auth token request (client_id \"\" in the token) and rejects proof iss = client_id (OID4VCI 1.0 App. F.1). Certify defect.",
    "ki": "F-CERT-3"
   },
   {
@@ -59,7 +59,7 @@
    "first_failure": "EnsureHttpStatusCodeIsAnyOf",
    "expected_warnings": [],
    "finding": "F-CERT-3",
-   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "reason": "Credential endpoint 400 invalid_proof: Certify ignores client auth on the pre-auth token request (client_id \"\" in the token) and rejects proof iss = client_id (OID4VCI 1.0 App. F.1). Certify defect.",
    "ki": "F-CERT-3"
   },
   {
@@ -69,7 +69,7 @@
    "first_failure": "EnsureHttpStatusCodeIsAnyOf",
    "expected_warnings": [],
    "finding": "F-CERT-3",
-   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "reason": "Credential endpoint 400 invalid_proof: Certify ignores client auth on the pre-auth token request (client_id \"\" in the token) and rejects proof iss = client_id (OID4VCI 1.0 App. F.1). Certify defect.",
    "ki": "F-CERT-3"
   },
   {
@@ -149,7 +149,7 @@
    "first_failure": "EnsureHttpStatusCodeIsAnyOf",
    "expected_warnings": [],
    "finding": "F-CERT-3",
-   "reason": "Credential endpoint 400 invalid_proof: proof JWT iss (suite client_id) rejected in the pre-auth flow (open finding).",
+   "reason": "Credential endpoint 400 invalid_proof: Certify ignores client auth on the pre-auth token request (client_id \"\" in the token) and rejects proof iss = client_id (OID4VCI 1.0 App. F.1). Certify defect.",
    "ki": "F-CERT-3"
   }
  ]

@@ -14,7 +14,7 @@ DEFAULT_ENV = {"CONFORMANCE_SERVER": "https://localhost.emobix.co.uk:8443/",
 
 
 def _report(a) -> int:
-    from . import combined, gate
+    from . import combined, gate, reconcile
     try:
         if a.cmd == "gate":
             res = gate.evaluate(gate.load(a.results), gate.load_benchmark(a.benchmark), a.strict)
@@ -26,12 +26,16 @@ def _report(a) -> int:
             bench = gate.init_benchmark(gate.load(a.results), a.results, a.label)
             Path(a.out).write_text(json.dumps(bench, indent=1, ensure_ascii=False) + "\n")
             return 0
+        if a.cmd == "reconcile":
+            res = reconcile.evaluate(a.report_dir, a.export, a.strict)
+            print(reconcile.markdown(res), end="")
+            return 1 if res["mismatch"] else 0
         if a.cmd == "diff":
             print(gate.diff(gate.load(a.a), gate.load(a.b)), end="")
             return 0
         return 1 if combined.write(a.out, [tuple(r.partition("=")[::2]) if "=" in r else (r, None) for r in a.runs],
                                    a.note) else 0
-    except gate.GateError as e:
+    except (gate.GateError, reconcile.ReconcileError) as e:
         print(f"error: {e}", file=sys.stderr)
         return 2
 
@@ -55,6 +59,10 @@ def main(argv=None) -> int:
     b.add_argument("--out", required=True)
     b.add_argument("--label", default="")
     b.add_argument("--force", action="store_true")
+    r = sub.add_parser("reconcile")
+    r.add_argument("report_dir")
+    r.add_argument("--export")
+    r.add_argument("--strict", action="store_true")
     d = sub.add_parser("diff")
     d.add_argument("a")
     d.add_argument("b")

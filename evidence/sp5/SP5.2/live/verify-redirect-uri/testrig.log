@@ -1,0 +1,178 @@
+INFO    2026-10-22 09:13:07,689 [main] io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner  - ** ------------- Started Inji Verify API Testrig--------------------------------- **
+INFO    2026-10-22 09:13:07,772 [main] io.mosip.testrig.apirig.utils.GlobalMethods  - RUN_CONTEXT set to: 05b_
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR   2026-10-22 09:13:07,882 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Old MosipTestResource folder not exist.
+INFO    2026-10-22 09:13:07,885 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/request.json
+INFO    2026-10-22 09:13:07,891 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/request.json to external resource successfully..!
+INFO    2026-10-22 09:13:07,895 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/internalAuthRequest.json
+INFO    2026-10-22 09:13:07,895 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/internalAuthRequest.json to external resource successfully..!
+INFO    2026-10-22 09:13:07,895 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/DB_delete_script.txt
+INFO    2026-10-22 09:13:07,896 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/DB_delete_script.txt to external resource successfully..!
+INFO    2026-10-22 09:13:07,896 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency.json
+INFO    2026-10-22 09:13:07,897 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency.json to external resource successfully..!
+INFO    2026-10-22 09:13:07,898 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/application.properties
+INFO    2026-10-22 09:13:07,899 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/application.properties to external resource successfully..!
+INFO    2026-10-22 09:13:07,899 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/healthCheckEndpoint.properties
+INFO    2026-10-22 09:13:07,899 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/healthCheckEndpoint.properties to external resource successfully..!
+INFO    2026-10-22 09:13:07,899 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/injiVerify.properties
+INFO    2026-10-22 09:13:07,900 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/injiVerify.properties to external resource successfully..!
+INFO    2026-10-22 09:13:07,900 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/valueMapping.properties
+INFO    2026-10-22 09:13:07,900 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/valueMapping.properties to external resource successfully..!
+INFO    2026-10-22 09:13:07,906 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/id-default.properties
+INFO    2026-10-22 09:13:07,907 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/id-default.properties to external resource successfully..!
+INFO    2026-10-22 09:13:07,909 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Kernel.properties
+INFO    2026-10-22 09:13:07,909 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Kernel.properties to external resource successfully..!
+INFO    2026-10-22 09:13:12,984 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/customize-emailable-report-template.html
+INFO    2026-10-22 09:13:12,984 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: customize-emailable-report-template.html to external resource successfully..!
+INFO    2026-10-22 09:13:17,984 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/metadata.xml
+INFO    2026-10-22 09:13:17,984 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: metadata.xml to external resource successfully..!
+INFO    2026-10-22 09:13:22,902 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/log4j.properties
+INFO    2026-10-22 09:13:22,902 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: log4j.properties to external resource successfully..!
+INFO    2026-10-22 09:13:27,813 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/spring.properties
+INFO    2026-10-22 09:13:27,814 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: spring.properties to external resource successfully..!
+INFO    2026-10-22 09:13:37,713 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/dbConfig.xml
+INFO    2026-10-22 09:13:37,714 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/dbConfig.xml to external resource successfully..!
+INFO    2026-10-22 09:13:37,714 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/.xml
+INFO    2026-10-22 09:13:37,714 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/.xml to external resource successfully..!
+INFO    2026-10-22 09:13:42,739 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/testCaseSkippedList.txt
+INFO    2026-10-22 09:13:42,739 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: testCaseSkippedList.txt to external resource successfully..!
+ERROR   2026-10-22 09:13:47,690 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Exception /home/inji/MosipTestResource/MosipTemporaryTestResource/config/bioValue.properties (No such file or directory)
+INFO    2026-10-22 09:13:47,692 [main] io.mosip.testrig.apirig.utils.ConfigManager  - jar:file:/home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jar!/config/Kernel.properties
+INFO    2026-10-22 09:13:47,692 [main] io.mosip.testrig.apirig.utils.ConfigManager  - jar:file:/home/inji/apitest-injiverify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jar!/config/Kernel.properties
+INFO    2026-10-22 09:13:47,701 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - We have created a Config Manager. Beginning to read properties!
+INFO    2026-10-22 09:13:47,702 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Environemnt is  ==== :local
+INFO    2026-10-22 09:13:47,702 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Application URI ======http://localhost:8080
+INFO    2026-10-22 09:13:47,702 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Application URI ======null
+INFO    2026-10-22 09:13:47,702 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Test Level ======smokeAndRegression
+INFO    2026-10-22 09:13:47,702 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Test Level ======[]
+INFO    2026-10-22 09:13:47,702 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Configs from properties file are set.
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-happy-flow [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rdCfnjDRTVkGupM
+evidence: oid4vp-1final-verifier-happy-flow.log.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.json
+evidence: oid4vp-1final-verifier-happy-flow.verify-result.png
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-minimal-cnf-jwk [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rSGepLllB3JFJZQ
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json
+evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=dU5uPho4TShASMo
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-credential-signature [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=INxP170FgHcB7qr
+evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-sd-hash [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=Brw38dDkT3ho3xm
+evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json
+evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4XygvrVrBzPQYrk
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=7LDNDJJXy9attPR
+evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=v2Drehqe6PMu8BY
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json
+run_id: 20261022091348-5d51, plan_id: DR33VyIEGEFQW, config_name: verify-redirect-uri
+oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-redirect-uri] verify_evidence_upload=true
+status/result/outcome: FINISHED/FAILED/fail
+message: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+failed: VP1FinalValidateVpFormatsSupportedInClientMetadata: client_metadata is missing or not a JSON object
+warning: VP1FinalCheckForUnexpectedParametersInVpClientMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=cUaGlQP4RvLAMKw
+evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+INFO    2026-10-22 09:13:53,959 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: /home/inji/automationLogAndReport
+ERROR   2026-10-22 09:13:53,959 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/home/testng-report' does not exist
+INFO    2026-10-22 09:13:53,959 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: /home/inji/automationLogAndReport
+INFO    2026-10-22 09:13:53,959 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-22 09:13:53,959 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-22 09:13:53,959 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Inji-Verify OpenID Conformance
+Total tests run: 9, Passes: 0, Failures: 9, Skips: 0
+===============================================
+
+ERROR   2026-10-22 09:13:53,962 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+prerequisiteFailedCount = 9
+INFO    2026-10-22 09:13:53,995 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-redirect-uri-2026-10-22_09-13-report.html
+INFO    2026-10-22 09:13:53,996 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-redirect-uri-2026-10-22_09-13-full-report_T-9_P-0_S-0_F-9_I-0_KI-0.html
+WARN    2026-10-22 09:13:53,996 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /home/inji/testng-report/mosip-local-injiverify-conformance-verify-redirect-uri-2026-10-22_09-13-report.html
+INFO    2026-10-22 09:13:53,996 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-22 09:13:53,998 [main] io.mosip.testrig.apirig.utils.S3Adapter  - useAccountAsBucketname:: true
+INFO    2026-10-22 09:13:54,001 [main] io.mosip.testrig.apirig.utils.S3Adapter  - bucketName :: automation
+INFO    2026-10-22 09:13:54,001 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3UserKey() :: minioadmin
+INFO    2026-10-22 09:13:54,002 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Host() :: http://localhost:9000
+INFO    2026-10-22 09:13:54,002 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Region() :: null
+INFO    2026-10-22 09:13:54,002 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3SecretKey() :: Masked
+INFO    2026-10-22 09:13:54,812 [main] io.mosip.testrig.apirig.report.EmailableReport  - isStoreSuccess:: true
+INFO    2026-10-22 09:13:54,812 [main] io.mosip.testrig.apirig.report.EmailableReport  - Pushed file to S3
+INFO    2026-10-22 09:13:54,813 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-22 09:13:54,899 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+ERROR   2026-10-22 09:13:54,901 [main] io.mosip.testrig.apirig.utils.AdminTestUtil  - Global Resource File Path Not Found/config/healthCheckEndpoint.properties (No such file or directory)
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-redirect-uri-2026-10-22_09-13-report.html
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/home/inji/testng-report/mosip-local-injiverify-conformance-verify-redirect-uri-2026-10-22_09-13-error-report_T-9_S-0_F-9_I-0_KI-0.html
+WARN    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /home/inji/testng-report/mosip-local-injiverify-conformance-verify-redirect-uri-2026-10-22_09-13-report.html
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.utils.S3Adapter  - useAccountAsBucketname:: true
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.utils.S3Adapter  - bucketName :: automation
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3UserKey() :: minioadmin
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Host() :: http://localhost:9000
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Region() :: null
+INFO    2026-10-22 09:13:54,909 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3SecretKey() :: Masked
+INFO    2026-10-22 09:13:54,926 [main] io.mosip.testrig.apirig.report.EmailableReport  - isStoreSuccess:: true
+INFO    2026-10-22 09:13:54,926 [main] io.mosip.testrig.apirig.report.EmailableReport  - Pushed file to S3
+INFO    2026-10-22 09:13:54,926 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-22 09:13:54,928 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found

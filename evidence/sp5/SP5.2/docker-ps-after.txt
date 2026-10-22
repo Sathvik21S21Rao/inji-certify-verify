@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE                         COMMAND                  CREATED        STATUS                      PORTS     NAMES
+6612a35e32b5   manimcommunity/manim:latest   "/bin/bash"              2 months ago   Exited (255) 2 months ago             manim-test
+8fc233ad619c   manimcommunity/manim:latest   "--name manim-test /…"   2 months ago   Created                               kind_easley
+1268eae95a3e   manimcommunity/manim:latest   "/opt/opensandbox/bo…"   2 months ago   Exited (0) 2 months ago               sandbox-16a442bd-43dc-44a6-8134-40965b1a412d
+5446b281eb5c   manimcommunity/manim:latest   "/opt/opensandbox/bo…"   2 months ago   Exited (0) 2 months ago               sandbox-b93fe5bd-5891-45d2-a342-9407913132ed

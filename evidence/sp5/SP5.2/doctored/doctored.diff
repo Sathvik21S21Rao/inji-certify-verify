@@ -1,0 +1,14 @@
+--- a/testng-results.xml
++++ b/testng-results.xml
+@@ -492,7 +492,7 @@
+           <reporter-output>
+           </reporter-output>
+         </test-method> <!-- setResultTestName -->
+-        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-21T14:27:24 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-21T14:27:24 GMT" duration-ms="2" status="FAIL">
++        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-21T14:27:24 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-21T14:27:24 GMT" duration-ms="2" status="PASS">
+           <params>
+             <param index="0">
+               <value>
+--- c-count: rename only (not a diff of content)
+- mosip-local-injicertify-conformance-certify-shim-off-2026-10-21_14-27-full-report_T-14_P-0_S-0_F-13_I-0_KI-1.html
++ mosip-local-injicertify-conformance-certify-shim-off-2026-10-21_14-27-full-report_T-14_P-1_S-0_F-12_I-0_KI-1.html

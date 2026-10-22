@@ -1,0 +1,234 @@
+INFO    2026-10-22 09:12:11,189 [main] io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner  - ** ------------- API Test Rig Run Started --------------------------------------------- **
+INFO    2026-10-22 09:12:11,256 [main] io.mosip.testrig.apirig.utils.GlobalMethods  - RUN_CONTEXT set to: f59_
+ERROR   2026-10-22 09:12:11,258 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Old MosipTestResource folder not exist.
+INFO    2026-10-22 09:12:11,263 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/request.json
+INFO    2026-10-22 09:12:11,275 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/request.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,279 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/esignetPayload.json
+INFO    2026-10-22 09:12:11,280 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/esignetPayload.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,280 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/pmsDataDeleteQueries.txt
+INFO    2026-10-22 09:12:11,281 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/pmsDataDeleteQueries.txt to external resource successfully..!
+INFO    2026-10-22 09:12:11,281 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/lang-isocode-transid.csv
+INFO    2026-10-22 09:12:11,282 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/lang-isocode-transid.csv to external resource successfully..!
+INFO    2026-10-22 09:12:11,283 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/idRepoToken.properties
+INFO    2026-10-22 09:12:11,284 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/idRepoToken.properties to external resource successfully..!
+INFO    2026-10-22 09:12:11,285 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency_mdl.json
+INFO    2026-10-22 09:12:11,285 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency_mdl.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,286 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/OtpGeneration/request.json
+INFO    2026-10-22 09:12:11,287 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/OtpGeneration/request.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,287 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/internalAuthRequest.json
+INFO    2026-10-22 09:12:11,288 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/internalAuthRequest.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,288 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/landRegistryDataDeleteQueries.txt
+INFO    2026-10-22 09:12:11,289 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/landRegistryDataDeleteQueries.txt to external resource successfully..!
+INFO    2026-10-22 09:12:11,289 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/idaCertDataDeleteQueries.txt
+INFO    2026-10-22 09:12:11,290 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/idaCertDataDeleteQueries.txt to external resource successfully..!
+INFO    2026-10-22 09:12:11,290 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/healthCheckEndpoint.properties
+INFO    2026-10-22 09:12:11,291 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/healthCheckEndpoint.properties to external resource successfully..!
+INFO    2026-10-22 09:12:11,292 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency_mdocvp.json
+INFO    2026-10-22 09:12:11,293 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency_mdocvp.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,293 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/masterDataCertDataDeleteQueries.txt
+INFO    2026-10-22 09:12:11,294 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/masterDataCertDataDeleteQueries.txt to external resource successfully..!
+INFO    2026-10-22 09:12:11,294 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/OtpValidation/request.json
+INFO    2026-10-22 09:12:11,295 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/OtpValidation/request.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,296 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency_preauthcode.json
+INFO    2026-10-22 09:12:11,297 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency_preauthcode.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,298 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency_mock.json
+INFO    2026-10-22 09:12:11,299 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency_mock.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,299 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/injiCertify.properties
+INFO    2026-10-22 09:12:11,300 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/injiCertify.properties to external resource successfully..!
+INFO    2026-10-22 09:12:11,301 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/valueMapping.properties
+INFO    2026-10-22 09:12:11,301 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/valueMapping.properties to external resource successfully..!
+INFO    2026-10-22 09:12:11,302 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/keyManagerCertDataDeleteQueries.txt
+INFO    2026-10-22 09:12:11,302 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/keyManagerCertDataDeleteQueries.txt to external resource successfully..!
+INFO    2026-10-22 09:12:11,303 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency_sunbird.json
+INFO    2026-10-22 09:12:11,303 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency_sunbird.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,304 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/application.properties
+INFO    2026-10-22 09:12:11,304 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/application.properties to external resource successfully..!
+INFO    2026-10-22 09:12:11,306 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Authorization/requestIdentity.json
+INFO    2026-10-22 09:12:11,307 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Authorization/requestIdentity.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,308 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency_mosipid.json
+INFO    2026-10-22 09:12:11,309 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency_mosipid.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,310 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/testCaseInterDependency_landregistry.json
+INFO    2026-10-22 09:12:11,311 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/testCaseInterDependency_landregistry.json to external resource successfully..!
+INFO    2026-10-22 09:12:11,319 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/id-default.properties
+INFO    2026-10-22 09:12:11,320 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/id-default.properties to external resource successfully..!
+INFO    2026-10-22 09:12:11,320 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/config/Kernel.properties
+INFO    2026-10-22 09:12:11,321 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: config/Kernel.properties to external resource successfully..!
+INFO    2026-10-22 09:12:18,210 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/customize-emailable-report-template.html
+INFO    2026-10-22 09:12:18,211 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: customize-emailable-report-template.html to external resource successfully..!
+INFO    2026-10-22 09:12:23,323 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/metadata.xml
+INFO    2026-10-22 09:12:23,323 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: metadata.xml to external resource successfully..!
+INFO    2026-10-22 09:12:28,440 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/log4j.properties
+INFO    2026-10-22 09:12:28,441 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: log4j.properties to external resource successfully..!
+INFO    2026-10-22 09:12:33,583 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/spring.properties
+INFO    2026-10-22 09:12:33,584 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: spring.properties to external resource successfully..!
+INFO    2026-10-22 09:12:43,732 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/PMS_delete_script.txt
+INFO    2026-10-22 09:12:43,734 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/PMS_delete_script.txt to external resource successfully..!
+INFO    2026-10-22 09:12:43,734 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/dbConfig.xml
+INFO    2026-10-22 09:12:43,735 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/dbConfig.xml to external resource successfully..!
+INFO    2026-10-22 09:12:43,735 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/.xml
+INFO    2026-10-22 09:12:43,736 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/.xml to external resource successfully..!
+INFO    2026-10-22 09:12:43,737 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/dbFiles/delete_Masterdata.sql
+INFO    2026-10-22 09:12:43,737 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: dbFiles/delete_Masterdata.sql to external resource successfully..!
+INFO    2026-10-22 09:12:48,890 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - resourceFile : /home/inji/apitest-injicertify-1.0.0-rc.1-SNAPSHOT-jar-with-dependencies.jardestinationFile : /home/inji/MosipTestResource/MosipTemporaryTestResource/testCaseSkippedList.txt
+INFO    2026-10-22 09:12:48,890 [main] io.mosip.testrig.apirig.testrunner.ExtractResource  - Copied the file: testCaseSkippedList.txt to external resource successfully..!
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [org.slf4j.reload4j.Reload4jServiceProvider@6b2fad11]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@79698539]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [org.slf4j.reload4j.Reload4jServiceProvider@6b2fad11]
+INFO    2026-10-22 09:12:54,096 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - We have created a Config Manager. Beginning to read properties!
+INFO    2026-10-22 09:12:54,096 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Environemnt is  ==== :local
+INFO    2026-10-22 09:12:54,097 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Application URI ======http://localhost:8091
+INFO    2026-10-22 09:12:54,097 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Application URI ======null
+INFO    2026-10-22 09:12:54,097 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Test Level ======smokeAndRegression
+INFO    2026-10-22 09:12:54,097 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Test Level ======[]
+INFO    2026-10-22 09:12:54,097 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Configs from properties file are set.
+INFO    2026-10-22 09:12:54,662 [main] org.testng.internal.Utils  - [TestNG] Running:
+  /home/inji/testNgXmlFiles/injicertifyConformanceSuite.xml
+
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-metadata-test [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: FINISHED/FAILED/fail
+message: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input
+failed: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input
+warning: CheckForUnexpectedParametersInCredentialIssuerMetadata
+warning: VCIValidateFormatOfCredentialConfigurationsInMetadata
+warning: CheckForUnexpectedParametersInServerMetadata
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zrhRYQ6yNugixPM
+evidence: oid4vci-1_0-issuer-metadata-test.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-metadata-test-signed [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response
+failed: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response
+failed: VCIDecodeSignedCredentialIssuerMetadata: If present, a string is expected for credential_issuer_metadata_endpoint_response body but JsonNull was found
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4Q5aFAxmmvXPdXp
+evidence: oid4vci-1_0-issuer-metadata-test-signed.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=izXvuiwE3hzlsJe
+evidence: oid4vci-1_0-issuer-happy-flow.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow-additional-requests [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=1jZHxRPxXEBbn7s
+evidence: oid4vci-1_0-issuer-happy-flow-additional-requests.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow-multiple-clients [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=TACcQ956jagw2Ay
+evidence: oid4vci-1_0-issuer-happy-flow-multiple-clients.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-happy-flow-skip-notification [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=F27MBT1mkzD3RXI
+evidence: oid4vci-1_0-issuer-happy-flow-skip-notification.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-batch-issuance [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rPbhIi3BH5YnEOt
+evidence: oid4vci-1_0-issuer-batch-issuance.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-invalid-nonce [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=BoWUx62v6N9Fdrc
+evidence: oid4vci-1_0-issuer-fail-invalid-nonce.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=nX9OAXdkDxbGYnY
+evidence: oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-invalid-key-attestation-signature [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=Pq8vfBJVbo6XJIv
+evidence: oid4vci-1_0-issuer-fail-invalid-key-attestation-signature.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-missing-proof [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=8XLxeguJCUUcpSE
+evidence: oid4vci-1_0-issuer-fail-missing-proof.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-unknown-credential-configuration [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=9LyR9OhNiUcHq2K
+evidence: oid4vci-1_0-issuer-fail-unknown-credential-configuration.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-unknown-credential-identifier [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=54QEqcJeM5X3ZZg
+evidence: oid4vci-1_0-issuer-fail-unknown-credential-identifier.log.json
+run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off
+oid4vci-1_0-issuer-fail-on-access-token-in-query [certify-shim-off] certify_as_metadata_shim=false
+status/result/outcome: INTERRUPTED/FAILED/fail
+message: CheckServerConfiguration: Couldn't find required component
+failed: CheckServerConfiguration: Couldn't find required component
+log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=blEEm0VpzrMaNoJ
+evidence: oid4vci-1_0-issuer-fail-on-access-token-in-query.log.json
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+INFO    2026-10-22 09:13:03,957 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Not able to store the log and report at the specified path: /home/inji/automationLogAndReport
+ERROR   2026-10-22 09:13:03,957 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Source '/home/testng-report' does not exist
+INFO    2026-10-22 09:13:03,957 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Copied the logs and reports successfully in folder: /home/inji/automationLogAndReport
+INFO    2026-10-22 09:13:03,957 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - 
+
+
+INFO    2026-10-22 09:13:03,958 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - Rest Assured framework has been reset because all tests have been executed.
+INFO    2026-10-22 09:13:03,958 [main] io.mosip.testrig.apirig.testrunner.BaseTestCase  - TESTING COMPLETE: SHUTTING DOWN FRAMEWORK!!
+
+===============================================
+Inji-Certify OpenID Conformance
+Total tests run: 14, Passes: 0, Failures: 13, Skips: 1
+===============================================
+
+prerequisiteFailedCount = 13
+INFO    2026-10-22 09:13:05,564 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/home/inji/testng-report/mosip-local-injicertify-conformance-certify-shim-off-2026-10-22_09-12-report.html
+INFO    2026-10-22 09:13:05,564 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/home/inji/testng-report/mosip-local-injicertify-conformance-certify-shim-off-2026-10-22_09-12-full-report_T-14_P-0_S-0_F-13_I-0_KI-1.html
+WARN    2026-10-22 09:13:05,565 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /home/inji/testng-report/mosip-local-injicertify-conformance-certify-shim-off-2026-10-22_09-12-report.html
+INFO    2026-10-22 09:13:05,565 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-22 09:13:05,566 [main] io.mosip.testrig.apirig.utils.S3Adapter  - useAccountAsBucketname:: true
+INFO    2026-10-22 09:13:05,567 [main] io.mosip.testrig.apirig.utils.S3Adapter  - bucketName :: automation
+INFO    2026-10-22 09:13:05,568 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3UserKey() :: minioadmin
+INFO    2026-10-22 09:13:05,568 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Host() :: http://localhost:9000
+INFO    2026-10-22 09:13:05,568 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Region() :: null
+INFO    2026-10-22 09:13:05,568 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3SecretKey() :: Masked
+INFO    2026-10-22 09:13:06,114 [main] io.mosip.testrig.apirig.report.EmailableReport  - isStoreSuccess:: true
+INFO    2026-10-22 09:13:06,114 [main] io.mosip.testrig.apirig.report.EmailableReport  - Pushed file to S3
+INFO    2026-10-22 09:13:06,115 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-22 09:13:06,192 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found
+INFO    2026-10-22 09:13:06,408 [main] io.mosip.testrig.apirig.report.EmailableReport  - reportFile is::/home/inji/testng-report/mosip-local-injicertify-conformance-certify-shim-off-2026-10-22_09-12-report.html
+INFO    2026-10-22 09:13:06,408 [main] io.mosip.testrig.apirig.report.EmailableReport  - New reportFile is::/home/inji/testng-report/mosip-local-injicertify-conformance-certify-shim-off-2026-10-22_09-12-error-report_T-14_S-0_F-13_I-0_KI-1.html
+WARN    2026-10-22 09:13:06,408 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to delete original report file: /home/inji/testng-report/mosip-local-injicertify-conformance-certify-shim-off-2026-10-22_09-12-report.html
+INFO    2026-10-22 09:13:06,408 [main] io.mosip.testrig.apirig.report.EmailableReport  - Report File re-named successfully!
+INFO    2026-10-22 09:13:06,408 [main] io.mosip.testrig.apirig.utils.S3Adapter  - useAccountAsBucketname:: true
+INFO    2026-10-22 09:13:06,408 [main] io.mosip.testrig.apirig.utils.S3Adapter  - bucketName :: automation
+INFO    2026-10-22 09:13:06,409 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3UserKey() :: minioadmin
+INFO    2026-10-22 09:13:06,409 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Host() :: http://localhost:9000
+INFO    2026-10-22 09:13:06,409 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3Region() :: null
+INFO    2026-10-22 09:13:06,409 [main] io.mosip.testrig.apirig.utils.S3Adapter  - ConfigManager.getS3SecretKey() :: Masked
+INFO    2026-10-22 09:13:06,432 [main] io.mosip.testrig.apirig.report.EmailableReport  - isStoreSuccess:: true
+INFO    2026-10-22 09:13:06,432 [main] io.mosip.testrig.apirig.report.EmailableReport  - Pushed file to S3
+INFO    2026-10-22 09:13:06,432 [main] io.mosip.testrig.apirig.utils.SlackChannelIntegration  - SLACK_WEBHOOK_URL is - 
+ERROR   2026-10-22 09:13:06,433 [main] io.mosip.testrig.apirig.report.EmailableReport  - Failed to send Slack notification: Expected URL scheme 'http' or 'https' but no colon was found

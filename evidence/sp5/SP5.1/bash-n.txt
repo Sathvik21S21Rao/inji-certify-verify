@@ -1,0 +1,2 @@
+bash -n ok
+usage exit 2

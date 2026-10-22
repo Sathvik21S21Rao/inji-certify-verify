@@ -1,0 +1,72 @@
+
+X main full-stack-conformance · 39751732547
+Triggered via workflow_dispatch about 1 hour ago
+
+JOBS
+✓ conformance (verify) in 4m52s (ID 119738953383)
+X conformance (certify) in 5m29s (ID 119738953812)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-python@v5
+  ✓ Run actions/setup-java@v4
+  ✓ Run pip install -r runner/requirements.txt
+  ✓ Ensure suite hostname resolves
+  X Run conformance
+  ✓ Job summary
+  ✓ Diff against previous successful run
+  ✓ Run actions/upload-artifact@v4
+  ✓ Final teardown
+  ✓ Post Run actions/setup-java@v4
+  - Post Run actions/setup-python@v5
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+X conformance (combined) in 9m51s (ID 119738953990)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-python@v5
+  ✓ Run actions/setup-java@v4
+  ✓ Run pip install -r runner/requirements.txt
+  ✓ Ensure suite hostname resolves
+  X Run conformance
+  ✓ Job summary
+  ✓ Diff against previous successful run
+  ✓ Run actions/upload-artifact@v4
+  ✓ Final teardown
+  ✓ Post Run actions/setup-java@v4
+  - Post Run actions/setup-python@v5
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+conformance (verify): .github#2
+
+! setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+conformance (verify): .github#23
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+conformance (certify): .github#2
+
+X Process completed with exit code 1.
+conformance (certify): .github#1867
+
+! setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+conformance (certify): .github#23
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+conformance (combined): .github#2
+
+X Process completed with exit code 1.
+conformance (combined): .github#2827
+
+! setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+conformance (combined): .github#23
+
+
+ARTIFACTS
+conformance-combined
+conformance-verify
+conformance-certify
+
+To see what failed, try: gh run view 39751732547 --log-failed
+View this run on GitHub: https://github.com/Sathvik21S21Rao/inji-certify-verify/actions/runs/39751732547

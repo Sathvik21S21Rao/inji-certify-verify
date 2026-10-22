@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="0" failed="13" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-metadata-test [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input]]>
+    </line>
+    <line>
+      <![CDATA[failed: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input]]>
+    </line>
+    <line>
+      <![CDATA[warning: CheckForUnexpectedParametersInCredentialIssuerMetadata]]>
+    </line>
+    <line>
+      <![CDATA[warning: VCIValidateFormatOfCredentialConfigurationsInMetadata]]>
+    </line>
+    <line>
+      <![CDATA[warning: CheckForUnexpectedParametersInServerMetadata]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zrhRYQ6yNugixPM]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-metadata-test.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-metadata-test-signed [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response]]>
+    </line>
+    <line>
+      <![CDATA[failed: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response]]>
+    </line>
+    <line>
+      <![CDATA[failed: VCIDecodeSignedCredentialIssuerMetadata: If present, a string is expected for credential_issuer_metadata_endpoint_response body but JsonNull was found]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4Q5aFAxmmvXPdXp]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-metadata-test-signed.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-happy-flow [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=izXvuiwE3hzlsJe]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-happy-flow-additional-requests [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=1jZHxRPxXEBbn7s]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow-additional-requests.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-happy-flow-multiple-clients [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=TACcQ956jagw2Ay]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow-multiple-clients.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-happy-flow-skip-notification [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=F27MBT1mkzD3RXI]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow-skip-notification.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-batch-issuance [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rPbhIi3BH5YnEOt]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-batch-issuance.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-fail-invalid-nonce [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=BoWUx62v6N9Fdrc]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-fail-invalid-nonce.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=nX9OAXdkDxbGYnY]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-fail-invalid-key-attestation-signature [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=Pq8vfBJVbo6XJIv]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-fail-invalid-key-attestation-signature.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-fail-missing-proof [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=8XLxeguJCUUcpSE]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-fail-missing-proof.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-fail-unknown-credential-configuration [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=9LyR9OhNiUcHq2K]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-fail-unknown-credential-configuration.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-fail-unknown-credential-identifier [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=54QEqcJeM5X3ZZg]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-fail-unknown-credential-identifier.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+    </line>
+    <line>
+      <![CDATA[oid4vci-1_0-issuer-fail-on-access-token-in-query [certify-shim-off] certify_as_metadata_shim=false]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=blEEm0VpzrMaNoJ]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vci-1_0-issuer-fail-on-access-token-in-query.log.json]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-22T09:12:54 GMT" name="Inji-Certify OpenID Conformance" finished-at="2026-10-22T09:13:03 GMT" duration-ms="8888">
+    <groups>
+    </groups>
+    <test started-at="2026-10-22T09:12:54 GMT" name="OpenIDConformance" finished-at="2026-10-22T09:13:03 GMT" duration-ms="8888">
+      <class name="io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest">
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:12:57 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:12:57 GMT" duration-ms="12" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-metadata-test, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-metadata-test [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_01, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"VCICredentialIssuerMetadataValidation","requirements":["OID4VCI-1FINAL-12.2.3"],"message":"Found invalid entries in OID4VCI Credential Issuer metadata input"}],"evidence":["oid4vci-1_0-issuer-metadata-test.log.json"],"module":"oid4vci-1_0-issuer-metadata-test","warnings":[{"condition":"CheckForUnexpectedParametersInCredentialIssuerMetadata","requirements":["OID4VCI-1FINAL-12.2.3"],"message":"Unknown properties were found in the OID4VCI Credential Issuer metadata. This may indicate the sender has misunderstood the spec, or it may be using extensions the test suite is unaware of. If these are known extensions, add their names to the 'vci.allow_unexpected_credential_issuer_metadata_fields' array in the test configuration to suppress this warning. If they are derived from a specification, please open an issue at https://gitlab.com/openid/conformance-suite/-/work_items/new (or, if you are unable to, email certification@oidf.org) so the test suite can be updated."},{"condition":"VCIValidateFormatOfCredentialConfigurationsInMetadata","requirements":["OID4VCI-1FINALA-A.2","OID4VCI-1FINALA-A.3.1","OID4VCI-1FINALA-A.1"],"message":"Found credential configurations with unsupported formats"},{"condition":"CheckForUnexpectedParametersInServerMetadata","requirements":["OID4VCI-1FINAL-12.3","OID4VCI-1FINAL-12.2.3"],"message":"Unknown properties were found in the OAuth Authorization Server metadata. This may indicate the sender has misunderstood the spec, or it may be using extensions the test suite is unaware of. If these are known extensions, add their names to the 'server.allow_unexpected_metadata_fields' array in the test configuration to suppress this warning. If they are derived from a specification, please open an issue at https://gitlab.com/openid/conformance-suite/-/work_items/new (or, if you are unable to, email certification@oidf.org) so the test suite can be updated."}],"started":"2026-10-22T09:12:55.394333Z","finished":"2026-10-22T09:12:56.118Z","type":"module","message":"VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=zrhRYQ6yNugixPM","outcome":"fail","test_id":"zrhRYQ6yNugixPM","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[known issue. Hence skipping the testcase: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: known issue. Hence skipping the testcase: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:103)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-metadata-test [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input]]>
+            </line>
+            <line>
+              <![CDATA[failed: VCICredentialIssuerMetadataValidation: Found invalid entries in OID4VCI Credential Issuer metadata input]]>
+            </line>
+            <line>
+              <![CDATA[warning: CheckForUnexpectedParametersInCredentialIssuerMetadata]]>
+            </line>
+            <line>
+              <![CDATA[warning: VCIValidateFormatOfCredentialConfigurationsInMetadata]]>
+            </line>
+            <line>
+              <![CDATA[warning: CheckForUnexpectedParametersInServerMetadata]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=zrhRYQ6yNugixPM]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-metadata-test.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:12:57 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:12:57 GMT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name="" status=SKIP method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:12:59 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:12:59 GMT" duration-ms="5" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-metadata-test-signed, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-metadata-test-signed [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_02, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"EnsureContentTypeApplicationJwt","requirements":["RFC8414-3.2"],"message":"Couldn't find content-type header in endpoint_response"},{"condition":"VCIDecodeSignedCredentialIssuerMetadata","requirements":["OID4VCI-1FINAL-12.2.2"],"message":"If present, a string is expected for credential_issuer_metadata_endpoint_response body but JsonNull was found"}],"evidence":["oid4vci-1_0-issuer-metadata-test-signed.log.json"],"module":"oid4vci-1_0-issuer-metadata-test-signed","warnings":[],"started":"2026-10-22T09:12:57.648221Z","finished":"2026-10-22T09:12:57.774Z","type":"module","message":"EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=4Q5aFAxmmvXPdXp","outcome":"fail","test_id":"4Q5aFAxmmvXPdXp","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response | https://localhost.emobix.co.uk:8443/log-detail.html?log=4Q5aFAxmmvXPdXp]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response | https://localhost.emobix.co.uk:8443/log-detail.html?log=4Q5aFAxmmvXPdXp
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-metadata-test-signed [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response]]>
+            </line>
+            <line>
+              <![CDATA[failed: EnsureContentTypeApplicationJwt: Couldn't find content-type header in endpoint_response]]>
+            </line>
+            <line>
+              <![CDATA[failed: VCIDecodeSignedCredentialIssuerMetadata: If present, a string is expected for credential_issuer_metadata_endpoint_response body but JsonNull was found]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4Q5aFAxmmvXPdXp]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-metadata-test-signed.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:12:59 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:12:59 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-metadata-test status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:12:59 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:12:59 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-happy-flow, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-happy-flow [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_03, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-happy-flow.log.json"],"module":"oid4vci-1_0-issuer-happy-flow","warnings":[],"started":"2026-10-22T09:12:59.787990Z","finished":"2026-10-22T09:12:59.894Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=izXvuiwE3hzlsJe","outcome":"fail","test_id":"izXvuiwE3hzlsJe","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=izXvuiwE3hzlsJe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=izXvuiwE3hzlsJe
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-happy-flow [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=izXvuiwE3hzlsJe]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:12:59 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:12:59 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-metadata-test-signed status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-happy-flow-additional-requests, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-happy-flow-additional-requests [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_04, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-happy-flow-additional-requests.log.json"],"module":"oid4vci-1_0-issuer-happy-flow-additional-requests","warnings":[],"started":"2026-10-22T09:12:59.956979Z","finished":"2026-10-22T09:13:00.068Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=1jZHxRPxXEBbn7s","outcome":"fail","test_id":"1jZHxRPxXEBbn7s","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=1jZHxRPxXEBbn7s]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=1jZHxRPxXEBbn7s
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-happy-flow-additional-requests [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=1jZHxRPxXEBbn7s]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow-additional-requests.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-happy-flow status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-happy-flow-multiple-clients, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-happy-flow-multiple-clients [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_05, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-happy-flow-multiple-clients.log.json"],"module":"oid4vci-1_0-issuer-happy-flow-multiple-clients","warnings":[],"started":"2026-10-22T09:13:00.130403Z","finished":"2026-10-22T09:13:00.257Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=TACcQ956jagw2Ay","outcome":"fail","test_id":"TACcQ956jagw2Ay","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=TACcQ956jagw2Ay]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=TACcQ956jagw2Ay
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-happy-flow-multiple-clients [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=TACcQ956jagw2Ay]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow-multiple-clients.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-happy-flow-additional-requests status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-happy-flow-skip-notification, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-happy-flow-skip-notification [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_06, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-happy-flow-skip-notification.log.json"],"module":"oid4vci-1_0-issuer-happy-flow-skip-notification","warnings":[],"started":"2026-10-22T09:13:00.325423Z","finished":"2026-10-22T09:13:00.445Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=F27MBT1mkzD3RXI","outcome":"fail","test_id":"F27MBT1mkzD3RXI","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=F27MBT1mkzD3RXI]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=F27MBT1mkzD3RXI
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-happy-flow-skip-notification [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=F27MBT1mkzD3RXI]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-happy-flow-skip-notification.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-happy-flow-multiple-clients status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-batch-issuance, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-batch-issuance [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_07, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-batch-issuance.log.json"],"module":"oid4vci-1_0-issuer-batch-issuance","warnings":[],"started":"2026-10-22T09:13:00.511662Z","finished":"2026-10-22T09:13:00.620Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=rPbhIi3BH5YnEOt","outcome":"fail","test_id":"rPbhIi3BH5YnEOt","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=rPbhIi3BH5YnEOt]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=rPbhIi3BH5YnEOt
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-batch-issuance [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rPbhIi3BH5YnEOt]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-batch-issuance.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-happy-flow-skip-notification status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-fail-invalid-nonce, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-fail-invalid-nonce [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_08, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-fail-invalid-nonce.log.json"],"module":"oid4vci-1_0-issuer-fail-invalid-nonce","warnings":[],"started":"2026-10-22T09:13:00.677201Z","finished":"2026-10-22T09:13:00.784Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=BoWUx62v6N9Fdrc","outcome":"fail","test_id":"BoWUx62v6N9Fdrc","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=BoWUx62v6N9Fdrc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=BoWUx62v6N9Fdrc
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-fail-invalid-nonce [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=BoWUx62v6N9Fdrc]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-fail-invalid-nonce.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-batch-issuance status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_09, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature.log.json"],"module":"oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature","warnings":[],"started":"2026-10-22T09:13:00.842190Z","finished":"2026-10-22T09:13:00.952Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=nX9OAXdkDxbGYnY","outcome":"fail","test_id":"nX9OAXdkDxbGYnY","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=nX9OAXdkDxbGYnY]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=nX9OAXdkDxbGYnY
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=nX9OAXdkDxbGYnY]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:00 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:00 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-fail-invalid-nonce status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-fail-invalid-key-attestation-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-fail-invalid-key-attestation-signature [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_10, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-fail-invalid-key-attestation-signature.log.json"],"module":"oid4vci-1_0-issuer-fail-invalid-key-attestation-signature","warnings":[],"started":"2026-10-22T09:13:01.012254Z","finished":"2026-10-22T09:13:01.118Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=Pq8vfBJVbo6XJIv","outcome":"fail","test_id":"Pq8vfBJVbo6XJIv","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=Pq8vfBJVbo6XJIv]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=Pq8vfBJVbo6XJIv
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-fail-invalid-key-attestation-signature [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=Pq8vfBJVbo6XJIv]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-fail-invalid-key-attestation-signature.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-fail-missing-proof, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-fail-missing-proof [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_11, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-fail-missing-proof.log.json"],"module":"oid4vci-1_0-issuer-fail-missing-proof","warnings":[],"started":"2026-10-22T09:13:01.179846Z","finished":"2026-10-22T09:13:01.279Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=8XLxeguJCUUcpSE","outcome":"fail","test_id":"8XLxeguJCUUcpSE","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=8XLxeguJCUUcpSE]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=8XLxeguJCUUcpSE
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-fail-missing-proof [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=8XLxeguJCUUcpSE]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-fail-missing-proof.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-fail-invalid-key-attestation-signature status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-fail-unknown-credential-configuration, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-fail-unknown-credential-configuration [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_12, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-fail-unknown-credential-configuration.log.json"],"module":"oid4vci-1_0-issuer-fail-unknown-credential-configuration","warnings":[],"started":"2026-10-22T09:13:01.338953Z","finished":"2026-10-22T09:13:01.443Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=9LyR9OhNiUcHq2K","outcome":"fail","test_id":"9LyR9OhNiUcHq2K","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=9LyR9OhNiUcHq2K]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=9LyR9OhNiUcHq2K
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-fail-unknown-credential-configuration [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=9LyR9OhNiUcHq2K]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-fail-unknown-credential-configuration.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-fail-missing-proof status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-fail-unknown-credential-identifier, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-fail-unknown-credential-identifier [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_13, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-fail-unknown-credential-identifier.log.json"],"module":"oid4vci-1_0-issuer-fail-unknown-credential-identifier","warnings":[],"started":"2026-10-22T09:13:01.501476Z","finished":"2026-10-22T09:13:01.606Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=54QEqcJeM5X3ZZg","outcome":"fail","test_id":"54QEqcJeM5X3ZZg","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=54QEqcJeM5X3ZZg]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=54QEqcJeM5X3ZZg
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-fail-unknown-credential-identifier [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=54QEqcJeM5X3ZZg]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-fail-unknown-credential-identifier.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-fail-unknown-credential-configuration status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vci-1_0-issuer-fail-on-access-token-in-query [certify-shim-off] certify_as_metadata_shim=false, uniqueIdentifier=OIDF_certify-shim-off_14, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"CheckServerConfiguration","requirements":[],"message":"Couldn't find required component"}],"evidence":["oid4vci-1_0-issuer-fail-on-access-token-in-query.log.json"],"module":"oid4vci-1_0-issuer-fail-on-access-token-in-query","warnings":[],"started":"2026-10-22T09:13:01.661868Z","finished":"2026-10-22T09:13:01.752Z","type":"module","message":"CheckServerConfiguration: Couldn't find required component","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=blEEm0VpzrMaNoJ","outcome":"fail","test_id":"blEEm0VpzrMaNoJ","status":"INTERRUPTED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=blEEm0VpzrMaNoJ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: CheckServerConfiguration: Couldn't find required component | https://localhost.emobix.co.uk:8443/log-detail.html?log=blEEm0VpzrMaNoJ
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:296)
+at io.inji.testrig.apirig.injicertify.testrunner.InjiTestRunner.main(InjiTestRunner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]>
+            </line>
+            <line>
+              <![CDATA[oid4vci-1_0-issuer-fail-on-access-token-in-query [certify-shim-off] certify_as_metadata_shim=false]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: INTERRUPTED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[failed: CheckServerConfiguration: Couldn't find required component]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=blEEm0VpzrMaNoJ]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vci-1_0-issuer-fail-on-access-token-in-query.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:01 GMT" name="setResultTestName" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:01 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_certify_oid4vci-1_0-issuer-fail-unknown-credential-identifier status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26] output=run_id: 20261022091255-760f, plan_id: HEJBAlUO5O1NI, config_name: certify-shim-off]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest@a2ddf26]" started-at="2026-10-22T09:13:03 GMT" name="testTearDown" test-instance-name="OIDF_certify_oid4vci-1_0-issuer-fail-on-access-token-in-query" finished-at="2026-10-22T09:13:03 GMT" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- io.inji.testrig.apirig.injicertify.testscripts.OpenIDConformanceTest -->
+    </test> <!-- OpenIDConformance -->
+  </suite> <!-- Inji-Certify OpenID Conformance -->
+</testng-results>

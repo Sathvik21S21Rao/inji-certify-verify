@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="0" failed="10" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-happy-flow [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4p83qCCIPwpsDuP]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-minimal-cnf-jwk [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=fKKg7h0bndX8MyL]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-request-uri-method-post [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/SKIPPED/skip]]>
+    </line>
+    <line>
+      <![CDATA[message: The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=iOM6dKTSbnBqu7x]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-request-uri-method-post.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-request-uri-fetched-twice [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=A8DHVyNUThxQTaC]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-request-uri-fetched-twice.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=eF5yGDT3Beb5x3i]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-credential-signature [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=ets6nT8bW7UhyXL]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-sd-hash [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=yCiBKXOMBwkEXKm]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=whifb2SJxnuRO4N]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rOChP2PIuXpl6as]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=FS6Hd7L2k6MjJkJ]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json]]>
+    </line>
+    <line>
+      <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+    </line>
+    <line>
+      <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-x509] verify_evidence_upload=true]]>
+    </line>
+    <line>
+      <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+    </line>
+    <line>
+      <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+    </line>
+    <line>
+      <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+    </line>
+    <line>
+      <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=cS9dwUIy6HgdqKD]]>
+    </line>
+    <line>
+      <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-22T09:14:37 GMT" name="Inji-Verify OpenID Conformance" finished-at="2026-10-22T09:14:43 GMT" duration-ms="5993">
+    <groups>
+    </groups>
+    <test started-at="2026-10-22T09:14:37 GMT" name="OpenIDConformance" finished-at="2026-10-22T09:14:43 GMT" duration-ms="5993">
+      <class name="io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest">
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:38 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:38 GMT" duration-ms="9" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-happy-flow, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-happy-flow [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_01, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-happy-flow.log.json","oid4vp-1final-verifier-happy-flow.verify-result.json","oid4vp-1final-verifier-happy-flow.verify-result.png"],"module":"oid4vp-1final-verifier-happy-flow","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:38.061489Z","finished":"2026-10-22T09:14:38.818Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=4p83qCCIPwpsDuP","outcome":"fail","test_id":"4p83qCCIPwpsDuP","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=4p83qCCIPwpsDuP]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=4p83qCCIPwpsDuP
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-happy-flow [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=4p83qCCIPwpsDuP]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-happy-flow.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:38 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:39 GMT" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name="" status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:39 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:39 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-minimal-cnf-jwk [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_02, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-minimal-cnf-jwk.log.json","oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json","oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png"],"module":"oid4vp-1final-verifier-minimal-cnf-jwk","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:38.931145Z","finished":"2026-10-22T09:14:39.404Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=fKKg7h0bndX8MyL","outcome":"fail","test_id":"fKKg7h0bndX8MyL","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=fKKg7h0bndX8MyL]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=fKKg7h0bndX8MyL
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-minimal-cnf-jwk [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=fKKg7h0bndX8MyL]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-minimal-cnf-jwk.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:39 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:39 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-happy-flow status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:39 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:39 GMT" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-request-uri-method-post, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-request-uri-method-post [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_03, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[],"evidence":["oid4vp-1final-verifier-request-uri-method-post.log.json"],"module":"oid4vp-1final-verifier-request-uri-method-post","warnings":[],"started":"2026-10-22T09:14:39.489608Z","finished":"2026-10-22T09:14:39.583Z","type":"module","message":"The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.","result":"SKIPPED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=iOM6dKTSbnBqu7x","outcome":"skip","test_id":"iOM6dKTSbnBqu7x","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-request-uri-method-post [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/SKIPPED/skip]]>
+            </line>
+            <line>
+              <![CDATA[message: The test was skipped: The verifier's authorization request does not include request_uri_method=post, so this test is not applicable.]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=iOM6dKTSbnBqu7x]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-request-uri-method-post.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:39 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:39 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-minimal-cnf-jwk status=SKIP method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:40 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:40 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-request-uri-fetched-twice, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-request-uri-fetched-twice [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_04, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-request-uri-fetched-twice.log.json","oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.json","oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.png"],"module":"oid4vp-1final-verifier-request-uri-fetched-twice","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:39.636082Z","finished":"2026-10-22T09:14:40.148Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=A8DHVyNUThxQTaC","outcome":"fail","test_id":"A8DHVyNUThxQTaC","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=A8DHVyNUThxQTaC]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=A8DHVyNUThxQTaC
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-request-uri-fetched-twice [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=A8DHVyNUThxQTaC]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-request-uri-fetched-twice.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-request-uri-fetched-twice.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:40 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:40 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-request-uri-method-post status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:40 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:40 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_05, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json","oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json","oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-signature","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:40.265008Z","finished":"2026-10-22T09:14:40.693Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=eF5yGDT3Beb5x3i","outcome":"fail","test_id":"eF5yGDT3Beb5x3i","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=eF5yGDT3Beb5x3i]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=eF5yGDT3Beb5x3i
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-signature [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=eF5yGDT3Beb5x3i]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-signature.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:40 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:40 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-request-uri-fetched-twice status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:41 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:41 GMT" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-credential-signature [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_06, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-invalid-credential-signature.log.json","oid4vp-1final-verifier-invalid-credential-signature.verify-result.json","oid4vp-1final-verifier-invalid-credential-signature.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-credential-signature","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:40.800192Z","finished":"2026-10-22T09:14:41.226Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=ets6nT8bW7UhyXL","outcome":"fail","test_id":"ets6nT8bW7UhyXL","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=ets6nT8bW7UhyXL]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=ets6nT8bW7UhyXL
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-credential-signature [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=ets6nT8bW7UhyXL]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-credential-signature.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:41 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:41 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-signature status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:41 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:41 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-sd-hash [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_07, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-invalid-sd-hash.log.json","oid4vp-1final-verifier-invalid-sd-hash.verify-result.json","oid4vp-1final-verifier-invalid-sd-hash.verify-result.png"],"module":"oid4vp-1final-verifier-invalid-sd-hash","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:41.335593Z","finished":"2026-10-22T09:14:41.785Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=yCiBKXOMBwkEXKm","outcome":"fail","test_id":"yCiBKXOMBwkEXKm","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=yCiBKXOMBwkEXKm]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=yCiBKXOMBwkEXKm
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-sd-hash [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=yCiBKXOMBwkEXKm]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.log.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.json]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-sd-hash.verify-result.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:41 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:41 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-credential-signature status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:42 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:42 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_08, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-nonce","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:41.895529Z","finished":"2026-10-22T09:14:42.089Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=whifb2SJxnuRO4N","outcome":"fail","test_id":"whifb2SJxnuRO4N","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=whifb2SJxnuRO4N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=whifb2SJxnuRO4N
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-nonce [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=whifb2SJxnuRO4N]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-nonce.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:42 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:42 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-sd-hash status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:42 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:42 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_09, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json"],"module":"oid4vp-1final-verifier-invalid-kb-jwt-aud","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:42.138930Z","finished":"2026-10-22T09:14:42.397Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=rOChP2PIuXpl6as","outcome":"fail","test_id":"rOChP2PIuXpl6as","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=rOChP2PIuXpl6as]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=rOChP2PIuXpl6as
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-invalid-kb-jwt-aud [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=rOChP2PIuXpl6as]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-invalid-kb-jwt-aud.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:42 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:42 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-nonce status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:42 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:42 GMT" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_10, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json"],"module":"oid4vp-1final-verifier-kb-jwt-iat-in-past","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:42.457104Z","finished":"2026-10-22T09:14:42.689Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=FS6Hd7L2k6MjJkJ","outcome":"fail","test_id":"FS6Hd7L2k6MjJkJ","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=FS6Hd7L2k6MjJkJ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=FS6Hd7L2k6MjJkJ
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-past [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=FS6Hd7L2k6MjJkJ]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-past.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:42 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:42 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-invalid-kb-jwt-aud status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method signature="test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:43 GMT" name="test" data-provider="conformance" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:43 GMT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCaseDTO(testCaseName=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future, endPoint=null, role=null, templateFields=null, input=null, output=null, inputTemplate=null, outputTemplate=null, restMethod=null, regenerateHbs=false, validityCheckRequired=false, auditLogCheck=false, checkErrorsOnlyInResponse=false, checkOnlyStatusCodeInResponse=false, allowedErrorCodes=null, kycFields=null, description=oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-x509] verify_evidence_upload=true, uniqueIdentifier=OIDF_verify-x509_11, additionalDependencies=null)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"failed_conditions":[{"condition":"ValidateRequestObjectSignatureAgainstX5cHeader","requirements":["OID4VP-1FINAL-5.9.3"],"message":"Error verifying JWT signature using x5c leaf certificate"}],"evidence":["oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json"],"module":"oid4vp-1final-verifier-kb-jwt-iat-in-future","warnings":[{"condition":"ValidateRequestObjectIssIfPresent","requirements":["OID4VP-1FINAL-5"],"message":"iss claim is present but does not match the client id"}],"started":"2026-10-22T09:14:42.740910Z","finished":"2026-10-22T09:14:42.971Z","type":"module","message":"ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate","result":"FAILED","infra_reason":null,"log_url":"https://localhost.emobix.co.uk:8443/log-detail.html?log=cS9dwUIy6HgdqKD","outcome":"fail","test_id":"cS9dwUIy6HgdqKD","status":"FINISHED"}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=cS9dwUIy6HgdqKD]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate | https://localhost.emobix.co.uk:8443/log-detail.html?log=cS9dwUIy6HgdqKD
+at org.testng.Assert.fail(Assert.java:111)
+at io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest.test(OpenIDConformanceTest.java:104)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.startConformanceRunner(InjiTestRunner.java:219)
+at io.inji.testrig.apirig.injiverify.testrunner.InjiTestRunner.main(InjiTestRunner.java:68)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]>
+            </line>
+            <line>
+              <![CDATA[oid4vp-1final-verifier-kb-jwt-iat-in-future [verify-x509] verify_evidence_upload=true]]>
+            </line>
+            <line>
+              <![CDATA[status/result/outcome: FINISHED/FAILED/fail]]>
+            </line>
+            <line>
+              <![CDATA[message: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[failed: ValidateRequestObjectSignatureAgainstX5cHeader: Error verifying JWT signature using x5c leaf certificate]]>
+            </line>
+            <line>
+              <![CDATA[warning: ValidateRequestObjectIssIfPresent]]>
+            </line>
+            <line>
+              <![CDATA[log_url: https://localhost.emobix.co.uk:8443/log-detail.html?log=cS9dwUIy6HgdqKD]]>
+            </line>
+            <line>
+              <![CDATA[evidence: oid4vp-1final-verifier-kb-jwt-iat-in-future.log.json]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:43 GMT" name="setResultTestName" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:43 GMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-past status=FAILURE method=OpenIDConformanceTest.test(io.mosip.testrig.apirig.dto.TestCaseDTO,org.json.JSONObject)[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2] output=run_id: 20261022091437-106e, plan_id: 0D8ZU2WXoW3zd, config_name: verify-x509]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest@10aa41f2]" started-at="2026-10-22T09:14:43 GMT" name="testTearDown" test-instance-name="OIDF_verify_oid4vp-1final-verifier-kb-jwt-iat-in-future" finished-at="2026-10-22T09:14:44 GMT" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- io.inji.testrig.apirig.injiverify.testscripts.OpenIDConformanceTest -->
+    </test> <!-- OpenIDConformance -->
+  </suite> <!-- Inji-Verify OpenID Conformance -->
+</testng-results>

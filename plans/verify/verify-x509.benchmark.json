@@ -15,7 +15,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -27,7 +27,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -49,7 +49,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -61,7 +61,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -73,7 +73,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -85,7 +85,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -97,7 +97,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -109,7 +109,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -121,7 +121,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   },
   {
@@ -133,7 +133,7 @@
     "ValidateRequestObjectIssIfPresent"
    ],
    "finding": "F-VER-5",
-   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (open finding).",
+   "reason": "Verify signs x509_san_dns request objects with EdDSA only; the suite's x5c check cannot verify EdDSA (suite limitation; ES256 support in Verify needed for HAIP).",
    "ki": "F-VER-5"
   }
  ]

@@ -1,0 +1,256 @@
+mode=all
+certify_configs=certify-shim-off
+verify_configs=verify-redirect-uri verify-x509
+CONFORMANCE_CERTIFY_AS_METADATA_SHIM=false
+CONFORMANCE_FAULT=none
+driver=testrig
+strict=no
+parallel=no
+git=7eacc05
+build-testrig: inji-conformance/testrig-certify:57bd5bf7895e exists, skipping
+build-testrig: inji-conformance/testrig-verify:6fd03a5340ac exists, skipping
+build	0
+env.sh: CONFORMANCE_CERTIFY_AS_METADATA_SHIM=false CONFORMANCE_FAULT=none CONFORMANCE_CERTIFY_RELEASE=1.0
+fetch-upstream: ok
+~/wt/sp5-verification/data/certs/verify/leaf.pem: OK
+ Volume oidf_suite-mongo Creating 
+ Volume oidf_suite-mongo Created 
+ Container oidf-mongodb-1 Creating 
+ Container oidf-mongodb-1 Created 
+ Container oidf-server-1 Creating 
+ Container oidf-server-1 Created 
+ Container oidf-nginx-1 Creating 
+ Container oidf-nginx-1 Created 
+ Container oidf-mongodb-1 Starting 
+ Container oidf-mongodb-1 Started 
+ Container oidf-server-1 Starting 
+ Container oidf-server-1 Started 
+ Container oidf-nginx-1 Starting 
+ Container oidf-nginx-1 Started 
+ Container oidf-mongodb-1 Waiting 
+ Container oidf-nginx-1 Waiting 
+ Container oidf-server-1 Waiting 
+ Container oidf-mongodb-1 Healthy 
+ Container oidf-server-1 Healthy 
+ Container oidf-nginx-1 Healthy 
+time="2026-10-22T14:41:16+05:30" level=warning msg="~/wt/sp5-verification/upstream/inji-certify/docker-compose/docker-compose-injistack/docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Container certify-database-1 Creating 
+ Container certify-database-1 Created 
+ Container certify-certify-1 Creating 
+ Container certify-certify-1 Created 
+ Container certify-certify-nginx-1 Creating 
+ Container certify-certify-nginx-1 Created 
+ Container certify-certify-tls-1 Creating 
+ Container certify-certify-tls-1 Created 
+ Container certify-database-1 Starting 
+ Container certify-database-1 Started 
+ Container certify-database-1 Waiting 
+ Container certify-database-1 Healthy 
+ Container certify-certify-1 Starting 
+ Container certify-certify-1 Started 
+ Container certify-certify-nginx-1 Starting 
+ Container certify-certify-nginx-1 Started 
+ Container certify-certify-tls-1 Starting 
+ Container certify-certify-tls-1 Started 
+ Container certify-certify-1 Waiting 
+ Container certify-certify-nginx-1 Waiting 
+ Container certify-certify-tls-1 Waiting 
+ Container certify-database-1 Waiting 
+ Container certify-database-1 Healthy 
+ Container certify-certify-nginx-1 Healthy 
+ Container certify-certify-tls-1 Healthy 
+ Container certify-certify-1 Healthy 
+time="2026-10-22T14:41:44+05:30" level=warning msg="~/wt/sp5-verification/upstream/inji-verify/docker-compose/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Network verify_default Creating 
+ Network verify_default Created 
+ Container postgres-db Creating 
+ Container postgres-db Created 
+ Container verify-service Creating 
+ Container verify-service Created 
+ Container verify-verify-tls-1 Creating 
+ Container verify-verify-tls-1 Created 
+ Container postgres-db Starting 
+ Container postgres-db Started 
+ Container postgres-db Waiting 
+ Container postgres-db Healthy 
+ Container verify-service Starting 
+ Container verify-service Started 
+ Container verify-verify-tls-1 Starting 
+ Container verify-verify-tls-1 Started 
+ Container verify-verify-tls-1 Waiting 
+ Container verify-service Waiting 
+ Container postgres-db Waiting 
+ Container postgres-db Healthy 
+ Container verify-service Healthy 
+ Container verify-verify-tls-1 Healthy 
+wait-ready: suite-api ok
+wait-ready: certify-host ok
+wait-ready: certify-from-suite ok
+wait-ready: certify-as-from-suite ok
+wait-ready: verify-host ok
+wait-ready: verify-from-suite ok
+wait-ready: OK (1s)
+seed-certify: posting ~/wt/sp5-verification/compose/seed/certify-sdjwt-config.json
+{"id":"ConformanceSdJwt","status":"active"}
+seed-certify: ConformanceSdJwt seeded
+env.sh: ready in 70s
+up	70
+ Network minio_default Creating 
+ Network minio_default Created 
+ Container minio-minio-1 Creating 
+ Container minio-minio-1 Created 
+ Container minio-minio-1 Starting 
+ Container minio-minio-1 Started 
+minio	2
+### Gate certify-shim-off: GREEN (14 ok)
+run `20261022091255-760f` · benchmark: Benchmark of record: Inji Certify 1.0.x, AS-metadata shim OFF · flags: certify_as_metadata_shim=false · environment: fault=none, certify_release=1.0
+| module | expected | observed | verdict | finding | detail |
+|---|---|---|---|---|---|
+| oid4vci-1_0-issuer-metadata-test | FAILED VCICredentialIssuerMetadataValidation | FAILED VCICredentialIssuerMetadataValidation | OK | F-CERT-5 |  |
+| oid4vci-1_0-issuer-metadata-test-signed | FAILED EnsureContentTypeApplicationJwt | FAILED EnsureContentTypeApplicationJwt | OK | F-CERT-5 |  |
+| oid4vci-1_0-issuer-happy-flow | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-happy-flow-additional-requests | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-happy-flow-multiple-clients | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-happy-flow-skip-notification | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-batch-issuance | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-fail-invalid-nonce | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-fail-invalid-key-attestation-signature | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-fail-missing-proof | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-fail-unknown-credential-configuration | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-fail-unknown-credential-identifier | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+| oid4vci-1_0-issuer-fail-on-access-token-in-query | FAILED CheckServerConfiguration | FAILED CheckServerConfiguration | OK | F-CERT-1 |  |
+# Reconciliation: MATCH (14 modules)
+
+Suite plan: HEJBAlUO5O1NI
+
+| module | suite status/result | expected TestNG | TestNG | verdict |
+|---|---|---|---|---|
+| oid4vci-1_0-issuer-batch-issuance | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-fail-invalid-jwt-proof-signature | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-fail-invalid-key-attestation-signature | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-fail-invalid-nonce | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-fail-missing-proof | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-fail-on-access-token-in-query | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-fail-unknown-credential-configuration | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-fail-unknown-credential-identifier | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-happy-flow | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-happy-flow-additional-requests | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-happy-flow-multiple-clients | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-happy-flow-skip-notification | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vci-1_0-issuer-metadata-test | FINISHED/FAILED | FAIL or SKIP-KI | SKIP-KI | ok |
+| oid4vci-1_0-issuer-metadata-test-signed | INTERRUPTED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+
+Counts (mosip-local-injicertify-conformance-certify-shim-off-2026-10-22_09-12-full-report_T-14_P-0_S-0_F-13_I-0_KI-1.html): EmailableReport {'T': 14, 'P': 0, 'S': 0, 'F+KI': 14, 'I': 0} vs suite-derived {'T': 14, 'P': 0, 'S': 0, 'F+KI': 14, 'I': 0}: match
+### Gate verify-redirect-uri: GREEN (9 ok)
+run `20261022091348-5d51` · benchmark: Benchmark of record: Inji Verify 1.0.x, redirect_uri / url_query / direct_post · flags: verify_evidence_upload=true · environment: fault=none, certify_release=1.0
+| module | expected | observed | verdict | finding | detail |
+|---|---|---|---|---|---|
+| oid4vp-1final-verifier-happy-flow | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-minimal-cnf-jwk | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-invalid-kb-jwt-signature | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-invalid-credential-signature | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-invalid-sd-hash | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-invalid-kb-jwt-nonce | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-invalid-kb-jwt-aud | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-kb-jwt-iat-in-past | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+| oid4vp-1final-verifier-kb-jwt-iat-in-future | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | FAILED VP1FinalValidateVpFormatsSupportedInClientMetadata | OK | F-VER-1 |  |
+# Reconciliation: MATCH (9 modules)
+
+Suite plan: DR33VyIEGEFQW
+
+| module | suite status/result | expected TestNG | TestNG | verdict |
+|---|---|---|---|---|
+| oid4vp-1final-verifier-happy-flow | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-credential-signature | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-kb-jwt-aud | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-kb-jwt-nonce | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-kb-jwt-signature | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-sd-hash | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-kb-jwt-iat-in-future | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-kb-jwt-iat-in-past | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-minimal-cnf-jwk | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+
+Counts (mosip-local-injiverify-conformance-verify-redirect-uri-2026-10-22_09-13-full-report_T-9_P-0_S-0_F-9_I-0_KI-0.html): EmailableReport {'T': 9, 'P': 0, 'S': 0, 'F+KI': 9, 'I': 0} vs suite-derived {'T': 9, 'P': 0, 'S': 0, 'F+KI': 9, 'I': 0}: match
+### Gate verify-x509: GREEN (11 ok)
+run `20261022091437-106e` · benchmark: Benchmark of record: Inji Verify 1.0.x, x509_san_dns / request_uri_signed / direct_post · flags: verify_evidence_upload=true · environment: fault=none, certify_release=1.0
+| module | expected | observed | verdict | finding | detail |
+|---|---|---|---|---|---|
+| oid4vp-1final-verifier-happy-flow | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-minimal-cnf-jwk | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-request-uri-method-post | SKIPPED | SKIPPED | OK |  |  |
+| oid4vp-1final-verifier-request-uri-fetched-twice | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-invalid-kb-jwt-signature | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-invalid-credential-signature | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-invalid-sd-hash | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-invalid-kb-jwt-nonce | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-invalid-kb-jwt-aud | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-kb-jwt-iat-in-past | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+| oid4vp-1final-verifier-kb-jwt-iat-in-future | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | FAILED ValidateRequestObjectSignatureAgainstX5cHeader | OK | F-VER-5 |  |
+# Reconciliation: MATCH (11 modules)
+
+Suite plan: 0D8ZU2WXoW3zd
+
+| module | suite status/result | expected TestNG | TestNG | verdict |
+|---|---|---|---|---|
+| oid4vp-1final-verifier-happy-flow | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-credential-signature | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-kb-jwt-aud | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-kb-jwt-nonce | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-kb-jwt-signature | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-invalid-sd-hash | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-kb-jwt-iat-in-future | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-kb-jwt-iat-in-past | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-minimal-cnf-jwk | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-request-uri-fetched-twice | FINISHED/FAILED | FAIL or SKIP-KI | FAIL | ok |
+| oid4vp-1final-verifier-request-uri-method-post | FINISHED/SKIPPED | SKIP | SKIP | ok |
+
+Counts (mosip-local-injiverify-conformance-verify-x509-2026-10-22_09-14-full-report_T-11_P-0_S-1_F-10_I-0_KI-0.html): EmailableReport {'T': 11, 'P': 0, 'S': 1, 'F+KI': 10, 'I': 0} vs suite-derived {'T': 11, 'P': 0, 'S': 1, 'F+KI': 10, 'I': 0}: match
+tests	155
+combined	0
+time="2026-10-22T14:44:46+05:30" level=warning msg="~/wt/sp5-verification/upstream/inji-certify/docker-compose/docker-compose-injistack/docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Container certify-certify-tls-1 Stopping 
+ Container certify-certify-tls-1 Stopped 
+ Container certify-certify-tls-1 Removing 
+ Container certify-certify-tls-1 Removed 
+ Container certify-certify-nginx-1 Stopping 
+ Container certify-certify-nginx-1 Stopped 
+ Container certify-certify-nginx-1 Removing 
+ Container certify-certify-nginx-1 Removed 
+ Container certify-certify-1 Stopping 
+ Container certify-certify-1 Stopped 
+ Container certify-certify-1 Removing 
+ Container certify-certify-1 Removed 
+ Container certify-database-1 Stopping 
+ Container certify-database-1 Stopped 
+ Container certify-database-1 Removing 
+ Container certify-database-1 Removed 
+time="2026-10-22T14:44:48+05:30" level=warning msg="~/wt/sp5-verification/upstream/inji-verify/docker-compose/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Container verify-verify-tls-1 Stopping 
+ Container verify-verify-tls-1 Stopped 
+ Container verify-verify-tls-1 Removing 
+ Container verify-verify-tls-1 Removed 
+ Container verify-service Stopping 
+ Container verify-service Stopped 
+ Container verify-service Removing 
+ Container verify-service Removed 
+ Container postgres-db Stopping 
+ Container postgres-db Stopped 
+ Container postgres-db Removing 
+ Container postgres-db Removed 
+ Network verify_default Removing 
+ Network verify_default Removed 
+ Container oidf-nginx-1 Stopping 
+ Container oidf-nginx-1 Stopped 
+ Container oidf-nginx-1 Removing 
+ Container oidf-nginx-1 Removed 
+ Container oidf-server-1 Stopping 
+ Container oidf-server-1 Stopped 
+ Container oidf-server-1 Removing 
+ Container oidf-server-1 Removed 
+ Container oidf-mongodb-1 Stopping 
+ Container oidf-mongodb-1 Stopped 
+ Container oidf-mongodb-1 Removing 
+ Container oidf-mongodb-1 Removed 
+down	14
+total	242

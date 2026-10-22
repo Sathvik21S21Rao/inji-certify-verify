@@ -87,7 +87,7 @@ jobs:
             echo '```'
             cat reports/run-info.txt 2>/dev/null || echo "no run-info.txt"
             echo '```'
-            for f in reports/*/gate.md; do [ -f "$f" ] && { echo "### $f"; cat "$f"; }; done
+            for f in reports/*/gate.md reports/*/reconcile.md; do [ -f "$f" ] && { echo "### $f"; cat "$f"; }; done
             if [ -f reports/timing.tsv ]; then
               echo '### timing'
               echo '```'

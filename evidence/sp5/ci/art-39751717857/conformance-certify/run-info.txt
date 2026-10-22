@@ -1,0 +1,9 @@
+mode=certify
+certify_configs=certify-shim-off
+verify_configs=
+CONFORMANCE_CERTIFY_AS_METADATA_SHIM=false
+CONFORMANCE_FAULT=none
+driver=testrig
+strict=no
+parallel=no
+git=89f5574
