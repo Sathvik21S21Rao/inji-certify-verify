@@ -1,0 +1,79 @@
+[setup] credential config ConformanceSdJwt present
+module id OYoMV9t5mbGEHLT status changed to WAITING
+module id OYoMV9t5mbGEHLT status changed to FINISHED
+module id 7jNvoCtlahEMUvx status changed to WAITING
+module id 7jNvoCtlahEMUvx status changed to INTERRUPTED
+module id ciyo98NhGRFMucj status changed to CONFIGURED
+module id ciyo98NhGRFMucj status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2Ff8f874c7-cf4a-4041-b5e7-4092b3c18d27"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2Ff8f874c7-cf4a-4041-b5e7- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id ciyo98NhGRFMucj status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 400 '{"error":"net.openid.conformance.condition.ConditionError: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","error_description":null,"cause":"EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","testId":"ciyo98NhGRFMucj"}'
+module id ciyo98NhGRFMucj status changed to INTERRUPTED
+module id by9uc2OO9jA6eyt status changed to CONFIGURED
+module id by9uc2OO9jA6eyt status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F71384819-c9db-4271-b135-5dd961d85bbb"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F71384819-c9db-4271-b135- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id by9uc2OO9jA6eyt status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 400 '{"error":"net.openid.conformance.condition.ConditionError: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","error_description":null,"cause":"EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","testId":"by9uc2OO9jA6eyt"}'
+module id by9uc2OO9jA6eyt status changed to INTERRUPTED
+module id OaD0HjSqTWDk8i4 status changed to CONFIGURED
+module id OaD0HjSqTWDk8i4 status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F187432fb-e251-4e3f-a858-32943df4793e"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F187432fb-e251-4e3f-a858- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id OaD0HjSqTWDk8i4 status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 400 '{"error":"net.openid.conformance.condition.ConditionError: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","error_description":null,"cause":"EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","testId":"OaD0HjSqTWDk8i4"}'
+module id OaD0HjSqTWDk8i4 status changed to INTERRUPTED
+module id nWaNFZYmAwwgPGF status changed to CONFIGURED
+module id nWaNFZYmAwwgPGF status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F350d69c7-0e33-4764-bc99-f4e338345ef2"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F350d69c7-0e33-4764-bc99- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id nWaNFZYmAwwgPGF status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 400 '{"error":"net.openid.conformance.condition.ConditionError: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","error_description":null,"cause":"EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","testId":"nWaNFZYmAwwgPGF"}'
+module id nWaNFZYmAwwgPGF status changed to INTERRUPTED
+module id ls8ai3eKNuj1qbe status changed to WAITING
+module id ls8ai3eKNuj1qbe status changed to FINISHED
+module id V7IeDIMn3FT4nQ9 status changed to CONFIGURED
+module id V7IeDIMn3FT4nQ9 status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F4589abec-ae57-4c6d-8f98-cda023c7820e"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F4589abec-ae57-4c6d-8f98- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id V7IeDIMn3FT4nQ9 status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id V7IeDIMn3FT4nQ9 status changed to FINISHED
+module id M11Hlwtw6VIUN6c status changed to CONFIGURED
+module id M11Hlwtw6VIUN6c status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F2f2743d1-9925-42ab-a9ab-6a2fa2617629"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F2f2743d1-9925-42ab-a9ab- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id M11Hlwtw6VIUN6c status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id M11Hlwtw6VIUN6c status changed to FINISHED
+module id ax06BkbF0R05QfW status changed to CONFIGURED
+module id ax06BkbF0R05QfW status changed to FINISHED
+module id 0qBGmyyAvHMoaXv status changed to CONFIGURED
+module id 0qBGmyyAvHMoaXv status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F401d21ec-2d45-4851-83d5-98ae8b15f891"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F401d21ec-2d45-4851-83d5- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id 0qBGmyyAvHMoaXv status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id 0qBGmyyAvHMoaXv status changed to FINISHED
+module id puvf7OJsZOGdHiA status changed to CONFIGURED
+module id puvf7OJsZOGdHiA status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2Fdc5971a8-8d13-42b6-a277-9e47fc8c8d5f"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2Fdc5971a8-8d13-42b6-a277- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id puvf7OJsZOGdHiA status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 400 '{"error":"net.openid.conformance.condition.ConditionError: VCIValidateCredentialErrorResponse: Expected error code not found in credential error response: unknown_credential_configuration","error_description":null,"cause":"VCIValidateCredentialErrorResponse: Expected error code not found in credenti'
+module id puvf7OJsZOGdHiA status changed to INTERRUPTED
+module id 182R8QReM4k4RCC status changed to CONFIGURED
+module id 182R8QReM4k4RCC status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F5a94bace-3486-4814-93a1-70f64ad93a6f"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F5a94bace-3486-4814-93a1- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id 182R8QReM4k4RCC status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 400 '{"error":"net.openid.conformance.condition.ConditionError: VCIValidateCredentialErrorResponse: Non-standard credential error response error code found: invalid_request","error_description":null,"cause":"VCIValidateCredentialErrorResponse: Non-standard credential error response error code found: inva'
+module id 182R8QReM4k4RCC status changed to INTERRUPTED
+module id nOTyR9V5fEuIyXa status changed to CONFIGURED
+module id nOTyR9V5fEuIyXa status changed to WAITING
+[handoff] POST http://localhost:8091/v1/certify/pre-authorized-data -> 200 '{"credential_offer_uri":"openid-credential-offer://?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F3df296e3-db09-4a49-8002-9a784c869bff"}'
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/credential_offer?credential_offer_uri=https%3A%2F%2Fcertify-tls%2Fv1%2Fcertify%2Fcredential-offer-data%2F3df296e3-db09-4a49-8002- -> 200 '<!DOCTYPE html>\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n    <meta charset="UTF-8">\n    <title>OIDF Conformance: Result captured</title>\n\n    <!-- Latest compiled and minified CSS -->\n    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap'
+module id nOTyR9V5fEuIyXa status changed to WAITING
+[handoff] GET https://localhost.emobix.co.uk:8443/test/a/certify-20261021184933-551b/tx_code -> 400 '{"error":"net.openid.conformance.condition.ConditionError: EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","error_description":null,"cause":"EnsureHttpStatusCodeIsAnyOf: resource endpoint returned an unexpected http status","testId":"nOTyR9V5fEuIyXa"}'
+module id nOTyR9V5fEuIyXa status changed to INTERRUPTED
