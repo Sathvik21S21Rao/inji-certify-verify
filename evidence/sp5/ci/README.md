@@ -11,3 +11,13 @@
 - `run-<id>.txt`: `gh run view` output. `log-39751732547.txt`: the full log of the red run. `log-39751717857-{certify,verify,combined}.txt`: the job logs of the green run, from the jobs API.
 - The source commit is `89f5574` (public repo), as recorded in `run-info.txt`.
 - An earlier pair of dispatches (39751587588, 39751603413) failed in `setup-java` before any test ran: `cache: maven` needs a `pom.xml`. Fixed by `cache-dependency-path: compose/.env.pinned`.
+
+## After SP5.3 (23 Oct 2026, commit cc57313 in the public repo)
+A fault run is now green when the gate goes red for the recorded reason (`scripts/expect-fault.sh`). The gate output itself does not change.
+
+| Run | Title (run-name) | certify | verify | combined | Run conclusion |
+|---|---|---|---|---|---|
+| 39909614848 | fault=none shim=false | GREEN 14 ok (5m31s) | GREEN 9 ok + 11 ok (6m14s) | GREEN, all 3 gates (8m38s) | success |
+| 39909618292 | fault=strip-credential-endpoint shim=false | gate RED new_failure 1, `negative control: PASSED` (5m26s) | GREEN, `PASSED (fault outside this target's reach)` (5m4s) | certify-shim-off RED, verify GREEN, `PASSED` (8m44s) | success |
+
+Logs: `log-39909614848.txt`, `log-39909618292.txt`; `run-<id>.txt` is `gh run view`.
