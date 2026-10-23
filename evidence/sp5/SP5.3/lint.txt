@@ -1,0 +1,10 @@
+$ docker run --rm -v <worktree>:/repo -w /repo rhysd/actionlint:1.7.7 .github/workflows/full-stack-conformance.yml
+(no output)
+actionlint exit code: 0
+
+$ bash -n scripts/expect-fault.sh
+(no output) exit 0
+
+$ docker run --rm -v <worktree>:/mnt koalaman/shellcheck:stable scripts/expect-fault.sh runner/tests/test_expect_fault.sh
+(no output)
+shellcheck exit code: 0

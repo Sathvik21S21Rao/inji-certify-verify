@@ -1,0 +1,28 @@
+ok   certify caught
+     negative control: PASSED (strip-credential-endpoint, shim=false: gate red with oid4vci-1_0-issuer-metadata-test NEW_FAILURE)
+ok   combined caught
+     negative control: PASSED (strip-credential-endpoint, shim=false: gate red with oid4vci-1_0-issuer-metadata-test NEW_FAILURE)
+ok   verify green
+     negative control: PASSED (strip-credential-endpoint, shim=false: gate green, fault outside this target's reach)
+ok   fault not caught
+     negative control: FAILED (expected rc=1, got rc=0 for certify, strip-credential-endpoint, shim=false)
+ok   wrong reason
+     negative control: FAILED (expected rc=1 with oid4vci-1_0-issuer-metadata-test NEW_FAILURE in certify-shim-off/gate.md, got rc=1 without it: red for the wrong reason)
+ok   rc2 passthrough
+     
+ok   rc4 passthrough
+     
+ok   none rc1
+     
+ok   none rc0
+     
+ok   nonce shim-on caught
+     negative control: PASSED (strip-nonce-endpoint, shim=true: gate red with oid4vci-1_0-issuer-fail-invalid-nonce REGRESSION)
+ok   nonce shim-off green
+     negative control: PASSED (strip-nonce-endpoint, shim=false: gate green, fault outside this target's reach)
+ok   no expectation (shim)
+     negative control: no recorded expectation for strip-credential-endpoint/shim=true/strict=false; reporting raw rc
+ok   no expectation (strict)
+     negative control: no recorded expectation for strip-credential-endpoint/shim=false/strict=true; reporting raw rc
+ok   other config red
+     negative control: FAILED (expected only certify-shim-off red, also red: verify-x509: red for the wrong reason)

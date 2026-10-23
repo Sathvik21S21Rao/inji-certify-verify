@@ -6,6 +6,11 @@ name: full-stack-conformance
 # Negative control for the benchmark of record: fault=strip-credential-endpoint (shim off) must turn the certify and
 # combined jobs red (observed: evidence/sp4/SP4.8/fault-i, NEW_FAILURE in oid4vci-1_0-issuer-metadata-test).
 # certify_shim=true is diagnostic only (metadata shim on), never a release result.
+# A run with fault != none goes GREEN when the gate is red for exactly the recorded reason, and red otherwise
+# (scripts/expect-fault.sh; rc 2/4 and unrecorded fault/shim/strict combinations stay raw). Gate output and
+# artifacts are unchanged. The run-name carries fault and shim, and the diff baseline is the latest successful
+# run titled "fault=none shim=false", so negative-control runs never become the baseline.
+run-name: "full-stack-conformance fault=${{ inputs.fault || 'none' }} shim=${{ inputs.certify_shim || 'false' }}"
 on:
   workflow_dispatch:
     inputs:
@@ -78,7 +83,9 @@ jobs:
             args+=(--component "$TARGET")
           fi
           [ "$STRICT" = true ] && args+=(--strict)
-          scripts/run-conformance.sh "${args[@]}"
+          rc=0
+          scripts/run-conformance.sh "${args[@]}" || rc=$?
+          scripts/expect-fault.sh "$TARGET" "$CONFORMANCE_FAULT" "$CONFORMANCE_CERTIFY_AS_METADATA_SHIM" "$STRICT" "$rc" reports
       - name: Job summary
         if: always()
         run: |
@@ -103,7 +110,7 @@ jobs:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           echo '## Diff vs previous successful run' >> "$GITHUB_STEP_SUMMARY"
-          id=$(gh run list --branch "$DEFAULT_BRANCH" --workflow full-stack-conformance.yml --status success -L 1 --json databaseId -q '.[0].databaseId' || true)
+          id=$(gh run list --branch "$DEFAULT_BRANCH" --workflow full-stack-conformance.yml --status success -L 20 --json databaseId,displayTitle -q '[.[] | select(.displayTitle | contains("fault=none shim=false"))][0].databaseId // empty' || true)
           if [ -n "$id" ]; then gh run download "$id" -n "conformance-$TARGET" -D prev || true; fi
           found=0
           for f in reports/*/results.jsonl; do
