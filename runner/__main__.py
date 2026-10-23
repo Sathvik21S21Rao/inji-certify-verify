@@ -20,6 +20,12 @@ def _report(a) -> int:
             res = gate.evaluate(gate.load(a.results), gate.load_benchmark(a.benchmark), a.strict)
             print(gate.gate_markdown(res), end="")
             return 1 if res["red"] else 0
+        if a.cmd == "benchmark" and a.bcmd == "update":
+            bench, md = gate.update_benchmark(gate.load(a.results), gate.load_benchmark(a.benchmark, check=False),
+                                              a.results)
+            Path(a.out or a.benchmark).write_text(json.dumps(bench, indent=1, ensure_ascii=False) + "\n")
+            print(md, end="")
+            return 0
         if a.cmd == "benchmark":
             if Path(a.out).exists() and not a.force:
                 raise gate.GateError(f"{a.out} exists (use --force)")
@@ -54,11 +60,16 @@ def main(argv=None) -> int:
     g.add_argument("results")
     g.add_argument("benchmark")
     g.add_argument("--strict", action="store_true")
-    b = sub.add_parser("benchmark").add_subparsers(dest="bcmd", required=True).add_parser("init")
+    bsub = sub.add_parser("benchmark").add_subparsers(dest="bcmd", required=True)
+    b = bsub.add_parser("init")
     b.add_argument("results")
     b.add_argument("--out", required=True)
     b.add_argument("--label", default="")
     b.add_argument("--force", action="store_true")
+    bu = bsub.add_parser("update", help="rewrite off-benchmark entries from a run; changed entries need review")
+    bu.add_argument("results")
+    bu.add_argument("benchmark")
+    bu.add_argument("--out", help="write here instead of over the benchmark")
     r = sub.add_parser("reconcile")
     r.add_argument("report_dir")
     r.add_argument("--export")

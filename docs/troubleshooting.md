@@ -30,6 +30,12 @@ Every image is pinned by digest. If a registry has dropped a digest, `docker pul
 **`env.sh down --purge` leaves `data/`**
 Some files under `data/` are created by containers as another user. `env.sh` removes them through a throwaway nginx container; if that fails, remove `data/` with `sudo`.
 
+**`needs bash 4+, this is 3.2…`**
+macOS ships bash 3.2. Run `brew install bash` and make sure Homebrew's bin directory comes first on `PATH`; the scripts start with `#!/usr/bin/env bash`.
+
+**Testrig container can't reach Certify, Verify or MinIO (Docker Desktop)**
+Docker Desktop has no host networking by default, so the script uses `CONFORMANCE_DOCKER_NETWORK=bridge` there. Check `reports/run-info.txt` for `docker_network=bridge`. If you enabled host networking in Docker Desktop yourself, either value works. On Linux, a firewall that drops traffic from Docker bridges to the host (some `ufw` setups) breaks `bridge`; use the default `host`.
+
 ### Suite hostname doesn't resolve
 `localhost.emobix.co.uk` is a public DNS name for 127.0.0.1. Without DNS, or behind a resolver that filters private answers, add `127.0.0.1 localhost.emobix.co.uk` to `/etc/hosts`. The CI workflow does this automatically if `getent hosts` fails.
 

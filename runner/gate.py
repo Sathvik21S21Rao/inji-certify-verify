@@ -80,6 +80,49 @@ def init_benchmark(recs, src, label=""):
             "variant_key": vk, "source_run": f"{src} (run_id {plan['run_id']})", "entries": entries}
 
 
+def update_benchmark(recs, bench, src):
+    """Benchmark with every off-benchmark entry replaced by what this run observed, plus a Markdown summary.
+    Changed and new entries get an empty reason (finding/ki kept only if outcome and first failure are unchanged),
+    so the gate refuses the file until someone reviews them. OK, NOT_RUN and INFRA modules keep their entry."""
+    end = _end(recs)
+    if end is None or end["exit"] == 2:
+        raise GateError("cannot update a benchmark from an aborted run")
+    res = evaluate(recs, bench)
+    mods, vk = _by_module(recs), bench["variant_key"]
+    old = {e["module"]: e for e in bench["entries"]}
+    repl, rows, kept = {}, [], []
+    for r in res["rows"]:
+        m, v = r["module"], r["verdict"]
+        if v == "INFRA":
+            kept.append(m)
+        if v in OK_VERDICTS or v == "INFRA":
+            continue
+        o, fp = observe(mods[m])
+        e = old.get(m)
+        same = e is not None and (e["expected"], e["first_failure"]) == (o, fp)
+        repl[m] = {"module": m, "variant_key": vk, "expected": o, "first_failure": fp,
+                   "expected_warnings": _warnings(mods[m]), "finding": e["finding"] if same else None,
+                   "reason": "", "ki": e["ki"] if same else None}
+        todo = "reason" if same or o != "FAILED" else "reason, finding, ki"
+        rows.append((m, v, r["expected"], r["observed"], r["detail"], todo))
+    entries = [repl.get(e["module"], e) for e in bench["entries"]] + [x for m, x in repl.items() if m not in old]
+    out = dict(bench, entries=entries)
+    if repl:
+        out["source_run"] = f"{src} (run_id {res['plan']['run_id']})"
+    name = bench.get("config_name") or res["plan"]["config_name"]
+    if not repl:
+        md = [f"### Benchmark update {name}: no changes, the benchmark already matches this run"]
+    else:
+        md = [f"### Benchmark update {name}: {len(repl)} entr{'y' if len(repl) == 1 else 'ies'} to review",
+              "| module | verdict | was | now | detail | fill in |", "|---|---|---|---|---|---|"]
+        md += ["| " + " | ".join(_c(x) for x in row) + " |" for row in rows]
+        md.append("Fill in the listed fields for each entry (`finding` is F-CERT-n / F-VER-n). "
+                  "The gate exits 2 on this file until every entry has a reason.")
+    if kept:
+        md.append(f"Kept unchanged (INFRA in this run): {', '.join(kept)}")
+    return out, "\n".join(md) + "\n"
+
+
 def validate(bench):
     bad = [] if bench.get("benchmark_version") == 2 else ["benchmark_version must be 2"]
     seen = set()
@@ -108,13 +151,14 @@ def validate(bench):
     return bad
 
 
-def load_benchmark(path):
+def load_benchmark(path, check=True):
+    """check=False skips the review rules (reasons, findings) so `benchmark update` can rerun on an unreviewed file."""
     try:
         b = json.loads(Path(path).read_text())
         b["entries"], b["variant_key"]
     except (OSError, ValueError, KeyError, TypeError) as e:
         raise GateError(f"invalid benchmark {path}: {e}")
-    bad = validate(b)
+    bad = validate(b) if check else []
     if bad:
         raise GateError(f"invalid benchmark {path}: " + "; ".join(bad))
     return b

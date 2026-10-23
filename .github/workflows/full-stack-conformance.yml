@@ -10,7 +10,11 @@ name: full-stack-conformance
 # (scripts/expect-fault.sh; rc 2/4 and unrecorded fault/shim/strict combinations stay raw). Gate output and
 # artifacts are unchanged. The run-name carries fault and shim, and the diff baseline is the latest successful
 # run titled "fault=none shim=false", so negative-control runs never become the baseline.
-run-name: "full-stack-conformance fault=${{ inputs.fault || 'none' }} shim=${{ inputs.certify_shim || 'false' }}"
+# Custom images (inputs, or a repository_dispatch "inji-release" event from a release pipeline) add "images=custom"
+# to the run-name and never become the diff baseline either. Empty image = the pin in compose/.env.pinned.
+#   gh api repos/<owner>/<repo>/dispatches -f event_type=inji-release \
+#     -f 'client_payload[certify_image]=injistackqa/inji-certify-with-plugins:1.0.1'
+run-name: "full-stack-conformance fault=${{ inputs.fault || 'none' }} shim=${{ inputs.certify_shim || 'false' }}${{ (inputs.certify_image || inputs.verify_image || github.event.client_payload.certify_image || github.event.client_payload.verify_image) && ' images=custom' || '' }}"
 on:
   workflow_dispatch:
     inputs:
@@ -32,6 +36,16 @@ on:
         type: choice
         options: ['false', 'true']
         default: 'false'
+      certify_image:
+        description: Certify image to test instead of the pin (e.g. injistackqa/inji-certify-with-plugins:1.0.1)
+        type: string
+        default: ''
+      verify_image:
+        description: Verify service image to test instead of the pin (e.g. injistackqa/inji-verify-service:1.0.1)
+        type: string
+        default: ''
+  repository_dispatch:
+    types: [inji-release]
   push:
     tags: ['v*', 'release-*']
 
@@ -71,6 +85,8 @@ jobs:
           CONFORMANCE_PYTHON: python
           CONFORMANCE_FAULT: ${{ inputs.fault || 'none' }}
           CONFORMANCE_CERTIFY_AS_METADATA_SHIM: ${{ inputs.certify_shim || 'false' }}
+          CERTIFY_IMAGE: ${{ inputs.certify_image || github.event.client_payload.certify_image || '' }}
+          VERIFY_SERVICE_IMAGE: ${{ inputs.verify_image || github.event.client_payload.verify_image || '' }}
           TARGET: ${{ matrix.target }}
           STRICT: ${{ inputs.strict }}
           PARALLEL: ${{ inputs.parallel }}
@@ -94,7 +110,7 @@ jobs:
             echo '```'
             cat reports/run-info.txt 2>/dev/null || echo "no run-info.txt"
             echo '```'
-            for f in reports/*/gate.md reports/*/reconcile.md; do [ -f "$f" ] && { echo "### $f"; cat "$f"; }; done
+            for f in reports/*/gate.md reports/*/reconcile.md reports/*/benchmark-update.md; do [ -f "$f" ] && { echo "### $f"; cat "$f"; }; done
             if [ -f reports/timing.tsv ]; then
               echo '### timing'
               echo '```'
@@ -110,7 +126,7 @@ jobs:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           echo '## Diff vs previous successful run' >> "$GITHUB_STEP_SUMMARY"
-          id=$(gh run list --branch "$DEFAULT_BRANCH" --workflow full-stack-conformance.yml --status success -L 20 --json databaseId,displayTitle -q '[.[] | select(.displayTitle | contains("fault=none shim=false"))][0].databaseId // empty' || true)
+          id=$(gh run list --branch "$DEFAULT_BRANCH" --workflow full-stack-conformance.yml --status success -L 20 --json databaseId,displayTitle -q '[.[] | select((.displayTitle | contains("fault=none shim=false")) and (.displayTitle | contains("images=custom") | not))][0].databaseId // empty' || true)
           if [ -n "$id" ]; then gh run download "$id" -n "conformance-$TARGET" -D prev || true; fi
           found=0
           for f in reports/*/results.jsonl; do
@@ -131,3 +147,34 @@ jobs:
       - name: Final teardown
         if: always()
         run: scripts/env.sh down all || true
+
+  # Publishes reports/combined/badge.{svg,json} to the single-commit `badges` branch, which the README embeds.
+  # Record runs only: default branch or a tag, no fault, shim off, not strict. Custom images (a release dispatch)
+  # do publish, since the badge should show the newest release tested. Only this job can write to the repo.
+  badge:
+    needs: conformance
+    if: >-
+      always() && needs.conformance.result != 'cancelled'
+      && (github.ref == format('refs/heads/{0}', github.event.repository.default_branch) || startsWith(github.ref, 'refs/tags/'))
+      && (inputs.fault || 'none') == 'none' && (inputs.certify_shim || 'false') == 'false' && inputs.strict != true
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: conformance-combined
+          path: art
+      - name: Push badge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN: ${{ github.run_id }}
+        run: |
+          [ -f art/combined/badge.svg ] || { echo "::warning::no combined badge in this run; badge not updated"; exit 0; }
+          mkdir b && cp art/combined/badge.svg art/combined/badge.json b/ && cd b
+          git init -q -b badges
+          git add badge.svg badge.json
+          git -c user.name=github-actions -c user.email=41898282+github-actions[bot]@users.noreply.github.com \
+            commit -qm "badge from run $RUN"
+          git push -qf "https://x-access-token:$GH_TOKEN@github.com/$REPO.git" badges

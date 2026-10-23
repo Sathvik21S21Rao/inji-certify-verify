@@ -10,14 +10,15 @@ python3 -m venv .venv
 .venv/bin/pip install -r runner/requirements-dev.txt   # + pytest, jsonschema (unit tests only)
 ```
 
-Docker with Compose v2, git, openssl and curl must be installed. The default testrig driver also needs JDK 21 and Maven on `PATH` (or `source env.sh`), because it builds the patched api-test images. The first `up` clones the three upstream repos into `upstream/` (git-ignored) at the commits in `compose/.env.pinned`.
+Docker with Compose v2, git, openssl, curl and bash 4+ must be installed. Linux with Docker Engine is the tested platform. On macOS or Windows (WSL2), use Docker Desktop and, on macOS, `brew install bash` (the system bash is 3.2); the testrig containers then use bridge networking (see `CONFORMANCE_DOCKER_NETWORK`). The default testrig driver also needs JDK 21 and Maven on `PATH` (or `source env.sh`), because it builds the patched api-test images. The first `up` clones the three upstream repos into `upstream/` (git-ignored) at the commits in `compose/.env.pinned`.
 
-`source env.sh` puts `.venv/bin` and a JDK 21 on `PATH`. The JDK path in the file is `~/.local/jdks/jdk-21.0.12.1+1`; edit it to match your machine. `scripts/build-testrig.sh` sources it only when `~/.local/jdks` exists, and otherwise uses the `java` and `mvn` already on `PATH` (CI gets them from `actions/setup-java`).
+`source env.sh` puts `.venv/bin` and a JDK 21+ on `PATH`; nothing in it is machine-specific. It keeps `JAVA_HOME` if that is already a JDK 21+ (CI sets it with `actions/setup-java`), else uses `/usr/libexec/java_home -v 21+` on macOS, else the newest `~/.local/jdks/jdk-2x*`, else the `java` already on `PATH`, and warns if that is older than 21. `scripts/build-testrig.sh` sources it on every build.
 
 ## One command: `scripts/run-conformance.sh`
 
 ```
-scripts/run-conformance.sh (--component certify|verify | --combined) [--strict] [--parallel] [--keep] [--out DIR]
+scripts/run-conformance.sh (--component certify|verify | --combined | --config NAME[,NAME…])
+                           [--modules MODULE[,MODULE…]] [--strict] [--parallel] [--keep] [--out DIR]
 ```
 
 `scripts/run-full-stack-conformance.sh` is the same script under a second name.
@@ -35,17 +36,20 @@ Both drivers produce the same gate result: on the known-good run, the `strip-cre
 | `--combined` | Everything: all three stacks, all configs, plus the combined report in `<out>/combined/`. |
 | `--strict` | A suite WARNING fails the gate (`STRICT_WARNING`). |
 | `--parallel` | With `--combined` only: run the Certify and Verify configs at the same time. |
+| `--config NAME[,NAME…]` | Exactly these configs (file stems under `plans/certify/` or `plans/verify/`). The stacks come from the name prefixes, and the AS-metadata shim follows the Certify config's `expect.certify_as_metadata_shim`, so `--config certify-shim-on` needs no variable. Two Certify configs that need different shim states can't share a run. No combined report. |
+| `--modules MODULE[,MODULE…]` | With a single `--config`: run only these modules. Names are checked against the config's benchmark before anything starts; the gate marks the rest `NOT_RUN` (green). |
 | `--keep` | Don't tear the stacks down at the end. |
 | `--out DIR` | Output directory (default `reports/`). |
 
-Exactly one of `--component` or `--combined` is required. Exit codes: `0` all gates green, `1` at least one gate red, `2` usage error or a gate could not evaluate (for example a missing `results.jsonl` or an invalid benchmark), `3` `env.sh up` failed, `4` (testrig driver) the TestNG report disagrees with the suite's own plan export for at least one module. `4` outranks `1` and `2`. A reconcile check that can't read its inputs counts like a gate `2`.
+Exactly one of `--component`, `--combined` or `--config` is required. Exit codes: `0` all gates green, `1` at least one gate red, `2` usage error or a gate could not evaluate (for example a missing `results.jsonl` or an invalid benchmark), `3` `env.sh up` failed, `4` (testrig driver) the TestNG report disagrees with the suite's own plan export for at least one module. `4` outranks `1` and `2`. A reconcile check that can't read its inputs counts like a gate `2`.
 
 Which Certify config runs depends on `CONFORMANCE_CERTIFY_AS_METADATA_SHIM`: `certify-shim-off` by default (the benchmark of record), `certify-shim-on` when it is `true`. For `verify-x509`, the script exports `VERIFY_X509_CA_PEM` from `data/certs/verify-ca.pem` when it is not already set.
 
 Output:
 
 ```
-reports/run-info.txt                 mode, configs, shim, fault, driver, strict, parallel, git commit
+reports/run-info.txt                 mode, configs, shim, fault, driver, strict, parallel, modules, docker network,
+                                     images (pinned/custom) and the Certify and Verify image refs, git commit
 reports/timing.tsv                   seconds per phase: build, up, minio, tests, combined, down, total
 reports/minio-ls.xml                 bucket listing after the uploads (testrig driver)
 reports/<config>/results.jsonl       the runner's records (see results-contract.md)
@@ -53,10 +57,11 @@ reports/<config>/stdout.jsonl        the same stream as printed on stdout (runne
 reports/<config>/stderr.log          runner and handoff log
 reports/<config>/<module>.log.json   suite log per module, plus *.verify-result.{json,png} for Verify
 reports/<config>/gate.md, gate.exit  gate table and its exit code
+reports/<config>/benchmark-update.md, benchmark.proposed.json   (red gate only) see `benchmark update`
 reports/<config>/reconcile.md, reconcile.exit  TestNG vs suite export, per module (testrig driver)
 reports/<config>/testng-report/      EmailableReport output, plus conformance/<config>/ from the runner (testrig driver)
 reports/<config>/testrig.log         container log (testrig driver)
-reports/combined/index.html, badge.json, gate.md   (--combined)
+reports/combined/index.html, badge.json, badge.svg, gate.md   (--combined)
 ```
 
 Examples:
@@ -65,6 +70,11 @@ Examples:
 CONFORMANCE_PYTHON=.venv/bin/python scripts/run-conformance.sh --component certify
 CONFORMANCE_PYTHON=.venv/bin/python scripts/run-conformance.sh --component verify --keep
 CONFORMANCE_PYTHON=.venv/bin/python scripts/run-conformance.sh --combined --parallel --out /tmp/conf
+CONFORMANCE_PYTHON=.venv/bin/python scripts/run-conformance.sh --config verify-x509
+CONFORMANCE_PYTHON=.venv/bin/python scripts/run-conformance.sh --config verify-redirect-uri \
+  --modules oid4vp-1final-verifier-happy-flow
+# a new release, without editing compose/.env.pinned
+CERTIFY_IMAGE=injistackqa/inji-certify-with-plugins:1.0.1 scripts/run-conformance.sh --component certify
 ```
 
 The scripts take no lock. If several people or jobs share one Docker host, wrap the whole call, for example `flock /tmp/inji-conformance.docker.lock scripts/run-conformance.sh --combined`. Two concurrent `up`s would recreate each other's containers.
@@ -142,6 +152,14 @@ python -m runner benchmark init <results.jsonl> --out <benchmark.json> [--label 
 ```
 Writes a benchmark skeleton from a clean run (it refuses a run with `infra` modules or an abort). Then fill in, by hand, `reason` for every entry, and `finding` (`F-CERT-n` / `F-VER-n`) and `ki` for each FAILED entry. An empty `reason` makes the gate exit 2. `--force` overwrites an existing file. Update a benchmark only by a reviewed edit, once a `STALE`, `REGRESSION` or `NEW_*` verdict is understood. The shim-on benchmark is diagnostic only.
 
+### `benchmark update`
+```
+python -m runner benchmark update <results.jsonl> <benchmark.json> [--out FILE]
+```
+Rewrites every entry the gate would not pass (`NEW_FAILURE`, `REGRESSION`, `STALE`, `NEW_WARNING`, `UNBENCHMARKED`) from what the run observed, and prints a Markdown table of those entries: verdict, old and new expectation, and the fields left to fill in. `OK` and `NOT_RUN` entries stay as they are, and so do modules that were `INFRA` in this run (listed at the end). Changed and new entries get an empty `reason`. They keep `finding` and `ki` only when the outcome and first failing condition are unchanged (a warning-only change). So the gate exits 2 on the file until someone reviews each entry; that is the reviewed edit the gate asks for. It writes over the benchmark unless `--out` is given, and it refuses an aborted run.
+
+`run-conformance.sh` runs it after every red gate and writes `reports/<config>/benchmark.proposed.json` and `benchmark-update.md`; CI shows the latter in the job summary. To accept a change: review the table, fill in the empty fields in the proposed file, copy it over `plans/<component>/<config>.benchmark.json`, and check it with `python -m runner gate`.
+
 ### `diff`
 ```
 python -m runner diff <A.jsonl> <B.jsonl>
@@ -187,6 +205,8 @@ Environment and entry script:
 | `CONFORMANCE_PYTHON` | `python3` | Interpreter `run-conformance.sh` uses for the runner and the gate. |
 | `CONFORMANCE_DRIVER` | `testrig` | `testrig` or `runner`, else exit 2. See [driver](#one-command-scriptsrun-conformancesh). |
 | `CONFORMANCE_MVN_OFFLINE` | unset | `1` adds `mvn -o` to the testrig image build. |
+| `CONFORMANCE_DOCKER_NETWORK` | `host`, or `bridge` on Docker Desktop | How the testrig container reaches the stacks. `host` (`--network host`, all recorded runs). `bridge`: joins MinIO's network and reaches the published ports through `host.docker.internal`, with `localhost.emobix.co.uk` mapped to the host. The default is `bridge` when `docker info` reports Docker Desktop (macOS, Windows, WSL2), else `host`. |
+| `CERTIFY_IMAGE`, `VERIFY_SERVICE_IMAGE` (any key in `compose/.env.pinned`) | the pin | A non-empty value in the environment overrides the pin, for example to test a release candidate. The run is labelled `images=custom` in `run-info.txt`, the combined note and the CI run-name, and CI never uses it as the diff baseline. The testrig image is still built from the pinned source commit. |
 | `CONFORMANCE_ROOT` | set by `env.sh` | Repository root; the overlays reach the repo's files through it. Don't set it yourself. |
 
 ## Plan templates (`plans/<component>/<config>.json`)

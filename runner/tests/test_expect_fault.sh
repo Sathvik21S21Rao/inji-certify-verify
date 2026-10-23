@@ -29,7 +29,7 @@ t 0 "nonce shim-off green"    certify  strip-nonce-endpoint false false 0 $G/con
 t 1 "no expectation (shim)"   certify  strip-credential-endpoint true false 1 $A/conformance-certify
 t 1 "no expectation (strict)" certify  strip-credential-endpoint false true 1 $A/conformance-certify
 cp -r $A/conformance-combined "$W/comb"
-sed -i 's/^\(### Gate verify-x509:\) GREEN/\1 RED/' "$W/comb/verify-x509/gate.md"
+sed -i.bak 's/^\(### Gate verify-x509:\) GREEN/\1 RED/' "$W/comb/verify-x509/gate.md"  # .bak: BSD sed needs a suffix
 t 1 "other config red"        combined strip-credential-endpoint false false 1 "$W/comb"
 rm -rf "$W"
 exit $fail

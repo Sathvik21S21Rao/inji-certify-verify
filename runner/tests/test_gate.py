@@ -267,3 +267,63 @@ def _known_good():
 @pytest.mark.parametrize("bp,run", _known_good(), ids=lambda p: "/".join(p.parts[-3:-1]))
 def test_known_good_runs_green(bp, run):
     assert main(["gate", str(run), str(bp)]) == 0
+
+
+def test_badge_svg(tmp_path):
+    rs = recs("certify-shim-off")
+    bp = tmp_path / "b.json"
+    bp.write_text(json.dumps(bench_of(rs)))
+    combined.write(tmp_path / "o", [(write(tmp_path / "r.jsonl", rs), str(bp))])
+    svg = (tmp_path / "o" / "badge.svg").read_text()
+    assert svg.startswith("<svg") and "benchmark green · 14 modules" in svg and "#4c1" in svg
+    assert "<img src=badge.svg" in (tmp_path / "o" / "index.html").read_text()
+
+
+def test_benchmark_update(tmp_path):
+    rs = recs("certify-shim-off")
+    b = bench_of(rs)
+    names = [e["module"] for e in b["entries"]]
+    same, md = gate.update_benchmark(rs, b, "r.jsonl")
+    assert same == b and "no changes" in md
+
+    run = copy.deepcopy(rs)
+    set_out(mod(run, 0), "fail", "SomethingNew")                    # NEW_FAILURE: finding cleared
+    mod(run, 1)["warnings"] = [{"condition": "W1", "message": "m"}]  # NEW_WARNING only: finding kept
+    set_out(mod(run, 2), "infra")                                   # INFRA: entry kept as is
+    b2 = copy.deepcopy(b)
+    del b2["entries"][3]                                            # module 3 becomes UNBENCHMARKED
+    b2["entries"].append(dict(b["entries"][4], module="gone-module"))  # NOT_RUN: kept
+    new, md = gate.update_benchmark(run, b2, "r.jsonl")
+    ent = {e["module"]: e for e in new["entries"]}
+    assert ent[names[0]]["first_failure"] == "SomethingNew" and ent[names[0]]["finding"] is None
+    assert ent[names[0]]["reason"] == ""
+    assert ent[names[1]]["expected_warnings"] == ["W1"] and ent[names[1]]["finding"] == b["entries"][1]["finding"]
+    assert ent[names[1]]["reason"] == ""
+    assert ent[names[2]] == b["entries"][2] and ent["gone-module"]["reason"] == "r"
+    assert ent[names[3]]["reason"] == "" and new["entries"][-1]["module"] == names[3]  # new entries go last
+    assert "3 entries to review" in md and "Kept unchanged (INFRA in this run)" in md
+    assert gate.validate(new)  # unreviewed: the gate refuses it
+
+    aborted = copy.deepcopy(rs)
+    next(r for r in aborted if r["type"] == "end")["exit"] = 2
+    with pytest.raises(gate.GateError):
+        gate.update_benchmark(aborted, b, "r.jsonl")
+
+
+def test_benchmark_update_cli(tmp_path):
+    rs = recs("certify-shim-off")
+    bp = tmp_path / "b.json"
+    bp.write_text(json.dumps(bench_of(rs)))
+    run = copy.deepcopy(rs)
+    set_out(mod(run, 0), "fail", "SomethingNew")
+    rp = write(tmp_path / "r.jsonl", run)
+    assert main(["gate", rp, str(bp)]) == 1
+    prop = tmp_path / "p.json"
+    assert main(["benchmark", "update", rp, str(bp), "--out", str(prop)]) == 0
+    assert main(["gate", rp, str(prop)]) == 2                          # needs review first
+    assert main(["benchmark", "update", rp, str(prop)]) == 0             # reruns on an unreviewed file, in place
+    p = json.loads(prop.read_text())
+    e = p["entries"][0]
+    e["reason"], e["finding"] = "reviewed", "F-CERT-9"
+    prop.write_text(json.dumps(p))
+    assert main(["gate", rp, str(prop)]) == 0

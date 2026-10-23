@@ -23,6 +23,7 @@ The fingerprint is the first failing condition plus the module's set of warning 
 - **The testrig driver builds images on the run host.** The first run of `scripts/run-conformance.sh` clones both modules and runs a Maven build per module (about two minutes each). MOSIP CI would use its own published testrig images instead. `CONFORMANCE_DRIVER=runner` skips the testrig entirely.
 - **`runner combined` ignores `--strict`.** Per-config gates honour it; the combined page and badge gate non-strictly. This only matters if a WARNING outcome ever appears (none does today).
 - **No locking.** Two harness runs on one Docker host recreate each other's containers. Ports are fixed: 8443, 8091, 9443 and 8080, plus 9000/9001 for MinIO. Use `flock` around whole runs.
+- **Docker Desktop is untested end to end.** Bridge networking (`CONFORMANCE_DOCKER_NETWORK=bridge`, the default on Docker Desktop) was checked on Linux for reachability (published host port, the suite hostname, MinIO by name), but every recorded full run used Linux with host networking.
 - **Certify's credential configuration doesn't persist.** Certify's database uses an anonymous volume, so the configuration is lost on `down`. `env.sh up` and the runner both re-seed it, idempotently.
 - **Suite upgrades need a re-baseline.** Benchmarks key on suite condition names, so a new suite tag that renames conditions makes entries `STALE` or `NEW_FAILURE` until they are reviewed.
 - **The verifier screenshot is automated.** It is a rendering of Verify's own `/vp-result` response, not a wallet or UI capture. That is acceptable for regression gating, but it isn't evidence a certification reviewer would accept.
@@ -34,7 +35,7 @@ The fingerprint is the first failing condition plus the module's set of warning 
 - How the runner code reaches the testrig container in a cluster. Today `runner/` and `plans/` are mounted at `conformance.runner.dir`; baking them into the image or using a volume are both open.
 - The report bucket used in MOSIP environments. The commons default is `automation`; the brief's `automationtests` appears nowhere in code. Either works through `s3-account`.
 - How MOSIP CI stages `testNgXmlFiles/` into the image. The api-test `Dockerfile` copies only `api-test/target`, so `testrig-bridge/build-image.sh` copies the XML files into `target/testNgXmlFiles` itself.
-- The GitHub Actions workflow has passed `actionlint`, but it has not yet run on GitHub. It assumes `localhost.emobix.co.uk` resolves to 127.0.0.1 on the runner, and adds an `/etc/hosts` entry if it doesn't.
+- The GitHub Actions workflow has run green on GitHub (known-good and the credential-endpoint negative control). It assumes `localhost.emobix.co.uk` resolves to 127.0.0.1 on the runner, and adds an `/etc/hosts` entry if it doesn't.
 
 ## Triage outcome
 

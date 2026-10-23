@@ -1,4 +1,4 @@
-"""Aggregate several gated runs into index.html + badge.json + gate.md. Stdlib only."""
+"""Aggregate several gated runs into index.html + badge.json + badge.svg + gate.md. Stdlib only."""
 import json
 from collections import Counter
 from html import escape as e
@@ -9,6 +9,20 @@ from . import gate
 CSS = ("body{font:14px system-ui,sans-serif;margin:16px;max-width:1200px}table{border-collapse:collapse;margin:8px 0 24px}"
        "td,th{border:1px solid #bbb;padding:3px 8px;text-align:left;vertical-align:top}th{background:#eee}"
        ".red{color:#b00020;font-weight:bold}.green{color:#176f2c;font-weight:bold}")
+
+
+COLORS = {"brightgreen": "#4c1", "red": "#e05d44", "lightgrey": "#9f9f9f"}
+LABEL = "Certify ↔ Verify OpenID 1.0"
+
+
+def badge_svg(label, message, color):
+    """Flat shields-style badge. ponytail: width from a fixed 7 px per character, fine for this short ASCII-ish text."""
+    lw, mw = 10 + 7 * len(label), 10 + 7 * len(message)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{lw + mw}" height="20" role="img" '
+            f'aria-label="{e(label)}: {e(message)}"><title>{e(label)}: {e(message)}</title>'
+            f'<rect width="{lw}" height="20" fill="#555"/><rect x="{lw}" width="{mw}" height="20" fill="{COLORS[color]}"/>'
+            '<g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11">'
+            f'<text x="{lw / 2}" y="14">{e(label)}</text><text x="{lw + mw / 2}" y="14">{e(message)}</text></g></svg>\n')
 
 
 def write(out_dir, runs, note=None):
@@ -30,8 +44,9 @@ def write(out_dir, runs, note=None):
         badge = (f"red · {k} of {n} modules off benchmark", "red")
     else:
         badge = (f"benchmark green · {n} modules", "brightgreen")
-    (out / "badge.json").write_text(json.dumps({"schemaVersion": 1, "label": "Certify ↔ Verify OpenID 1.0",
+    (out / "badge.json").write_text(json.dumps({"schemaVersion": 1, "label": LABEL,
                                                 "message": badge[0], "color": badge[1]}, ensure_ascii=False))
+    (out / "badge.svg").write_text(badge_svg(LABEL, *badge))
     (out / "gate.md").write_text("\n".join(gate.gate_markdown(r) for r in gated))
 
     summ, detail = [], []
@@ -58,7 +73,7 @@ def write(out_dir, runs, note=None):
                       + "".join(body) + "</table>")
     (out / "index.html").write_text(
         "<!doctype html><meta charset=utf-8><title>Certify ↔ Verify OpenID 1.0 conformance</title>"
-        f"<style>{CSS}</style><h1>Certify ↔ Verify OpenID 1.0 conformance</h1>"
+        f"<style>{CSS}</style><h1>Certify ↔ Verify OpenID 1.0 conformance</h1><p><img src=badge.svg alt=badge></p>"
         + (f"<p>{e(note)}</p>" if note else "")
         + "<table><tr><th>config<th>component<th>run id<th>flags<th>counts<th>gate</tr>" + "".join(summ) + "</table>"
         + "".join(detail))

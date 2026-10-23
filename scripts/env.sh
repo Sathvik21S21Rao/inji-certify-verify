@@ -7,10 +7,17 @@
 #   flock /tmp/inji-conformance.docker.lock scripts/env.sh up all
 # (nested flock would deadlock).
 set -euo pipefail
+# bash 4+ (wait-ready.sh uses an associative array; empty arrays under set -u). macOS ships 3.2: brew install bash
+[ "${BASH_VERSINFO[0]}" -ge 4 ] || { echo "env.sh: needs bash 4+, this is $BASH_VERSION (macOS: brew install bash)" >&2; exit 2; }
 CONFORMANCE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 export CONFORMANCE_ROOT
 cd "$CONFORMANCE_ROOT"
-set -a; source compose/.env.pinned; set +a
+# Pins from .env.pinned. A variable already set (non-empty) in the environment wins, e.g.
+# CERTIFY_IMAGE=... or VERIFY_SERVICE_IMAGE=... to test a new release without editing the file.
+while IFS='=' read -r k v; do
+  case $k in ''|\#*) continue;; esac
+  [ -n "${!k:-}" ] || export "$k=$v"
+done < compose/.env.pinned
 U=upstream
 BASE_suite=$U/conformance-suite/docker-compose-prebuilt.yml
 BASE_certify=$U/inji-certify/docker-compose/docker-compose-injistack/docker-compose.yaml

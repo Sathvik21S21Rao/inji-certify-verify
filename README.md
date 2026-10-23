@@ -1,5 +1,9 @@
 # Inji conformance harness
 
+[![Certify ↔ Verify OpenID 1.0 conformance](../../raw/badges/badge.svg)](../../actions/workflows/full-stack-conformance.yml)
+
+<sub>The badge is the combined gate of the latest record run in CI (default branch or tag, no fault, shim off). It is pushed to the `badges` branch; the relative link works on GitHub for anyone who can see the repository.</sub>
+
 An automated OpenID conformance harness for **Inji Certify** (OpenID4VCI issuer) and **Inji Verify** (OpenID4VP verifier). It runs the OpenID Foundation (OIDF) conformance suite against both components unattended, reports each suite module as a TestNG test inside the MOSIP testrig they already use, and gates the build against a recorded benchmark, so CI turns red only when something regresses.
 
 What it does, end to end:
@@ -13,14 +17,14 @@ What it does, end to end:
 
 ## Quick start
 
-Requirements: Linux, Docker with Compose v2 (tested with Compose v5.0.0 on Engine 29.1.3), git, openssl, curl, Python 3.12, and JDK 21 with Maven (the default driver builds the patched testrig images; skip both with `CONFORMANCE_DRIVER=runner`). The three stacks together use about 1.9 GiB more host memory than idle (`evidence/sp1/SP1.4/memory.md`), so leave at least 3 GiB free. The first run clones the pinned upstream repos into `upstream/` and pulls the images.
+Requirements: Linux with Docker Engine, or macOS / Windows (WSL2) with Docker Desktop and bash 4+ (`brew install bash` on macOS); Docker with Compose v2 (tested with Compose v5.0.0 on Engine 29.1.3), git, openssl, curl, Python 3.12, and JDK 21 with Maven (the default driver builds the patched testrig images; skip both with `CONFORMANCE_DRIVER=runner`). The three stacks together use about 1.9 GiB more host memory than idle (`evidence/sp1/SP1.4/memory.md`), so leave at least 3 GiB free. The first run clones the pinned upstream repos into `upstream/` and pulls the images.
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r runner/requirements.txt
 CONFORMANCE_PYTHON=.venv/bin/python scripts/run-conformance.sh --combined
 ```
 
-This builds the patched Certify and Verify testrig images (about two minutes each the first time, cached by patch hash after that; `evidence/sp4/SP4.13/build-durations.txt`), brings up all three stacks and MinIO, and runs the three record configs (`certify-shim-off`, `verify-redirect-uri`, `verify-x509`) through `OpenIDConformanceTest` in the testrig. It writes the TestNG reports, the per-config gate results and a combined HTML report and badge under `reports/`, uploads the reports to MinIO, then tears everything down. Exit code 0 means every gate is green and every TestNG report matches the suite's own record (exit 4 means it doesn't). Run one component with `--component certify` or `--component verify`. `scripts/run-full-stack-conformance.sh` is an alias with the same flags.
+This builds the patched Certify and Verify testrig images (about two minutes each the first time, cached by patch hash after that; `evidence/sp4/SP4.13/build-durations.txt`), brings up all three stacks and MinIO, and runs the three record configs (`certify-shim-off`, `verify-redirect-uri`, `verify-x509`) through `OpenIDConformanceTest` in the testrig. It writes the TestNG reports, the per-config gate results and a combined HTML report and badge under `reports/`, uploads the reports to MinIO, then tears everything down. Exit code 0 means every gate is green and every TestNG report matches the suite's own record (exit 4 means it doesn't). Run one component with `--component certify` or `--component verify`, chosen configs with `--config verify-x509` (comma-separated), and a few modules of one config with `--config NAME --modules a,b`. To test a new Certify or Verify release, set `CERTIFY_IMAGE` or `VERIFY_SERVICE_IMAGE` (the same inputs exist on the GitHub workflow). `scripts/run-full-stack-conformance.sh` is an alias with the same flags.
 
 The suite UI is at <https://localhost.emobix.co.uk:8443> while the stacks are up (`--keep` leaves them running). That hostname resolves to 127.0.0.1 in public DNS.
 

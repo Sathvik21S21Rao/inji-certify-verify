@@ -39,7 +39,7 @@
       │
       └─► python -m runner gate results.jsonl plans/<component>/<config>.benchmark.json
               ├─► gate.md + exit 0 green / 1 red / 2 cannot evaluate
-              ├─► python -m runner combined ─► combined/index.html, badge.json, gate.md
+              ├─► python -m runner combined ─► combined/index.html, badge.json, badge.svg, gate.md
               └─► python -m runner diff A.jsonl B.jsonl (CI: against the last successful run)
 
  testrig driver, after each gate:
@@ -102,7 +102,7 @@ Reporting is entirely the testrig's own. `EmailableReport` names the file with i
 - **Benchmark** (`plans/<component>/<config>.benchmark.json`, [ADR-004](design-decisions.md#adr-004-conformance-benchmark-gate)). For each module it records the expected outcome, the first failing condition (for FAILED), the sorted set of expected warning conditions, a finding id, a KI id and a human-written reason. A `variant_key` (plan, variant and observed flags) ties the file to one configuration, so a shim-on run can never be gated against the shim-off benchmark.
 - **Gate verdicts.** `OK`, `NOT_RUN` (in the benchmark but not in this run's `--modules` selection), `STALE` (better than expected, or an expected warning disappeared), `REGRESSION` (worse), `NEW_FAILURE` (still FAILED, at a different condition), `NEW_WARNING`, `UNBENCHMARKED`, `STRICT_WARNING`, `INFRA`. Any verdict other than `OK` or `NOT_RUN` makes the gate red.
 - **Diff.** Compares two runs module by module (outcome and first failing condition) and prints a Markdown table. CI diffs each config against the last successful run on the default branch.
-- **Combined.** Gates several runs together and writes one HTML page, `badge.json` (shields.io endpoint format) and the concatenated `gate.md`.
+- **Combined.** Gates several runs together and writes one HTML page, `badge.json` (shields.io endpoint format), `badge.svg` (the same badge, rendered; CI pushes it to the `badges` branch for the README) and the concatenated `gate.md`.
 
 ### Reconciliation (`runner/reconcile.py`)
 The gate trusts `results.jsonl`, which is the harness's own output. The reconcile check closes that loop against the suite: after every testrig run, it compares each module's TestNG status with the status and result in the suite's plan export, mapped through the same ADR-003 table. It also compares the EmailableReport's T/P/S/F/KI counts with the suite. A disagreement makes `scripts/run-conformance.sh` exit 4, so CI fails. Evidence: MATCH on all 34 modules of a live combined run (`evidence/sp5/SP5.2/live/*/reconcile.md`), and MISMATCH on doctored reports (`evidence/sp5/SP5.2/doctored/`).
@@ -123,6 +123,6 @@ Runs on `workflow_dispatch` (inputs `strict`, `parallel`, `fault`, `certify_shim
 | Output | Path |
 |---|---|
 | Runner, per config | `<out>/results.jsonl`, `<out>/<module>.log.json`, `<out>/*.verify-result.{json,png}`, `<out>/plan-config.json`, plan export `<out>/<plan>-….zip` |
-| Entry script | `reports/run-info.txt`, `reports/timing.tsv`, `reports/<config>/{results.jsonl,stdout.jsonl,stderr.log,gate.md,gate.exit,reconcile.md,reconcile.exit}`, `reports/combined/{index.html,badge.json,gate.md}` |
+| Entry script | `reports/run-info.txt`, `reports/timing.tsv`, `reports/<config>/{results.jsonl,stdout.jsonl,stderr.log,gate.md,gate.exit,reconcile.md,reconcile.exit}`, `reports/<config>/{benchmark-update.md,benchmark.proposed.json}` (red gate), `reports/combined/{index.html,badge.json,badge.svg,gate.md}` |
 | Testrig (in the container) | `/home/inji/testng-report/*-full-report_T-…html`; the runner output under `/home/inji/testng-report/conformance/<config>/` |
 | MinIO | bucket `s3-account` (default `automation`), key `<modules>/<report file>` |
