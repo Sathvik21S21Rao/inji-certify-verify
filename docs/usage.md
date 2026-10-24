@@ -206,7 +206,8 @@ Environment and entry script:
 | `CONFORMANCE_DRIVER` | `testrig` | `testrig` or `runner`, else exit 2. See [driver](#one-command-scriptsrun-conformancesh). |
 | `CONFORMANCE_MVN_OFFLINE` | unset | `1` adds `mvn -o` to the testrig image build. |
 | `CONFORMANCE_DOCKER_NETWORK` | `host`, or `bridge` on Docker Desktop | How the testrig container reaches the stacks. `host` (`--network host`, all recorded runs). `bridge`: joins MinIO's network and reaches the published ports through `host.docker.internal`, with `localhost.emobix.co.uk` mapped to the host. The default is `bridge` when `docker info` reports Docker Desktop (macOS, Windows, WSL2), else `host`. |
-| `CERTIFY_IMAGE`, `VERIFY_SERVICE_IMAGE` (any key in `compose/.env.pinned`) | the pin | A non-empty value in the environment overrides the pin, for example to test a release candidate. The run is labelled `images=custom` in `run-info.txt`, the combined note and the CI run-name, and CI never uses it as the diff baseline. The testrig image is still built from the pinned source commit. |
+| `CERTIFY_IMAGE`, `VERIFY_SERVICE_IMAGE` (any key in `compose/.env.pinned`) | the pin | A non-empty value in the environment overrides the pin, for example to test a release candidate. The run is labelled `images=custom` in `run-info.txt`, the combined note and the CI run-name, and CI never uses it as the diff baseline. The testrig image is still built from the pinned source commit unless `INJI_*_REF` is set. |
+| `INJI_CERTIFY_REF`, `INJI_VERIFY_REF` | the pin | A SHA, branch, tag or `refs/pull/N/head` of `INJI_*_REPO`. The Inji compose files and the api-test (testrig) source come from that ref instead of the pin. It is fetched into `data/upstream-ref/inji-<c>`, so `upstream/` stays at the pin. Pair it with the image built from the same ref (`CERTIFY_IMAGE` / `VERIFY_SERVICE_IMAGE`). The testrig image tag includes the source commit. If `testrig-bridge/inji-<c>.patch` no longer applies, the build stops with exit 2 and says so. Recorded as `upstream=custom`, `certify_ref` and `verify_ref` in `run-info.txt`. Not allowed with `CONFORMANCE_CERTIFY_RELEASE=0.14`. |
 | `CONFORMANCE_ROOT` | set by `env.sh` | Repository root; the overlays reach the repo's files through it. Don't set it yourself. |
 
 ## Plan templates (`plans/<component>/<config>.json`)
@@ -306,7 +307,31 @@ The bridge also passes `CERTIFY_API=<injiCertifyBaseURL>/v1/certify` (Certify) o
 
 ## CI
 
-`.github/workflows/full-stack-conformance.yml` runs on manual dispatch and on tags `v*` / `release-*`. Dispatch inputs: `strict` (boolean), `parallel` (boolean), `fault` (`none`, `strip-nonce-endpoint`, `strip-credential-endpoint`), `certify_shim` (`false` / `true`). Each matrix job (`certify`, `verify`, `combined`) uploads `reports/` as the artifact `conformance-<target>` and writes the gate tables, the timing and a diff against the last successful run to the job summary.
+`.github/workflows/full-stack-conformance.yml` runs on manual dispatch and on tags `v*` / `release-*`. Dispatch inputs: `strict` (boolean), `parallel` (boolean), `fault` (`none`, `strip-nonce-endpoint`, `strip-credential-endpoint`), `certify_shim` (`false` / `true`), `certify_image` / `verify_image`, `certify_ref` / `verify_ref`. A `repository_dispatch` event of type `inji-release` takes the same image and ref fields from `client_payload`. Each matrix job (`certify`, `verify`, `combined`) uploads `reports/` as the artifact `conformance-<target>` and writes the gate tables, the timing and a diff against the last successful run to the job summary.
+
+### Calling it from Inji PR CI (`workflow_call`)
+
+The same file is a reusable workflow. An Inji repo builds the PR images, saves them with `docker save` into one artifact, and calls it:
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t inji-certify:pr . && docker save inji-certify:pr -o certify.tar
+      - uses: actions/upload-artifact@v4
+        with: {name: pr-images, path: certify.tar}
+  conformance:
+    needs: build
+    uses: Sathvik21S21Rao/inji-certify-verify/.github/workflows/full-stack-conformance.yml@main
+    with:
+      image_artifact: pr-images
+      certify_image: inji-certify:pr
+      certify_ref: ${{ github.event.pull_request.head.sha }}
+```
+
+Inputs: `certify_image`, `verify_image`, `certify_ref`, `verify_ref`, `image_artifact` (every `*.tar` in it is loaded with `docker load`), `strict`, `harness_repository` and `harness_ref` (which harness to run; the defaults are this repo's `main`). The optional secret `harness_token` is a token that can read the harness repo. A workflow in another repository can only call this one if this repo is public or shared with it. The badge job never runs under `workflow_call`, and the diff step finds no baseline in the caller's repo. A PR that changes behaviour on purpose turns the gate red. The job summary then holds `benchmark-update.md`, and the proposed benchmark goes into this repo after review.
 
 ## Unit tests
 

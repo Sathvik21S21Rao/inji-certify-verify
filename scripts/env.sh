@@ -20,8 +20,11 @@ while IFS='=' read -r k v; do
 done < compose/.env.pinned
 U=upstream
 BASE_suite=$U/conformance-suite/docker-compose-prebuilt.yml
-BASE_certify=$U/inji-certify/docker-compose/docker-compose-injistack/docker-compose.yaml
-BASE_verify=$U/inji-verify/docker-compose/docker-compose.yml
+# INJI_CERTIFY_REF / INJI_VERIFY_REF: compose files from that ref (scripts/fetch-upstream.sh fetches it)
+U_certify=$U; [ -z "${INJI_CERTIFY_REF:-}" ] || U_certify=data/upstream-ref
+U_verify=$U; [ -z "${INJI_VERIFY_REF:-}" ] || U_verify=data/upstream-ref
+BASE_certify=$U_certify/inji-certify/docker-compose/docker-compose-injistack/docker-compose.yaml
+BASE_verify=$U_verify/inji-verify/docker-compose/docker-compose.yml
 die() { echo "env.sh: $*" >&2; exit 2; }
 
 dc() { # project args...
@@ -36,6 +39,7 @@ fault=${CONFORMANCE_FAULT:-none}
 export CONFORMANCE_FAULT=$fault
 release=${CONFORMANCE_CERTIFY_RELEASE:-1.0}
 [ "$release" = 0.14 ] && [ "${CONFORMANCE_CERTIFY_AS_METADATA_SHIM:-false}" = true ] && die "0.14 control runs with the shim off only"
+[ "$release" = 1.0 ] || [ -z "${INJI_CERTIFY_REF:-}" ] || die "INJI_CERTIFY_REF needs CONFORMANCE_CERTIFY_RELEASE=1.0"
 case $release in 1.0) ;; 0.14) # negative control (b): v0.14.0 upstream compose, same overlay
   d=data/upstream-0.14/inji-certify; c=docker-compose/docker-compose-injistack
   if [ ! -d "$d/$c" ]; then

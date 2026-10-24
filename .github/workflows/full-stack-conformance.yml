@@ -14,7 +14,18 @@ name: full-stack-conformance
 # to the run-name and never become the diff baseline either. Empty image = the pin in compose/.env.pinned.
 #   gh api repos/<owner>/<repo>/dispatches -f event_type=inji-release \
 #     -f 'client_payload[certify_image]=injistackqa/inji-certify-with-plugins:1.0.1'
-run-name: "full-stack-conformance fault=${{ inputs.fault || 'none' }} shim=${{ inputs.certify_shim || 'false' }}${{ (inputs.certify_image || inputs.verify_image || github.event.client_payload.certify_image || github.event.client_payload.verify_image) && ' images=custom' || '' }}"
+# certify_ref / verify_ref (a SHA, branch or refs/pull/N/head) take the Inji compose files and api-test from that ref
+# instead of the pin (scripts/fetch-upstream.sh); the run is labelled "upstream=custom" and is never the baseline.
+# Inji PR CI calls this file as a reusable workflow (workflow_call): build the PR images, `docker save` them into
+# one artifact, pass its name as image_artifact plus the image tags and the PR ref. Example caller:
+#   jobs:
+#     build: ...   # docker build -t inji-certify:pr .; docker save inji-certify:pr -o certify.tar; upload-artifact
+#     conformance:
+#       needs: build
+#       uses: Sathvik21S21Rao/inji-certify-verify/.github/workflows/full-stack-conformance.yml@main
+#       with: {image_artifact: pr-images, certify_image: 'inji-certify:pr', certify_ref: '${{ github.event.pull_request.head.sha }}'}
+# A caller in another repo needs this repo to be public (or shared with it); the badge job never runs there.
+run-name: "full-stack-conformance fault=${{ inputs.fault || 'none' }} shim=${{ inputs.certify_shim || 'false' }}${{ (inputs.certify_image || inputs.verify_image || github.event.client_payload.certify_image || github.event.client_payload.verify_image) && ' images=custom' || '' }}${{ (inputs.certify_ref || inputs.verify_ref || github.event.client_payload.certify_ref || github.event.client_payload.verify_ref) && ' upstream=custom' || '' }}"
 on:
   workflow_dispatch:
     inputs:
@@ -44,6 +55,29 @@ on:
         description: Verify service image to test instead of the pin (e.g. injistackqa/inji-verify-service:1.0.1)
         type: string
         default: ''
+      certify_ref:
+        description: inji-certify ref for compose files and api-test instead of the pin (SHA, branch, refs/pull/N/head)
+        type: string
+        default: ''
+      verify_ref:
+        description: inji-verify ref for compose files and api-test instead of the pin (SHA, branch, refs/pull/N/head)
+        type: string
+        default: ''
+  workflow_call:
+    inputs:
+      certify_image: {type: string, default: '', description: Certify image instead of the pin}
+      verify_image: {type: string, default: '', description: Verify service image instead of the pin}
+      certify_ref: {type: string, default: '', description: inji-certify ref instead of the pin}
+      verify_ref: {type: string, default: '', description: inji-verify ref instead of the pin}
+      image_artifact: {type: string, default: '', description: 'Artifact of `docker save` *.tar files, loaded before the run'}
+      strict: {type: boolean, default: false, description: Gate red on any suite WARNING}
+      harness_repository: {type: string, default: Sathvik21S21Rao/inji-certify-verify, description: This harness repo}
+      harness_ref: {type: string, default: main, description: Harness ref to run}
+      skip_badge: {type: boolean, default: true, description: 'Leave true: the badge job would write to the caller repo'}
+    secrets:
+      harness_token:
+        description: Token that can read the harness repo (only while it is private)
+        required: false
   repository_dispatch:
     types: [inji-release]
   push:
@@ -67,6 +101,18 @@ jobs:
         target: [certify, verify, combined]
     steps:
       - uses: actions/checkout@v4
+        with:   # under workflow_call, github.repository is the caller, so name the harness explicitly
+          repository: ${{ inputs.harness_repository || github.repository }}
+          ref: ${{ inputs.harness_ref || '' }}
+          token: ${{ secrets.harness_token || github.token }}
+      - if: inputs.image_artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.image_artifact }}
+          path: ${{ runner.temp }}/images
+      - name: Load images
+        if: inputs.image_artifact
+        run: for f in "$RUNNER_TEMP"/images/*.tar; do docker load -i "$f"; done
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -87,6 +133,8 @@ jobs:
           CONFORMANCE_CERTIFY_AS_METADATA_SHIM: ${{ inputs.certify_shim || 'false' }}
           CERTIFY_IMAGE: ${{ inputs.certify_image || github.event.client_payload.certify_image || '' }}
           VERIFY_SERVICE_IMAGE: ${{ inputs.verify_image || github.event.client_payload.verify_image || '' }}
+          INJI_CERTIFY_REF: ${{ inputs.certify_ref || github.event.client_payload.certify_ref || '' }}
+          INJI_VERIFY_REF: ${{ inputs.verify_ref || github.event.client_payload.verify_ref || '' }}
           TARGET: ${{ matrix.target }}
           STRICT: ${{ inputs.strict }}
           PARALLEL: ${{ inputs.parallel }}
@@ -126,7 +174,7 @@ jobs:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           echo '## Diff vs previous successful run' >> "$GITHUB_STEP_SUMMARY"
-          id=$(gh run list --branch "$DEFAULT_BRANCH" --workflow full-stack-conformance.yml --status success -L 20 --json databaseId,displayTitle -q '[.[] | select((.displayTitle | contains("fault=none shim=false")) and (.displayTitle | contains("images=custom") | not))][0].databaseId // empty' || true)
+          id=$(gh run list --branch "$DEFAULT_BRANCH" --workflow full-stack-conformance.yml --status success -L 20 --json databaseId,displayTitle -q '[.[] | select((.displayTitle | contains("fault=none shim=false")) and (.displayTitle | contains("images=custom") | not) and (.displayTitle | contains("upstream=custom") | not))][0].databaseId // empty' || true)
           if [ -n "$id" ]; then gh run download "$id" -n "conformance-$TARGET" -D prev || true; fi
           found=0
           for f in reports/*/results.jsonl; do
@@ -149,7 +197,7 @@ jobs:
         run: scripts/env.sh down all || true
 
   # Publishes reports/combined/badge.{svg,json} to the single-commit `badges` branch, which the README embeds.
-  # Record runs only: default branch or a tag, no fault, shim off, not strict. Custom images (a release dispatch)
+  # Record runs only: default branch or a tag, no fault, shim off, not strict, pinned upstream, not a workflow_call. Custom images (a release dispatch)
   # do publish, since the badge should show the newest release tested. Only this job can write to the repo.
   badge:
     needs: conformance
@@ -157,6 +205,8 @@ jobs:
       always() && needs.conformance.result != 'cancelled'
       && (github.ref == format('refs/heads/{0}', github.event.repository.default_branch) || startsWith(github.ref, 'refs/tags/'))
       && (inputs.fault || 'none') == 'none' && (inputs.certify_shim || 'false') == 'false' && inputs.strict != true
+      && inputs.skip_badge != true && !inputs.certify_ref && !inputs.verify_ref
+      && !github.event.client_payload.certify_ref && !github.event.client_payload.verify_ref
     runs-on: ubuntu-24.04
     permissions:
       contents: write

@@ -87,6 +87,8 @@ certify_image=$(pin CERTIFY_IMAGE); [ "${CONFORMANCE_CERTIFY_RELEASE:-1.0}" != 0
 verify_image=$(pin VERIFY_SERVICE_IMAGE)
 images=pinned
 [ -z "${CERTIFY_IMAGE:-}${VERIFY_SERVICE_IMAGE:-}" ] || images=custom
+upstream=pinned
+[ -z "${INJI_CERTIFY_REF:-}${INJI_VERIFY_REF:-}" ] || upstream=custom
 
 mkdir -p "$OUT"
 info="mode=$mode
@@ -102,6 +104,9 @@ docker_network=$net
 images=$images
 certify_image=$certify_image
 verify_image=$verify_image
+upstream=$upstream
+certify_ref=${INJI_CERTIFY_REF:-pin}
+verify_ref=${INJI_VERIFY_REF:-pin}
 git=$(git rev-parse --short HEAD 2>/dev/null || echo unknown)"
 echo "$info" | tee "$OUT/run-info.txt"
 
@@ -218,7 +223,7 @@ phase tests $((SECONDS - s))
 if [ -n "$combined" ]; then
   s=$SECONDS; args=()
   for cfg in "${cfgs[@]}"; do args+=("$OUT/$cfg/results.jsonl=plans/${cfg%%-*}/$cfg.benchmark.json"); done
-  "$PY" -m runner combined --out "$OUT/combined" --note "strict=${STRICT:-no} parallel=${parallel:-no} shim=$shim fault=${CONFORMANCE_FAULT:-none} driver=$driver images=$images" "${args[@]}" || true
+  "$PY" -m runner combined --out "$OUT/combined" --note "strict=${STRICT:-no} parallel=${parallel:-no} shim=$shim fault=${CONFORMANCE_FAULT:-none} driver=$driver images=$images upstream=$upstream" "${args[@]}" || true
   phase combined $((SECONDS - s))
 fi
 
