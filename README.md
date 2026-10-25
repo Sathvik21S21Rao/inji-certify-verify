@@ -6,6 +6,8 @@
 
 An automated OpenID conformance harness for **Inji Certify** (OpenID4VCI issuer) and **Inji Verify** (OpenID4VP verifier). It runs the OpenID Foundation (OIDF) conformance suite against both components unattended, reports each suite module as a TestNG test inside the MOSIP testrig they already use, and gates the build against a recorded benchmark, so CI turns red only when something regresses.
 
+![Architecture](docs/architecture.svg)
+
 What it does, end to end:
 
 1. Brings up Inji Certify, Inji Verify and the OIDF conformance suite with Docker Compose. It reuses the upstream compose files unchanged and adds overlays, with every image pinned by digest.
@@ -112,6 +114,8 @@ env.sh            JDK 21 + venv on PATH for Maven and Python commands
 ## Documentation
 
 - [Architecture](docs/architecture.md): components, data flow and the network layout.
+- [Test data](docs/test-data.md): plan configs, credential, test keys and certificates, service credentials.
+- [Test cases and results](docs/test-cases-and-results.md): every test case with its expected and observed result and evidence.
 - [How the API automation works](docs/how-the-api-automation-works.md): plan lifecycle, suite REST calls, long-polling, and the reconciliation check.
 - [Handoff](docs/handoff.md): how Certify and Verify are driven while the suite waits.
 - [Usage](docs/usage.md): every command, flag, environment variable, testrig key and template placeholder.

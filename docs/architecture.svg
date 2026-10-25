@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1010" width="1600" height="1010" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#5a4630"/>
+    </marker>
+    <style>
+      .box{fill:#fff;stroke:#8c7753;stroke-width:2;rx:10}
+      .new{fill:#f3ead9;stroke:#8c7753;stroke-width:2.5}
+      .ext{fill:#fff;stroke:#b9ab92;stroke-width:2}
+      .t{font-size:20px;font-weight:700;fill:#331b0d}
+      .s{font-size:15px;fill:#4a3a2a}
+      .l{font-size:14px;fill:#5a4630;font-style:italic}
+      .ln{stroke:#5a4630;stroke-width:2;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="1600" height="1010" fill="#faf7f0"/>
+  <text x="40" y="48" font-size="28" font-weight="700" fill="#331b0d">Inji conformance harness: architecture</text>
+  <text x="40" y="74" class="s">Shaded boxes are new (this harness). White boxes are existing MOSIP, Inji or OIDF components, reused unchanged.</text>
+
+  <!-- trigger -->
+  <rect x="40" y="100" width="360" height="90" rx="10" class="new"/>
+  <text x="58" y="132" class="t">Developer shell / GitHub Actions</text>
+  <text x="58" y="156" class="s">PR in Certify or Verify → workflow_call</text>
+  <text x="58" y="176" class="s">scripts/run-conformance.sh --combined</text>
+
+  <!-- testrig -->
+  <rect x="40" y="250" width="360" height="130" rx="10" class="box"/>
+  <text x="58" y="282" class="t">MOSIP testrig (api-test image)</text>
+  <text x="58" y="306" class="s">InjiTestRunner, conformance.enabled=yes</text>
+  <rect x="54" y="318" width="332" height="50" rx="8" class="new"/>
+  <text x="66" y="340" class="s" font-weight="700">OpenIDConformanceTest</text>
+  <text x="66" y="360" class="s">one TestNG test per suite module</text>
+
+  <!-- runner -->
+  <rect x="40" y="440" width="360" height="170" rx="10" class="new"/>
+  <text x="58" y="472" class="t">Python runner (runner/)</text>
+  <text x="58" y="498" class="s">• suite client: REST + long-poll</text>
+  <text x="58" y="522" class="s">• handoff plugins: certify, verify</text>
+  <text x="58" y="546" class="s">• evidence uploader (verifier PNG)</text>
+  <text x="58" y="570" class="s">• JSONL emitter</text>
+  <text x="58" y="594" class="s">• gate, reconcile, combined report</text>
+
+  <!-- compose -->
+  <rect x="498" y="210" width="1062" height="470" rx="14" fill="none" stroke="#8c7753" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="512" y="238" class="s" font-weight="700">Docker Compose: upstream compose files (unchanged) + overlays · network mosip_network · every image pinned by digest</text>
+
+  <rect x="520" y="260" width="320" height="200" rx="10" class="ext"/>
+  <text x="538" y="292" class="t">OIDF conformance suite</text>
+  <text x="538" y="316" class="s">server · nginx · mongodb</text>
+  <text x="538" y="340" class="s">release-v5.3.3</text>
+  <text x="538" y="372" class="s">Plays the wallet. Runs</text>
+  <text x="538" y="394" class="s">oid4vci-1_0-issuer-test-plan</text>
+  <text x="538" y="416" class="s">and oid4vp-1final-verifier-</text>
+  <text x="538" y="438" class="s">test-plan.</text>
+
+  <rect x="1000" y="260" width="520" height="110" rx="10" class="ext"/>
+  <text x="1018" y="292" class="t">Inji Certify (OpenID4VCI issuer)</text>
+  <text x="1018" y="318" class="s">certify-tls → certify-nginx → certify · database</text>
+  <text x="1018" y="342" class="s">seeded SD-JWT credential config "ConformanceSdJwt"</text>
+
+  <rect x="1000" y="400" width="520" height="110" rx="10" class="ext"/>
+  <text x="1018" y="432" class="t">Inji Verify (OpenID4VP verifier)</text>
+  <text x="1018" y="458" class="s">verify-tls → verify-service · postgres</text>
+  <text x="1018" y="482" class="s">client-ID modes: redirect_uri, x509_san_dns</text>
+
+  <rect x="520" y="560" width="320" height="90" rx="10" class="ext"/>
+  <text x="538" y="592" class="t">MinIO (S3)</text>
+  <text x="538" y="616" class="s">bucket "automation": TestNG reports</text>
+
+  <!-- outputs -->
+  <rect x="40" y="720" width="250" height="100" rx="10" class="new"/>
+  <text x="58" y="752" class="t">results.jsonl</text>
+  <text x="58" y="776" class="s">one record per module</text>
+  <text x="58" y="798" class="s">versioned contract</text>
+
+  <rect x="320" y="720" width="330" height="100" rx="10" class="box"/>
+  <text x="338" y="752" class="t">EmailableReport + S3Adapter</text>
+  <text x="338" y="776" class="s">existing apitest-commons reporting</text>
+  <text x="338" y="798" class="s">…_T-n_P-n_S-n_F-n_I-n_KI-n.html</text>
+
+  <rect x="680" y="720" width="260" height="100" rx="10" class="new"/>
+  <text x="698" y="752" class="t">Reconcile</text>
+  <text x="698" y="776" class="s">TestNG report vs suite's</text>
+  <text x="698" y="798" class="s">plan export · exit 4 if differ</text>
+
+  <rect x="970" y="720" width="280" height="100" rx="10" class="new"/>
+  <text x="988" y="752" class="t">Gate</text>
+  <text x="988" y="776" class="s">results vs *.benchmark.json</text>
+  <text x="988" y="798" class="s">exit 0 green · 1 red · 2 error</text>
+
+  <rect x="1280" y="720" width="280" height="100" rx="10" class="new"/>
+  <text x="1298" y="752" class="t">Combined report</text>
+  <text x="1298" y="776" class="s">index.html · badge.svg</text>
+  <text x="1298" y="798" class="s">gate.md (job summary)</text>
+
+  <rect x="680" y="890" width="880" height="80" rx="10" class="box"/>
+  <text x="700" y="922" class="t">GitHub Actions status check on the PR</text>
+  <text x="700" y="948" class="s">red only on a regression, a new failure or warning, a stale benchmark entry, or an infrastructure fault</text>
+
+  <!-- arrows -->
+  <path class="ln" d="M220 190V248"/>
+  <text x="232" y="225" class="l">runs</text>
+  <path class="ln" d="M220 380V438"/>
+  <text x="232" y="415" class="l">spawns the runner</text>
+
+  <path class="ln" d="M400 465L518 360"/>
+  <text x="408" y="300" class="l">REST:</text>
+  <text x="408" y="318" class="l">create plan,</text>
+  <text x="408" y="336" class="l">run modules,</text>
+  <text x="408" y="354" class="l">poll, export</text>
+
+  <path class="ln" d="M842 290H998" marker-start="url(#a)"/>
+  <text x="848" y="282" class="l">OID4VCI/TLS</text>
+  <path class="ln" d="M842 430H998" marker-start="url(#a)"/>
+  <text x="848" y="422" class="l">OID4VP/TLS</text>
+
+  <path class="ln" d="M400 500H930V335H998"/>
+  <path class="ln" d="M930 500H998"/>
+  <text x="440" y="492" class="l">handoff while the suite is WAITING</text>
+  <text x="944" y="552" class="l">POST /pre-authorized-data</text>
+  <text x="944" y="572" class="l">POST /v2/vp-request</text>
+
+  <path class="ln" d="M165 610V718"/>
+  <text x="177" y="670" class="l">stdout + file</text>
+  <path class="ln" d="M290 770H318"/>
+  <path class="ln" d="M600 720V652"/>
+  <text x="612" y="700" class="l">upload</text>
+  <path class="ln" d="M650 770H678"/>
+  <path class="ln" d="M1250 770H1278"/>
+
+  <path class="ln" d="M810 820V888"/>
+  <path class="ln" d="M1110 820V888"/>
+  <path class="ln" d="M1420 820V888"/>
+  <path class="ln" d="M165 820V860H1080V888" stroke-dasharray="5 4"/>
+  <text x="300" y="852" class="l">the gate reads results.jsonl</text>
+</svg>

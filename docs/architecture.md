@@ -2,6 +2,10 @@
 
 ## Overview
 
+![Architecture: compose stacks, runner, handoff plugins, testrig reporting, gate and CI](architecture.svg)
+
+The same flow in text, with every call:
+
 ```
  developer shell / GitHub Actions
       │  scripts/run-conformance.sh --component certify|verify | --combined
